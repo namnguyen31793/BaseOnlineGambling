@@ -1,0 +1,20 @@
+
+qua xoai.png
+size: 451,259
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 11
+  rotate: true
+  xy: 297, 86
+  size: 171, 152
+  orig: 181, 163
+  offset: 5, 6
+  index: -1
+as
+  rotate: false
+  xy: 2, 2
+  size: 293, 255
+  orig: 312, 267
+  offset: 10, 8
+  index: -1

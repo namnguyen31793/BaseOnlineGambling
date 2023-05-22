@@ -1,0 +1,107 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "SelectMission2_Random",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "1": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -200.3
+            },
+            {
+              "frame": 0.3,
+              "value": -654.375
+            }
+          ]
+        }
+      },
+      "2": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -0.3
+            },
+            {
+              "frame": 0.3,
+              "value": -196.699
+            }
+          ]
+        }
+      },
+      "3": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 199.7
+            },
+            {
+              "frame": 0.3,
+              "value": 628.635
+            }
+          ]
+        }
+      },
+      "khung chua mission": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 539.869
+            },
+            {
+              "frame": 0.2,
+              "value": 539.869
+            },
+            {
+              "frame": 0.5,
+              "value": 103.078
+            }
+          ]
+        }
+      },
+      "btn go": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": -284.517
+            },
+            {
+              "frame": 0.2,
+              "value": -284.517
+            },
+            {
+              "frame": 0.5,
+              "value": -155
+            }
+          ]
+        }
+      },
+      "BtnRefresh": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": -152.307
+            },
+            {
+              "frame": 0.2,
+              "value": -227.106
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

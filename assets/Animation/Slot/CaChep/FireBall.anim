@@ -1,0 +1,79 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "FireBall",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "7a44d4e9-4cc5-46fd-b843-a2fd2d4498cc"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "ca9546e8-b87e-4d31-8479-7a550f278257"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "6687cc70-f3d5-40a1-80c0-15996d8647a1"
+            }
+          },
+          {
+            "frame": 0.3,
+            "value": {
+              "__uuid__": "91428586-a2ef-4135-9c06-0b4d8875ce04"
+            }
+          },
+          {
+            "frame": 0.4,
+            "value": {
+              "__uuid__": "c60e61eb-8706-492a-bf29-1dd8340b6735"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "0c4ecce2-1d15-4359-ac08-51822969622b"
+            }
+          },
+          {
+            "frame": 0.6,
+            "value": {
+              "__uuid__": "82ce020a-85dc-4783-b406-b69bee803900"
+            }
+          },
+          {
+            "frame": 0.7,
+            "value": {
+              "__uuid__": "0a86ae20-ad73-49ab-89d5-72ec77a174d3"
+            }
+          },
+          {
+            "frame": 0.8,
+            "value": {
+              "__uuid__": "f1d9dc15-959f-43ed-b607-819c20fbdf62"
+            }
+          },
+          {
+            "frame": 0.9,
+            "value": {
+              "__uuid__": "a9b92e59-7e9c-4d74-baa9-8103c9e2ec5d"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

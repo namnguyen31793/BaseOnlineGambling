@@ -1,0 +1,69 @@
+
+anim-qua ket thuc tutorial.png
+size: 1270,554
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+as bay len
+  rotate: false
+  xy: 1210, 494
+  size: 58, 58
+  orig: 66, 66
+  offset: 4, 4
+  index: -1
+as sao toa ra
+  rotate: true
+  xy: 2, 129
+  size: 423, 225
+  orig: 440, 238
+  offset: 9, 7
+  index: -1
+as tien vang
+  rotate: false
+  xy: 588, 15
+  size: 322, 324
+  orig: 330, 335
+  offset: 4, 4
+  index: -1
+as trong toa ra
+  rotate: false
+  xy: 588, 341
+  size: 620, 211
+  orig: 626, 219
+  offset: 3, 4
+  index: -1
+mo ruong dong
+  rotate: false
+  xy: 2, 2
+  size: 121, 125
+  orig: 122, 125
+  offset: 0, 0
+  index: -1
+no ruong mo
+  rotate: true
+  xy: 125, 7
+  size: 120, 103
+  orig: 122, 104
+  offset: 1, 0
+  index: -1
+ruong dong
+  rotate: false
+  xy: 912, 47
+  size: 352, 292
+  orig: 359, 293
+  offset: 6, 0
+  index: -1
+ruong mo
+  rotate: false
+  xy: 229, 158
+  size: 357, 394
+  orig: 359, 396
+  offset: 1, 1
+  index: -1
+vang
+  rotate: false
+  xy: 230, 13
+  size: 263, 143
+  orig: 266, 146
+  offset: 1, 1
+  index: -1

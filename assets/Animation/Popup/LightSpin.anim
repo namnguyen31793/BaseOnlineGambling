@@ -1,0 +1,41 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "LightSpin",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.7,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Group 54": {
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "45c3abfe-72f1-4366-9eea-43ab33996ead"
+                }
+              },
+              {
+                "frame": 0.3,
+                "value": {
+                  "__uuid__": "e299bd70-e9ad-4f87-89b2-bbf000a782cf"
+                }
+              },
+              {
+                "frame": 0.6,
+                "value": {
+                  "__uuid__": "e299bd70-e9ad-4f87-89b2-bbf000a782cf"
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "events": []
+}

@@ -1,0 +1,41 @@
+
+scatter.png
+size: 257, 287
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+4d392c731a3e38e9c06b41a768a5fe665ded6b1cc63b-Lnqvaj copy 3
+  rotate: false
+  xy: 2, 6
+  size: 138, 142
+  orig: 140, 146
+  offset: 1, 2
+  index: -1
+Brightness/Contrast 1
+  rotate: false
+  xy: 2, 150
+  size: 172, 137
+  orig: 174, 139
+  offset: 1, 1
+  index: -1
+cua phai
+  rotate: true
+  xy: 142, 64
+  size: 58, 113
+  orig: 60, 115
+  offset: 1, 1
+  index: -1
+cua trai
+  rotate: true
+  xy: 142, 4
+  size: 58, 113
+  orig: 60, 115
+  offset: 1, 1
+  index: -1
+text
+  rotate: true
+  xy: 176, 124
+  size: 163, 48
+  orig: 165, 50
+  offset: 1, 1
+  index: -1

@@ -1,0 +1,159 @@
+var InGameLogicManager = cc.Class({
+    statics: {
+        getIns() {
+            if (this.self == null) this.self = new InGameLogicManager();
+            return this.self;
+        }
+    },
+
+    InGameHandleResponse(operationResponse) {
+        var data = operationResponse;
+
+        let defineRe = Global.Enum.RESPONSE_CODE.CTP_TAG;
+        let packet = data.vals;
+        var responseCode = packet[defineRe];
+        if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_LOGIN) {
+            this.HandleLoginResponse(packet);
+        } else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_PING) {
+            this.HandlePingTime(packet);
+            if(require("FishNetworkManager").getIns().gamelogic) {
+				require("FishNetworkManager").getIns().gamelogic.CheckIce();
+				require("FishCollection").getIns().UpdateCurrentMoveTime();
+			}
+        } else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_CONFIRM_MESSAGE) {
+            this.HandleConfirmResponce(packet);
+        } else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_SEND_NOTIFICATION) {
+            this.HandleNotifyInGame(packet);
+        } else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_UPDATE_PLAYER_BALANCE) {
+            this.HandleUpdateBalance(packet);
+        } else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_NORMAL_NOTIFICATION) {
+            this.HandleNotifyCashOut(packet);
+        } else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_RECEIVED_DIAMOND) {
+            this.HandleReceiveDiamond(packet);
+        } else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_SEND_UPDATE_DIAMOND) {
+            this.HandleUpdateDiamond(packet);
+        } else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_GET_SHOP_CONFIG) {
+            this.HandleGetShopConfig(packet);
+        } else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_BUY_SHOP_PACKAGE_RESPONSE) {
+            this.HandleBuyShopPackage(packet);
+        } else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_TOP_TAKE_JACKPOT_RANK) {
+            this.HandleTopJackpotRank(packet);
+        } else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_GET_ACCOUNT_INFO) {
+            this.HandleLeaveRoomFish(packet);
+        } else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_BATTLE_FIELD_REGISTER){
+            this.HandleBattleFieldRegister(packet);
+        } 
+    },
+
+    HandleNotifyInGame(packet) {
+        let notifyfString = packet[1];
+        let notifyData = JSON.parse(notifyfString);
+        require("FishNetworkManager").getIns().gamelogic.NotifyInGame (notifyData);
+    },
+
+    HandlePingTime(packet) {
+        require("SyncTimeControl").getIns().HandlePing(packet);
+        if (require("ScreenManager").getIns().currentScreen == Global.Enum.SCREEN_CODE.INGAME_SLOT) {
+            Global.SlotNetWork.slotView.OnUpdateTime();
+        }
+    },
+
+    HandleUpdateBalance(packet) {
+        let playerId = packet[1];
+        let money = packet[2];
+        if (require("ScreenManager").getIns().currentScreen == Global.Enum.SCREEN_CODE.INGAME_KILL_BOSS) {
+            require("FishNetworkManager").getIns().gamelogic.UpdateBalane (playerId, money, 0);
+        } else if (require("ScreenManager").getIns().currentScreen == Global.Enum.SCREEN_CODE.INGAME_SLOT) {
+            require("WalletController").getIns().UpdateWallet (money);
+        }
+    },
+
+    HandleReceiveDiamond(packet) {
+        let accountId = packet[1];
+        let diamondBonus = packet[2];
+        let diamondBalance = packet[3];
+        require("FishNetworkManager").getIns().gamelogic.ReceiveDiamond(accountId, diamondBonus, diamondBalance);
+    },
+
+    HandleUpdateDiamond(packet) {
+        let accountId = packet[1];
+        let diamondBalance = packet[2];
+        require("FishNetworkManager").getIns().gamelogic.UpdateDiamond(accountId, diamondBalance);
+    },
+
+    HandleGetShopConfig(packet) {
+        let shopConfigString = packet[1];
+        let listData = [];
+        for (let i = 0; i < shopConfigString.length; i++) {
+            listData[i] = JSON.parse(shopConfigString[i]);
+        }
+        Global.InGameView.UpdateListItemDiamond(listData);
+    },
+
+    HandleBuyShopPackage(packet) {
+        let data = packet[1];
+        let accountBalance = packet[2];
+        let diamondBalance = packet[3];
+        require("FishNetworkManager").getIns().gamelogic.BuyShopSuccess(data, accountBalance, diamondBalance);
+    },
+
+    HandleTopJackpotRank(packet) {
+        let listDataTopJackpotString = packet[1];
+        let listDataTopJackpot = [];
+        for (let i = 0; i < listDataTopJackpotString.length; i++) {
+            listDataTopJackpot[i] = JSON.parse(listDataTopJackpotString[i]);
+        }
+
+        let listDataBigWin = [];
+        if(packet[2]) {
+            let listDataBigWinString = packet[2];
+            for (let i = 0; i < listDataBigWinString.length; i++) {
+                listDataBigWin[i] = JSON.parse(listDataBigWinString[i]);
+            }
+        }
+       
+
+        Global.InGameView.btnVinhDanh.InitInfo(listDataTopJackpot, listDataBigWin);
+    },
+
+    HandleLeaveRoomFish(packet) {
+        let accountBalance = JSON.parse(packet[1]).IngameBalance;
+        Global.GameLogic.LeaveRoom(accountBalance);
+    },
+
+    HandleBattleFieldRegister(packet) {
+        let accountBalance = packet[1];
+        let user = JSON.parse(packet[2]);
+        let rival = JSON.parse(packet[3]);
+        let gameId = packet[4];
+        let endTimeLive = packet[5];
+        let turnModelString = packet[6];
+        let betModel = packet[7];
+        let betReward = packet[8];
+        Global.betRewardBattle = betReward;
+        Global.MainPlayerInfo.ingameBalance = accountBalance;
+        let turnModel = [];
+        let betValue = JSON.parse(betModel).Bet;
+        if(turnModelString!= null && turnModelString.length > 0) {
+            for(let i = 0; i < turnModelString.length; i++) {
+                turnModel[i] = JSON.parse(turnModelString[i]);
+            }
+        }
+        let dataBattle = {
+            rivalName : rival.Nickname,
+            myTurn : user.BattleNormalTurn,
+            rivalTurn : rival.BattleNormalTurn,
+            userScore : user.BattleScore,
+            rivalScore : rival.BattleScore,
+            endTimeLive : endTimeLive,
+            startTime : require("SyncTimeControl").getIns().GetCurrentTimeServer(),
+            turnModel : turnModel,
+            betValue : betValue,
+        };
+        Global.dataBattle = dataBattle;
+        cc.log(dataBattle);
+        require("ScreenManager").getIns().roomType = gameId;
+        require("ScreenManager").getIns().LoadScene(Global.Enum.SCREEN_CODE.INGAME_SLOT);
+    },
+});
+module.exports = InGameLogicManager;

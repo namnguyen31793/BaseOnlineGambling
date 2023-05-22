@@ -1,0 +1,25 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "TableBattleMoveRight",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.3,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "x": [
+        {
+          "frame": 0,
+          "value": 151.645
+        },
+        {
+          "frame": 0.3,
+          "value": 532.221
+        }
+      ]
+    }
+  },
+  "events": []
+}

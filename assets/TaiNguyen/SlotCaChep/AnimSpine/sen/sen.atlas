@@ -1,0 +1,13 @@
+
+sen.png
+size: 110, 103
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+hoa sen copy
+  rotate: false
+  xy: 2, 4
+  size: 106, 99
+  orig: 108, 101
+  offset: 1, 1
+  index: -1

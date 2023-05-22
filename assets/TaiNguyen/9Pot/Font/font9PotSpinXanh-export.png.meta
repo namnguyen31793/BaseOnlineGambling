@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "3c3fdce5-cf5b-41c6-bdd0-303e5325ab7f",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 128,
+  "height": 256,
+  "platformSettings": {},
+  "subMetas": {
+    "font9PotSpinXanh-export": {
+      "ver": "1.0.4",
+      "uuid": "f292953a-837c-43cc-9374-95ff3949f191",
+      "rawTextureUuid": "3c3fdce5-cf5b-41c6-bdd0-303e5325ab7f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -18.5,
+      "offsetY": 2,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 91,
+      "height": 252,
+      "rawWidth": 128,
+      "rawHeight": 256,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

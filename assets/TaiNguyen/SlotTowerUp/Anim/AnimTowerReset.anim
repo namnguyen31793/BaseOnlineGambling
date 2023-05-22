@@ -1,0 +1,289 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "AnimTowerReset",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.7666666666666667,
+  "sample": 30,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Rim1": {
+        "props": {
+          "y": [
+            {
+              "frame": 0.16666666666666666,
+              "value": -310
+            },
+            {
+              "frame": 0.5,
+              "value": 490
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": 490
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": -510
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.5,
+              "value": true
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": false
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Rim2": {
+        "props": {
+          "y": [
+            {
+              "frame": 0.16666666666666666,
+              "value": -110
+            },
+            {
+              "frame": 0.4,
+              "value": 490
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": 490
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": -510
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": -310
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.4,
+              "value": true
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": false
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Rim3": {
+        "props": {
+          "y": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 90
+            },
+            {
+              "frame": 0.3,
+              "value": 490
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 490
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": -510
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": -110
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.3,
+              "value": true
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": false
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Rim4": {
+        "props": {
+          "y": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 290
+            },
+            {
+              "frame": 0.2,
+              "value": 490
+            },
+            {
+              "frame": 0.26666666666666666,
+              "value": -510
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": 90
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.2,
+              "value": true
+            },
+            {
+              "frame": 0.23333333333333334,
+              "value": false
+            },
+            {
+              "frame": 0.26666666666666666,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Rim5": {
+        "props": {
+          "y": [
+            {
+              "frame": 0.16666666666666666,
+              "value": -510
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": 290
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.1,
+              "value": true
+            },
+            {
+              "frame": 0.13333333333333333,
+              "value": false
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": true
+            }
+          ]
+        }
+      },
+      "buc": {
+        "props": {
+          "y": [
+            {
+              "frame": 0.4666666666666667,
+              "value": -485
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": -285
+            }
+          ]
+        }
+      }
+    },
+    "props": {
+      "scale": [
+        {
+          "frame": 0,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "frame": 0.06666666666666667,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 0.95,
+            "y": 0.95
+          }
+        },
+        {
+          "frame": 0.5,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 0.95,
+            "y": 0.95
+          }
+        },
+        {
+          "frame": 0.5666666666666667,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1.03,
+            "y": 1.03
+          }
+        },
+        {
+          "frame": 0.6333333333333333,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 0.95,
+            "y": 0.95
+          }
+        },
+        {
+          "frame": 0.7,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1.03,
+            "y": 1.03
+          }
+        },
+        {
+          "frame": 0.7666666666666667,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1,
+            "y": 1
+          }
+        }
+      ]
+    }
+  },
+  "events": []
+}

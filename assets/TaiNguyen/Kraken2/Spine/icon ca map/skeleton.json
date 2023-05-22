@@ -1,0 +1,1 @@
+{"skeleton":{"hash":"E3a4cEp+V9xvp7iwOXrGl5su0+4","spine":"3.8.99","images":"C:/Users/Admin/Desktop/anim icon","audio":""},"bones":[{"name":"root"}],"slots":[{"name":"icon 10","bone":"root","attachment":"icon ca map"}],"skins":[{"name":"default","attachments":{"icon 10":{"icon ca map":{"width":127,"height":124}}}}],"animations":{"active":{},"waiting":{}}}

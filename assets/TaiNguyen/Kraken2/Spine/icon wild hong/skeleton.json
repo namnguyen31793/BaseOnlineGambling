@@ -1,0 +1,1 @@
+{"skeleton":{"hash":"+1w4AMcyL3j7M1UFkwYMmDqtmXE","spine":"3.8.99","images":"C:/Users/Admin/Desktop/anim icon","audio":""},"bones":[{"name":"root"}],"slots":[{"name":"icon 10","bone":"root","attachment":"icon wild hong"}],"skins":[{"name":"default","attachments":{"icon 10":{"icon wild hong":{"width":182,"height":169}}}}],"animations":{"active":{},"waiting":{}}}

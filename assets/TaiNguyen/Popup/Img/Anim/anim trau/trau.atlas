@@ -1,0 +1,69 @@
+
+trau.png
+size: 1845,1533
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Group 4 copy
+  rotate: false
+  xy: 1153, 612
+  size: 632, 117
+  orig: 636, 121
+  offset: 2, 2
+  index: -1
+Group 6
+  rotate: false
+  xy: 843, 8
+  size: 609, 45
+  orig: 613, 49
+  offset: 2, 2
+  index: -1
+Group 7
+  rotate: false
+  xy: 660, 589
+  size: 491, 100
+  orig: 495, 102
+  offset: 2, 1
+  index: -1
+as
+  rotate: false
+  xy: 1116, 1154
+  size: 727, 377
+  orig: 732, 383
+  offset: 3, 2
+  index: -1
+as do
+  rotate: true
+  xy: 2, 579
+  size: 952, 656
+  orig: 976, 674
+  offset: 9, 13
+  index: -1
+as vang
+  rotate: true
+  xy: 660, 691
+  size: 840, 454
+  orig: 868, 470
+  offset: 12, 10
+  index: -1
+giay
+  rotate: false
+  xy: 2, 2
+  size: 839, 575
+  orig: 843, 579
+  offset: 1, 3
+  index: -1
+tien
+  rotate: false
+  xy: 843, 55
+  size: 805, 532
+  orig: 807, 534
+  offset: 1, 1
+  index: -1
+trau
+  rotate: false
+  xy: 1116, 731
+  size: 545, 421
+  orig: 545, 421
+  offset: 0, 0
+  index: -1

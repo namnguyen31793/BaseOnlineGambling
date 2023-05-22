@@ -1,0 +1,230 @@
+
+vong quay.png
+size: 2016, 1023
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Layer 10
+  rotate: true
+  xy: 677, 366
+  size: 192, 222
+  orig: 200, 227
+  offset: 4, 2
+  index: -1
+Layer 18
+  rotate: true
+  xy: 677, 560
+  size: 463, 457
+  orig: 522, 465
+  offset: 31, 7
+  index: -1
+Layer 19
+  rotate: true
+  xy: 1904, 217
+  size: 66, 69
+  orig: 68, 71
+  offset: 1, 1
+  index: -1
+Layer 20 copy
+  rotate: true
+  xy: 1922, 354
+  size: 67, 70
+  orig: 69, 72
+  offset: 1, 1
+  index: -1
+Layer 20
+  rotate: true
+  xy: 1922, 354
+  size: 67, 70
+  orig: 69, 72
+  offset: 1, 1
+  index: -1
+Layer 21 copy
+  rotate: false
+  xy: 1758, 36
+  size: 66, 69
+  orig: 68, 71
+  offset: 1, 1
+  index: -1
+Layer 21
+  rotate: false
+  xy: 1758, 36
+  size: 66, 69
+  orig: 68, 71
+  offset: 1, 1
+  index: -1
+Layer 22
+  rotate: true
+  xy: 1826, 41
+  size: 60, 59
+  orig: 62, 61
+  offset: 1, 1
+  index: -1
+Layer 23
+  rotate: true
+  xy: 1099, 370
+  size: 188, 151
+  orig: 194, 154
+  offset: 2, 2
+  index: -1
+Layer 26
+  rotate: true
+  xy: 1758, 107
+  size: 153, 112
+  orig: 153, 112
+  offset: 0, 0
+  index: -1
+Layer 38 copy 2
+  rotate: true
+  xy: 1904, 285
+  size: 67, 69
+  orig: 69, 71
+  offset: 1, 1
+  index: -1
+Layer 38
+  rotate: true
+  xy: 1904, 285
+  size: 67, 69
+  orig: 69, 71
+  offset: 1, 1
+  index: -1
+Layer 38 copy
+  rotate: true
+  xy: 1904, 285
+  size: 67, 69
+  orig: 69, 71
+  offset: 1, 1
+  index: -1
+Layer 40
+  rotate: true
+  xy: 901, 370
+  size: 188, 196
+  orig: 193, 198
+  offset: 1, 1
+  index: -1
+as leo tron
+  rotate: false
+  xy: 2, 348
+  size: 673, 675
+  orig: 691, 691
+  offset: 9, 9
+  index: -1
+bong sang
+  rotate: true
+  xy: 1616, 664
+  size: 359, 257
+  orig: 371, 277
+  offset: 6, 10
+  index: -1
+capsuletoy1_2
+  rotate: true
+  xy: 2, 20
+  size: 326, 463
+  orig: 369, 487
+  offset: 37, 16
+  index: -1
+capsuletoy_2
+  rotate: true
+  xy: 1281, 381
+  size: 278, 415
+  orig: 369, 487
+  offset: 47, 10
+  index: -1
+de xuat hien tien
+  rotate: false
+  xy: 1698, 408
+  size: 222, 48
+  orig: 224, 51
+  offset: 1, 2
+  index: -1
+gacha_moonrabbit
+  rotate: true
+  xy: 847, 4
+  size: 360, 482
+  orig: 369, 487
+  offset: 6, 2
+  index: -1
+gacha_ranking_high
+  rotate: true
+  xy: 1331, 10
+  size: 369, 425
+  orig: 369, 487
+  offset: 0, 18
+  index: -1
+gacha_ranking_low
+  rotate: true
+  xy: 467, 29
+  size: 317, 378
+  orig: 369, 487
+  offset: 28, 26
+  index: -1
+gacha_scratch_card
+  rotate: true
+  xy: 1136, 661
+  size: 362, 478
+  orig: 369, 487
+  offset: 6, 5
+  index: -1
+item dong bang (merged)
+  rotate: false
+  xy: 1922, 423
+  size: 92, 92
+  orig: 94, 93
+  offset: 2, 0
+  index: -1
+item nham ban (merged)
+  rotate: false
+  xy: 1872, 103
+  size: 112, 112
+  orig: 114, 113
+  offset: 2, 0
+  index: -1
+item x2 toc ban (merged)
+  rotate: false
+  xy: 1758, 262
+  size: 144, 144
+  orig: 147, 147
+  offset: 3, 1
+  index: -1
+vang
+  rotate: false
+  xy: 1875, 753
+  size: 135, 134
+  orig: 137, 136
+  offset: 1, 1
+  index: -1
+vang (merged)
+  rotate: false
+  xy: 1698, 458
+  size: 204, 204
+  orig: 208, 207
+  offset: 4, 0
+  index: -1
+vang copy
+  rotate: false
+  xy: 1875, 889
+  size: 135, 134
+  orig: 137, 136
+  offset: 1, 1
+  index: -1
+vang copy (merged)
+  rotate: false
+  xy: 1875, 670
+  size: 81, 81
+  orig: 82, 83
+  offset: 1, 1
+  index: -1
+vo so duoi
+  rotate: true
+  xy: 1904, 517
+  size: 151, 71
+  orig: 153, 73
+  offset: 1, 1
+  index: -1
+vo so tren
+  rotate: false
+  xy: 1136, 578
+  size: 143, 81
+  orig: 145, 83
+  offset: 1, 1
+  index: -1

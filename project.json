@@ -1,0 +1,8 @@
+{
+  "engine": "cocos-creator-js",
+  "packages": "packages",
+  "name": "DemoHotUpdateBundle",
+  "id": "1e5db8df-167f-4fc9-b0d4-7798d43c5e9a",
+  "version": "2.4.3",
+  "isNew": false
+}

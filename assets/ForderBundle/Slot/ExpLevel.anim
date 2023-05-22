@@ -1,0 +1,135 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "ExpLevel",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2.857142857142857,
+  "sample": 7,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Exp/1": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.7142857142857143,
+              "value": -76
+            },
+            {
+              "frame": 1.4285714285714286,
+              "value": 76
+            },
+            {
+              "frame": 2.142857142857143,
+              "value": 0
+            },
+            {
+              "frame": 2.857142857142857,
+              "value": -76
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.7142857142857143,
+              "value": false
+            },
+            {
+              "frame": 1.4285714285714286,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Exp/2": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 76
+            },
+            {
+              "frame": 0.7142857142857143,
+              "value": 0
+            },
+            {
+              "frame": 1.4285714285714286,
+              "value": -76
+            },
+            {
+              "frame": 2.142857142857143,
+              "value": 76
+            },
+            {
+              "frame": 2.857142857142857,
+              "value": 0
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.4285714285714286,
+              "value": false
+            },
+            {
+              "frame": 2.142857142857143,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Exp/3": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 152
+            },
+            {
+              "frame": 0.7142857142857143,
+              "value": 76
+            },
+            {
+              "frame": 1.4285714285714286,
+              "value": 0
+            },
+            {
+              "frame": 2.142857142857143,
+              "value": -76
+            },
+            {
+              "frame": 2.857142857142857,
+              "value": 76
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 2.142857142857143,
+              "value": false
+            },
+            {
+              "frame": 2.857142857142857,
+              "value": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

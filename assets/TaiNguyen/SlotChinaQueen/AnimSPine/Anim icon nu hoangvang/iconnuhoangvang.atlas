@@ -1,0 +1,104 @@
+
+iconnuhoangvang.png
+size: 322, 1079
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+icon vang/Group_1
+  rotate: false
+  xy: 177, 907
+  size: 143, 172
+  orig: 147, 173
+  offset: 4, 1
+  index: -1
+icon vang/Group_10
+  rotate: true
+  xy: 176, 258
+  size: 149, 118
+  orig: 149, 118
+  offset: 0, 0
+  index: -1
+icon vang/Group_2
+  rotate: false
+  xy: 176, 733
+  size: 143, 172
+  orig: 147, 173
+  offset: 4, 1
+  index: -1
+icon vang/Group_3
+  rotate: true
+  xy: 2, 403
+  size: 155, 172
+  orig: 156, 173
+  offset: 1, 1
+  index: -1
+icon vang/Group_4
+  rotate: true
+  xy: 2, 560
+  size: 171, 172
+  orig: 172, 173
+  offset: 1, 1
+  index: -1
+icon vang/Group_5
+  rotate: false
+  xy: 2, 733
+  size: 172, 172
+  orig: 172, 173
+  offset: 0, 1
+  index: -1
+icon vang/Group_6
+  rotate: false
+  xy: 2, 907
+  size: 173, 172
+  orig: 173, 173
+  offset: 0, 1
+  index: -1
+icon vang/Group_7
+  rotate: false
+  xy: 2, 248
+  size: 167, 153
+  orig: 167, 153
+  offset: 0, 0
+  index: -1
+icon vang/Group_8
+  rotate: true
+  xy: 176, 570
+  size: 161, 135
+  orig: 161, 135
+  offset: 0, 0
+  index: -1
+icon vang/Group_9
+  rotate: true
+  xy: 176, 409
+  size: 159, 125
+  orig: 159, 126
+  offset: 0, 1
+  index: -1
+icon vang/Layer 2
+  rotate: true
+  xy: 2, 11
+  size: 115, 112
+  orig: 115, 112
+  offset: 0, 0
+  index: -1
+icon vang/Layer_16_copy_6
+  rotate: true
+  xy: 138, 4
+  size: 132, 118
+  orig: 132, 118
+  offset: 0, 0
+  index: -1
+icon vang/Layer_1_(merged)
+  rotate: false
+  xy: 171, 138
+  size: 135, 118
+  orig: 135, 118
+  offset: 0, 0
+  index: -1
+icon vang/Layer_1_copy_(merged)
+  rotate: false
+  xy: 2, 128
+  size: 134, 118
+  orig: 134, 118
+  offset: 0, 0
+  index: -1

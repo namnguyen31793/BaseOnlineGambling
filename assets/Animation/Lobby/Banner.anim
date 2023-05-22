@@ -1,0 +1,105 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Banner",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 18,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "4b6fd996-ad5f-4dd7-9417-d08f2fb21448"
+            }
+          },
+          {
+            "frame": 5,
+            "value": {
+              "__uuid__": "4b6fd996-ad5f-4dd7-9417-d08f2fb21448"
+            }
+          },
+          {
+            "frame": 5.5,
+            "value": {
+              "__uuid__": "6bdc3b41-1850-4414-99db-a4b96182219e"
+            }
+          },
+          {
+            "frame": 11,
+            "value": {
+              "__uuid__": "6bdc3b41-1850-4414-99db-a4b96182219e"
+            }
+          },
+          {
+            "frame": 11.5,
+            "value": {
+              "__uuid__": "707f6deb-b9d4-485c-8a30-2ea7954f447c"
+            }
+          },
+          {
+            "frame": 17,
+            "value": {
+              "__uuid__": "707f6deb-b9d4-485c-8a30-2ea7954f447c"
+            }
+          },
+          {
+            "frame": 17.5,
+            "value": {
+              "__uuid__": "4b6fd996-ad5f-4dd7-9417-d08f2fb21448"
+            }
+          }
+        ]
+      }
+    },
+    "props": {
+      "scaleX": [
+        {
+          "frame": 0,
+          "value": 1
+        },
+        {
+          "frame": 5,
+          "value": 1
+        },
+        {
+          "frame": 5.5,
+          "value": 0
+        },
+        {
+          "frame": 6,
+          "value": 1
+        },
+        {
+          "frame": 11,
+          "value": 1
+        },
+        {
+          "frame": 11.5,
+          "value": 0
+        },
+        {
+          "frame": 12,
+          "value": 1
+        },
+        {
+          "frame": 17,
+          "value": 1
+        },
+        {
+          "frame": 17.5,
+          "value": 0
+        },
+        {
+          "frame": 18,
+          "value": 1
+        }
+      ]
+    }
+  },
+  "events": []
+}

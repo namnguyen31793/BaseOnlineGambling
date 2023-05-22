@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "6e49d4c0-1516-4aee-b30c-615b9d6c403c",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 339,
+  "height": 242,
+  "platformSettings": {},
+  "subMetas": {
+    "icon tower of fortuna": {
+      "ver": "1.0.4",
+      "uuid": "5c2d48a1-51bd-4288-8f86-e2454d6488bb",
+      "rawTextureUuid": "6e49d4c0-1516-4aee-b30c-615b9d6c403c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 339,
+      "height": 242,
+      "rawWidth": 339,
+      "rawHeight": 242,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

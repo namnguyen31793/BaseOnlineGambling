@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "2f463bae-f779-45c2-9e12-8c84290fe122",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 38,
+  "height": 28,
+  "platformSettings": {},
+  "subMetas": {
+    "thanh den hien thi bigwin ingame": {
+      "ver": "1.0.4",
+      "uuid": "bf949121-7740-4602-9b0b-912e90a6457b",
+      "rawTextureUuid": "2f463bae-f779-45c2-9e12-8c84290fe122",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 38,
+      "height": 28,
+      "rawWidth": 38,
+      "rawHeight": 28,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 17,
+      "borderRight": 17,
+      "subMetas": {}
+    }
+  }
+}

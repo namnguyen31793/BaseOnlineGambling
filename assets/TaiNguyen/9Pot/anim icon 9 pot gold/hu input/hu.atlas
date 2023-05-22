@@ -1,0 +1,272 @@
+
+hu.png
+size: 1692,523
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 35 copy 8
+  rotate: true
+  xy: 1639, 128
+  size: 252, 51
+  orig: 254, 53
+  offset: 1, 1
+  index: -1
+Layer 67
+  rotate: false
+  xy: 956, 2
+  size: 55, 41
+  orig: 57, 43
+  offset: 1, 1
+  index: -1
+Layer 68
+  rotate: false
+  xy: 328, 351
+  size: 49, 21
+  orig: 53, 23
+  offset: 2, 2
+  index: -1
+images/hu_01
+  rotate: false
+  xy: 902, 379
+  size: 189, 142
+  orig: 235, 161
+  offset: 8, 9
+  index: -1
+images/hu_02
+  rotate: true
+  xy: 1501, 193
+  size: 187, 136
+  orig: 234, 161
+  offset: 26, 9
+  index: -1
+images/hu_03
+  rotate: false
+  xy: 384, 4
+  size: 189, 139
+  orig: 235, 161
+  offset: 43, 9
+  index: -1
+images/hu_04
+  rotate: false
+  xy: 328, 374
+  size: 189, 147
+  orig: 235, 161
+  offset: 8, 2
+  index: -1
+images/hu_05
+  rotate: false
+  xy: 956, 45
+  size: 187, 143
+  orig: 234, 161
+  offset: 26, 3
+  index: -1
+images/hu_06
+  rotate: false
+  xy: 519, 377
+  size: 189, 144
+  orig: 235, 161
+  offset: 43, 2
+  index: -1
+images/hu_07
+  rotate: false
+  xy: 575, 37
+  size: 189, 144
+  orig: 235, 162
+  offset: 8, 4
+  index: -1
+images/hu_08
+  rotate: true
+  xy: 1145, 4
+  size: 184, 144
+  orig: 234, 162
+  offset: 29, 4
+  index: -1
+images/hu_09
+  rotate: true
+  xy: 637, 186
+  size: 189, 144
+  orig: 235, 162
+  offset: 43, 4
+  index: -1
+images/hu_10
+  rotate: false
+  xy: 2, 2
+  size: 189, 140
+  orig: 235, 161
+  offset: 8, 6
+  index: -1
+images/hu_11
+  rotate: false
+  xy: 1284, 382
+  size: 187, 139
+  orig: 234, 161
+  offset: 26, 5
+  index: -1
+images/hu_12
+  rotate: false
+  xy: 710, 378
+  size: 190, 143
+  orig: 235, 161
+  offset: 43, 6
+  index: -1
+images/hu_13
+  rotate: false
+  xy: 1093, 382
+  size: 189, 139
+  orig: 235, 161
+  offset: 8, 6
+  index: -1
+images/hu_14
+  rotate: true
+  xy: 1291, 3
+  size: 187, 139
+  orig: 234, 161
+  offset: 26, 6
+  index: -1
+images/hu_15
+  rotate: false
+  xy: 193, 2
+  size: 189, 141
+  orig: 235, 161
+  offset: 43, 6
+  index: -1
+images/hu_16
+  rotate: true
+  xy: 489, 183
+  size: 189, 146
+  orig: 235, 161
+  offset: 8, 0
+  index: -1
+images/hu_17
+  rotate: true
+  xy: 1074, 190
+  size: 187, 143
+  orig: 234, 161
+  offset: 26, 0
+  index: -1
+images/hu_19
+  rotate: true
+  xy: 783, 187
+  size: 189, 143
+  orig: 235, 161
+  offset: 8, 1
+  index: -1
+images/hu_20
+  rotate: true
+  xy: 165, 145
+  size: 187, 160
+  orig: 234, 161
+  offset: 26, 1
+  index: -1
+images/hu_21
+  rotate: false
+  xy: 328, 348
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+images/hu_24
+  rotate: false
+  xy: 328, 348
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+images/hu_27
+  rotate: false
+  xy: 328, 348
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+images/hu_30
+  rotate: false
+  xy: 328, 348
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+images/hu_33
+  rotate: false
+  xy: 328, 348
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+images/hu_36
+  rotate: false
+  xy: 328, 348
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+images/hu_22
+  rotate: false
+  xy: 766, 40
+  size: 188, 144
+  orig: 235, 161
+  offset: 8, 1
+  index: -1
+images/hu_23
+  rotate: true
+  xy: 928, 190
+  size: 187, 144
+  orig: 234, 161
+  offset: 26, 1
+  index: -1
+images/hu_25
+  rotate: true
+  xy: 1360, 193
+  size: 187, 139
+  orig: 235, 162
+  offset: 8, 3
+  index: -1
+images/hu_26
+  rotate: false
+  xy: 1473, 382
+  size: 187, 139
+  orig: 234, 162
+  offset: 26, 3
+  index: -1
+images/hu_28
+  rotate: true
+  xy: 1219, 192
+  size: 188, 139
+  orig: 235, 161
+  offset: 8, 1
+  index: -1
+images/hu_29
+  rotate: true
+  xy: 1432, 4
+  size: 187, 139
+  orig: 234, 161
+  offset: 26, 1
+  index: -1
+images/hu_31
+  rotate: true
+  xy: 2, 333
+  size: 188, 161
+  orig: 235, 161
+  offset: 8, 0
+  index: -1
+images/hu_32
+  rotate: true
+  xy: 2, 144
+  size: 187, 161
+  orig: 234, 161
+  offset: 26, 0
+  index: -1
+images/hu_34
+  rotate: true
+  xy: 165, 334
+  size: 187, 161
+  orig: 235, 161
+  offset: 8, 0
+  index: -1
+images/hu_35
+  rotate: true
+  xy: 327, 145
+  size: 187, 160
+  orig: 234, 161
+  offset: 26, 0
+  index: -1

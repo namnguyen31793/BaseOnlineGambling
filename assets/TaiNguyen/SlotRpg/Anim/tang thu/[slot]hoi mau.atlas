@@ -1,0 +1,90 @@
+
+[slot]hoi mau.png
+size: 399,1108
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 29
+  rotate: false
+  xy: 255, 165
+  size: 115, 249
+  orig: 117, 251
+  offset: 1, 1
+  index: -1
+Layer 30
+  rotate: true
+  xy: 2, 784
+  size: 174, 259
+  orig: 176, 261
+  offset: 1, 1
+  index: -1
+Layer 31
+  rotate: true
+  xy: 2, 960
+  size: 146, 265
+  orig: 148, 267
+  offset: 1, 1
+  index: -1
+Layer 32
+  rotate: true
+  xy: 2, 669
+  size: 113, 254
+  orig: 115, 256
+  offset: 1, 1
+  index: -1
+Layer 33
+  rotate: false
+  xy: 269, 859
+  size: 126, 247
+  orig: 128, 249
+  offset: 1, 1
+  index: -1
+Layer 34
+  rotate: true
+  xy: 2, 380
+  size: 141, 251
+  orig: 143, 253
+  offset: 1, 1
+  index: -1
+Layer 35
+  rotate: false
+  xy: 255, 416
+  size: 142, 251
+  orig: 144, 253
+  offset: 1, 1
+  index: -1
+Layer 36
+  rotate: true
+  xy: 2, 523
+  size: 144, 251
+  orig: 146, 253
+  offset: 1, 1
+  index: -1
+Layer 37
+  rotate: true
+  xy: 2, 230
+  size: 148, 247
+  orig: 150, 249
+  offset: 1, 1
+  index: -1
+Layer 38
+  rotate: false
+  xy: 2, 2
+  size: 150, 226
+  orig: 153, 229
+  offset: 1, 2
+  index: -1
+Layer 39
+  rotate: true
+  xy: 154, 9
+  size: 154, 199
+  orig: 156, 201
+  offset: 1, 1
+  index: -1
+Layer 40
+  rotate: false
+  xy: 263, 669
+  size: 130, 188
+  orig: 132, 190
+  offset: 1, 1
+  index: -1

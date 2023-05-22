@@ -1,0 +1,41 @@
+
+Layer 22.png
+size: 224,193
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 20
+  rotate: false
+  xy: 2, 133
+  size: 59, 58
+  orig: 82, 82
+  offset: 11, 13
+  index: -1
+Layer 21
+  rotate: false
+  xy: 2, 28
+  size: 96, 93
+  orig: 103, 103
+  offset: 1, 5
+  index: -1
+Layer 22
+  rotate: true
+  xy: 100, 2
+  size: 119, 122
+  orig: 136, 139
+  offset: 9, 9
+  index: -1
+Layer 4
+  rotate: true
+  xy: 63, 123
+  size: 68, 74
+  orig: 70, 76
+  offset: 1, 1
+  index: -1
+Layer 41
+  rotate: true
+  xy: 139, 123
+  size: 68, 74
+  orig: 68, 74
+  offset: 0, 0
+  index: -1

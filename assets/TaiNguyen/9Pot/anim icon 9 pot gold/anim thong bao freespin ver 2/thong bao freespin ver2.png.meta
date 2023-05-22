@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "744eeb64-98ed-4840-a013-de35cf3ee8aa",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1962,
+  "height": 680,
+  "platformSettings": {},
+  "subMetas": {
+    "thong bao freespin ver2": {
+      "ver": "1.0.4",
+      "uuid": "602abf91-36e8-48e8-bd5e-d1eeca689f7f",
+      "rawTextureUuid": "744eeb64-98ed-4840-a013-de35cf3ee8aa",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 1958,
+      "height": 676,
+      "rawWidth": 1962,
+      "rawHeight": 680,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

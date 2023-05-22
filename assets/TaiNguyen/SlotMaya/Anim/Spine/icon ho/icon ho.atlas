@@ -1,0 +1,20 @@
+
+icon ho.png
+size: 286, 135
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Group 9
+  rotate: false
+  xy: 149, 6
+  size: 135, 129
+  orig: 138, 131
+  offset: 1, 1
+  index: -1
+Layer 31 copy
+  rotate: false
+  xy: 2, 4
+  size: 145, 131
+  orig: 147, 133
+  offset: 1, 1
+  index: -1

@@ -1,0 +1,184 @@
+{
+"skeleton": {
+	"hash": "7dIMKBfUlBV3O/HadyqdsPmk3i8",
+	"spine": "3.8.99",
+	"x": -124.63,
+	"y": -111.42,
+	"width": 238,
+	"height": 199,
+	"images": "./images/",
+	"audio": "C:/Users/Admin/Desktop/anim icon thailand/icon scatter"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "dau", "parent": "root", "x": -2.94, "y": 0.2 },
+	{ "name": "than voi", "parent": "dau", "length": 24.74, "rotation": -90.92, "x": 3.59, "y": -5.06 },
+	{ "name": "dau voi", "parent": "than voi", "length": 44.34, "rotation": 150.67, "x": 65.85, "y": -0.14 },
+	{ "name": "tai trai", "parent": "dau", "length": 48.48, "rotation": -129.32, "x": -34.71, "y": 47.61 },
+	{ "name": "tai phai", "parent": "dau", "length": 48.14, "rotation": -33.16, "x": 33.12, "y": 52 },
+	{ "name": "luatrai", "parent": "dau", "length": 60.25, "rotation": -114.6, "x": -33.64, "y": 56.6 },
+	{ "name": "luaphai", "parent": "dau", "length": 56.2, "rotation": -63.9, "x": 27.02, "y": 58.77 },
+	{ "name": "text", "parent": "dau", "x": 0.4, "y": -72.16 },
+	{ "name": "as", "parent": "root", "x": -6.29, "y": -13.45 }
+],
+"slots": [
+	{ "name": "as", "bone": "as" },
+	{ "name": "outer", "bone": "dau", "attachment": "outer" },
+	{ "name": "tai trai", "bone": "tai trai", "attachment": "tai trai" },
+	{ "name": "tai phai", "bone": "tai phai", "attachment": "tai phai" },
+	{ "name": "dau", "bone": "dau", "attachment": "dau" },
+	{ "name": "than voi", "bone": "than voi", "attachment": "than voi" },
+	{ "name": "dau voi", "bone": "dau voi", "attachment": "dau voi" },
+	{ "name": "lau trai", "bone": "luatrai", "attachment": "lau trai" },
+	{ "name": "lua phai", "bone": "luaphai", "attachment": "lua phai" },
+	{ "name": "text", "bone": "text", "attachment": "text" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"as": {
+				"as": { "x": -0.34, "y": -1.96, "width": 424, "height": 362 }
+			},
+			"dau": {
+				"dau": { "x": 1.8, "y": -12.62, "width": 155, "height": 168 }
+			},
+			"dau voi": {
+				"dau voi": { "x": 23.26, "y": 0.36, "rotation": -59.74, "width": 65, "height": 64 }
+			},
+			"lau trai": {
+				"lau trai": { "x": 58.24, "y": 1.85, "rotation": 114.6, "width": 51, "height": 113 }
+			},
+			"lua phai": {
+				"lua phai": { "x": 56.98, "y": 8.59, "rotation": 63.9, "width": 73, "height": 100 }
+			},
+			"outer": {
+				"outer": { "x": -2.7, "y": -12.12, "width": 238, "height": 199 }
+			},
+			"tai phai": {
+				"tai phai": { "x": 53.82, "y": -7.98, "rotation": 33.16, "width": 83, "height": 109 }
+			},
+			"tai trai": {
+				"tai trai": { "x": 51.92, "y": -11.74, "rotation": 129.32, "width": 88, "height": 109 }
+			},
+			"text": {
+				"text": { "x": -3.1, "y": -1.96, "width": 182, "height": 53 }
+			},
+			"than voi": {
+				"than voi": { "x": 34.08, "y": -0.74, "rotation": 90.92, "width": 54, "height": 89 }
+			}
+		}
+	}
+],
+"animations": {
+	"active": {
+		"slots": {
+			"as": {
+				"attachment": [
+					{ "name": "as" }
+				]
+			}
+		},
+		"bones": {
+			"dau": {
+				"rotate": [
+					{ "time": 0.1667 },
+					{ "time": 0.5, "angle": 2.92 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.1667, "x": 1.285, "y": 1.285, "curve": "stepped" },
+					{ "time": 1.1667, "x": 1.285, "y": 1.285 },
+					{ "time": 1.3333 }
+				]
+			},
+			"than voi": {
+				"rotate": [
+					{ "time": 0.5 },
+					{ "time": 0.6667, "angle": 9.76 },
+					{ "time": 0.8333, "angle": 12.3 },
+					{ "time": 1, "angle": 9.76 },
+					{ "time": 1.1667 }
+				],
+				"scale": [
+					{ "time": 0.5 },
+					{ "time": 0.6667, "x": 1.009, "y": 1.009 }
+				]
+			},
+			"tai trai": {
+				"rotate": [
+					{ "time": 0.1667 },
+					{ "time": 0.3333, "angle": 7.67 },
+					{ "time": 0.5667, "angle": 14.05 },
+					{ "time": 0.8333, "angle": 7.67, "curve": "stepped" },
+					{ "time": 1, "angle": 7.67 },
+					{ "time": 1.3333 }
+				],
+				"scale": [
+					{ "time": 0.1667 },
+					{ "time": 0.3333, "x": 1.168, "y": 1.192, "curve": "stepped" },
+					{ "time": 1, "x": 1.168, "y": 1.192 },
+					{ "time": 1.3333 }
+				]
+			},
+			"tai phai": {
+				"rotate": [
+					{ "time": 0.1667 },
+					{ "time": 0.3333, "angle": -10.47 },
+					{ "time": 0.5667, "angle": -15.46 },
+					{ "time": 0.8333, "angle": -10.47, "curve": "stepped" },
+					{ "time": 1, "angle": -10.47 },
+					{ "time": 1.3333 }
+				],
+				"scale": [
+					{ "time": 0.1667 },
+					{ "time": 0.3333, "x": 1.168, "y": 1.192, "curve": "stepped" },
+					{ "time": 1, "x": 1.168, "y": 1.192 },
+					{ "time": 1.3333 }
+				]
+			},
+			"text": {
+				"scale": [
+					{ "time": 0.1667 },
+					{ "time": 0.3333, "x": 1.277, "y": 1.277, "curve": "stepped" },
+					{ "time": 1, "x": 1.277, "y": 1.277 },
+					{ "time": 1.1667 }
+				]
+			},
+			"luaphai": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "angle": 6.67 },
+					{ "time": 0.5, "angle": -1.35 },
+					{ "time": 1, "angle": 6.67 },
+					{ "time": 1.3333 }
+				]
+			},
+			"luatrai": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "angle": -3.95 },
+					{ "time": 0.5, "angle": 12.21 },
+					{ "time": 1, "angle": -8.65 },
+					{ "time": 1.3333 }
+				]
+			},
+			"as": {
+				"rotate": [
+					{ "time": 0.3333 },
+					{ "time": 1.5, "angle": 120 }
+				],
+				"scale": [
+					{ "x": 0, "y": 0 },
+					{ "time": 0.3333 },
+					{ "time": 0.5, "x": 1.257, "y": 1.257, "curve": "stepped" },
+					{ "time": 1.1667, "x": 1.257, "y": 1.257 },
+					{ "time": 1.3333 },
+					{ "time": 1.5, "x": 0, "y": 0 }
+				]
+			}
+		}
+	},
+	"waiting": {}
+}
+}

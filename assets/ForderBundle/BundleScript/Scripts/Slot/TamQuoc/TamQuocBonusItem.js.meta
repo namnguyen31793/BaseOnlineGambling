@@ -1,0 +1,9 @@
+{
+  "ver": "1.0.8",
+  "uuid": "eacafe42-ebcb-4f9d-a2d3-653e900d05a6",
+  "isPlugin": false,
+  "loadPluginInWeb": true,
+  "loadPluginInNative": true,
+  "loadPluginInEditor": false,
+  "subMetas": {}
+}

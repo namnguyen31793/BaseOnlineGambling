@@ -1,0 +1,278 @@
+{
+"skeleton": {
+	"hash": "6xSOdUfzdOz3UoyJSjmJp+vUFnk",
+	"spine": "3.8.99",
+	"x": -315.94,
+	"y": -173.8,
+	"width": 627,
+	"height": 382,
+	"images": "./images/",
+	"audio": "C:/Users/Admin/Desktop/anime the cao"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "length": 58.06, "rotation": 0.63, "x": -285.53, "y": -0.51 },
+	{ "name": "the cao", "parent": "bone", "rotation": -0.63, "x": 284.79, "y": -0.41 },
+	{
+		"name": "as luot qua",
+		"parent": "the cao",
+		"x": -509.55,
+		"y": 1.25,
+		"scaleX": 0.6905,
+		"scaleY": 1.5866,
+		"shearY": -18.81
+	}
+],
+"slots": [
+	{ "name": "the cao", "bone": "the cao", "attachment": "the cao" },
+	{ "name": "mask the cao", "bone": "the cao", "attachment": "mask the cao" },
+	{ "name": "as lướt qua", "bone": "as luot qua", "color": "ffffff96", "attachment": "as lướt qua", "blend": "additive" },
+	{ "name": "mt1", "bone": "the cao", "attachment": "mt1" },
+	{ "name": "mt2", "bone": "the cao", "attachment": "mt2" },
+	{ "name": "mt3", "bone": "the cao", "attachment": "mt3" },
+	{ "name": "mt4", "bone": "the cao", "attachment": "mt4" },
+	{ "name": "mt5", "bone": "the cao", "attachment": "mt5" },
+	{ "name": "mt6", "bone": "the cao", "attachment": "mt6" },
+	{ "name": "mt7", "bone": "the cao", "attachment": "mt7" },
+	{ "name": "lop cao the", "bone": "the cao", "attachment": "lop cao the" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"as lướt qua": {
+				"as lướt qua": { "x": -5.37, "y": -2.26, "width": 250, "height": 338 }
+			},
+			"lop cao the": {
+				"lop cao the": { "x": -1.19, "y": -87.01, "width": 500, "height": 106 }
+			},
+			"mask the cao": {
+				"mask the cao": {
+					"type": "clipping",
+					"end": "mask the cao",
+					"vertexCount": 39,
+					"vertices": [ -284.33, -145.81, -282.63, -153.34, -279.36, -160.3, -275.53, -164.84, -269.57, -169.95, -263.74, -172.79, -257.5, -174.36, -251.53, -174.78, 253.22, -175.05, 256.78, -174.61, 260.56, -173.49, 264.58, -171.35, 267.64, -169.33, 271.94, -165.69, 275.1, -161.99, 276.7, -159.71, 278.64, -155.59, 280.5, -149.69, 281.02, -145.15, 281.81, 133.6, 280.3, 141.53, 275.6, 151.15, 270.2, 156.44, 264.31, 160.92, 255.67, 165.73, 249.84, 167.13, 244.33, 167.18, -249.38, 167.42, -255.05, 166.77, -261.35, 164.61, -268.18, 160.66, -272.04, 157.54, -274.2, 155.32, -276.62, 152.38, -278.64, 150.08, -281, 145.32, -282.55, 142.26, -283.73, 136.9, -284.65, 133.44 ],
+					"color": "ce3a3aff"
+				}
+			},
+			"mt1": {
+				"mt1": { "x": -196.19, "y": -87.01, "width": 110, "height": 106 }
+			},
+			"mt2": {
+				"mt2": { "x": -150.69, "y": -87.01, "width": 175, "height": 106 }
+			},
+			"mt3": {
+				"mt3": { "x": -96.69, "y": -87.01, "width": 173, "height": 106 }
+			},
+			"mt4": {
+				"mt4": { "x": -19.19, "y": -87.01, "width": 202, "height": 106 }
+			},
+			"mt5": {
+				"mt5": { "x": 65.31, "y": -87.01, "width": 195, "height": 106 }
+			},
+			"mt6": {
+				"mt6": { "x": 138.31, "y": -87.01, "width": 179, "height": 106 }
+			},
+			"mt7": {
+				"mt7": { "x": 182.81, "y": -87.01, "width": 132, "height": 106 }
+			},
+			"the cao": {
+				"the cao": { "x": -1.69, "y": 14.99, "width": 627, "height": 382 }
+			}
+		}
+	}
+],
+"animations": {
+	"again": {
+		"slots": {
+			"as lướt qua": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff" }
+				]
+			},
+			"lop cao the": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff" }
+				]
+			},
+			"mask the cao": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff" }
+				]
+			},
+			"mt1": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff" }
+				]
+			},
+			"mt2": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff" }
+				]
+			},
+			"mt3": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff" }
+				]
+			},
+			"mt4": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff" }
+				]
+			},
+			"mt5": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff" }
+				]
+			},
+			"mt6": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff" }
+				]
+			},
+			"mt7": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff" }
+				]
+			},
+			"the cao": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"translate": [
+					{ "x": 954.91 },
+					{ "time": 0.4333 }
+				],
+				"scale": [
+					{ "time": 0.4333 },
+					{ "time": 0.6333, "x": 0.62 },
+					{ "time": 0.7667, "x": 1.189 },
+					{ "time": 0.9, "x": 1.204 },
+					{ "time": 1.0333, "curve": "stepped" },
+					{ "time": 3.3333 }
+				]
+			}
+		}
+	},
+	"cao the-k lop cao": {
+		"slots": {
+			"lop cao the": {
+				"color": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"mt1": {
+				"color": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"mt2": {
+				"color": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"mt3": {
+				"color": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"mt4": {
+				"color": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"mt5": {
+				"color": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"mt6": {
+				"color": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"mt7": {
+				"color": [
+					{ "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"the cao": {
+				"translate": [
+					{ "time": 7.6667 }
+				]
+			},
+			"as luot qua": {
+				"translate": [
+					{},
+					{ "time": 1.6667, "x": 1026.5 },
+					{ "time": 2, "x": 1026.5, "y": 473.92 },
+					{ "time": 2.3333, "x": -53.55, "y": 473.92 },
+					{ "time": 2.6667 },
+					{ "time": 4.3333, "x": 1026.5 },
+					{ "time": 4.6667, "x": 1026.5, "y": 473.92 },
+					{ "time": 5, "x": -53.55, "y": 473.92 },
+					{ "time": 5.3333 },
+					{ "time": 7, "x": 1026.5 }
+				]
+			}
+		},
+		"drawOrder": [
+			{
+				"offsets": [
+					{ "slot": "lop cao the", "offset": -7 }
+				]
+			}
+		]
+	},
+	"waiting": {
+		"bones": {
+			"as luot qua": {
+				"translate": [
+					{},
+					{ "time": 1.6667, "x": 1026.5 }
+				]
+			},
+			"the cao": {
+				"translate": [
+					{ "time": 2.6667 }
+				]
+			}
+		}
+	},
+	"xuat hien": {
+		"bones": {
+			"as luot qua": {
+				"scale": [
+					{ "x": 0, "y": 0 }
+				]
+			},
+			"the cao": {
+				"scale": [
+					{ "x": 0, "y": 0.2 },
+					{ "time": 0.3333, "x": 0.25, "y": -0.25 },
+					{ "time": 0.6667, "x": 0.5, "y": 0.5 },
+					{ "time": 1, "x": 0.75, "y": -0.75 },
+					{ "time": 1.3333 }
+				]
+			}
+		}
+	}
+}
+}

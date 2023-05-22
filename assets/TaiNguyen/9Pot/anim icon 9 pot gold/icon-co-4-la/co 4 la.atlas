@@ -1,0 +1,27 @@
+
+co 4 la.png
+size: 313,119
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 24 copy 5
+  rotate: false
+  xy: 2, 2
+  size: 115, 115
+  orig: 117, 117
+  offset: 1, 1
+  index: -1
+Layer 31
+  rotate: false
+  xy: 119, 11
+  size: 95, 106
+  orig: 97, 108
+  offset: 1, 1
+  index: -1
+Layer 32
+  rotate: false
+  xy: 216, 14
+  size: 95, 103
+  orig: 97, 105
+  offset: 1, 1
+  index: -1

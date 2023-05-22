@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "52fb52b4-b8d0-462a-9f1d-410f2c36f0f5",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 339,
+  "height": 242,
+  "platformSettings": {},
+  "subMetas": {
+    "iconThaiSlot": {
+      "ver": "1.0.4",
+      "uuid": "fc1e745d-fef2-4235-a3d1-8b8ca64a4eaa",
+      "rawTextureUuid": "52fb52b4-b8d0-462a-9f1d-410f2c36f0f5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 339,
+      "height": 242,
+      "rawWidth": 339,
+      "rawHeight": 242,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

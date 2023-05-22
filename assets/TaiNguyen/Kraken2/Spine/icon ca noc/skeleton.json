@@ -1,0 +1,1 @@
+{"skeleton":{"hash":"g/pLNd7rVBgAbnrpNFuTXZW+zT4","spine":"3.8.99","images":"C:/Users/Admin/Desktop/anim icon","audio":""},"bones":[{"name":"root"}],"slots":[{"name":"icon 10","bone":"root","attachment":"icon ca noc"}],"skins":[{"name":"default","attachments":{"icon 10":{"icon ca noc":{"width":114,"height":79}}}}],"animations":{"active":{},"waiting":{}}}

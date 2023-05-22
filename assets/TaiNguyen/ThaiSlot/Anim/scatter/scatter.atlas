@@ -1,0 +1,76 @@
+
+scatter.png
+size: 779,350
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+as
+  rotate: false
+  xy: 2, 2
+  size: 398, 346
+  orig: 424, 362
+  offset: 14, 11
+  index: -1
+dau
+  rotate: true
+  xy: 594, 196
+  size: 152, 166
+  orig: 155, 168
+  offset: 2, 1
+  index: -1
+dau voi
+  rotate: false
+  xy: 594, 132
+  size: 63, 62
+  orig: 65, 64
+  offset: 1, 1
+  index: -1
+lau trai
+  rotate: true
+  xy: 490, 9
+  size: 49, 111
+  orig: 51, 113
+  offset: 1, 1
+  index: -1
+lua phai
+  rotate: false
+  xy: 690, 13
+  size: 71, 98
+  orig: 73, 100
+  offset: 1, 1
+  index: -1
+outer
+  rotate: true
+  xy: 402, 113
+  size: 235, 190
+  orig: 238, 199
+  offset: 1, 5
+  index: -1
+tai phai
+  rotate: true
+  xy: 670, 113
+  size: 81, 107
+  orig: 83, 109
+  offset: 1, 1
+  index: -1
+tai trai
+  rotate: false
+  xy: 402, 4
+  size: 86, 107
+  orig: 88, 109
+  offset: 1, 1
+  index: -1
+text
+  rotate: false
+  xy: 490, 60
+  size: 178, 51
+  orig: 182, 53
+  offset: 2, 1
+  index: -1
+than voi
+  rotate: true
+  xy: 603, 6
+  size: 52, 85
+  orig: 54, 89
+  offset: 1, 2
+  index: -1

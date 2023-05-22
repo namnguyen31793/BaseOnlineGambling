@@ -1,0 +1,76 @@
+
+fx jackpot.png
+size: 1445,676
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+input
+  rotate: true
+  xy: 1228, 168
+  size: 506, 98
+  orig: 508, 100
+  offset: 1, 1
+  index: -1
+outter line
+  rotate: false
+  xy: 2, 190
+  size: 830, 484
+  orig: 832, 486
+  offset: 1, 1
+  index: -1
+sDp
+  rotate: false
+  xy: 1228, 65
+  size: 183, 55
+  orig: 186, 59
+  offset: 1, 2
+  index: -1
+sDt
+  rotate: false
+  xy: 1228, 8
+  size: 183, 55
+  orig: 186, 59
+  offset: 2, 2
+  index: -1
+sGp
+  rotate: true
+  xy: 1328, 399
+  size: 275, 115
+  orig: 278, 118
+  offset: 1, 1
+  index: -1
+sGt
+  rotate: true
+  xy: 1328, 122
+  size: 275, 115
+  orig: 278, 118
+  offset: 2, 1
+  index: -1
+sTp
+  rotate: false
+  xy: 629, 96
+  size: 174, 92
+  orig: 177, 95
+  offset: 1, 1
+  index: -1
+sTt
+  rotate: false
+  xy: 629, 2
+  size: 174, 92
+  orig: 177, 95
+  offset: 2, 1
+  index: -1
+sao line
+  rotate: true
+  xy: 834, 33
+  size: 641, 392
+  orig: 645, 396
+  offset: 2, 2
+  index: -1
+text jackpot
+  rotate: false
+  xy: 2, 11
+  size: 625, 177
+  orig: 627, 179
+  offset: 1, 1
+  index: -1

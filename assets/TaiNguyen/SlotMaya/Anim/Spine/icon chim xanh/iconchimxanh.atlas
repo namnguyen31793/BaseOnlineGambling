@@ -1,0 +1,20 @@
+
+iconchimxanh.png
+size: 269, 137
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Group 10
+  rotate: false
+  xy: 2, 4
+  size: 136, 133
+  orig: 138, 136
+  offset: 1, 2
+  index: -1
+Layer 38
+  rotate: false
+  xy: 140, 5
+  size: 127, 132
+  orig: 127, 132
+  offset: 0, 0
+  index: -1

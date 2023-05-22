@@ -1,0 +1,90 @@
+
+bonus speciel.png
+size: 1776,1271
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+as do duoi cung
+  rotate: true
+  xy: 513, 557
+  size: 712, 335
+  orig: 727, 355
+  offset: 13, 11
+  index: -1
+as duoi hop qua
+  rotate: true
+  xy: 850, 603
+  size: 666, 301
+  orig: 668, 305
+  offset: 1, 2
+  index: -1
+as outer video
+  rotate: true
+  xy: 1370, 218
+  size: 459, 350
+  orig: 469, 360
+  offset: 5, 5
+  index: -1
+as text
+  rotate: false
+  xy: 513, 521
+  size: 34, 34
+  orig: 41, 40
+  offset: 3, 3
+  index: -1
+as xoay
+  rotate: false
+  xy: 857, 73
+  size: 501, 488
+  orig: 530, 520
+  offset: 14, 16
+  index: -1
+as-sao
+  rotate: false
+  xy: 2, 7
+  size: 580, 390
+  orig: 592, 399
+  offset: 7, 5
+  index: -1
+btn play active
+  rotate: false
+  xy: 1360, 93
+  size: 97, 123
+  orig: 99, 125
+  offset: 1, 1
+  index: -1
+free special
+  rotate: true
+  xy: 1153, 605
+  size: 664, 113
+  orig: 668, 116
+  offset: 2, 2
+  index: -1
+hop qua
+  rotate: true
+  xy: 584, 2
+  size: 553, 271
+  orig: 555, 273
+  offset: 1, 1
+  index: -1
+qua
+  rotate: true
+  xy: 1268, 679
+  size: 590, 506
+  orig: 607, 522
+  offset: 5, 12
+  index: -1
+text mo ta
+  rotate: false
+  xy: 850, 563
+  size: 518, 38
+  orig: 522, 41
+  offset: 2, 2
+  index: -1
+tien
+  rotate: true
+  xy: 2, 399
+  size: 870, 509
+  orig: 872, 513
+  offset: 1, 2
+  index: -1

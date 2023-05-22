@@ -1,0 +1,13 @@
+
+binh.png
+size: 127, 88
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Layer 116
+  rotate: false
+  xy: 2, 4
+  size: 123, 84
+  orig: 143, 87
+  offset: 10, 2
+  index: -1

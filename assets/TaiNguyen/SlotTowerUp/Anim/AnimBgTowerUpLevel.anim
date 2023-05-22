@@ -1,0 +1,129 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "AnimBgTowerUpLevel",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5333333333333333,
+  "sample": 30,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "BG1": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": -120
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": -320
+            }
+          ]
+        }
+      },
+      "BG2": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 80
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": -120
+            }
+          ]
+        }
+      },
+      "BG3": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 280
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": 80
+            }
+          ]
+        }
+      },
+      "BG4": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 480
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": 280
+            }
+          ]
+        }
+      },
+      "BG5": {
+        "props": {
+          "y": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 680
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": 480
+            }
+          ]
+        }
+      }
+    },
+    "props": {
+      "scale": [
+        {
+          "frame": 0,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "frame": 0.26666666666666666,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 0.95,
+            "y": 0.95
+          }
+        },
+        {
+          "frame": 0.43333333333333335,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1.05,
+            "y": 1.05
+          }
+        },
+        {
+          "frame": 0.4666666666666667,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 0.98,
+            "y": 0.98
+          }
+        },
+        {
+          "frame": 0.5333333333333333,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1,
+            "y": 1
+          }
+        }
+      ]
+    }
+  },
+  "events": []
+}

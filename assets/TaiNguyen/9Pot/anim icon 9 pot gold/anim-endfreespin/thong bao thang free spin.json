@@ -1,0 +1,223 @@
+{
+"skeleton": {
+	"hash": "1eCkKRbJV+mFxifrQ0tAAbCQAxU",
+	"spine": "3.8.99",
+	"x": -655.16,
+	"y": -391.14,
+	"width": 1278,
+	"height": 662,
+	"images": "./images/",
+	"audio": "C:/Users/Admin/Desktop/thong bao end freespin"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "hien thi tien", "parent": "root", "y": -91.32 },
+	{ "name": "vong quay", "parent": "root", "x": -17.08, "y": -70.03 },
+	{ "name": "as sau", "parent": "root", "x": -17.44, "y": -55.74 },
+	{ "name": "cau vong", "parent": "root", "length": 154.7, "rotation": 90.59, "x": -6.32, "y": -32.57 },
+	{ "name": "hu vang", "parent": "root", "x": 81.33, "y": 11.4 },
+	{ "name": "character", "parent": "root", "x": -62.33, "y": 4.08 }
+],
+"slots": [
+	{ "name": "Layer 76", "bone": "as sau", "attachment": "Layer 76", "blend": "additive" },
+	{ "name": "Layer 75", "bone": "cau vong", "attachment": "Layer 75" },
+	{ "name": "Layer 61 (merged)", "bone": "vong quay", "attachment": "Layer 61 (merged)" },
+	{ "name": "Layer 74", "bone": "hu vang", "attachment": "Layer 74" },
+	{ "name": "Layer 67", "bone": "hien thi tien", "attachment": "Layer 67" },
+	{ "name": "Layer 73", "bone": "character", "attachment": "Layer 73" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Layer 61 (merged)": {
+				"Layer 61 (merged)": { "x": 1.42, "y": 27.39, "width": 513, "height": 541 }
+			},
+			"Layer 67": {
+				"Layer 67": { "x": 7.34, "y": -13.81, "width": 839, "height": 214 }
+			},
+			"Layer 73": {
+				"Layer 73": { "x": -8.34, "y": 74.29, "width": 207, "height": 223 }
+			},
+			"Layer 74": {
+				"Layer 74": { "x": 1.01, "y": 65.97, "width": 217, "height": 233 }
+			},
+			"Layer 75": {
+				"Layer 75": { "x": 123.02, "y": 7.09, "rotation": -90.59, "width": 531, "height": 323 }
+			},
+			"Layer 76": {
+				"Layer 76": { "x": 1.28, "y": -4.39, "width": 1278, "height": 662 }
+			}
+		}
+	}
+],
+"animations": {
+	"bien mat": {
+		"slots": {
+			"Layer 67": {
+				"color": [
+					{ "time": 0.1667, "color": "ffffffff" },
+					{ "time": 0.3333, "color": "ffffff00" }
+				]
+			},
+			"Layer 73": {
+				"color": [
+					{ "time": 0.1667, "color": "ffffffff" },
+					{ "time": 0.3333, "color": "ffffff00" }
+				]
+			},
+			"Layer 74": {
+				"color": [
+					{ "time": 0.1667, "color": "ffffffff" },
+					{ "time": 0.3333, "color": "ffffff00" }
+				]
+			},
+			"Layer 75": {
+				"color": [
+					{ "time": 0.1667, "color": "ffffffff" },
+					{ "time": 0.3333, "color": "ffffff00" }
+				]
+			},
+			"Layer 76": {
+				"color": [
+					{ "time": 0.2, "color": "ffffffff" },
+					{ "time": 0.3333, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"vong quay": {
+				"translate": [
+					{},
+					{ "time": 0.3333, "x": 17.25, "y": 72.45 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.3333, "x": 0, "y": 0 }
+				]
+			},
+			"hu vang": {
+				"translate": [
+					{},
+					{ "time": 0.3333, "x": -79.35, "y": -10.35 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.3333, "x": 0, "y": 0 }
+				]
+			},
+			"hien thi tien": {
+				"translate": [
+					{},
+					{ "time": 0.3333, "y": 89.93 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.3333, "x": 0, "y": 0 }
+				]
+			},
+			"character": {
+				"translate": [
+					{},
+					{ "time": 0.3333, "x": 62.1, "y": -5.18 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.3333, "x": 0, "y": 0 }
+				]
+			},
+			"cau vong": {
+				"translate": [
+					{},
+					{ "time": 0.3333, "x": 12.07, "y": 31.05 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.3333, "x": 0, "y": 0 }
+				]
+			},
+			"as sau": {
+				"scale": [
+					{},
+					{ "time": 0.2, "x": 1.32, "y": 1.32 },
+					{ "time": 0.3333, "x": 0, "y": 0 }
+				]
+			}
+		}
+	},
+	"waiting": {
+		"bones": {
+			"as sau": {
+				"scale": [
+					{},
+					{ "time": 0.5, "x": 1.12, "y": 1.12 },
+					{ "time": 1 }
+				]
+			}
+		}
+	},
+	"xuat hien": {
+		"slots": {
+			"Layer 67": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"hien thi tien": {
+				"scale": [
+					{ "x": 0, "y": 0 },
+					{ "time": 0.3333, "x": 1.5, "y": 1.5 },
+					{ "time": 0.5 }
+				]
+			},
+			"vong quay": {
+				"scale": [
+					{ "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.4333, "x": 0, "y": 0 },
+					{ "time": 0.5333, "x": 1.6, "y": 1.6 },
+					{ "time": 0.6667 }
+				]
+			},
+			"as sau": {
+				"scale": [
+					{ "x": 0, "y": 0 },
+					{ "time": 0.3333, "x": 1.4, "y": 1.4 },
+					{ "time": 0.6667 }
+				]
+			},
+			"cau vong": {
+				"scale": [
+					{ "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.4667, "x": 0, "y": 0 },
+					{ "time": 0.6667 }
+				]
+			},
+			"hu vang": {
+				"translate": [
+					{},
+					{ "time": 0.4333, "y": 97.47 },
+					{ "time": 0.6667 }
+				],
+				"scale": [
+					{ "x": 0, "y": 0 },
+					{ "time": 0.3333 }
+				]
+			},
+			"character": {
+				"translate": [
+					{},
+					{ "time": 0.4333, "y": 97.47 },
+					{ "time": 0.6667 }
+				],
+				"scale": [
+					{ "x": 0, "y": 0 },
+					{ "time": 0.3333 }
+				]
+			}
+		}
+	}
+}
+}

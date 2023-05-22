@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "98439595-238d-440f-add0-a6edde322fbe",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 447,
+  "height": 142,
+  "platformSettings": {},
+  "subMetas": {
+    "bon hoa tren": {
+      "ver": "1.0.4",
+      "uuid": "3b1878bb-7512-4c29-9d20-ec89aab61dc1",
+      "rawTextureUuid": "98439595-238d-440f-add0-a6edde322fbe",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 447,
+      "height": 142,
+      "rawWidth": 447,
+      "rawHeight": 142,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

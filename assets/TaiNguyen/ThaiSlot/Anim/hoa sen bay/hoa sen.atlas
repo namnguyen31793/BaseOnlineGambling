@@ -1,0 +1,62 @@
+
+hoa sen.png
+size: 317,478
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 42
+  rotate: true
+  xy: 2, 429
+  size: 47, 54
+  orig: 50, 57
+  offset: 2, 2
+  index: -1
+Layer 43
+  rotate: true
+  xy: 116, 424
+  size: 52, 55
+  orig: 54, 57
+  offset: 1, 1
+  index: -1
+Layer 44
+  rotate: true
+  xy: 58, 425
+  size: 51, 56
+  orig: 55, 59
+  offset: 2, 2
+  index: -1
+Layer 45
+  rotate: false
+  xy: 173, 413
+  size: 75, 63
+  orig: 78, 65
+  offset: 2, 1
+  index: -1
+Layer 46
+  rotate: false
+  xy: 2, 155
+  size: 304, 93
+  orig: 308, 99
+  offset: 2, 3
+  index: -1
+Layer 47
+  rotate: false
+  xy: 2, 2
+  size: 302, 151
+  orig: 308, 156
+  offset: 4, 2
+  index: -1
+Layer 48
+  rotate: false
+  xy: 2, 250
+  size: 313, 90
+  orig: 317, 96
+  offset: 2, 2
+  index: -1
+Layer 49
+  rotate: false
+  xy: 2, 342
+  size: 302, 69
+  orig: 320, 74
+  offset: 4, 2
+  index: -1

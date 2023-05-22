@@ -1,0 +1,61 @@
+{
+"skeleton": {
+	"hash": "1ibUFwgUypy56elhjaO0G+M8bOE",
+	"spine": "3.8.99",
+	"x": -69.5,
+	"y": -62.5,
+	"width": 139,
+	"height": 125,
+	"images": "C:/Users/Admin/Desktop/anim icon slot fortuna/08/08",
+	"audio": "C:\\Users\\Admin\\Desktop\\anim icon slot fortuna\\07.1"
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "Layer 1", "bone": "root", "attachment": "6" },
+	{ "name": "Layer 2", "bone": "root", "blend": "screen" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Layer 1": {
+				"6": { "width": 139, "height": 125 }
+			},
+			"Layer 2": {
+				"6": { "width": 139, "height": 125 }
+			}
+		}
+	}
+],
+"animations": {
+	"active": {
+		"slots": {
+			"Layer 2": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.6667, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "6" }
+				]
+			}
+		},
+		"bones": {
+			"root": {
+				"scale": [
+					{},
+					{ "time": 0.3333, "x": 1.119, "y": 1.119 },
+					{ "time": 0.5, "x": 1.186, "y": 1.186 },
+					{ "time": 0.6667, "x": 1.119, "y": 1.119 },
+					{ "time": 1 }
+				]
+			}
+		}
+	},
+	"waiting": {}
+}
+}

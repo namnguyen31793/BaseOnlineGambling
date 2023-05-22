@@ -1,0 +1,48 @@
+
+animfooter.png
+size: 1640, 393
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+anime thong bao win copy/Group_1
+  rotate: false
+  xy: 2, 4
+  size: 646, 283
+  orig: 646, 283
+  offset: 0, 0
+  index: -1
+anime thong bao win copy/Group_2
+  rotate: false
+  xy: 1152, 257
+  size: 398, 30
+  orig: 400, 30
+  offset: 1, 0
+  index: -1
+anime thong bao win copy/Group_3
+  rotate: false
+  xy: 650, 150
+  size: 457, 24
+  orig: 467, 27
+  offset: 5, 0
+  index: -1
+anime thong bao win copy/Group_4
+  rotate: false
+  xy: 650, 176
+  size: 500, 111
+  orig: 509, 113
+  offset: 5, 1
+  index: -1
+anime thong bao win copy/as
+  rotate: false
+  xy: 650, 120
+  size: 157, 28
+  orig: 157, 28
+  offset: 0, 0
+  index: -1
+anime thong bao win copy/bg_fotter_copy
+  rotate: false
+  xy: 2, 289
+  size: 1636, 104
+  orig: 1636, 104
+  offset: 0, 0
+  index: -1

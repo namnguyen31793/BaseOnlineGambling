@@ -1,0 +1,47 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "AnimLightingFree",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.15,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "165e06d6-c7a1-489d-9f31-8a74e0aee5ea"
+            }
+          },
+          {
+            "frame": 0.03333333333333333,
+            "value": {
+              "__uuid__": "708bcd90-8b6e-4291-a5cb-59d6f9805ebf"
+            }
+          },
+          {
+            "frame": 0.06666666666666667,
+            "value": {
+              "__uuid__": "58b6306c-f365-4be9-b2d4-c2b27c18a932"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "d070e47f-6456-4358-b00d-ff95aeec34fe"
+            }
+          },
+          {
+            "frame": 0.13333333333333333,
+            "value": null
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

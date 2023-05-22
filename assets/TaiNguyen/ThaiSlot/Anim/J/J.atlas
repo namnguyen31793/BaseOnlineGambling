@@ -1,0 +1,20 @@
+
+J.png
+size: 384,259
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 15
+  rotate: false
+  xy: 297, 134
+  size: 85, 123
+  orig: 90, 128
+  offset: 2, 3
+  index: -1
+as
+  rotate: false
+  xy: 2, 2
+  size: 293, 255
+  orig: 312, 267
+  offset: 10, 8
+  index: -1

@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "GateCloseDoor",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.25,
+  "sample": 20,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Gate/bg khung da/Mask/Right": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 342.531
+            },
+            {
+              "frame": 0.25,
+              "value": 110.437
+            }
+          ]
+        }
+      },
+      "Gate/bg khung da/Mask/Left": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -342.998
+            },
+            {
+              "frame": 0.25,
+              "value": -117
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

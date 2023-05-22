@@ -1,0 +1,272 @@
+
+textwin.png
+size: 1828, 1664
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BIGWIN
+  rotate: false
+  xy: 1363, 1101
+  size: 444, 107
+  orig: 446, 109
+  offset: 1, 1
+  index: -1
+Group 9
+  rotate: false
+  xy: 814, 917
+  size: 429, 90
+  orig: 431, 92
+  offset: 1, 1
+  index: -1
+Layer 29 copy
+  rotate: false
+  xy: 1363, 1013
+  size: 439, 86
+  orig: 441, 93
+  offset: 1, 6
+  index: -1
+MEGA
+  rotate: true
+  xy: 1020, 11
+  size: 351, 107
+  orig: 353, 109
+  offset: 1, 1
+  index: -1
+WIN
+  rotate: true
+  xy: 1129, 127
+  size: 235, 105
+  orig: 237, 107
+  offset: 1, 1
+  index: -1
+as sau-sp
+  rotate: false
+  xy: 1537, 624
+  size: 160, 170
+  orig: 180, 189
+  offset: 7, 10
+  index: -1
+as sau-sp-2
+  rotate: false
+  xy: 571, 4
+  size: 248, 215
+  orig: 268, 229
+  offset: 9, 10
+  index: -1
+as1
+  rotate: false
+  xy: 1699, 688
+  size: 106, 106
+  orig: 129, 113
+  offset: 12, 5
+  index: -1
+as2
+  rotate: false
+  xy: 1699, 688
+  size: 106, 106
+  orig: 129, 113
+  offset: 12, 5
+  index: -1
+as3
+  rotate: false
+  xy: 1592, 11
+  size: 85, 85
+  orig: 105, 93
+  offset: 11, 5
+  index: -1
+as4
+  rotate: false
+  xy: 970, 316
+  size: 46, 46
+  orig: 57, 52
+  offset: 6, 4
+  index: -1
+asmega1
+  rotate: false
+  xy: 717, 912
+  size: 95, 95
+  orig: 101, 99
+  offset: 3, 2
+  index: -1
+asmega2
+  rotate: false
+  xy: 831, 225
+  size: 137, 137
+  orig: 144, 144
+  offset: 3, 5
+  index: -1
+bludsuperwin
+  rotate: true
+  xy: 447, 221
+  size: 689, 382
+  orig: 743, 431
+  offset: 26, 22
+  index: -1
+boder
+  rotate: false
+  xy: 1239, 311
+  size: 523, 178
+  orig: 526, 180
+  offset: 1, 1
+  index: -1
+cup
+  rotate: true
+  xy: 1366, 69
+  size: 240, 224
+  orig: 242, 226
+  offset: 1, 1
+  index: -1
+ds1
+  rotate: false
+  xy: 2, 6
+  size: 567, 147
+  orig: 572, 151
+  offset: 3, 2
+  index: -1
+ds2
+  rotate: false
+  xy: 1245, 1517
+  size: 567, 147
+  orig: 572, 151
+  offset: 3, 2
+  index: -1
+hoavanphai
+  rotate: true
+  xy: 821, 4
+  size: 215, 197
+  orig: 244, 201
+  offset: 27, 3
+  index: -1
+hoavantrai
+  rotate: true
+  xy: 1592, 98
+  size: 211, 225
+  orig: 277, 227
+  offset: 1, 1
+  index: -1
+input mega
+  rotate: false
+  xy: 1354, 925
+  size: 439, 86
+  orig: 441, 93
+  offset: 1, 6
+  index: -1
+input tien
+  rotate: false
+  xy: 1239, 491
+  size: 540, 124
+  orig: 542, 126
+  offset: 1, 1
+  index: -1
+kc1
+  rotate: true
+  xy: 970, 270
+  size: 44, 45
+  orig: 46, 48
+  offset: 1, 1
+  index: -1
+kc2
+  rotate: false
+  xy: 1699, 618
+  size: 65, 68
+  orig: 67, 70
+  offset: 1, 1
+  index: -1
+kc3
+  rotate: false
+  xy: 442, 912
+  size: 25, 25
+  orig: 27, 27
+  offset: 1, 1
+  index: -1
+kc4
+  rotate: false
+  xy: 447, 171
+  size: 45, 48
+  orig: 48, 50
+  offset: 2, 1
+  index: -1
+kc5
+  rotate: false
+  xy: 494, 171
+  size: 45, 48
+  orig: 47, 50
+  offset: 1, 1
+  index: -1
+text main
+  rotate: true
+  xy: 1224, 1018
+  size: 497, 137
+  orig: 500, 139
+  offset: 1, 1
+  index: -1
+text super win (merged)
+  rotate: true
+  xy: 831, 364
+  size: 551, 406
+  orig: 599, 454
+  offset: 24, 24
+  index: -1
+textsuper
+  rotate: true
+  xy: 1245, 617
+  size: 399, 107
+  orig: 401, 109
+  offset: 1, 1
+  index: -1
+textwin
+  rotate: false
+  xy: 1129, 20
+  size: 235, 105
+  orig: 237, 107
+  offset: 1, 1
+  index: -1
+vang phai
+  rotate: false
+  xy: 1354, 666
+  size: 181, 257
+  orig: 183, 259
+  offset: 1, 1
+  index: -1
+vang trai
+  rotate: true
+  xy: 1537, 796
+  size: 127, 250
+  orig: 129, 252
+  offset: 1, 1
+  index: -1
+vnq
+  rotate: false
+  xy: 1363, 1210
+  size: 463, 305
+  orig: 465, 307
+  offset: 1, 1
+  index: -1
+vs1
+  rotate: true
+  xy: 2, 904
+  size: 760, 438
+  orig: 770, 454
+  offset: 8, 9
+  index: -1
+vs2
+  rotate: true
+  xy: 2, 155
+  size: 747, 443
+  orig: 767, 454
+  offset: 10, 6
+  index: -1
+xu1
+  rotate: true
+  xy: 442, 939
+  size: 725, 273
+  orig: 727, 316
+  offset: 1, 42
+  index: -1
+xu2
+  rotate: true
+  xy: 717, 1009
+  size: 655, 505
+  orig: 657, 507
+  offset: 1, 1
+  index: -1

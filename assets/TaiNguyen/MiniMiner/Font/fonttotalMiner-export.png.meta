@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "50a24729-2530-478f-b718-0ef3985d4789",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 128,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "fonttotalMiner-export": {
+      "ver": "1.0.4",
+      "uuid": "84ccd392-c5b0-46c5-9b11-154e55c4de08",
+      "rawTextureUuid": "50a24729-2530-478f-b718-0ef3985d4789",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -17.5,
+      "offsetY": 7.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 93,
+      "height": 113,
+      "rawWidth": 128,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

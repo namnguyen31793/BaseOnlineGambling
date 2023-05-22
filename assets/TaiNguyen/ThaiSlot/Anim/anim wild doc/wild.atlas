@@ -1,0 +1,209 @@
+
+wild.png
+size: 655,526
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Group 10
+  rotate: true
+  xy: 437, 391
+  size: 133, 185
+  orig: 140, 193
+  offset: 3, 4
+  index: -1
+Group 11
+  rotate: false
+  xy: 254, 148
+  size: 157, 190
+  orig: 164, 197
+  offset: 4, 4
+  index: -1
+Group 8
+  rotate: false
+  xy: 254, 340
+  size: 181, 184
+  orig: 188, 191
+  offset: 4, 3
+  index: -1
+Group 9
+  rotate: true
+  xy: 254, 57
+  size: 89, 184
+  orig: 95, 191
+  offset: 3, 4
+  index: -1
+Layer 48
+  rotate: true
+  xy: 611, 298
+  size: 47, 41
+  orig: 49, 44
+  offset: 1, 1
+  index: -1
+Layer 49
+  rotate: true
+  xy: 440, 60
+  size: 50, 56
+  orig: 52, 58
+  offset: 1, 1
+  index: -1
+Layer 50
+  rotate: true
+  xy: 525, 256
+  size: 86, 84
+  orig: 89, 88
+  offset: 1, 2
+  index: -1
+Layer 51 copy
+  rotate: false
+  xy: 525, 183
+  size: 69, 71
+  orig: 71, 73
+  offset: 1, 1
+  index: -1
+Layer 52
+  rotate: false
+  xy: 443, 2
+  size: 57, 56
+  orig: 59, 58
+  offset: 1, 1
+  index: -1
+Layer 52 copy 3
+  rotate: false
+  xy: 598, 347
+  size: 42, 42
+  orig: 44, 44
+  offset: 1, 1
+  index: -1
+Layer 53
+  rotate: false
+  xy: 554, 27
+  size: 47, 58
+  orig: 49, 60
+  offset: 1, 1
+  index: -1
+Layer 54
+  rotate: false
+  xy: 596, 203
+  size: 50, 51
+  orig: 52, 53
+  offset: 1, 1
+  index: -1
+Layer 54 copy
+  rotate: false
+  xy: 596, 203
+  size: 50, 51
+  orig: 52, 53
+  offset: 1, 1
+  index: -1
+Layer 56
+  rotate: false
+  xy: 624, 430
+  size: 29, 94
+  orig: 98, 116
+  offset: 67, 2
+  index: -1
+Layer 57
+  rotate: false
+  xy: 603, 32
+  size: 42, 53
+  orig: 44, 55
+  offset: 1, 1
+  index: -1
+Layer 58
+  rotate: false
+  xy: 525, 95
+  size: 50, 86
+  orig: 52, 88
+  offset: 1, 1
+  index: -1
+Layer 58 copy 3
+  rotate: false
+  xy: 525, 95
+  size: 50, 86
+  orig: 52, 88
+  offset: 1, 1
+  index: -1
+Layer 58 copy 5
+  rotate: false
+  xy: 525, 95
+  size: 50, 86
+  orig: 52, 88
+  offset: 1, 1
+  index: -1
+Layer 58 copy 2
+  rotate: false
+  xy: 577, 87
+  size: 41, 94
+  orig: 44, 97
+  offset: 2, 1
+  index: -1
+Layer 58 copy 6
+  rotate: false
+  xy: 502, 7
+  size: 50, 86
+  orig: 52, 88
+  offset: 1, 1
+  index: -1
+Layer 60
+  rotate: true
+  xy: 437, 344
+  size: 45, 159
+  orig: 48, 162
+  offset: 1, 2
+  index: -1
+Layer 60 copy 3
+  rotate: true
+  xy: 437, 344
+  size: 45, 159
+  orig: 48, 162
+  offset: 1, 2
+  index: -1
+Layer 60 copy 2
+  rotate: true
+  xy: 413, 179
+  size: 159, 45
+  orig: 162, 48
+  offset: 2, 2
+  index: -1
+Layer 60 copy 5
+  rotate: true
+  xy: 413, 179
+  size: 159, 45
+  orig: 162, 48
+  offset: 2, 2
+  index: -1
+Layer 61
+  rotate: true
+  xy: 254, 3
+  size: 52, 187
+  orig: 57, 190
+  offset: 3, 2
+  index: -1
+Layer 63
+  rotate: false
+  xy: 460, 112
+  size: 63, 230
+  orig: 66, 232
+  offset: 1, 1
+  index: -1
+Layer 65
+  rotate: false
+  xy: 611, 261
+  size: 42, 35
+  orig: 48, 38
+  offset: 5, 1
+  index: -1
+Layer 65 copy
+  rotate: false
+  xy: 611, 261
+  size: 42, 35
+  orig: 48, 38
+  offset: 5, 1
+  index: -1
+bg hoa
+  rotate: false
+  xy: 2, 3
+  size: 250, 521
+  orig: 256, 527
+  offset: 3, 3
+  index: -1

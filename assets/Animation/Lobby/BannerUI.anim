@@ -1,0 +1,89 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "BannerUI",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 8.5,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "1": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 4.5,
+              "value": 0
+            },
+            {
+              "frame": 5,
+              "value": -249
+            },
+            {
+              "frame": 5.2,
+              "value": 249
+            },
+            {
+              "frame": 5.4,
+              "value": 249
+            },
+            {
+              "frame": 8,
+              "value": 249
+            },
+            {
+              "frame": 8.5,
+              "value": 0
+            }
+          ],
+          "y": [
+            {
+              "frame": 5,
+              "value": 0
+            },
+            {
+              "frame": 5.1,
+              "value": 560.409
+            },
+            {
+              "frame": 5.3,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "2": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 249
+            },
+            {
+              "frame": 4.5,
+              "value": 249
+            },
+            {
+              "frame": 5,
+              "value": 0
+            },
+            {
+              "frame": 8,
+              "value": 0
+            },
+            {
+              "frame": 8.5,
+              "value": -249
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

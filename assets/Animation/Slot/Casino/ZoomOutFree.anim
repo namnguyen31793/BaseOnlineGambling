@@ -1,0 +1,79 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "ZoomOutFree",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.6,
+  "sample": 25,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "y": [
+        {
+          "frame": 0,
+          "value": -2600
+        },
+        {
+          "frame": 0.8,
+          "value": -1000
+        },
+        {
+          "frame": 1.2,
+          "value": -400
+        },
+        {
+          "frame": 1.4,
+          "value": -200
+        },
+        {
+          "frame": 1.6,
+          "value": 0
+        }
+      ],
+      "scale": [
+        {
+          "frame": 0,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 14,
+            "y": 14
+          }
+        },
+        {
+          "frame": 0.8,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 6,
+            "y": 6
+          }
+        },
+        {
+          "frame": 1.2,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 3,
+            "y": 3
+          }
+        },
+        {
+          "frame": 1.4,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 2,
+            "y": 2
+          }
+        },
+        {
+          "frame": 1.6,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1,
+            "y": 1
+          }
+        }
+      ]
+    }
+  },
+  "events": []
+}

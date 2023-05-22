@@ -1,0 +1,13 @@
+
+thu.png
+size: 201,131
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+icon thu
+  rotate: false
+  xy: 2, 2
+  size: 197, 127
+  orig: 197, 128
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,41 @@
+
+Layer 2 copy 3.png
+size: 299,107
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 1
+  rotate: true
+  xy: 219, 8
+  size: 49, 43
+  orig: 53, 47
+  offset: 2, 2
+  index: -1
+Layer 2
+  rotate: true
+  xy: 264, 17
+  size: 40, 33
+  orig: 44, 36
+  offset: 2, 1
+  index: -1
+Layer 3
+  rotate: false
+  xy: 219, 59
+  size: 51, 46
+  orig: 55, 50
+  offset: 3, 2
+  index: -1
+Layer 4
+  rotate: true
+  xy: 123, 4
+  size: 101, 94
+  orig: 104, 98
+  offset: 2, 2
+  index: -1
+Layer 5
+  rotate: true
+  xy: 2, 2
+  size: 103, 119
+  orig: 109, 121
+  offset: 5, 1
+  index: -1

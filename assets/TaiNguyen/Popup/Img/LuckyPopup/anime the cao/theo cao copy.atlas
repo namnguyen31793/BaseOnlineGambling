@@ -1,0 +1,76 @@
+
+theo cao copy.png
+size: 591,865
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+as lướt qua
+  rotate: true
+  xy: 2, 2
+  size: 240, 336
+  orig: 250, 338
+  offset: 6, 1
+  index: -1
+lop cao the
+  rotate: true
+  xy: 379, 365
+  size: 498, 104
+  orig: 500, 106
+  offset: 1, 1
+  index: -1
+mt1
+  rotate: false
+  xy: 465, 12
+  size: 108, 104
+  orig: 110, 106
+  offset: 1, 1
+  index: -1
+mt2
+  rotate: true
+  xy: 379, 190
+  size: 173, 104
+  orig: 175, 106
+  offset: 1, 1
+  index: -1
+mt3
+  rotate: true
+  xy: 485, 118
+  size: 170, 104
+  orig: 173, 106
+  offset: 2, 1
+  index: -1
+mt4
+  rotate: true
+  xy: 485, 663
+  size: 200, 104
+  orig: 202, 106
+  offset: 1, 1
+  index: -1
+mt5
+  rotate: true
+  xy: 485, 468
+  size: 193, 104
+  orig: 195, 106
+  offset: 1, 1
+  index: -1
+mt6
+  rotate: true
+  xy: 485, 290
+  size: 176, 104
+  orig: 179, 106
+  offset: 1, 1
+  index: -1
+mt7
+  rotate: false
+  xy: 340, 84
+  size: 123, 104
+  orig: 132, 106
+  offset: 8, 1
+  index: -1
+the cao
+  rotate: true
+  xy: 2, 244
+  size: 619, 375
+  orig: 627, 382
+  offset: 2, 1
+  index: -1

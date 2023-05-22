@@ -1,0 +1,27 @@
+
+icon bonus.png
+size: 246, 311
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+3de98a2a2de41ba03c0e3ead5f5dd3678f1a08e67b4ce-M1hW4n
+  rotate: true
+  xy: 2, 4
+  size: 210, 219
+  orig: 233, 225
+  offset: 14, 2
+  index: -1
+91b0435a75654f67e74525f3acb9347db319674e2a6ab-N9nIuy
+  rotate: false
+  xy: 135, 216
+  size: 109, 95
+  orig: 109, 95
+  offset: 0, 0
+  index: -1
+Group 8 copy
+  rotate: false
+  xy: 2, 270
+  size: 131, 41
+  orig: 133, 43
+  offset: 1, 1
+  index: -1

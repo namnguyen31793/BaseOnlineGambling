@@ -1,0 +1,13 @@
+
+icon 4.png
+size: 186, 186
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+icon4
+  rotate: false
+  xy: 2, 4
+  size: 182, 182
+  orig: 184, 184
+  offset: 1, 1
+  index: -1

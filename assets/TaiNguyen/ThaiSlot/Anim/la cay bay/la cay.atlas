@@ -1,0 +1,62 @@
+
+la cay.png
+size: 669,576
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 34
+  rotate: false
+  xy: 395, 306
+  size: 92, 108
+  orig: 96, 112
+  offset: 2, 2
+  index: -1
+Layer 35
+  rotate: false
+  xy: 407, 6
+  size: 188, 267
+  orig: 191, 271
+  offset: 2, 2
+  index: -1
+Layer 36
+  rotate: false
+  xy: 2, 277
+  size: 155, 297
+  orig: 157, 301
+  offset: 1, 2
+  index: -1
+Layer 37
+  rotate: false
+  xy: 2, 2
+  size: 137, 273
+  orig: 143, 277
+  offset: 2, 2
+  index: -1
+Layer 38
+  rotate: false
+  xy: 489, 275
+  size: 168, 139
+  orig: 170, 142
+  offset: 1, 1
+  index: -1
+Layer 39
+  rotate: false
+  xy: 407, 416
+  size: 260, 158
+  orig: 262, 162
+  offset: 1, 2
+  index: -1
+Layer 40
+  rotate: true
+  xy: 159, 349
+  size: 225, 234
+  orig: 228, 239
+  offset: 1, 2
+  index: -1
+Layer 41
+  rotate: true
+  xy: 141, 5
+  size: 270, 264
+  orig: 272, 268
+  offset: 1, 2
+  index: -1

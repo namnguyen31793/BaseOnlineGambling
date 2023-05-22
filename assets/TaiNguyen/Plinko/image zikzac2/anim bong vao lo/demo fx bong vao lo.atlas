@@ -1,0 +1,20 @@
+
+demo fx bong vao lo.png
+size: 75,98
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Group 1
+  rotate: false
+  xy: 2, 42
+  size: 58, 54
+  orig: 60, 60
+  offset: 1, 2
+  index: -1
+Layer 37
+  rotate: false
+  xy: 2, 2
+  size: 71, 38
+  orig: 77, 45
+  offset: 3, 3
+  index: -1

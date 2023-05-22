@@ -1,0 +1,12 @@
+{
+  "ver": "1.1.2",
+  "uuid": "50a63397-ac67-44c8-bbb3-2c5121243e4a",
+  "isBundle": true,
+  "bundleName": "NotifyPopup",
+  "priority": 1,
+  "compressionType": {},
+  "optimizeHotUpdate": {},
+  "inlineSpriteFrames": {},
+  "isRemoteBundle": {},
+  "subMetas": {}
+}

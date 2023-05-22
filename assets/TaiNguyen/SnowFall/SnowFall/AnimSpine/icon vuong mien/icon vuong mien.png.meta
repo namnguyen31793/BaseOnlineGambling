@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "1419060a-dc65-40fa-9df7-56a1bb44e399",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 235,
+  "height": 144,
+  "platformSettings": {},
+  "subMetas": {
+    "icon vuong mien": {
+      "ver": "1.0.4",
+      "uuid": "e4701085-9bb7-4de1-8b0f-f6b6534f6a5c",
+      "rawTextureUuid": "1419060a-dc65-40fa-9df7-56a1bb44e399",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 231,
+      "height": 140,
+      "rawWidth": 235,
+      "rawHeight": 144,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

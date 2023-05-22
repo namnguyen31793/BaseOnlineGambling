@@ -1,0 +1,12 @@
+{
+  "ver": "1.1.2",
+  "uuid": "aaf0119d-dda1-4075-926b-c4a442a2ef09",
+  "isBundle": true,
+  "bundleName": "Lobby",
+  "priority": 1,
+  "compressionType": {},
+  "optimizeHotUpdate": {},
+  "inlineSpriteFrames": {},
+  "isRemoteBundle": {},
+  "subMetas": {}
+}

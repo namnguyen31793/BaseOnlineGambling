@@ -1,0 +1,69 @@
+
+thong bao thang gold miner.png
+size: 1182,565
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+as duoi cung
+  rotate: false
+  xy: 2, 7
+  size: 725, 556
+  orig: 727, 558
+  offset: 1, 1
+  index: -1
+as text
+  rotate: false
+  xy: 1142, 291
+  size: 27, 26
+  orig: 32, 32
+  offset: 3, 3
+  index: -1
+cuoc phai
+  rotate: true
+  xy: 953, 87
+  size: 82, 109
+  orig: 85, 111
+  offset: 1, 1
+  index: -1
+cuoc trai
+  rotate: true
+  xy: 729, 2
+  size: 83, 109
+  orig: 85, 111
+  offset: 1, 1
+  index: -1
+den phai
+  rotate: true
+  xy: 930, 4
+  size: 81, 87
+  orig: 83, 90
+  offset: 1, 1
+  index: -1
+den trai
+  rotate: true
+  xy: 840, 3
+  size: 82, 88
+  orig: 84, 91
+  offset: 1, 1
+  index: -1
+khung
+  rotate: false
+  xy: 729, 171
+  size: 411, 146
+  orig: 415, 154
+  offset: 3, 2
+  index: -1
+outer
+  rotate: false
+  xy: 729, 319
+  size: 451, 244
+  orig: 457, 251
+  offset: 3, 4
+  index: -1
+text
+  rotate: false
+  xy: 729, 87
+  size: 222, 82
+  orig: 224, 84
+  offset: 1, 1
+  index: -1

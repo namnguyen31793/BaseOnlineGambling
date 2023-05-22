@@ -1,0 +1,27 @@
+info face="bmDragonFireToFont-export_cyrillic" size=32 bold=0 italic=0 charset="" unicode=0 stretchH=100 smooth=1 aa=1 padding=0,0,0,0 spacing=1,1
+common lineHeight=30 base=26 scaleW=2048 scaleH=1024 pages=1 packed=0 alphaChnl=1 redChnl=0 greenChnl=0 blueChnl=0
+page id=0 file="bmDragonFireToFont-export_cyrillic.png"
+chars count=21
+char id=48 x=303 y=0 width=204 height=272 xoffset=0 yoffset=-242 xadvance=206 page=0 chnl=0 letter="0"
+char id=49 x=869 y=0 width=155 height=266 xoffset=0 yoffset=-239 xadvance=157 page=0 chnl=0 letter="1"
+char id=50 x=613 y=281 width=161 height=264 xoffset=0 yoffset=-238 xadvance=163 page=0 chnl=0 letter="2"
+char id=51 x=786 y=281 width=172 height=272 xoffset=0 yoffset=-242 xadvance=174 page=0 chnl=0 letter="3"
+char id=52 x=214 y=530 width=205 height=274 xoffset=0 yoffset=-243 xadvance=207 page=0 chnl=0 letter="4"
+char id=53 x=786 y=554 width=163 height=282 xoffset=0 yoffset=-247 xadvance=165 page=0 chnl=0 letter="5"
+char id=54 x=603 y=547 width=182 height=277 xoffset=0 yoffset=-245 xadvance=184 page=0 chnl=0 letter="6"
+char id=55 x=508 y=0 width=180 height=268 xoffset=0 yoffset=-240 xadvance=182 page=0 chnl=0 letter="7"
+char id=56 x=420 y=273 width=192 height=273 xoffset=0 yoffset=-243 xadvance=194 page=0 chnl=0 letter="8"
+char id=57 x=420 y=547 width=182 height=272 xoffset=0 yoffset=-242 xadvance=184 page=0 chnl=0 letter="9"
+char id=43 x=0 y=837 width=155 height=178 xoffset=0 yoffset=-148 xadvance=157 page=0 chnl=0 letter="+"
+char id=120 x=156 y=825 width=128 height=143 xoffset=0 yoffset=-113 xadvance=130 page=0 chnl=0 letter="x"
+char id=46 x=285 y=820 width=66 height=110 xoffset=0 yoffset=-82 xadvance=68 page=0 chnl=0 letter="."
+char id=44 x=225 y=370 width=71 height=140 xoffset=0 yoffset=-84 xadvance=73 page=0 chnl=0 letter=","
+char id=75 x=0 y=267 width=224 height=262 xoffset=0 yoffset=-239 xadvance=226 page=0 chnl=0 letter="K"
+char id=77 x=0 y=0 width=302 height=266 xoffset=0 yoffset=-239 xadvance=304 page=0 chnl=0 letter="M"
+char id=88 x=0 y=530 width=213 height=262 xoffset=0 yoffset=-239 xadvance=215 page=0 chnl=0 letter="X"
+char id=45 x=225 y=273 width=106 height=96 xoffset=0 yoffset=-128 xadvance=108 page=0 chnl=0 letter="-"
+char id=47 x=689 y=0 width=179 height=280 xoffset=0 yoffset=-246 xadvance=181 page=0 chnl=0 letter="/"
+char id=32 x=0 y=0 width=0 height=0 xoffset=0 yoffset=0 xadvance=8 page=0 chnl=0 letter=" "
+char id=9 x=0 y=0 width=0 height=0 xoffset=0 yoffset=0 xadvance=64 page=0 chnl=0 letter="	"
+
+kernings count=0

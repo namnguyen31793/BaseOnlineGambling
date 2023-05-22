@@ -1,0 +1,1 @@
+{"skeleton":{"hash":"5SrHBtIMzhMtj5derjtTDmfEN3I","spine":"3.8.99","images":"C:/Users/Admin/Desktop/slot rpg/icon slot","audio":""},"bones":[{"name":"root"}],"slots":[{"name":"cong nho","bone":"root","attachment":"icon thu"}],"skins":[{"name":"default","attachments":{"cong nho":{"icon thu":{"width":197,"height":128}}}}],"animations":{"active":{},"waiting":{}}}

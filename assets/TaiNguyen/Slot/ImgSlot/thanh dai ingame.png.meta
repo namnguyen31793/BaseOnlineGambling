@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "eec9f663-2634-4403-8fdc-33fca146084a",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 117,
+  "height": 432,
+  "platformSettings": {},
+  "subMetas": {
+    "thanh dai ingame": {
+      "ver": "1.0.4",
+      "uuid": "cc064786-fd5c-4340-b703-29eddde74c2c",
+      "rawTextureUuid": "eec9f663-2634-4403-8fdc-33fca146084a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 117,
+      "height": 432,
+      "rawWidth": 117,
+      "rawHeight": 432,
+      "borderTop": 64,
+      "borderBottom": 63,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

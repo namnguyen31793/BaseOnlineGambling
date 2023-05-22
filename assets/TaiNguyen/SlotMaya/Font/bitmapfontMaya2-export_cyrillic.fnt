@@ -1,0 +1,27 @@
+info face="bitmapfontMaya2-export_cyrillic" size=32 bold=0 italic=0 charset="" unicode=0 stretchH=100 smooth=1 aa=1 padding=0,0,0,0 spacing=1,1
+common lineHeight=20 base=26 scaleW=512 scaleH=256 pages=1 packed=0 alphaChnl=1 redChnl=0 greenChnl=0 blueChnl=0
+page id=0 file="bitmapfontMaya2-export_cyrillic.png"
+chars count=21
+char id=48 x=62 y=0 width=54 height=73 xoffset=0 yoffset=-52 xadvance=56 page=0 chnl=0 letter="0"
+char id=49 x=172 y=0 width=40 height=71 xoffset=0 yoffset=-51 xadvance=42 page=0 chnl=0 letter="1"
+char id=50 x=274 y=0 width=52 height=72 xoffset=0 yoffset=-52 xadvance=54 page=0 chnl=0 letter="2"
+char id=51 x=220 y=74 width=53 height=72 xoffset=0 yoffset=-51 xadvance=55 page=0 chnl=0 letter="3"
+char id=52 x=0 y=71 width=55 height=70 xoffset=0 yoffset=-50 xadvance=57 page=0 chnl=0 letter="4"
+char id=53 x=220 y=147 width=53 height=73 xoffset=0 yoffset=-52 xadvance=55 page=0 chnl=0 letter="5"
+char id=54 x=110 y=74 width=54 height=73 xoffset=0 yoffset=-52 xadvance=56 page=0 chnl=0 letter="6"
+char id=55 x=117 y=0 width=54 height=72 xoffset=0 yoffset=-52 xadvance=56 page=0 chnl=0 letter="7"
+char id=56 x=165 y=73 width=54 height=72 xoffset=0 yoffset=-51 xadvance=56 page=0 chnl=0 letter="8"
+char id=57 x=220 y=0 width=53 height=73 xoffset=0 yoffset=-52 xadvance=55 page=0 chnl=0 letter="9"
+char id=46 x=47 y=214 width=34 height=35 xoffset=0 yoffset=-15 xadvance=36 page=0 chnl=0 letter="."
+char id=44 x=274 y=73 width=33 height=41 xoffset=0 yoffset=-15 xadvance=35 page=0 chnl=0 letter=","
+char id=75 x=110 y=148 width=54 height=71 xoffset=0 yoffset=-51 xadvance=56 page=0 chnl=0 letter="K"
+char id=77 x=0 y=0 width=61 height=70 xoffset=0 yoffset=-50 xadvance=63 page=0 chnl=0 letter="M"
+char id=120 x=165 y=146 width=54 height=71 xoffset=0 yoffset=-51 xadvance=56 page=0 chnl=0 letter="x"
+char id=88 x=55 y=142 width=54 height=71 xoffset=0 yoffset=-51 xadvance=56 page=0 chnl=0 letter="X"
+char id=43 x=56 y=74 width=46 height=49 xoffset=0 yoffset=-39 xadvance=48 page=0 chnl=0 letter="+"
+char id=45 x=0 y=214 width=46 height=38 xoffset=0 yoffset=-35 xadvance=48 page=0 chnl=0 letter="-"
+char id=47 x=0 y=142 width=54 height=70 xoffset=0 yoffset=-50 xadvance=56 page=0 chnl=0 letter="/"
+char id=32 x=0 y=0 width=0 height=0 xoffset=0 yoffset=0 xadvance=8 page=0 chnl=0 letter=" "
+char id=9 x=0 y=0 width=0 height=0 xoffset=0 yoffset=0 xadvance=64 page=0 chnl=0 letter="	"
+
+kernings count=0

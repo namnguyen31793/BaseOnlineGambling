@@ -1,0 +1,181 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "CharacterLoopBigWin",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Normal": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Free": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "FreeWait": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "BigWin": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "BigWin/1-batdau": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "BigWin/2-cuinguoi": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "BigWin/3-chayra": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "BigWin/3-wait": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "ba535a13-d4b5-4f69-8513-d0d9213d1fa1"
+                }
+              },
+              {
+                "frame": 0.1,
+                "value": {
+                  "__uuid__": "f8734b57-4b71-459d-ae50-a3d97b218c0e"
+                }
+              },
+              {
+                "frame": 0.2,
+                "value": {
+                  "__uuid__": "0f050627-9dc3-4091-80c9-df973be1f61e"
+                }
+              },
+              {
+                "frame": 0.3,
+                "value": {
+                  "__uuid__": "f8a62442-1a61-492f-a228-c866e4668a55"
+                }
+              },
+              {
+                "frame": 0.4,
+                "value": {
+                  "__uuid__": "febe2ea3-dddb-46d0-b58e-b6da29922afa"
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "__uuid__": "74801c3e-c0db-4ec4-a5f5-0dd8dcae5649"
+                }
+              },
+              {
+                "frame": 0.6,
+                "value": {
+                  "__uuid__": "febe2ea3-dddb-46d0-b58e-b6da29922afa"
+                }
+              },
+              {
+                "frame": 0.7,
+                "value": {
+                  "__uuid__": "f8a62442-1a61-492f-a228-c866e4668a55"
+                }
+              },
+              {
+                "frame": 0.8,
+                "value": {
+                  "__uuid__": "0f050627-9dc3-4091-80c9-df973be1f61e"
+                }
+              },
+              {
+                "frame": 0.9,
+                "value": {
+                  "__uuid__": "ba535a13-d4b5-4f69-8513-d0d9213d1fa1"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "BigWin/4-chayvao": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "BigWin/5-ketthuc": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

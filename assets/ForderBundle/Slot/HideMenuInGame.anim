@@ -1,0 +1,303 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "HideMenuInGame",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.9230769230769231,
+  "sample": 13,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "iconMenu1": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0.5384615384615384,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "frame": 0.6923076923076923,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1.5,
+                "y": 1.5
+              }
+            },
+            {
+              "frame": 0.8461538461538461,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            },
+            {
+              "frame": 0.9230769230769231,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ]
+        }
+      },
+      "iconMenu2": {
+        "props": {
+          "x": [
+            {
+              "frame": 0.8461538461538461,
+              "value": 0
+            },
+            {
+              "frame": 0.9230769230769231,
+              "value": 13.209
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.5384615384615384,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "frame": 0.6923076923076923,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1.5,
+                "y": 1.5
+              }
+            },
+            {
+              "frame": 0.8461538461538461,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            },
+            {
+              "frame": 0.9230769230769231,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ]
+        }
+      },
+      "iconMenu3": {
+        "props": {
+          "x": [
+            {
+              "frame": 0.8461538461538461,
+              "value": 0
+            },
+            {
+              "frame": 0.9230769230769231,
+              "value": -13.649
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.5384615384615384,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "frame": 0.6923076923076923,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1.5,
+                "y": 1.5
+              }
+            },
+            {
+              "frame": 0.8461538461538461,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            },
+            {
+              "frame": 0.9230769230769231,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ]
+        }
+      },
+      "closeListBtn": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0.23076923076923078,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            },
+            {
+              "frame": 0.38461538461538464,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1.3,
+                "y": 1.3
+              }
+            },
+            {
+              "frame": 0.6153846153846154,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "frame": 0.9230769230769231,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0,
+                "y": 0
+              }
+            }
+          ],
+          "active": [
+            {
+              "frame": 0.9230769230769231,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Duoi/KhungButtonInGame": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 105
+            },
+            {
+              "frame": 0.23076923076923078,
+              "value": 265.4
+            },
+            {
+              "frame": 0.9230769230769231,
+              "value": 265.4
+            }
+          ]
+        }
+      },
+      "closeListBtn/BtnClose": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.9230769230769231,
+              "value": false
+            }
+          ]
+        }
+      },
+      "btnShow": {
+        "props": {
+          "active": [
+            {
+              "frame": 0.23076923076923078,
+              "value": false
+            },
+            {
+              "frame": 0.9230769230769231,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Duoi/KhungButtonInGame/ToggleMusic": {
+        "props": {
+          "active": [
+            {
+              "frame": 0.23076923076923078,
+              "value": true
+            },
+            {
+              "frame": 0.9230769230769231,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Duoi/KhungButtonInGame/BtnHelp": {
+        "props": {
+          "active": [
+            {
+              "frame": 0.23076923076923078,
+              "value": true
+            },
+            {
+              "frame": 0.9230769230769231,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Duoi/KhungButtonInGame/BtnRank": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.23076923076923078,
+              "value": true
+            },
+            {
+              "frame": 0.9230769230769231,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Duoi/KhungButtonInGame/BtnBack": {
+        "props": {
+          "active": [
+            {
+              "frame": 0.23076923076923078,
+              "value": true
+            },
+            {
+              "frame": 0.3076923076923077,
+              "value": false
+            },
+            {
+              "frame": 0.9230769230769231,
+              "value": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

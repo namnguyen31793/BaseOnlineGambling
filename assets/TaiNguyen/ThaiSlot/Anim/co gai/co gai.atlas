@@ -1,0 +1,20 @@
+
+co gai.png
+size: 472,259
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 9
+  rotate: true
+  xy: 297, 76
+  size: 181, 173
+  orig: 182, 173
+  offset: 0, 0
+  index: -1
+as
+  rotate: false
+  xy: 2, 2
+  size: 293, 255
+  orig: 312, 267
+  offset: 10, 8
+  index: -1

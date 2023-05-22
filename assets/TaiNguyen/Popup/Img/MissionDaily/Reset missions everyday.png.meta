@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "3efe5aee-f499-40fb-a546-f3af4ca662cc",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 307,
+  "height": 35,
+  "platformSettings": {},
+  "subMetas": {
+    "Reset missions everyday": {
+      "ver": "1.0.4",
+      "uuid": "29383836-e465-4ede-a6e0-076a38a971f6",
+      "rawTextureUuid": "3efe5aee-f499-40fb-a546-f3af4ca662cc",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 307,
+      "height": 35,
+      "rawWidth": 307,
+      "rawHeight": 35,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,48 @@
+
+[slot]hoi mau.png
+size: 570,361
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 23
+  rotate: false
+  xy: 2, 13
+  size: 175, 164
+  orig: 177, 166
+  offset: 1, 1
+  index: -1
+Layer 24
+  rotate: false
+  xy: 2, 179
+  size: 205, 180
+  orig: 207, 182
+  offset: 1, 1
+  index: -1
+Layer 25
+  rotate: true
+  xy: 209, 2
+  size: 201, 161
+  orig: 203, 163
+  offset: 1, 1
+  index: -1
+Layer 26
+  rotate: false
+  xy: 209, 205
+  size: 213, 154
+  orig: 215, 156
+  offset: 1, 1
+  index: -1
+Layer 27
+  rotate: true
+  xy: 424, 158
+  size: 201, 144
+  orig: 203, 146
+  offset: 1, 1
+  index: -1
+Layer 28
+  rotate: false
+  xy: 372, 17
+  size: 195, 139
+  orig: 197, 141
+  offset: 1, 1
+  index: -1

@@ -1,0 +1,97 @@
+
+freespins award.png
+size: 1908,810
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+4393e55c63e6a18a88f122cbfd72b8a403318144f4098-BqlUhv
+  rotate: false
+  xy: 2, 2
+  size: 806, 806
+  orig: 808, 808
+  offset: 1, 1
+  index: -1
+Layer 50
+  rotate: false
+  xy: 1418, 524
+  size: 399, 284
+  orig: 401, 301
+  offset: 1, 16
+  index: -1
+Layer 57
+  rotate: false
+  xy: 1423, 111
+  size: 332, 107
+  orig: 334, 109
+  offset: 1, 1
+  index: -1
+Layer 58
+  rotate: false
+  xy: 1418, 332
+  size: 404, 190
+  orig: 406, 194
+  offset: 1, 2
+  index: -1
+Layer 59
+  rotate: true
+  xy: 1761, 63
+  size: 267, 141
+  orig: 269, 143
+  offset: 1, 1
+  index: -1
+Layer 59 copy
+  rotate: true
+  xy: 1761, 63
+  size: 267, 141
+  orig: 269, 143
+  offset: 1, 1
+  index: -1
+freespin award
+  rotate: false
+  xy: 1418, 220
+  size: 341, 110
+  orig: 347, 116
+  offset: 3, 3
+  index: -1
+ken phai
+  rotate: true
+  xy: 1819, 669
+  size: 139, 87
+  orig: 142, 89
+  offset: 2, 1
+  index: -1
+ken trai
+  rotate: true
+  xy: 1819, 528
+  size: 139, 87
+  orig: 142, 89
+  offset: 1, 1
+  index: -1
+outter
+  rotate: false
+  xy: 810, 204
+  size: 606, 604
+  orig: 616, 615
+  offset: 5, 6
+  index: -1
+phai
+  rotate: true
+  xy: 1423, 9
+  size: 100, 165
+  orig: 106, 183
+  offset: 5, 5
+  index: -1
+ribon
+  rotate: false
+  xy: 810, 3
+  size: 611, 199
+  orig: 615, 203
+  offset: 2, 3
+  index: -1
+trai
+  rotate: true
+  xy: 1590, 9
+  size: 100, 165
+  orig: 106, 183
+  offset: 1, 5
+  index: -1

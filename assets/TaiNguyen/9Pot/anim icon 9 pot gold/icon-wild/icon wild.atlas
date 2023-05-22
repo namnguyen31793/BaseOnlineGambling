@@ -1,0 +1,27 @@
+
+icon wild.png
+size: 157,350
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg
+  rotate: true
+  xy: 2, 192
+  size: 156, 153
+  orig: 156, 153
+  offset: 0, 0
+  index: -1
+nam
+  rotate: false
+  xy: 2, 68
+  size: 136, 122
+  orig: 138, 124
+  offset: 1, 1
+  index: -1
+text
+  rotate: false
+  xy: 2, 2
+  size: 114, 64
+  orig: 116, 66
+  offset: 1, 1
+  index: -1

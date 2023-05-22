@@ -1,0 +1,76 @@
+
+iconbonus.png
+size: 745, 160
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+01
+  rotate: true
+  xy: 296, 43
+  size: 117, 135
+  orig: 120, 137
+  offset: 1, 1
+  index: -1
+02
+  rotate: true
+  xy: 570, 90
+  size: 70, 135
+  orig: 72, 137
+  offset: 1, 1
+  index: -1
+03
+  rotate: true
+  xy: 296, 4
+  size: 37, 135
+  orig: 39, 137
+  offset: 1, 1
+  index: -1
+04
+  rotate: true
+  xy: 159, 14
+  size: 9, 135
+  orig: 11, 137
+  offset: 1, 1
+  index: -1
+05
+  rotate: true
+  xy: 433, 4
+  size: 37, 135
+  orig: 39, 137
+  offset: 1, 1
+  index: -1
+07
+  rotate: true
+  xy: 570, 18
+  size: 70, 135
+  orig: 72, 137
+  offset: 1, 1
+  index: -1
+07-1
+  rotate: true
+  xy: 433, 43
+  size: 117, 135
+  orig: 120, 137
+  offset: 2, 1
+  index: -1
+Layer 1
+  rotate: false
+  xy: 159, 25
+  size: 135, 135
+  orig: 137, 137
+  offset: 1, 1
+  index: -1
+astron
+  rotate: false
+  xy: 2, 5
+  size: 155, 155
+  orig: 159, 159
+  offset: 2, 2
+  index: -1
+text bonus
+  rotate: true
+  xy: 707, 36
+  size: 124, 36
+  orig: 126, 38
+  offset: 1, 1
+  index: -1

@@ -1,0 +1,55 @@
+
+theo cao copy.png
+size: 1159,108
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mt1
+  rotate: false
+  xy: 1049, 2
+  size: 108, 104
+  orig: 110, 106
+  offset: 1, 1
+  index: -1
+mt2
+  rotate: false
+  xy: 577, 2
+  size: 173, 104
+  orig: 175, 106
+  offset: 1, 1
+  index: -1
+mt3
+  rotate: false
+  xy: 752, 2
+  size: 170, 104
+  orig: 173, 106
+  offset: 2, 1
+  index: -1
+mt4
+  rotate: false
+  xy: 2, 2
+  size: 200, 104
+  orig: 202, 106
+  offset: 1, 1
+  index: -1
+mt5
+  rotate: false
+  xy: 204, 2
+  size: 193, 104
+  orig: 195, 106
+  offset: 1, 1
+  index: -1
+mt6
+  rotate: false
+  xy: 399, 2
+  size: 176, 104
+  orig: 179, 106
+  offset: 1, 1
+  index: -1
+mt7
+  rotate: false
+  xy: 924, 2
+  size: 123, 104
+  orig: 132, 106
+  offset: 8, 1
+  index: -1

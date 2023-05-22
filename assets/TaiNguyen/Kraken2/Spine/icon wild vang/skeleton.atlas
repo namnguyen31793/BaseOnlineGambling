@@ -1,0 +1,13 @@
+
+skeleton.png
+size: 186,176
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+icon wild vang
+  rotate: false
+  xy: 2, 2
+  size: 182, 172
+  orig: 182, 172
+  offset: 0, 0
+  index: -1

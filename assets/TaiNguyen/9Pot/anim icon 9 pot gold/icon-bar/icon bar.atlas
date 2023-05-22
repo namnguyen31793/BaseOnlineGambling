@@ -1,0 +1,27 @@
+
+icon bar.png
+size: 199,123
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 24 copy 6
+  rotate: false
+  xy: 2, 6
+  size: 115, 115
+  orig: 117, 117
+  offset: 1, 1
+  index: -1
+outer
+  rotate: true
+  xy: 119, 2
+  size: 119, 38
+  orig: 121, 40
+  offset: 1, 1
+  index: -1
+shadow
+  rotate: true
+  xy: 159, 2
+  size: 119, 38
+  orig: 121, 40
+  offset: 1, 1
+  index: -1

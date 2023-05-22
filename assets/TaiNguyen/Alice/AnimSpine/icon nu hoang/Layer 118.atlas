@@ -1,0 +1,20 @@
+
+Layer 118.png
+size: 288, 181
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Group 1
+  rotate: true
+  xy: 2, 4
+  size: 177, 160
+  orig: 180, 164
+  offset: 1, 2
+  index: -1
+Layer 118
+  rotate: false
+  xy: 164, 13
+  size: 122, 168
+  orig: 122, 168
+  offset: 0, 0
+  index: -1

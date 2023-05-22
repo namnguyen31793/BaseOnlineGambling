@@ -1,0 +1,51 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "UnlockGun",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Content": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 339.572
+            },
+            {
+              "frame": 1,
+              "value": 339.572
+            },
+            {
+              "frame": 2,
+              "value": 2.959
+            }
+          ]
+        }
+      },
+      "Value": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1,
+              "value": 0
+            },
+            {
+              "frame": 2,
+              "value": -301.261
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

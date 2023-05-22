@@ -1,0 +1,27 @@
+
+icon free.png
+size: 224, 529
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Group 17
+  rotate: false
+  xy: 2, 249
+  size: 220, 176
+  orig: 222, 178
+  offset: 1, 1
+  index: -1
+Group 18
+  rotate: true
+  xy: 2, 4
+  size: 243, 204
+  orig: 246, 207
+  offset: 2, 1
+  index: -1
+Group 19
+  rotate: false
+  xy: 2, 427
+  size: 199, 102
+  orig: 201, 104
+  offset: 1, 1
+  index: -1

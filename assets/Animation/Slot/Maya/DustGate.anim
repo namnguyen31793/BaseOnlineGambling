@@ -1,0 +1,37 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "DustGate",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.3,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "38af18d4-e7ba-4ad6-b264-d03de614dc59"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "38af18d4-e7ba-4ad6-b264-d03de614dc59"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "ccad0813-18e1-4cba-912c-e238f1bb822d"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

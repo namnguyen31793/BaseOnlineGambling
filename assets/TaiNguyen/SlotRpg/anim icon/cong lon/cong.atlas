@@ -1,0 +1,13 @@
+
+cong.png
+size: 201,134
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+icon cong
+  rotate: false
+  xy: 2, 2
+  size: 197, 130
+  orig: 197, 131
+  offset: 0, 1
+  index: -1

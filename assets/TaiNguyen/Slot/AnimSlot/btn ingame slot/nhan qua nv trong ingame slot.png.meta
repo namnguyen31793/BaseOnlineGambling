@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "f76586db-f45e-4708-aee2-1224295d0ae2",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 185,
+  "height": 160,
+  "platformSettings": {},
+  "subMetas": {
+    "nhan qua nv trong ingame slot": {
+      "ver": "1.0.4",
+      "uuid": "9a728a7a-8222-4215-9922-c567185b9f98",
+      "rawTextureUuid": "f76586db-f45e-4708-aee2-1224295d0ae2",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 181,
+      "height": 156,
+      "rawWidth": 185,
+      "rawHeight": 160,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

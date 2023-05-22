@@ -1,0 +1,12 @@
+{
+  "ver": "1.1.2",
+  "uuid": "fe7d05d5-a89f-4b64-b1e4-74df923110d6",
+  "isBundle": true,
+  "bundleName": "SoundTowerUp",
+  "priority": 1,
+  "compressionType": {},
+  "optimizeHotUpdate": {},
+  "inlineSpriteFrames": {},
+  "isRemoteBundle": {},
+  "subMetas": {}
+}

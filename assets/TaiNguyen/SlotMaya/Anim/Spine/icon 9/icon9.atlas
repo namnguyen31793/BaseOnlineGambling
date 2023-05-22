@@ -1,0 +1,20 @@
+
+icon9.png
+size: 244, 166
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Layer 30 copy 2
+  rotate: false
+  xy: 2, 4
+  size: 171, 162
+  orig: 173, 166
+  offset: 1, 2
+  index: -1
+Layer 7
+  rotate: false
+  xy: 175, 78
+  size: 67, 88
+  orig: 67, 88
+  offset: 0, 0
+  index: -1

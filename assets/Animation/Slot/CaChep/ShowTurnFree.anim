@@ -1,0 +1,57 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "ShowTurnFree",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.6,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "StartBonus/Khunng": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0.3,
+              "value": 0
+            },
+            {
+              "frame": 0.6,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "StartBonus": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 90
+            },
+            {
+              "frame": 0.3,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "StartBonus/Khunng/IconBonus": {
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "595b3308-0c64-47a4-8594-1a6f208d62c6"
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "events": []
+}

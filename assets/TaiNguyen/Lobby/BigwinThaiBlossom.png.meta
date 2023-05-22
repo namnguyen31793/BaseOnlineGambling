@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "81290b95-cd81-4f67-b9f1-96f550e004b1",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 343,
+  "height": 221,
+  "platformSettings": {},
+  "subMetas": {
+    "BigwinThaiBlossom": {
+      "ver": "1.0.4",
+      "uuid": "6fdd31f0-d313-4221-bcf0-e7aab46b8ec4",
+      "rawTextureUuid": "81290b95-cd81-4f67-b9f1-96f550e004b1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 343,
+      "height": 221,
+      "rawWidth": 343,
+      "rawHeight": 221,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

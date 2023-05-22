@@ -1,0 +1,20 @@
+info face="fontThai-export" size=32 bold=0 italic=0 charset="" unicode=0 stretchH=100 smooth=1 aa=1 padding=0,0,0,0 spacing=1,1
+common lineHeight=80 base=26 scaleW=512 scaleH=1024 pages=1 packed=0 alphaChnl=1 redChnl=0 greenChnl=0 blueChnl=0
+page id=0 file="fontThai-export.png"
+chars count=14
+char id=48 x=0 y=0 width=146 height=173 xoffset=0 yoffset=-93 xadvance=147 page=0 chnl=0 letter="0"
+char id=49 x=147 y=0 width=114 height=169 xoffset=0 yoffset=-89 xadvance=115 page=0 chnl=0 letter="1"
+char id=50 x=0 y=174 width=135 height=172 xoffset=0 yoffset=-92 xadvance=136 page=0 chnl=0 letter="2"
+char id=51 x=135 y=347 width=131 height=171 xoffset=0 yoffset=-91 xadvance=132 page=0 chnl=0 letter="3"
+char id=52 x=0 y=697 width=134 height=170 xoffset=0 yoffset=-90 xadvance=135 page=0 chnl=0 letter="4"
+char id=53 x=135 y=519 width=131 height=170 xoffset=0 yoffset=-90 xadvance=132 page=0 chnl=0 letter="5"
+char id=54 x=0 y=522 width=134 height=174 xoffset=0 yoffset=-94 xadvance=135 page=0 chnl=0 letter="6"
+char id=55 x=136 y=174 width=127 height=169 xoffset=0 yoffset=-89 xadvance=128 page=0 chnl=0 letter="7"
+char id=56 x=135 y=690 width=131 height=172 xoffset=0 yoffset=-92 xadvance=132 page=0 chnl=0 letter="8"
+char id=57 x=0 y=347 width=134 height=174 xoffset=0 yoffset=-94 xadvance=135 page=0 chnl=0 letter="9"
+char id=44 x=71 y=868 width=70 height=70 xoffset=0 yoffset=10 xadvance=71 page=0 chnl=0 letter=","
+char id=46 x=0 y=868 width=70 height=85 xoffset=0 yoffset=-5 xadvance=71 page=0 chnl=0 letter="."
+char id=32 x=0 y=0 width=0 height=0 xoffset=0 yoffset=0 xadvance=20 page=0 chnl=0 letter=" "
+char id=9 x=0 y=0 width=0 height=0 xoffset=0 yoffset=0 xadvance=160 page=0 chnl=0 letter="	"
+
+kernings count=0

@@ -1,0 +1,27 @@
+
+2.png
+size: 179,205
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 1
+  rotate: false
+  xy: 2, 70
+  size: 137, 133
+  orig: 139, 135
+  offset: 1, 1
+  index: -1
+Layer 2
+  rotate: false
+  xy: 2, 2
+  size: 66, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+c_scatter_icon_caption_w1280
+  rotate: true
+  xy: 141, 34
+  size: 169, 36
+  orig: 172, 47
+  offset: 2, 2
+  index: -1

@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "6de11b44-2a38-43da-bee0-2de494125d52",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 53,
+  "height": 12,
+  "platformSettings": {},
+  "subMetas": {
+    "UNLOCK": {
+      "ver": "1.0.4",
+      "uuid": "4deb9681-ca84-4e42-97c9-b46ace05c4b5",
+      "rawTextureUuid": "6de11b44-2a38-43da-bee0-2de494125d52",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 53,
+      "height": 12,
+      "rawWidth": 53,
+      "rawHeight": 12,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

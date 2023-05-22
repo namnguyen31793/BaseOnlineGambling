@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "a8344338-eb18-4081-b241-6afd6b3b234b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 64,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "FontSoChinaQueen-export_cyrillic": {
+      "ver": "1.0.4",
+      "uuid": "8c9c6c83-cfd3-419e-afa9-843718f91c48",
+      "rawTextureUuid": "a8344338-eb18-4081-b241-6afd6b3b234b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -4.5,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 55,
+      "height": 127,
+      "rawWidth": 64,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

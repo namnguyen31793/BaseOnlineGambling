@@ -1,0 +1,131 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "PlayUnlockFunction",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 5,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Lock": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.5,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Icon": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.5,
+              "value": true
+            }
+          ]
+        }
+      },
+      "IconLock": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": false
+            }
+          ]
+        }
+      },
+      "fx unlock tinh nang": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.5,
+              "value": true
+            },
+            {
+              "frame": 5,
+              "value": false
+            }
+          ]
+        }
+      },
+      "IconLock/khoa": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.1,
+              "value": 3.387
+            },
+            {
+              "frame": 0.2,
+              "value": -4.234
+            },
+            {
+              "frame": 0.3,
+              "value": 1.693
+            },
+            {
+              "frame": 0.4,
+              "value": -1.694
+            },
+            {
+              "frame": 0.5,
+              "value": 1.693
+            },
+            {
+              "frame": 0.6,
+              "value": -2.307
+            },
+            {
+              "frame": 0.7,
+              "value": 4.693
+            },
+            {
+              "frame": 0.8,
+              "value": -4.307
+            },
+            {
+              "frame": 0.9,
+              "value": 2.693
+            },
+            {
+              "frame": 1,
+              "value": -7.307
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

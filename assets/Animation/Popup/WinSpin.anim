@@ -1,0 +1,179 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "WinSpin",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.5,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Group 56": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.1,
+              "value": 0
+            },
+            {
+              "frame": 0.2,
+              "value": 255
+            },
+            {
+              "frame": 0.3,
+              "value": 0
+            },
+            {
+              "frame": 0.4,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            },
+            {
+              "frame": 0.6,
+              "value": 255
+            },
+            {
+              "frame": 0.7,
+              "value": 0
+            },
+            {
+              "frame": 0.8,
+              "value": 255
+            },
+            {
+              "frame": 0.9,
+              "value": 0
+            },
+            {
+              "frame": 1,
+              "value": 255
+            },
+            {
+              "frame": 1.1,
+              "value": 0
+            },
+            {
+              "frame": 1.2,
+              "value": 255
+            },
+            {
+              "frame": 1.3,
+              "value": 0
+            },
+            {
+              "frame": 1.4,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Group 54": {
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "45c3abfe-72f1-4366-9eea-43ab33996ead"
+                }
+              },
+              {
+                "frame": 0.1,
+                "value": {
+                  "__uuid__": "e299bd70-e9ad-4f87-89b2-bbf000a782cf"
+                }
+              },
+              {
+                "frame": 0.2,
+                "value": {
+                  "__uuid__": "45c3abfe-72f1-4366-9eea-43ab33996ead"
+                }
+              },
+              {
+                "frame": 0.3,
+                "value": {
+                  "__uuid__": "e299bd70-e9ad-4f87-89b2-bbf000a782cf"
+                }
+              },
+              {
+                "frame": 0.4,
+                "value": {
+                  "__uuid__": "45c3abfe-72f1-4366-9eea-43ab33996ead"
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "__uuid__": "e299bd70-e9ad-4f87-89b2-bbf000a782cf"
+                }
+              },
+              {
+                "frame": 0.6,
+                "value": {
+                  "__uuid__": "45c3abfe-72f1-4366-9eea-43ab33996ead"
+                }
+              },
+              {
+                "frame": 0.7,
+                "value": {
+                  "__uuid__": "e299bd70-e9ad-4f87-89b2-bbf000a782cf"
+                }
+              },
+              {
+                "frame": 0.8,
+                "value": {
+                  "__uuid__": "45c3abfe-72f1-4366-9eea-43ab33996ead"
+                }
+              },
+              {
+                "frame": 0.9,
+                "value": {
+                  "__uuid__": "e299bd70-e9ad-4f87-89b2-bbf000a782cf"
+                }
+              },
+              {
+                "frame": 1,
+                "value": {
+                  "__uuid__": "45c3abfe-72f1-4366-9eea-43ab33996ead"
+                }
+              },
+              {
+                "frame": 1.1,
+                "value": {
+                  "__uuid__": "e299bd70-e9ad-4f87-89b2-bbf000a782cf"
+                }
+              },
+              {
+                "frame": 1.2,
+                "value": {
+                  "__uuid__": "45c3abfe-72f1-4366-9eea-43ab33996ead"
+                }
+              },
+              {
+                "frame": 1.3,
+                "value": {
+                  "__uuid__": "e299bd70-e9ad-4f87-89b2-bbf000a782cf"
+                }
+              },
+              {
+                "frame": 1.4,
+                "value": {
+                  "__uuid__": "45c3abfe-72f1-4366-9eea-43ab33996ead"
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "events": []
+}

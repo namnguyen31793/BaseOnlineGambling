@@ -1,0 +1,13 @@
+
+mau.png
+size: 201,138
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+icon mau copy 2
+  rotate: false
+  xy: 2, 2
+  size: 197, 134
+  orig: 197, 136
+  offset: 0, 1
+  index: -1

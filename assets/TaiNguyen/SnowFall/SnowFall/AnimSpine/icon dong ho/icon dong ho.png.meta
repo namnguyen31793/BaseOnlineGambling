@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "ede45768-e7df-42f9-9565-66e1259bf6f5",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 249,
+  "height": 133,
+  "platformSettings": {},
+  "subMetas": {
+    "icon dong ho": {
+      "ver": "1.0.4",
+      "uuid": "5e16bdbb-5975-4c6f-9595-17a17433ea8b",
+      "rawTextureUuid": "ede45768-e7df-42f9-9565-66e1259bf6f5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 245,
+      "height": 129,
+      "rawWidth": 249,
+      "rawHeight": 133,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

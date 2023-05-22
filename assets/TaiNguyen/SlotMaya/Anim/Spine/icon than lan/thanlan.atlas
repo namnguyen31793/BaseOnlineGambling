@@ -1,0 +1,20 @@
+
+thanlan.png
+size: 276, 141
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Hue/Saturation 2
+  rotate: false
+  xy: 2, 4
+  size: 137, 137
+  orig: 139, 139
+  offset: 1, 1
+  index: -1
+Layer 39 copy 2
+  rotate: false
+  xy: 141, 4
+  size: 133, 137
+  orig: 135, 139
+  offset: 1, 1
+  index: -1

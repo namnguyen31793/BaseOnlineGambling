@@ -1,0 +1,1 @@
+{"skeleton":{"hash":"Qv7Ijt74vjHyQ3ttEki3ZAiyR4g","spine":"3.8.99","images":"C:/Users/Admin/Desktop/anim icon","audio":""},"bones":[{"name":"root"}],"slots":[{"name":"icon 10","bone":"root","attachment":"icon A"}],"skins":[{"name":"default","attachments":{"icon 10":{"icon A":{"width":113,"height":120}}}}],"animations":{"active":{},"waiting":{}}}

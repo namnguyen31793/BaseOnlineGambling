@@ -1,0 +1,104 @@
+
+hoano.png
+size: 165,146
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 34
+  rotate: false
+  xy: 2, 57
+  size: 55, 87
+  orig: 58, 91
+  offset: 1, 2
+  index: -1
+Layer 34 copy
+  rotate: false
+  xy: 2, 57
+  size: 55, 87
+  orig: 58, 91
+  offset: 1, 2
+  index: -1
+Layer 35
+  rotate: true
+  xy: 2, 10
+  size: 45, 54
+  orig: 57, 63
+  offset: 11, 1
+  index: -1
+Layer 35 copy
+  rotate: false
+  xy: 108, 69
+  size: 43, 45
+  orig: 69, 48
+  offset: 25, 1
+  index: -1
+Layer 36
+  rotate: false
+  xy: 59, 116
+  size: 96, 28
+  orig: 98, 30
+  offset: 1, 1
+  index: -1
+Layer 38
+  rotate: true
+  xy: 58, 2
+  size: 23, 21
+  orig: 25, 23
+  offset: 1, 1
+  index: -1
+Layer 38 copy
+  rotate: true
+  xy: 58, 2
+  size: 23, 21
+  orig: 25, 23
+  offset: 1, 1
+  index: -1
+Layer 39
+  rotate: false
+  xy: 106, 2
+  size: 31, 28
+  orig: 33, 30
+  offset: 1, 1
+  index: -1
+Layer 40
+  rotate: false
+  xy: 81, 4
+  size: 21, 21
+  orig: 23, 23
+  offset: 1, 1
+  index: -1
+Layer 41
+  rotate: false
+  xy: 142, 18
+  size: 21, 21
+  orig: 23, 23
+  offset: 1, 1
+  index: -1
+Layer 42
+  rotate: false
+  xy: 59, 27
+  size: 45, 39
+  orig: 47, 41
+  offset: 1, 1
+  index: -1
+Layer 43
+  rotate: false
+  xy: 142, 41
+  size: 19, 26
+  orig: 21, 28
+  offset: 1, 1
+  index: -1
+Layer 44
+  rotate: false
+  xy: 106, 32
+  size: 34, 34
+  orig: 37, 36
+  offset: 2, 1
+  index: -1
+Layer 45
+  rotate: false
+  xy: 59, 68
+  size: 47, 46
+  orig: 49, 48
+  offset: 1, 1
+  index: -1

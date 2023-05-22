@@ -1,0 +1,12 @@
+{
+  "ver": "1.1.2",
+  "uuid": "66d7f343-a329-4e0c-9e48-7c285144c72e",
+  "isBundle": true,
+  "bundleName": "ShareMoney",
+  "priority": 1,
+  "compressionType": {},
+  "optimizeHotUpdate": {},
+  "inlineSpriteFrames": {},
+  "isRemoteBundle": {},
+  "subMetas": {}
+}

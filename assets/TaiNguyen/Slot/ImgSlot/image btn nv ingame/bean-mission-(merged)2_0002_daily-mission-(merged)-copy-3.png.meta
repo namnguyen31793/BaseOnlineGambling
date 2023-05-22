@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "11c5221b-1132-41d9-91a9-9ccf8bd32e5b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 110,
+  "height": 65,
+  "platformSettings": {},
+  "subMetas": {
+    "bean-mission-(merged)2_0002_daily-mission-(merged)-copy-3": {
+      "ver": "1.0.4",
+      "uuid": "8c332a8d-30c0-4b54-b621-ceec15280e6e",
+      "rawTextureUuid": "11c5221b-1132-41d9-91a9-9ccf8bd32e5b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -5.5,
+      "trimX": 0,
+      "trimY": 11,
+      "width": 110,
+      "height": 54,
+      "rawWidth": 110,
+      "rawHeight": 65,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

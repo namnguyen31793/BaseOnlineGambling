@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "1f6395c6-9404-4e70-b160-4f6a75ee3de1",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 2033,
+  "height": 1871,
+  "platformSettings": {},
+  "subMetas": {
+    "anime alice": {
+      "ver": "1.0.4",
+      "uuid": "f5fde175-ceb3-429d-a7d6-78bba4003c62",
+      "rawTextureUuid": "1f6395c6-9404-4e70-b160-4f6a75ee3de1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 2029,
+      "height": 1867,
+      "rawWidth": 2033,
+      "rawHeight": 1871,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "HideFree",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "mask": {
+        "props": {
+          "height": [
+            {
+              "frame": 0,
+              "value": 299
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "tren": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 185.226
+            },
+            {
+              "frame": 0.5,
+              "value": 38.501
+            },
+            {
+              "frame": 1,
+              "value": 562.596
+            }
+          ]
+        }
+      },
+      "duoi": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": -186.095
+            },
+            {
+              "frame": 0.5,
+              "value": -32.316
+            },
+            {
+              "frame": 1,
+              "value": 488.232
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

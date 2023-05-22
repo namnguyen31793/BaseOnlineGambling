@@ -1,0 +1,27 @@
+
+icon jackpot.png
+size: 390, 191
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Group 1
+  rotate: true
+  xy: 71, 19
+  size: 172, 163
+  orig: 176, 166
+  offset: 2, 1
+  index: -1
+JACKPOT2
+  rotate: true
+  xy: 2, 4
+  size: 187, 67
+  orig: 189, 69
+  offset: 1, 1
+  index: -1
+Layer 119
+  rotate: false
+  xy: 236, 27
+  size: 152, 164
+  orig: 152, 164
+  offset: 0, 0
+  index: -1

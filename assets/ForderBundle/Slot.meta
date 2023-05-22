@@ -1,0 +1,12 @@
+{
+  "ver": "1.1.2",
+  "uuid": "5d0c77c3-ece2-4d6d-82b0-4b9e1a804a88",
+  "isBundle": true,
+  "bundleName": "Slot",
+  "priority": 1,
+  "compressionType": {},
+  "optimizeHotUpdate": {},
+  "inlineSpriteFrames": {},
+  "isRemoteBundle": {},
+  "subMetas": {}
+}

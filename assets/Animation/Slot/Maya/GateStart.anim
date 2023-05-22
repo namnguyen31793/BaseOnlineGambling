@@ -1,0 +1,95 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "GateStart",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Gate": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 480
+            },
+            {
+              "frame": 0.5,
+              "value": -2.718
+            }
+          ]
+        }
+      },
+      "Dust": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            },
+            {
+              "frame": 0.6,
+              "value": 170
+            },
+            {
+              "frame": 0.7,
+              "value": 170
+            },
+            {
+              "frame": 0.8,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Gate/bg khung da/Mask/Right": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 342.531
+            },
+            {
+              "frame": 0.8,
+              "value": 342.531
+            },
+            {
+              "frame": 1,
+              "value": 342.531
+            },
+            {
+              "frame": 2,
+              "value": 342.531
+            }
+          ]
+        }
+      },
+      "Gate/bg khung da/Mask/Left": {
+        "props": {
+          "x": [
+            {
+              "frame": 0.8,
+              "value": -342.998
+            },
+            {
+              "frame": 1,
+              "value": -342.998
+            },
+            {
+              "frame": 2,
+              "value": -342.998
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

@@ -1,0 +1,48 @@
+
+icon cleopatra.png
+size: 194, 255
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+89baf0e14c1a673868283f52db6afb6f54c01ea12e50-CcKSiz
+  rotate: false
+  xy: 2, 138
+  size: 116, 117
+  orig: 128, 128
+  offset: 8, 6
+  index: -1
+Group 1
+  rotate: true
+  xy: 139, 54
+  size: 89, 34
+  orig: 91, 36
+  offset: 1, 1
+  index: -1
+Layer 1
+  rotate: false
+  xy: 120, 145
+  size: 72, 110
+  orig: 74, 115
+  offset: 1, 4
+  index: -1
+Layer 3
+  rotate: true
+  xy: 101, 11
+  size: 32, 88
+  orig: 34, 90
+  offset: 1, 1
+  index: -1
+Layer 4
+  rotate: false
+  xy: 101, 45
+  size: 36, 91
+  orig: 38, 93
+  offset: 1, 1
+  index: -1
+khung
+  rotate: true
+  xy: 2, 4
+  size: 132, 97
+  orig: 134, 99
+  offset: 1, 1
+  index: -1

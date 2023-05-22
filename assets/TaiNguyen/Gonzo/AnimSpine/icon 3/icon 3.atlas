@@ -1,0 +1,13 @@
+
+icon 3.png
+size: 186, 186
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+icon3
+  rotate: false
+  xy: 2, 4
+  size: 182, 182
+  orig: 182, 182
+  offset: 0, 0
+  index: -1

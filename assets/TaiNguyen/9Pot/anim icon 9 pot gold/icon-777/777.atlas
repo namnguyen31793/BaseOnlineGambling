@@ -1,0 +1,55 @@
+
+777.png
+size: 208,207
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+7-1
+  rotate: true
+  xy: 119, 108
+  size: 97, 87
+  orig: 99, 89
+  offset: 1, 1
+  index: -1
+7-2
+  rotate: true
+  xy: 119, 9
+  size: 97, 87
+  orig: 99, 89
+  offset: 1, 1
+  index: -1
+7-3
+  rotate: true
+  xy: 119, 9
+  size: 97, 87
+  orig: 99, 89
+  offset: 1, 1
+  index: -1
+outer
+  rotate: false
+  xy: 2, 90
+  size: 115, 115
+  orig: 117, 117
+  offset: 1, 1
+  index: -1
+shadow 7-1
+  rotate: false
+  xy: 2, 2
+  size: 98, 86
+  orig: 100, 88
+  offset: 1, 1
+  index: -1
+shadow 7-3
+  rotate: false
+  xy: 2, 2
+  size: 98, 86
+  orig: 100, 88
+  offset: 1, 1
+  index: -1
+shadown 7-2
+  rotate: false
+  xy: 2, 2
+  size: 98, 86
+  orig: 100, 88
+  offset: 1, 1
+  index: -1

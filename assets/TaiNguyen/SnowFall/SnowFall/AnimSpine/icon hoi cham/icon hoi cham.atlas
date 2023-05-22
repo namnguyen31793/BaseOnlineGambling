@@ -1,0 +1,27 @@
+
+icon hoi cham.png
+size: 333, 145
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Group 1
+  rotate: false
+  xy: 150, 26
+  size: 119, 119
+  orig: 120, 119
+  offset: 0, 0
+  index: -1
+Group 2
+  rotate: false
+  xy: 2, 4
+  size: 146, 141
+  orig: 149, 146
+  offset: 2, 1
+  index: -1
+copy
+  rotate: false
+  xy: 271, 54
+  size: 60, 91
+  orig: 62, 93
+  offset: 1, 1
+  index: -1

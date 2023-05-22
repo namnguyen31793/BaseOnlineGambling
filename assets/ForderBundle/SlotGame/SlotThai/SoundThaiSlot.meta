@@ -1,0 +1,12 @@
+{
+  "ver": "1.1.2",
+  "uuid": "e0cc1df3-88af-4984-8d53-0ccf91dc9b38",
+  "isBundle": true,
+  "bundleName": "SoundThaiSlot",
+  "priority": 1,
+  "compressionType": {},
+  "optimizeHotUpdate": {},
+  "inlineSpriteFrames": {},
+  "isRemoteBundle": {},
+  "subMetas": {}
+}

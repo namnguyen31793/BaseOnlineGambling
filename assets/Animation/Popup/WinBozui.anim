@@ -1,0 +1,31 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "WinBozui",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.1,
+  "sample": 20,
+  "speed": 1,
+  "wrapMode": 22,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "8999717c-3cf0-4395-8427-1ab30666c547"
+            }
+          },
+          {
+            "frame": 0.05,
+            "value": {
+              "__uuid__": "20c335ea-f2d5-464c-aeec-501ab04c8f0a"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

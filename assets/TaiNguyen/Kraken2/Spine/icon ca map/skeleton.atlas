@@ -1,0 +1,13 @@
+
+skeleton.png
+size: 131,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+icon ca map
+  rotate: false
+  xy: 2, 2
+  size: 127, 124
+  orig: 127, 124
+  offset: 0, 0
+  index: -1

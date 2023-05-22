@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "dd6a1e99-d2fa-448b-b713-e09eca419b6e",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 128,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "font9pot-sothutuhu-export": {
+      "ver": "1.0.4",
+      "uuid": "3d51b2ab-1d4e-4405-9e53-509d3f6731a9",
+      "rawTextureUuid": "dd6a1e99-d2fa-448b-b713-e09eca419b6e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -2,
+      "offsetY": 1.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 124,
+      "height": 125,
+      "rawWidth": 128,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

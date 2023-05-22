@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "2fbce46e-2bfb-4a74-85b7-4b7520669454",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 512,
+  "height": 29,
+  "platformSettings": {},
+  "subMetas": {
+    "Collect by WATCHING A SHORY VIDEO": {
+      "ver": "1.0.4",
+      "uuid": "acfe9e60-0309-4066-8385-d1cf514d7335",
+      "rawTextureUuid": "2fbce46e-2bfb-4a74-85b7-4b7520669454",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 512,
+      "height": 29,
+      "rawWidth": 512,
+      "rawHeight": 29,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

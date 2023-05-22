@@ -1,0 +1,151 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "AnimTowerUpLevel1",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.6333333333333333,
+  "sample": 30,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "buc": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": -285
+            },
+            {
+              "frame": 0.5,
+              "value": -485
+            }
+          ]
+        }
+      },
+      "Rim5": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 690
+            },
+            {
+              "frame": 0.5,
+              "value": 490
+            }
+          ]
+        }
+      },
+      "Rim4": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 490
+            },
+            {
+              "frame": 0.5,
+              "value": 290
+            }
+          ]
+        }
+      },
+      "Rim3": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 290
+            },
+            {
+              "frame": 0.5,
+              "value": 90
+            }
+          ]
+        }
+      },
+      "Rim2": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 90
+            },
+            {
+              "frame": 0.5,
+              "value": -110
+            }
+          ]
+        }
+      },
+      "Rim1": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": -110
+            },
+            {
+              "frame": 0.5,
+              "value": -310
+            }
+          ]
+        }
+      }
+    },
+    "props": {
+      "scale": [
+        {
+          "frame": 0,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "frame": 0.16666666666666666,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 0.95,
+            "y": 0.95
+          }
+        },
+        {
+          "frame": 0.43333333333333335,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 0.95,
+            "y": 0.95
+          }
+        },
+        {
+          "frame": 0.5,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1.03,
+            "y": 1.03
+          }
+        },
+        {
+          "frame": 0.5666666666666667,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 0.95,
+            "y": 0.95
+          }
+        },
+        {
+          "frame": 0.6333333333333333,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1,
+            "y": 1
+          }
+        }
+      ]
+    }
+  },
+  "events": []
+}

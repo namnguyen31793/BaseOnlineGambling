@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "8cc9a575-3ea4-4028-ae8e-4e80a08fdda8",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 75,
+  "height": 98,
+  "platformSettings": {},
+  "subMetas": {
+    "demo fx bong vao lo": {
+      "ver": "1.0.4",
+      "uuid": "c819fccc-579b-46cd-b5e6-0244f15aa3c5",
+      "rawTextureUuid": "8cc9a575-3ea4-4028-ae8e-4e80a08fdda8",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 71,
+      "height": 94,
+      "rawWidth": 75,
+      "rawHeight": 98,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

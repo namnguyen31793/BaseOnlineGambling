@@ -1,0 +1,13 @@
+
+grand.png
+size: 124, 122
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+minor
+  rotate: false
+  xy: 2, 4
+  size: 120, 118
+  orig: 122, 121
+  offset: 1, 2
+  index: -1

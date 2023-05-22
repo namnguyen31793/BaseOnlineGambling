@@ -1,0 +1,27 @@
+
+mu.png
+size: 332,119
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 24 copy 4
+  rotate: false
+  xy: 2, 2
+  size: 115, 115
+  orig: 117, 117
+  offset: 1, 1
+  index: -1
+mu
+  rotate: true
+  xy: 119, 9
+  size: 108, 105
+  orig: 110, 107
+  offset: 1, 1
+  index: -1
+shadow
+  rotate: true
+  xy: 226, 9
+  size: 108, 104
+  orig: 110, 106
+  offset: 1, 1
+  index: -1

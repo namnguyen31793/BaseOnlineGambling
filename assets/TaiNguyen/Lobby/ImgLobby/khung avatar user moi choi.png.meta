@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "03de5840-d029-44c4-9a47-6591b7d93b90",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 31,
+  "height": 32,
+  "platformSettings": {},
+  "subMetas": {
+    "khung avatar user moi choi": {
+      "ver": "1.0.4",
+      "uuid": "a7dbdbd1-4c1e-4143-b9f0-dad9d918dde3",
+      "rawTextureUuid": "03de5840-d029-44c4-9a47-6591b7d93b90",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 31,
+      "height": 32,
+      "rawWidth": 31,
+      "rawHeight": 32,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

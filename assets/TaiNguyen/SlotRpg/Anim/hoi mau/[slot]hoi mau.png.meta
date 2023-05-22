@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "214b4b2b-1dc5-4e2b-85d5-fb21e4c5fccd",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 488,
+  "height": 1002,
+  "platformSettings": {},
+  "subMetas": {
+    "[slot]hoi mau": {
+      "ver": "1.0.4",
+      "uuid": "29d2b83c-e448-4e4c-b4a2-b64676243dab",
+      "rawTextureUuid": "214b4b2b-1dc5-4e2b-85d5-fb21e4c5fccd",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 484,
+      "height": 998,
+      "rawWidth": 488,
+      "rawHeight": 1002,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

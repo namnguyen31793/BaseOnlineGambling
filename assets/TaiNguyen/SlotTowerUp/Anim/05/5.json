@@ -1,0 +1,67 @@
+{
+"skeleton": {
+	"hash": "nJ3Dk7tbUynZG0tYG9p+6KkrrcE",
+	"spine": "3.8.99",
+	"x": -60.5,
+	"y": -60.62,
+	"width": 121,
+	"height": 138,
+	"images": "C:/Users/Admin/Desktop/anim icon slot fortuna/05.1'",
+	"audio": "C:\\Users\\Admin\\Desktop\\anim icon slot fortuna\\07.1"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "x": -0.04, "y": -1 }
+],
+"slots": [
+	{ "name": "Layer 1", "bone": "bone", "attachment": "images/Layer 1" },
+	{ "name": "Layer 2", "bone": "bone", "attachment": "images/Layer 1", "blend": "screen" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Layer 1": {
+				"images/Layer 1": { "x": 0.04, "y": 9.38, "width": 121, "height": 138 }
+			},
+			"Layer 2": {
+				"images/Layer 1": { "x": 0.04, "y": 9.38, "width": 121, "height": 138 }
+			}
+		}
+	}
+],
+"animations": {
+	"active": {
+		"slots": {
+			"Layer 2": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.3333, "color": "fffffffe", "curve": "stepped" },
+					{ "time": 0.6667, "color": "fffffffe" },
+					{ "time": 1, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"scale": [
+					{},
+					{ "time": 0.3333, "x": 1.127, "y": 1.127 },
+					{ "time": 0.5, "x": 1.176, "y": 1.176 },
+					{ "time": 0.6667, "x": 1.127, "y": 1.127 },
+					{ "time": 1 }
+				]
+			}
+		}
+	},
+	"waiting": {
+		"slots": {
+			"Layer 2": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "c76900e7-7fa0-4d6a-b4e4-e13e459e4f74",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 496,
+  "height": 28,
+  "platformSettings": {},
+  "subMetas": {
+    "Choose the task and perform to receive the gift": {
+      "ver": "1.0.4",
+      "uuid": "ea26bab5-481f-4d80-ac23-2049d23f26e6",
+      "rawTextureUuid": "c76900e7-7fa0-4d6a-b4e4-e13e459e4f74",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 496,
+      "height": 28,
+      "rawWidth": 496,
+      "rawHeight": 28,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

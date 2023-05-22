@@ -1,0 +1,27 @@
+
+icon wild.png
+size: 376, 176
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Group 1
+  rotate: false
+  xy: 176, 18
+  size: 138, 158
+  orig: 149, 158
+  offset: 0, 0
+  index: -1
+Group 2
+  rotate: false
+  xy: 2, 4
+  size: 172, 172
+  orig: 176, 174
+  offset: 2, 1
+  index: -1
+JACKPOT321
+  rotate: true
+  xy: 316, 19
+  size: 157, 58
+  orig: 159, 60
+  offset: 1, 1
+  index: -1

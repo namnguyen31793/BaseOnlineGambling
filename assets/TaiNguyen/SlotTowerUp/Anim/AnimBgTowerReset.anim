@@ -1,0 +1,279 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "AnimBgTowerReset",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.7,
+  "sample": 30,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "scale": [
+        {
+          "frame": 0,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "frame": 0.06666666666666667,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 0.95,
+            "y": 0.95
+          }
+        },
+        {
+          "frame": 0.5,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 0.95,
+            "y": 0.95
+          }
+        },
+        {
+          "frame": 0.5666666666666667,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1.05,
+            "y": 1.05
+          }
+        },
+        {
+          "frame": 0.6333333333333333,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 0.95,
+            "y": 0.95
+          }
+        },
+        {
+          "frame": 0.7,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1,
+            "y": 1
+          }
+        }
+      ]
+    },
+    "paths": {
+      "BG1": {
+        "props": {
+          "y": [
+            {
+              "frame": 0.06666666666666667,
+              "value": -120
+            },
+            {
+              "frame": 0.5,
+              "value": 680
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": 680
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": -120
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.5,
+              "value": true
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": false
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": true
+            }
+          ]
+        }
+      },
+      "BG2": {
+        "props": {
+          "y": [
+            {
+              "frame": 0.06666666666666667,
+              "value": 80
+            },
+            {
+              "frame": 0.4,
+              "value": 680
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": 680
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": -120
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": 80
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.4,
+              "value": true
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": false
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": true
+            }
+          ]
+        }
+      },
+      "BG3": {
+        "props": {
+          "y": [
+            {
+              "frame": 0.06666666666666667,
+              "value": 280
+            },
+            {
+              "frame": 0.3,
+              "value": 680
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 680
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": -120
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": 280
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.3,
+              "value": true
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": false
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": true
+            }
+          ]
+        }
+      },
+      "BG4": {
+        "props": {
+          "y": [
+            {
+              "frame": 0.06666666666666667,
+              "value": 480
+            },
+            {
+              "frame": 0.2,
+              "value": 680
+            },
+            {
+              "frame": 0.23333333333333334,
+              "value": 680
+            },
+            {
+              "frame": 0.26666666666666666,
+              "value": -120
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": 480
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.2,
+              "value": true
+            },
+            {
+              "frame": 0.23333333333333334,
+              "value": false
+            },
+            {
+              "frame": 0.26666666666666666,
+              "value": true
+            }
+          ]
+        }
+      },
+      "BG5": {
+        "props": {
+          "y": [
+            {
+              "frame": 0.06666666666666667,
+              "value": 600
+            },
+            {
+              "frame": 0.1,
+              "value": 680
+            },
+            {
+              "frame": 0.13333333333333333,
+              "value": -120
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": 480
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.06666666666666667,
+              "value": true
+            },
+            {
+              "frame": 0.1,
+              "value": false
+            },
+            {
+              "frame": 0.13333333333333333,
+              "value": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

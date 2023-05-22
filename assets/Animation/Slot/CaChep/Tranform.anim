@@ -1,0 +1,167 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Tranform",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.2,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "ParentFish/tuongca": {
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "4596a0b1-47dd-4754-93f4-923afbc2861f"
+                }
+              },
+              {
+                "frame": 0.1,
+                "value": {
+                  "__uuid__": "9b18566f-48c1-4beb-98a9-0ffbcc85ff5f"
+                }
+              },
+              {
+                "frame": 0.2,
+                "value": {
+                  "__uuid__": "5ef62f35-d3c3-4277-8cc8-cf17640a6aab"
+                }
+              },
+              {
+                "frame": 0.3,
+                "value": {
+                  "__uuid__": "8970c087-0906-4430-ba31-d0ed89e0a135"
+                }
+              },
+              {
+                "frame": 0.4,
+                "value": {
+                  "__uuid__": "79d4aa53-67cf-4973-9631-16cb611fdec6"
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "__uuid__": "ef23322b-a14c-46dc-a01f-eda242621fbf"
+                }
+              },
+              {
+                "frame": 0.6,
+                "value": {
+                  "__uuid__": "9449a5b2-cabb-45e6-b138-0dc01124d26f"
+                }
+              },
+              {
+                "frame": 0.7,
+                "value": {
+                  "__uuid__": "5f9cfe5c-8c8b-4b57-b4bd-252316a8b5f4"
+                }
+              },
+              {
+                "frame": 0.8,
+                "value": {
+                  "__uuid__": "fb4e7558-4862-4265-9fda-583de90e0f88"
+                }
+              },
+              {
+                "frame": 1,
+                "value": null
+              }
+            ]
+          }
+        },
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.1,
+              "value": 10
+            },
+            {
+              "frame": 0.2,
+              "value": 30
+            },
+            {
+              "frame": 0.3,
+              "value": 60
+            },
+            {
+              "frame": 0.4,
+              "value": 100
+            },
+            {
+              "frame": 0.5,
+              "value": 150
+            },
+            {
+              "frame": 0.6,
+              "value": 210
+            },
+            {
+              "frame": 0.7,
+              "value": 280
+            },
+            {
+              "frame": 0.8,
+              "value": 360
+            },
+            {
+              "frame": 0.9,
+              "value": 480
+            },
+            {
+              "frame": 1,
+              "value": 600
+            }
+          ]
+        }
+      },
+      "ParentFish/ItemBous": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.5,
+              "value": 0
+            },
+            {
+              "frame": 1,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "ParentFish/Effect": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "ParentFish/fire_01": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1,
+              "value": 0
+            },
+            {
+              "frame": 1.2,
+              "value": 255
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

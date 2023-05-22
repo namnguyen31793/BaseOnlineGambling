@@ -1,0 +1,27 @@
+
+ngoc do.png
+size: 207, 109
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Group 1
+  rotate: false
+  xy: 2, 6
+  size: 94, 103
+  orig: 96, 105
+  offset: 1, 1
+  index: -1
+Layer 1
+  rotate: false
+  xy: 98, 10
+  size: 94, 99
+  orig: 96, 101
+  offset: 1, 1
+  index: -1
+Layer 2
+  rotate: true
+  xy: 194, 4
+  size: 105, 11
+  orig: 105, 11
+  offset: 0, 0
+  index: -1

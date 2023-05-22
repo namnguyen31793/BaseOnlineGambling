@@ -1,0 +1,13 @@
+
+cong nho.png
+size: 165,121
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cong nho
+  rotate: false
+  xy: 2, 2
+  size: 161, 117
+  orig: 163, 118
+  offset: 1, 1
+  index: -1

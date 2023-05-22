@@ -1,0 +1,34 @@
+
+icon chu he.png
+size: 398, 182
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Group 3
+  rotate: false
+  xy: 2, 9
+  size: 175, 173
+  orig: 177, 177
+  offset: 1, 2
+  index: -1
+Group 4
+  rotate: true
+  xy: 179, 79
+  size: 103, 164
+  orig: 103, 164
+  offset: 0, 0
+  index: -1
+Layer 2
+  rotate: true
+  xy: 345, 75
+  size: 107, 51
+  orig: 109, 53
+  offset: 1, 1
+  index: -1
+Layer 3
+  rotate: false
+  xy: 179, 4
+  size: 152, 73
+  orig: 156, 75
+  offset: 2, 1
+  index: -1

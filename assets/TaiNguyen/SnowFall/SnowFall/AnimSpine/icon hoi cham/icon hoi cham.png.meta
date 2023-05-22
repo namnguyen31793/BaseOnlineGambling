@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "4c11b19e-23e8-4999-9d62-df909b73ffac",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 333,
+  "height": 145,
+  "platformSettings": {},
+  "subMetas": {
+    "icon hoi cham": {
+      "ver": "1.0.4",
+      "uuid": "94e0c97c-4968-4411-844d-cc6785fbc006",
+      "rawTextureUuid": "4c11b19e-23e8-4999-9d62-df909b73ffac",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 329,
+      "height": 141,
+      "rawWidth": 333,
+      "rawHeight": 145,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "4ba3afba-fb48-4060-9282-b0f01ef4d775",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 113,
+  "height": 515,
+  "platformSettings": {},
+  "subMetas": {
+    "icon hu vang": {
+      "ver": "1.0.4",
+      "uuid": "9b977e48-a59a-4fa5-ba8c-943086f0ab71",
+      "rawTextureUuid": "4ba3afba-fb48-4060-9282-b0f01ef4d775",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 109,
+      "height": 511,
+      "rawWidth": 113,
+      "rawHeight": 515,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

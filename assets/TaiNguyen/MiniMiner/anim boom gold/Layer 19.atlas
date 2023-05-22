@@ -1,0 +1,76 @@
+
+Layer 19.png
+size: 546,153
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+01
+  rotate: false
+  xy: 263, 2
+  size: 70, 71
+  orig: 74, 83
+  offset: 1, 8
+  index: -1
+02
+  rotate: false
+  xy: 335, 2
+  size: 67, 71
+  orig: 74, 74
+  offset: 4, 1
+  index: -1
+03
+  rotate: false
+  xy: 404, 2
+  size: 67, 71
+  orig: 74, 78
+  offset: 4, 4
+  index: -1
+04
+  rotate: false
+  xy: 473, 5
+  size: 67, 71
+  orig: 74, 74
+  offset: 4, 2
+  index: -1
+Layer 18
+  rotate: true
+  xy: 479, 84
+  size: 67, 65
+  orig: 69, 67
+  offset: 1, 1
+  index: -1
+Layer 23
+  rotate: true
+  xy: 415, 78
+  size: 73, 62
+  orig: 75, 64
+  offset: 1, 1
+  index: -1
+Layer 29
+  rotate: false
+  xy: 141, 31
+  size: 120, 120
+  orig: 122, 122
+  offset: 1, 1
+  index: -1
+Layer 3
+  rotate: true
+  xy: 263, 75
+  size: 76, 74
+  orig: 78, 78
+  offset: 1, 3
+  index: -1
+Layer 31
+  rotate: true
+  xy: 339, 75
+  size: 76, 74
+  orig: 76, 76
+  offset: 0, 2
+  index: -1
+as
+  rotate: false
+  xy: 2, 9
+  size: 137, 142
+  orig: 157, 161
+  offset: 10, 10
+  index: -1

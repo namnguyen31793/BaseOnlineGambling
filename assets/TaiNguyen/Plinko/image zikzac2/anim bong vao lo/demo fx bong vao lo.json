@@ -1,0 +1,61 @@
+{
+"skeleton": {
+	"hash": "N5u8AuZ3CZpcXWFC7v+eK35q+E4",
+	"spine": "3.8.99",
+	"x": -1,
+	"y": -751,
+	"width": 1577,
+	"height": 752,
+	"images": "C:/Users/Admin/Desktop/bong vao lo/images/",
+	"audio": "C:\\Users\\Admin\\Desktop\\bong vao lo"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root" },
+	{ "name": "bone2", "parent": "bone", "length": 39.35, "rotation": 89.44, "x": -0.51, "y": -5.11 }
+],
+"slots": [
+	{ "name": "Layer 37", "bone": "bone", "attachment": "Layer 37" },
+	{ "name": "Group 1", "bone": "bone2", "attachment": "Group 1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Group 1": {
+				"Group 1": { "x": 29.22, "y": 0.54, "rotation": -89.44, "width": 60, "height": 60 }
+			},
+			"Layer 37": {
+				"Layer 37": { "x": -1.26, "y": 6.62, "width": 77, "height": 45 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"Group 1": {
+				"color": [
+					{ "time": 0.1, "color": "ffffffff" },
+					{ "time": 0.3333, "color": "ffffff00" }
+				]
+			},
+			"Layer 37": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.1, "color": "ffffffff" },
+					{ "time": 0.5, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"bone2": {
+				"scale": [
+					{ "x": 0, "y": 0 },
+					{ "time": 0.1 }
+				]
+			}
+		}
+	}
+}
+}

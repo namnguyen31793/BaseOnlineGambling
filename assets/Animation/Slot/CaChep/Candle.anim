@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Candle",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.4,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "61c3002f-e164-45ee-ac39-7acaa8eb27f9"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "60353d6e-5321-4158-bde5-d14a1b4fa6b1"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "bca26dbf-1d10-416a-910f-3ce9610fc410"
+            }
+          },
+          {
+            "frame": 0.3,
+            "value": {
+              "__uuid__": "316b1f9a-0fc2-418d-a4a3-68f9f2b2502f"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

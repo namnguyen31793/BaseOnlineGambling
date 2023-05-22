@@ -1,0 +1,139 @@
+
+line slot 9potgold.png
+size: 1969,721
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+01
+  rotate: true
+  xy: 1903, 650
+  size: 69, 60
+  orig: 71, 63
+  offset: 1, 1
+  index: -1
+02
+  rotate: true
+  xy: 1874, 65
+  size: 77, 90
+  orig: 79, 92
+  offset: 1, 1
+  index: -1
+03
+  rotate: true
+  xy: 1790, 49
+  size: 93, 82
+  orig: 95, 85
+  offset: 1, 1
+  index: -1
+04
+  rotate: false
+  xy: 1896, 340
+  size: 71, 84
+  orig: 73, 87
+  offset: 1, 1
+  index: -1
+05
+  rotate: false
+  xy: 1790, 144
+  size: 101, 87
+  orig: 103, 89
+  offset: 1, 1
+  index: -1
+06
+  rotate: false
+  xy: 1790, 426
+  size: 108, 89
+  orig: 110, 91
+  offset: 1, 1
+  index: -1
+07
+  rotate: false
+  xy: 1790, 332
+  size: 104, 92
+  orig: 107, 95
+  offset: 1, 2
+  index: -1
+08
+  rotate: false
+  xy: 1790, 517
+  size: 109, 100
+  orig: 112, 102
+  offset: 2, 1
+  index: -1
+09
+  rotate: false
+  xy: 1790, 619
+  size: 111, 100
+  orig: 113, 103
+  offset: 1, 1
+  index: -1
+10
+  rotate: true
+  xy: 1790, 233
+  size: 97, 103
+  orig: 103, 105
+  offset: 5, 1
+  index: -1
+as chay
+  rotate: true
+  xy: 1903, 539
+  size: 109, 36
+  orig: 111, 38
+  offset: 1, 1
+  index: -1
+line 14-15
+  rotate: true
+  xy: 416, 9
+  size: 710, 192
+  orig: 718, 199
+  offset: 4, 5
+  index: -1
+line 20
+  rotate: true
+  xy: 953, 16
+  size: 703, 336
+  orig: 710, 344
+  offset: 3, 5
+  index: -1
+line 4 5
+  rotate: true
+  xy: 1455, 19
+  size: 700, 333
+  orig: 708, 340
+  offset: 4, 4
+  index: -1
+line 8-9-16-17
+  rotate: true
+  xy: 197, 3
+  size: 716, 195
+  orig: 723, 201
+  offset: 3, 3
+  index: -1
+line1-2-3
+  rotate: true
+  xy: 394, 5
+  size: 714, 20
+  orig: 723, 25
+  offset: 4, 3
+  index: -1
+line10-11-12-13
+  rotate: true
+  xy: 2, 2
+  size: 717, 193
+  orig: 725, 201
+  offset: 3, 5
+  index: -1
+line18--19
+  rotate: true
+  xy: 610, 11
+  size: 708, 341
+  orig: 715, 347
+  offset: 3, 4
+  index: -1
+line6-7
+  rotate: true
+  xy: 1291, 18
+  size: 701, 162
+  orig: 709, 168
+  offset: 4, 4
+  index: -1

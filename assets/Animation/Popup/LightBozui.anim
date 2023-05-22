@@ -1,0 +1,37 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "LightBozui",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.6,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "8999717c-3cf0-4395-8427-1ab30666c547"
+            }
+          },
+          {
+            "frame": 0.3,
+            "value": {
+              "__uuid__": "20c335ea-f2d5-464c-aeec-501ab04c8f0a"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "20c335ea-f2d5-464c-aeec-501ab04c8f0a"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

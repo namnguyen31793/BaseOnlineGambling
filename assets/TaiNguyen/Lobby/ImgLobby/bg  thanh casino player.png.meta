@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "ef718f37-da5f-402e-b1fe-ff565005a5a2",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 32,
+  "height": 46,
+  "platformSettings": {},
+  "subMetas": {
+    "bg  thanh casino player": {
+      "ver": "1.0.4",
+      "uuid": "34310ece-7373-4730-988c-91dc1a532e66",
+      "rawTextureUuid": "ef718f37-da5f-402e-b1fe-ff565005a5a2",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 32,
+      "height": 46,
+      "rawWidth": 32,
+      "rawHeight": 46,
+      "borderTop": 14,
+      "borderBottom": 11,
+      "borderLeft": 12,
+      "borderRight": 13,
+      "subMetas": {}
+    }
+  }
+}

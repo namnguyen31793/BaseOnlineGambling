@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "06faeb5c-7373-402b-9707-3e3c368c0bc1",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1270,
+  "height": 554,
+  "platformSettings": {},
+  "subMetas": {
+    "anim-qua ket thuc tutorial": {
+      "ver": "1.0.4",
+      "uuid": "c3781cb0-706a-4059-81ef-4a01f4a009c7",
+      "rawTextureUuid": "06faeb5c-7373-402b-9707-3e3c368c0bc1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": -0.5,
+      "trimX": 2,
+      "trimY": 3,
+      "width": 1265,
+      "height": 549,
+      "rawWidth": 1270,
+      "rawHeight": 554,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

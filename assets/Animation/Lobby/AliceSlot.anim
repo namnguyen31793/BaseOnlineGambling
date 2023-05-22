@@ -1,0 +1,91 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "AliceSlot",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "11": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 5
+            },
+            {
+              "frame": 0.5,
+              "value": -5
+            },
+            {
+              "frame": 0.9,
+              "value": 5
+            },
+            {
+              "frame": 1.1,
+              "value": 5
+            },
+            {
+              "frame": 1.5,
+              "value": 3
+            },
+            {
+              "frame": 1.9,
+              "value": 5
+            },
+            {
+              "frame": 2,
+              "value": 5
+            }
+          ]
+        }
+      },
+      "12": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": -154.112
+            },
+            {
+              "frame": 0.2,
+              "value": -144.165
+            },
+            {
+              "frame": 0.5,
+              "value": -154.112
+            },
+            {
+              "frame": 0.8,
+              "value": -166.612
+            },
+            {
+              "frame": 1,
+              "value": -154.112
+            },
+            {
+              "frame": 1.2,
+              "value": -144.165
+            },
+            {
+              "frame": 1.5,
+              "value": -154.112
+            },
+            {
+              "frame": 1.8,
+              "value": -166.612
+            },
+            {
+              "frame": 2,
+              "value": -154.112
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

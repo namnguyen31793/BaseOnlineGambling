@@ -1,0 +1,20 @@
+
+icon ly.png
+size: 242, 127
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Ellipse 1
+  rotate: true
+  xy: 2, 4
+  size: 123, 124
+  orig: 130, 128
+  offset: 5, 1
+  index: -1
+Layer 1
+  rotate: false
+  xy: 128, 5
+  size: 112, 122
+  orig: 114, 124
+  offset: 1, 1
+  index: -1

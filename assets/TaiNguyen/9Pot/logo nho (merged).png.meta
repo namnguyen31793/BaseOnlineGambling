@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "d091505a-7f01-4cd7-9cbb-fe878a48bff3",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 234,
+  "height": 196,
+  "platformSettings": {},
+  "subMetas": {
+    "logo nho (merged)": {
+      "ver": "1.0.4",
+      "uuid": "aea443fe-7e40-4ce5-b522-35969b364885",
+      "rawTextureUuid": "d091505a-7f01-4cd7-9cbb-fe878a48bff3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 234,
+      "height": 196,
+      "rawWidth": 234,
+      "rawHeight": 196,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "ce00f91a-e2eb-4dce-af40-fe50e18fb4d5",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 478,
+  "height": 121,
+  "platformSettings": {},
+  "subMetas": {
+    "anim thanh chua btn": {
+      "ver": "1.0.4",
+      "uuid": "96afba29-7453-489f-a240-8dde950fea2e",
+      "rawTextureUuid": "ce00f91a-e2eb-4dce-af40-fe50e18fb4d5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 474,
+      "height": 117,
+      "rawWidth": 478,
+      "rawHeight": 121,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

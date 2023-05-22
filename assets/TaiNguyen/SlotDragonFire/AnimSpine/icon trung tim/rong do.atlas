@@ -1,0 +1,20 @@
+
+rong do.png
+size: 375, 179
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Group 3
+  rotate: false
+  xy: 2, 4
+  size: 221, 175
+  orig: 223, 177
+  offset: 1, 1
+  index: -1
+Group 4
+  rotate: true
+  xy: 225, 21
+  size: 158, 148
+  orig: 167, 151
+  offset: 5, 2
+  index: -1

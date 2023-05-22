@@ -1,0 +1,20 @@
+
+qua mang cut.png
+size: 462,259
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 4
+  rotate: true
+  xy: 297, 92
+  size: 165, 163
+  orig: 178, 165
+  offset: 10, 2
+  index: -1
+as
+  rotate: false
+  xy: 2, 2
+  size: 293, 255
+  orig: 312, 267
+  offset: 10, 8
+  index: -1

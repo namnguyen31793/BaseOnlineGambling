@@ -1,0 +1,20 @@
+
+icon A.png
+size: 195, 120
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+89baf0e14c1a673868283f52db6afb6f54c01ea12e50-CcKSiz
+  rotate: true
+  xy: 2, 4
+  size: 116, 117
+  orig: 128, 128
+  offset: 8, 6
+  index: -1
+Layer 1
+  rotate: true
+  xy: 121, 25
+  size: 95, 72
+  orig: 97, 74
+  offset: 1, 1
+  index: -1

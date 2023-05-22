@@ -1,0 +1,20 @@
+
+quyxuong.png
+size: 271, 139
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Hue/Saturation 1 (merged)
+  rotate: true
+  xy: 138, 4
+  size: 135, 131
+  orig: 137, 137
+  offset: 1, 5
+  index: -1
+mat
+  rotate: false
+  xy: 2, 5
+  size: 134, 134
+  orig: 134, 134
+  offset: 0, 0
+  index: -1

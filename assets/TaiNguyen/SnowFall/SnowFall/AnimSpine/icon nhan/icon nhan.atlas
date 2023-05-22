@@ -1,0 +1,20 @@
+
+icon nhan.png
+size: 227, 127
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Ellipse 1
+  rotate: true
+  xy: 2, 4
+  size: 123, 128
+  orig: 127, 131
+  offset: 2, 1
+  index: -1
+Layer 1 copy
+  rotate: false
+  xy: 132, 7
+  size: 93, 120
+  orig: 95, 122
+  offset: 1, 1
+  index: -1

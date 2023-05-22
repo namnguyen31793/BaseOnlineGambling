@@ -1,0 +1,20 @@
+
+K.png
+size: 412,259
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 12
+  rotate: false
+  xy: 297, 136
+  size: 113, 121
+  orig: 118, 126
+  offset: 2, 3
+  index: -1
+as
+  rotate: false
+  xy: 2, 2
+  size: 293, 255
+  orig: 312, 267
+  offset: 10, 8
+  index: -1

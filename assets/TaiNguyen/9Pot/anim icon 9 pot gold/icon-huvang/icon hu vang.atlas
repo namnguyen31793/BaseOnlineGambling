@@ -1,0 +1,62 @@
+
+icon hu vang.png
+size: 113,515
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cau vong
+  rotate: true
+  xy: 2, 147
+  size: 110, 71
+  orig: 112, 73
+  offset: 1, 1
+  index: -1
+hu
+  rotate: true
+  xy: 2, 259
+  size: 121, 108
+  orig: 123, 110
+  offset: 1, 1
+  index: -1
+shadow
+  rotate: true
+  xy: 2, 382
+  size: 131, 109
+  orig: 133, 111
+  offset: 1, 1
+  index: -1
+shadow tay cam ngoai
+  rotate: false
+  xy: 2, 97
+  size: 102, 48
+  orig: 104, 50
+  offset: 1, 1
+  index: -1
+tay cam ngoai
+  rotate: false
+  xy: 2, 50
+  size: 106, 45
+  orig: 108, 47
+  offset: 1, 1
+  index: -1
+tay cam trong
+  rotate: true
+  xy: 75, 215
+  size: 42, 35
+  orig: 44, 37
+  offset: 1, 1
+  index: -1
+tien
+  rotate: false
+  xy: 75, 195
+  size: 20, 18
+  orig: 22, 20
+  offset: 1, 1
+  index: -1
+tien tren
+  rotate: false
+  xy: 2, 2
+  size: 89, 46
+  orig: 91, 48
+  offset: 1, 1
+  index: -1

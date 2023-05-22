@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "6737c024-930c-4f00-a747-002ce145c2cb",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 512,
+  "height": 1024,
+  "platformSettings": {},
+  "subMetas": {
+    "luadoticon_tex": {
+      "ver": "1.0.4",
+      "uuid": "4c7723d6-3c60-44af-8e6d-69062a54d7cb",
+      "rawTextureUuid": "6737c024-930c-4f00-a747-002ce145c2cb",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -92.5,
+      "offsetY": 131,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 325,
+      "height": 760,
+      "rawWidth": 512,
+      "rawHeight": 1024,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

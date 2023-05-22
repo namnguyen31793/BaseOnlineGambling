@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "16e5c0d6-32e6-4cf0-a155-b955923776eb",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1969,
+  "height": 721,
+  "platformSettings": {},
+  "subMetas": {
+    "line slot 9potgold": {
+      "ver": "1.0.4",
+      "uuid": "34028aae-2625-40cf-8e9b-484c8a4c75d9",
+      "rawTextureUuid": "16e5c0d6-32e6-4cf0-a155-b955923776eb",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 1965,
+      "height": 717,
+      "rawWidth": 1969,
+      "rawHeight": 721,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

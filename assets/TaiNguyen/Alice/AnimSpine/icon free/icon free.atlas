@@ -1,0 +1,27 @@
+
+icon free.png
+size: 403, 178
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Group 1
+  rotate: false
+  xy: 2, 4
+  size: 174, 174
+  orig: 178, 178
+  offset: 2, 2
+  index: -1
+JACKPOT31
+  rotate: true
+  xy: 347, 23
+  size: 155, 54
+  orig: 157, 57
+  offset: 1, 2
+  index: -1
+Layer 120
+  rotate: false
+  xy: 178, 8
+  size: 167, 170
+  orig: 167, 170
+  offset: 0, 0
+  index: -1

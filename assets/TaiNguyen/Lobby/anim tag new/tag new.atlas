@@ -1,0 +1,27 @@
+
+tag new.png
+size: 156,71
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Group 1 (merged)
+  rotate: false
+  xy: 82, 34
+  size: 72, 35
+  orig: 72, 35
+  offset: 0, 0
+  index: -1
+Group 2
+  rotate: false
+  xy: 82, 2
+  size: 70, 30
+  orig: 70, 30
+  offset: 0, 0
+  index: -1
+Layer 817
+  rotate: true
+  xy: 2, 6
+  size: 63, 78
+  orig: 66, 82
+  offset: 2, 2
+  index: -1

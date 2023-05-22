@@ -1,0 +1,76 @@
+
+co gai.png
+size: 758,297
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 514, 14
+  size: 43, 58
+  orig: 50, 67
+  offset: 4, 5
+  index: -1
+2
+  rotate: false
+  xy: 259, 14
+  size: 56, 61
+  orig: 65, 69
+  offset: 4, 4
+  index: -1
+Layer 3
+  rotate: false
+  xy: 259, 77
+  size: 218, 218
+  orig: 218, 218
+  offset: 0, 0
+  index: -1
+as
+  rotate: true
+  xy: 2, 2
+  size: 293, 255
+  orig: 312, 267
+  offset: 10, 8
+  index: -1
+as do
+  rotate: true
+  xy: 634, 74
+  size: 128, 107
+  orig: 151, 120
+  offset: 12, 11
+  index: -1
+hoa
+  rotate: true
+  xy: 479, 89
+  size: 206, 153
+  orig: 208, 155
+  offset: 1, 1
+  index: -1
+huong
+  rotate: false
+  xy: 634, 204
+  size: 122, 91
+  orig: 125, 95
+  offset: 1, 0
+  index: -1
+lap lai
+  rotate: false
+  xy: 317, 15
+  size: 59, 60
+  orig: 66, 68
+  offset: 4, 4
+  index: -1
+stay
+  rotate: false
+  xy: 559, 20
+  size: 132, 52
+  orig: 137, 56
+  offset: 2, 2
+  index: -1
+wild
+  rotate: false
+  xy: 378, 16
+  size: 134, 59
+  orig: 138, 63
+  offset: 2, 3
+  index: -1

@@ -1,0 +1,20 @@
+
+3.png
+size: 205,124
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 1
+  rotate: true
+  xy: 2, 2
+  size: 120, 122
+  orig: 122, 124
+  offset: 1, 1
+  index: -1
+Layer 2
+  rotate: false
+  xy: 126, 28
+  size: 77, 94
+  orig: 79, 96
+  offset: 1, 1
+  index: -1

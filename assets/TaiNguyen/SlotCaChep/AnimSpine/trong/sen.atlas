@@ -1,0 +1,13 @@
+
+sen.png
+size: 125, 108
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+song
+  rotate: false
+  xy: 2, 4
+  size: 121, 104
+  orig: 123, 106
+  offset: 1, 1
+  index: -1

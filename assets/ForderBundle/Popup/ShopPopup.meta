@@ -1,0 +1,12 @@
+{
+  "ver": "1.1.2",
+  "uuid": "61cb94d5-d9ef-4716-b464-5e28a2f0c551",
+  "isBundle": true,
+  "bundleName": "ShopPopup",
+  "priority": 1,
+  "compressionType": {},
+  "optimizeHotUpdate": {},
+  "inlineSpriteFrames": {},
+  "isRemoteBundle": {},
+  "subMetas": {}
+}

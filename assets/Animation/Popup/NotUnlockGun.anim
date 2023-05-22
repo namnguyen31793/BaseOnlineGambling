@@ -1,0 +1,35 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "NotUnlockGun",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Content": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 339.572
+            }
+          ]
+        }
+      },
+      "Value": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "363fe013-1116-4f1a-b596-5d1eaf42c98d",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 444,
+  "height": 96,
+  "platformSettings": {},
+  "subMetas": {
+    "cau lua copy": {
+      "ver": "1.0.4",
+      "uuid": "b7864771-f2c9-47a3-be85-397849ad7739",
+      "rawTextureUuid": "363fe013-1116-4f1a-b596-5d1eaf42c98d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 440,
+      "height": 92,
+      "rawWidth": 444,
+      "rawHeight": 96,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

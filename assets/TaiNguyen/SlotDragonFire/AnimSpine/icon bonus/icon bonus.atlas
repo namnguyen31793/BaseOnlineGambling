@@ -1,0 +1,27 @@
+
+icon bonus.png
+size: 494, 230
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Group 1
+  rotate: true
+  xy: 244, 5
+  size: 225, 179
+  orig: 227, 181
+  offset: 1, 1
+  index: -1
+Group 2
+  rotate: false
+  xy: 2, 4
+  size: 240, 226
+  orig: 245, 229
+  offset: 2, 1
+  index: -1
+Layer 34
+  rotate: true
+  xy: 425, 55
+  size: 175, 67
+  orig: 178, 70
+  offset: 1, 1
+  index: -1

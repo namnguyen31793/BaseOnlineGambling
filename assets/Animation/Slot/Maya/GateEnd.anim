@@ -1,0 +1,91 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "GateEnd",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.5,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Gate": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": -2.718
+            },
+            {
+              "frame": 0.5,
+              "value": -2.718
+            },
+            {
+              "frame": 1.4,
+              "value": -425.42909999999983
+            },
+            {
+              "frame": 1.5,
+              "value": -472.397
+            }
+          ]
+        }
+      },
+      "Dust": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            },
+            {
+              "frame": 0.6,
+              "value": 170
+            },
+            {
+              "frame": 1.4,
+              "value": 170
+            },
+            {
+              "frame": 1.5,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Gate/bg khung da/Mask/Right": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 342.531
+            },
+            {
+              "frame": 0.5,
+              "value": 110.437
+            }
+          ]
+        }
+      },
+      "Gate/bg khung da/Mask/Left": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -342.998
+            },
+            {
+              "frame": 0.5,
+              "value": -117
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

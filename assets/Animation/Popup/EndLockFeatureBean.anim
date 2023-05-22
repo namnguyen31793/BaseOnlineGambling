@@ -1,0 +1,47 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "EndLockFeatureBean",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "trong chim tren (merged)": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": -85.338
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "long chim duoi (merged)": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": -149.255
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

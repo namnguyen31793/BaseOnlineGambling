@@ -1,0 +1,20 @@
+
+anim thanh chua btn.png
+size: 478,121
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+nua tron
+  rotate: true
+  xy: 417, 2
+  size: 117, 59
+  orig: 119, 61
+  offset: 1, 1
+  index: -1
+thanh dai
+  rotate: true
+  xy: 2, 2
+  size: 117, 413
+  orig: 119, 415
+  offset: 1, 1
+  index: -1

@@ -1,0 +1,20 @@
+
+cachepden.png
+size: 229, 156
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Group 3
+  rotate: true
+  xy: 2, 4
+  size: 152, 123
+  orig: 154, 126
+  offset: 1, 1
+  index: -1
+Group 46
+  rotate: true
+  xy: 127, 13
+  size: 143, 100
+  orig: 143, 101
+  offset: 0, 0
+  index: -1

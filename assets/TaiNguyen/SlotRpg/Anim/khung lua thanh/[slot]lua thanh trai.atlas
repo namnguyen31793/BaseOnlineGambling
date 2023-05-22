@@ -1,0 +1,62 @@
+
+[slot]lua thanh trai.png
+size: 683,359
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Group 10
+  rotate: false
+  xy: 263, 11
+  size: 74, 346
+  orig: 79, 354
+  offset: 2, 5
+  index: -1
+Group 7
+  rotate: true
+  xy: 339, 81
+  size: 105, 339
+  orig: 111, 346
+  offset: 4, 4
+  index: -1
+Group 8
+  rotate: false
+  xy: 174, 8
+  size: 87, 349
+  orig: 91, 355
+  offset: 2, 3
+  index: -1
+Group 9
+  rotate: true
+  xy: 339, 188
+  size: 83, 342
+  orig: 88, 350
+  offset: 2, 4
+  index: -1
+Layer 73
+  rotate: true
+  xy: 339, 273
+  size: 84, 342
+  orig: 88, 348
+  offset: 2, 3
+  index: -1
+Layer 74
+  rotate: true
+  xy: 339, 2
+  size: 77, 338
+  orig: 82, 346
+  offset: 2, 4
+  index: -1
+Layer 75
+  rotate: false
+  xy: 2, 3
+  size: 84, 354
+  orig: 88, 361
+  offset: 2, 3
+  index: -1
+Layer 76
+  rotate: false
+  xy: 88, 4
+  size: 84, 353
+  orig: 88, 360
+  offset: 2, 4
+  index: -1
