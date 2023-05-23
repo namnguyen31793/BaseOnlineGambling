@@ -88,31 +88,37 @@ cc.Class({
         this.bonusManager.Init(this);
         this.effectManager.Init(this);
         this.netWork.Init(this);
-        this.InitBattleManager();
+        //this.InitBattleManager();
+        /*
         if(this.tournamentView)
             this.tournamentView.Init(this);
         if(this.challengeView)
             this.challengeView.Init(this);
+        */
         this.soundControl.Init();
         this.soundControl.PlayBackgroundMusic();
         if(Global.isChallenge==0 && Global.dataBattle == null)
             this.netWork.RequestGetInfoRoom();
+        /*
         else if(Global.isChallenge == 1)
             this.SetupChallenge();
         else if(Global.dataBattle != null)
             this.SetupBattle();
+        */
         this.CallRequestGetJackpotInfo();
         this.AddScheduleAnimWait();
-        require("SendRequest").getIns().MST_Client_Event_Tournament_Get_Account_Reward();
+        //require("SendRequest").getIns().MST_Client_Event_Tournament_Get_Account_Reward();
 
       
         let msgRoomConfig = {};
         msgRoomConfig[40] = this.slotType
         require("SendRequest").getIns().MST_Client_Slot_Get_Room_Config(msgRoomConfig);
+        /*
         if(Global.dataBattle == null) {
             this.ShowNotifyBigWin();
             this.CreateListUser();
         }
+        */
         
     },
 
@@ -671,6 +677,7 @@ cc.Class({
     },
 
     //battle
+    /*
     InitBattleManager() {
         let slotView = this;
         Global.DownloadManager.LoadPrefab("Mission","MissionContent", (prefab)=>{
@@ -737,6 +744,7 @@ cc.Class({
            
         }
     },
+    */
 
     SetupBattle() {
         Global.UIManager.hideMiniLoading();
@@ -838,6 +846,7 @@ cc.Class({
         return false;
     },
 
+    /*
     ShowNotifyBigWin() {
         if(this.notifyBigWin == null) {
             let current = this;
@@ -866,6 +875,7 @@ cc.Class({
         } , timeWait);
         
     },
+    */
 
     CreateListUser() {
         return;
