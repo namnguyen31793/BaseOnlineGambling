@@ -112,10 +112,7 @@ cc.Class({
         this.normalManager.ClearWildEndFree();
     },
 
-    // CreateListUser() {
-    //     //loi check
-    // },
-
+   
     PlayEffectHoaBay() {
         this.effectManager.PlayAnimHoaBay();
     },

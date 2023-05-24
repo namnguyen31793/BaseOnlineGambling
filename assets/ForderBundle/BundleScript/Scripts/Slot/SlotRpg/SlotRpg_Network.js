@@ -18,26 +18,7 @@ cc.Class({
         require("SendRequest").getIns().MST_Client_Rpg_Battle_Spin();
     },
 
-    // RequestLeaveRoom() {
-    //     if(require("ScreenManager").getIns().moneyType == 0){
-    //         require("SendRequest").getIns().MST_Client_Slot_Leave_Room();
-    //     }else{
-    //         require("SendRequest").getIns().MST_Client_Real_Money_Slot_Leave_Room();
-    //     }
-    // },
-
-    // RequestEndBattle() {
-    //     require("SendRequest").getIns().MST_Client_Battle_Field_Confirm_Lose();
-    // },
-
-    // RequestEndTimeBattle() {
-    //     require("SendRequest").getIns().MST_Client_Battle_Field_End_Time();
-    // },
-
-    // RequestRematch() {
-    //     require("SendRequest").getIns().MST_Client_Battle_Field_ReMatch();
-    // },
-
+   
     ////////////////////////////////////////////////////////////
 
     ResponseServer(code, packet) {

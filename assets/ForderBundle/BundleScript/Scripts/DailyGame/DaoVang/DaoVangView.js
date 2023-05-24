@@ -148,7 +148,7 @@ cc.Class({
         if(DailyGameManager.getIns().configFree) {
             data[1] = DailyGameManager.getIns().configFree.GameID;
             Global.UIManager.showNotifyPopup(DailyGameManager.getIns().configFree.GameID, ()=>{
-                require("SendRequest").getIns().MST_Client_Reward_Spin_Take_Reward(data);
+               
                 require("ScreenManager").getIns().roomType = DailyGameManager.getIns().configFree.GameID;
 		        require("ScreenManager").getIns().LoadScene(Global.Enum.SCREEN_CODE.INGAME_SLOT);
             });

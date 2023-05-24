@@ -95,9 +95,7 @@ cc.Class({
     ActiveButtonMenu() {
         this.activeButton = true;
         this.isSpin = false;
-        this.CheckEndChallenge();
-        this.CheckEndBattle();
-        this.UpdateCurrentQuest();
+       
     },
 
     ShowCommandUseItemBonusTurn(todolist = null){

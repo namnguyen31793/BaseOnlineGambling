@@ -38,19 +38,17 @@ cc.Class({
 		txtDiamon: cc.Label,
 		txtVip: cc.Label,
 		txtName: cc.Label,
-		boxNotify: cc.Node,
+		
 		imgAva: cc.Sprite,
-		mailObj : cc.Node,
+		
 		toggleMusic : cc.Toggle,
 		loginPanel: cc.Node,
 		header: cc.Node,
 		pathTxt : cc.TextAsset,
 		//
 		markBg : cc.Node,
-		nodeScroll : cc.Node,
-		imgNotifyContent : cc.Node,
-		markNotify : cc.Node,
-		startPosNotify : cc.Node,
+	
+		
 
 		animBtnMenu : cc.Animation,
 
@@ -62,6 +60,7 @@ cc.Class({
 
 	start() {
 		Global.LobbyView = this;
+		/*
 		let musicValue = Global.AudioManager.GetValueMusic();
 		let soundValue = Global.AudioManager.GetValueSound();
 		if(musicValue == 1) {
@@ -70,6 +69,7 @@ cc.Class({
             this.toggleMusic.isChecked = true;
 		}
 		Global.AudioManager.PlayMusicLobby();
+		*/
 		this.markBg.width = cc.winSize.width;
 
 		if (Global.isLogin) {
@@ -157,8 +157,7 @@ cc.Class({
 			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
 			return;
 		}
-		Global.AudioManager.ClickButton();
-
+		
 		if(index == 3) {
 			CONFIG.MULTI_PLAYER = true;
 		} else {
@@ -175,43 +174,27 @@ cc.Class({
 			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
 			return;
 		}
-		Global.AudioManager.ClickButton();
+	
 		Global.UIManager.showSettingPopup();
 
 	},
 
 
-    ClickChangeStatusMusic(event, data) {
-        if(this.toggleMusic.isChecked) {
-            Global.AudioManager.ChangeValueMusic(0);
-        } else {
-            Global.AudioManager.ChangeValueMusic(1);
-        }
-    },
+   
 
 	ClickCommingSoon() {
 		if (!Global.isConnect) {
 			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
 			return;
 		}
-		Global.AudioManager.ClickButton();
+	
 		Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("COMMING_SOON"));
 	},
 
-	ClickTeam() {
-		Global.AudioManager.ClickButton();
-		cc.sys.openURL("https://t.me/team3bamboo");
-	},
-
-	ClickShare() {
-		console.log("invite friend");
-		sdkbox.PluginFacebook.inviteFriends(
-			"https://fb.me/1127490447739796",
-			"http://www.cocos2d-x.org/attachments/801/cocos2dx_portrait.png");
-	},
+	
 
 	playSlot(event, index) {
-		Global.AudioManager.ClickButton();
+		
 		cc.log(Global.isLogin);
 		if (!Global.isLogin) {
 			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
@@ -234,10 +217,7 @@ cc.Class({
 		}
 
 	},
-	ClickBtnShopCashOut() {
-		Global.AudioManager.ClickButton();
-
-	},
+	
 
 	CLickShowListButton(){
         this.animBtnMenu.play("ShowMenuLobby");
@@ -256,9 +236,7 @@ cc.Class({
 		// require("SendRequest").getIns().MST_Client_Get_Daily_Spin_Info();
 		require("SyncTimeControl").getIns().SendPing();
 
-		let data = {};
-		data[1] = Global.Enum.MISSION_TYPE.DAILY;
-		require("SendRequest").getIns().MST_Client_Event_Mission_Get_Mission_Config(data);
+	
 		
 		this.showStartGame.Action();
 
@@ -297,13 +275,7 @@ cc.Class({
 	UpdateTime() {
 	},
 
-	TestShowHome(){
-		require("ScreenManager").getIns().LoadScene(Global.Enum.SCREEN_CODE.HOME_VIEW);
-	},
-
-	GetLoginCollecsion(response){
-
-	},
+	
 
 
 	GetRoomMultiSlot(response){
@@ -315,9 +287,6 @@ cc.Class({
 		}
 	},
 
-	ClickShowDemoCity(){
-		Global.UIManager.ShowDemoCity();
-	},
 
 	ClickChangeBetMoneyType(){
 		require("ScreenManager").getIns().LoadScene(Global.Enum.SCREEN_CODE.LOBBY_MONEY);
@@ -325,12 +294,6 @@ cc.Class({
 		// this.playSlot(null, 20);
 	},
 			
-	ClickShowBag() {
-
-	},
-
-	CreateButtonTutorial() {
-
-	},
+	
 });
 

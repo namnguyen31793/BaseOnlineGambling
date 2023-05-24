@@ -97,7 +97,6 @@ cc.Class({
         slotView.CheckTimeShowPrize(winNormalValue);
         toDoList.AddWork(()=>slotView.ActiveButtonMenu(),false);
         //check item
-        toDoList.AddWork(()=>this.slotView.ShowCommandUseItemBonusTurn(this.slotView.toDoList), true);
         toDoList.AddWork(()=>slotView.ActionAutoSpin(),false);
         toDoList.Play();
     },

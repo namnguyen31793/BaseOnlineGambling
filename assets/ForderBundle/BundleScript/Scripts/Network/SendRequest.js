@@ -386,11 +386,7 @@ var SendRequest = cc.Class({
         Global.NetworkManager.sendRequest(Global.Enum.REQUEST_CODE.MSG_CLIENT_EVENT_TOURNAMENT_TAKE_ACCOUNT_REWARD, msg, Global.Enum.NETWORK_TARGET_CODE.EVENT);
     },
 
-    //free spin reward
-    MST_Client_Reward_Spin_Take_Reward(msg) {
-        Global.NetworkManager.sendRequest(Global.Enum.REQUEST_CODE.MSG_CLIENT_REWARD_SPIN_TAKE_REWARD, msg, Global.Enum.NETWORK_TARGET_CODE.LOBBY);
-    },
-
+  
     //city
     MST_Client_CityGame_ChatRoom_GetChat() {
         this.RequestMessageNoData(Global.Enum.REQUEST_CODE.MSG_CLIENT_CITYGAME_CHATROOM_GETCHAT, Global.Enum.NETWORK_TARGET_CODE.CITY_GAME);
@@ -432,47 +428,7 @@ var SendRequest = cc.Class({
         Global.NetworkManager.sendRequest(Global.Enum.REQUEST_CODE.MSG_CLIENT_CHALLENGE_CONFIRM_LOSE, msg, Global.Enum.NETWORK_TARGET_CODE.SLOT_MACHINE);
     },
 
-    //battle
-    MST_Client_Battle_Field_Register(msg) {
-        Global.NetworkManager.sendRequest(Global.Enum.REQUEST_CODE.MSG_CLIENT_BATTLE_FIELD_REGISTER, msg, Global.Enum.NETWORK_TARGET_CODE.LOBBY);
-    },
-
-    MST_Client_Battle_Field_Get_Config() {
-        this.RequestMessageNoData(Global.Enum.REQUEST_CODE.MSG_CLIENT_BATTLE_FIELD_GET_CONFIG, Global.Enum.NETWORK_TARGET_CODE.LOBBY);
-    },
-
-    MST_Client_Battle_Field_Get_Playing_Match() {
-        this.RequestMessageNoData(Global.Enum.REQUEST_CODE.MSG_CLIENT_BATTLE_FIELD_GET_PLAYING_MATCH, Global.Enum.NETWORK_TARGET_CODE.LOBBY);
-    },
-
-    MST_Client_Battle_Field_Continue_Battle_Match(msg) {
-        Global.NetworkManager.sendRequest(Global.Enum.REQUEST_CODE.MSG_CLIENT_BATTLE_FIELD_CONTINUE_BATTLE_MATCH, msg, Global.Enum.NETWORK_TARGET_CODE.LOBBY);
-    },
-
-    MST_Client_Battle_Field_Spin() {
-        this.RequestMessageNoData(Global.Enum.REQUEST_CODE.MSG_CLIENT_BATTLE_FIELD_SPIN, Global.Enum.NETWORK_TARGET_CODE.SLOT_MACHINE);
-    },
-
-    MST_Client_Battle_Field_Adversary_Player_Spin() {
-        this.RequestMessageNoData(Global.Enum.REQUEST_CODE.MSG_CLIENT_BATTLE_FIELD_ADVERSARY_PLAYER_SPIN, Global.Enum.NETWORK_TARGET_CODE.SLOT_MACHINE);
-    },
-
-    MST_Client_Battle_Field_Cancel_Battle_Match(msg) {
-        Global.NetworkManager.sendRequest(Global.Enum.REQUEST_CODE.MSG_CLIENT_BATTLE_FIELD_CANCEL_BATTLE_MATCH, msg, Global.Enum.NETWORK_TARGET_CODE.LOBBY);
-    },
-
-    MST_Client_Battle_Field_Confirm_Lose() {
-        this.RequestMessageNoData(Global.Enum.REQUEST_CODE.MSG_CLIENT_BATTLE_FIELD_CONFIRM_LOSE, Global.Enum.NETWORK_TARGET_CODE.SLOT_MACHINE);
-    },
-
-    MST_Client_Battle_Field_End_Time() {
-        this.RequestMessageNoData(Global.Enum.REQUEST_CODE.MSG_CLIENT_BATTLE_FIELD_END_TIME, Global.Enum.NETWORK_TARGET_CODE.SLOT_MACHINE);
-    },
-
-    MST_Client_Battle_Field_ReMatch() {
-        this.RequestMessageNoData(Global.Enum.REQUEST_CODE.MSG_CLIENT_BATTLE_FIELD_REMATCH, Global.Enum.NETWORK_TARGET_CODE.LOBBY);
-    },
-
+  
     //mission fish
     MST_Client_Get_Fish_Current_Mission_Info() {
         this.RequestMessageNoData(Global.Enum.REQUEST_CODE.MSG_CLIENT_GET_FISH_MISSION_CURRENT_MISSION_INFO, Global.Enum.NETWORK_TARGET_CODE.FISH_SHOOTING);
@@ -647,22 +603,8 @@ var SendRequest = cc.Class({
         Global.NetworkManager.sendRequest(Global.Enum.REQUEST_CODE.MSG_CLIENT_EVENT_SHARE_MONEY_TAKE_REWARD, msg, Global.Enum.NETWORK_TARGET_CODE.EVENT);
     },
 
-    //#region rpg
-    MST_Client_Rpg_Battle_Register(msg) {
-        Global.NetworkManager.sendRequest(Global.Enum.REQUEST_CODE.MSG_CLIENT_RPG_BATTLE_FIELD_REGISTER, msg, Global.Enum.NETWORK_TARGET_CODE.LOBBY);
-    },
+   
 
-    MST_Client_Rpg_Battle_Get_Config() {
-        this.RequestMessageNoData(Global.Enum.REQUEST_CODE.MSG_CLIENT_RPG_BATTLE_FIELD_GET_CONFIG, Global.Enum.NETWORK_TARGET_CODE.LOBBY);
-    },
-
-    MST_Client_Rpg_Battle_Spin() {
-        this.RequestMessageNoData(Global.Enum.REQUEST_CODE.MSG_CLIENT_RPG_BATTLE_FIELD_SPIN, Global.Enum.NETWORK_TARGET_CODE.SLOT_MACHINE);
-    },
-    
-    MST_Client_Rpg_Battle_Start() {
-        this.RequestMessageNoData(Global.Enum.REQUEST_CODE.MSG_CLIENT_RPG_BATTLE_START_GAME, Global.Enum.NETWORK_TARGET_CODE.SLOT_MACHINE);
-    },
     //#region REAL MONEY
     // Slot
     MST_Client_Real_Money_Slot_Open_Game(msg) {

@@ -175,9 +175,7 @@ cc.Class({
                 } else if (require("ScreenManager").getIns().currentScreen == Global.Enum.SCREEN_CODE.LOBBY) {
                     timeWait = Global.RandomNumber(10,21);
                 }
-                this.scheduleOnce(()=>{
-                    Global.UIManager.ShowShareMoney();
-                } , timeWait);
+               
             }
             this.lbTime.string = parseInt(this.countTime)+"s";
         }

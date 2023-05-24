@@ -81,38 +81,13 @@ cc.Class({
             return; 
         this.missionType = this.cacheTarget.MissionType;
         this.questView.SetInfo(this.cacheCurrent, this.cacheTarget);
-        this.UpdateCurrentQuest();
+       
         this.cacheCurrent = null;
         this.cacheTarget = null;
     },
 
-    // SetInfo(currentMissionInfo, currentTargetMission) {
-    //     this.node.active = true;
-    //     this.missionType = currentTargetMission.MissionType;
-    //     this.questView.SetInfo(currentMissionInfo, currentTargetMission);
-    //     this.UpdateCurrentQuest();
-    // },
+   
 
-    UpdateCurrentQuest() {
-        cc.log(this.missionType);
-        this.questView.UpdateCurrentQuest(()=>{
-            if(!this.slotView.isBonus && !this.slotView.isFree) {
-                this.slotView.isAuto = false;
-                Global.indexTutorial += 1;
-                Global.Helper.LogAction("End Tutorial "+Global.indexTutorial);
-                // Global.SendTrackerLogAchievement("End Tutorial "+Global.indexTutorial);
-                this.slotView.DeActiveButtonMenu();
-                Global.UIManager.showSuccessTutorialPopup(()=>{
-                    Global.isTutorial = 0;
-                    this.slotView.ActiveButtonMenu();
-                    this.node.active = false;
-                    this.slotView.menuView.toggleAuto.isChecked = false;
-                    this.slotView.menuView.animBtnMenu.node.opacity = 255;
-                }, this.slotView.slotType);
-            }
-        });
-        
-    },
 
     ClickShowInfo(event, index) {
         let select = parseInt(index);

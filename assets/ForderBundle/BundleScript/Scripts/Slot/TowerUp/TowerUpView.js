@@ -53,11 +53,7 @@ cc.Class({
         this.effectManager.HideWinMoneyWithMulti();
     },
 
-    CreateListUser() {
-        //add de bo qua add list user, tai vi db chua co bet
-        // this.contentUser.x = -440;
-        this._super();
-    },
+  
 
     ResetEndFree(){
         this.CurrentMulti = 1;

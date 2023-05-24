@@ -570,85 +570,7 @@ cc.Class({
 		}
 	},
 
-	showBattlePopup(id) {
-		if (Global.BattlePopup == null && !this.listPopup["BattlePopup"]) {
-			this.listPopup["BattlePopup"] = "1";
-			this.showMiniLoading();
-			Global.DownloadManager.LoadPrefab("Battle","BattlePopup", (prefab)=>{
-				Global.UIManager.hideMiniLoading();
-				Global.UIManager.showMark();
-				let item = cc.instantiate(prefab).getComponent("BattlePopup");
-				Global.BattlePopup = item;
-				Global.UIManager.parentPopup.addChild(item.node);
-				item.show(id);
-			},2)
-		} else {
-			if(Global.BattlePopup != null && !Global.BattlePopup.node.active) {
-				Global.UIManager.showMark();
-				Global.BattlePopup.show(id);
-			}
-		}
-	},
-
-	showEndBattlePopup(battleManager, status, reward, accountBalance) {
-		if (Global.EndBattlePopup == null && !this.listPopup["EndBattlePopup"]) {
-			this.listPopup["EndBattlePopup"] = "1";
-			this.showMiniLoading();
-			Global.DownloadManager.LoadPrefab("Battle","EndBattlePopup", (prefab)=>{
-				Global.UIManager.hideMiniLoading();
-				Global.UIManager.showMark();
-				let item = cc.instantiate(prefab).getComponent("EndBattlePopup");
-				Global.EndBattlePopup = item;
-				Global.UIManager.parentPopup.addChild(item.node);
-				item.show(battleManager, status, reward, accountBalance);
-			},2)
-		} else {
-			if(Global.EndBattlePopup != null && !Global.EndBattlePopup.node.active) {
-				Global.UIManager.showMark();
-				Global.EndBattlePopup.show(battleManager, status, reward, accountBalance);
-			}
-		}
-	},
-
-	showEndRpgPopup(battleManager, status, reward, accountBalance) {
-		if (Global.EndRpgPopup == null && !this.listPopup["EndRpgPopup"]) {
-			this.listPopup["EndRpgPopup"] = "1";
-			this.showMiniLoading();
-			Global.DownloadManager.LoadPrefab("27","EndRpgPopup", (prefab)=>{
-				Global.UIManager.hideMiniLoading();
-				Global.UIManager.showMark();
-				let item = cc.instantiate(prefab).getComponent("EndRpgPopup");
-				Global.EndRpgPopup = item;
-				Global.UIManager.parentPopup.addChild(item.node);
-				item.show(battleManager, status, reward, accountBalance);
-			},2)
-		} else {
-			if(Global.EndRpgPopup != null && !Global.EndRpgPopup.node.active) {
-				Global.UIManager.showMark();
-				Global.EndRpgPopup.show(battleManager, status, reward, accountBalance);
-			}
-		}
-	},
-
-	showCreateRoomBatlePopup() {
-		if (Global.CreateRoomBatlePopup == null && !this.listPopup["CreateRoomBatlePopup"]) {
-			this.listPopup["CreateRoomBatlePopup"] = "1";
-			this.showMiniLoading();
-			Global.DownloadManager.LoadPrefab("Battle","CreateRoomBatlePopup", (prefab)=>{
-				Global.UIManager.hideMiniLoading();
-				Global.UIManager.showMark();
-				let item = cc.instantiate(prefab).getComponent("CreateRoomBatlePopup");
-				Global.CreateRoomBatlePopup = item;
-				Global.UIManager.parentPopup.addChild(item.node);
-				item.show();
-			},2)
-		} else {
-			if(Global.CreateRoomBatlePopup != null && !Global.CreateRoomBatlePopup.node.active) {
-				Global.UIManager.showMark();
-				Global.CreateRoomBatlePopup.show();
-			}
-		}
-	},
+	
 
 	HideShopPopup() {
 		if(Global.ShopPopup != null && Global.ShopPopup.node.active == true)
@@ -719,42 +641,6 @@ cc.Class({
 		}
 	},
 
-	ShowShareMoney(gameId = -1) {
-		if (Global.ShareMoney == null && !this.listPopup["ShareMoney"]) {
-			this.listPopup["ShareMoney"] = "1";
-			Global.DownloadManager.LoadPrefab("ShareMoney","ShareMoney", (prefab)=>{
-                let node = cc.instantiate(prefab);
-                Global.ShareMoney = node.getComponent("ShareMoneySlot");
-                Global.UIManager.parentMiniGame.addChild(node);
-                Global.ShareMoney.show(gameId);
-            });
-        } else {
-			if(Global.ShareMoney != null && !Global.ShareMoney.node.active) {
-				Global.UIManager.showMark();
-				Global.ShareMoney.show(gameId);
-			}
-        }
-	},
-
-	ShowFreeSpinAdsSlot() {
-		if (Global.PopupFreeSpinAdsSlot == null && !this.listPopup["PopupFreeSpinAdsSlot"]) {
-			this.listPopup["PopupFreeSpinAdsSlot"] = "1";
-			this.showMiniLoading();
-			Global.DownloadManager.LoadPrefab("FreeSpinAds","PopupFreeSpinAdsSlot", (prefab)=>{
-				Global.UIManager.hideMiniLoading();
-				Global.UIManager.showMark();
-				let item = cc.instantiate(prefab).getComponent("PopupFreeSpinAdsSlot");
-				Global.PopupFreeSpinAdsSlot = item;
-				Global.UIManager.parentPopup.addChild(item.node);
-				item.show();
-			},2)
-		} else {
-			if(Global.PopupFreeSpinAdsSlot != null && !Global.PopupFreeSpinAdsSlot.node.active) {
-				Global.UIManager.showMark();
-				Global.PopupFreeSpinAdsSlot.show();
-			}
-		}
-	},
 
 	ShowSupportPopup() {
 		if (Global.SupportPopup == null && !this.listPopup["SupportPopup"]) {

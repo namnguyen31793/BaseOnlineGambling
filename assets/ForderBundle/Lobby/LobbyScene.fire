@@ -183,7 +183,7 @@
       "array": [
         0,
         0,
-        274.5300529996671,
+        366.32874580081756,
         0,
         0,
         0,
@@ -2182,7 +2182,7 @@
     "component": "",
     "_componentId": "cdd88SL0ARAd5OaByfm212k",
     "handler": "playSlot",
-    "customEventData": "31"
+    "customEventData": "28"
   },
   {
     "__type__": "cc.Node",
@@ -16740,11 +16740,9 @@
     "txtName": {
       "__id__": 57
     },
-    "boxNotify": null,
     "imgAva": {
       "__id__": 64
     },
-    "mailObj": null,
     "toggleMusic": {
       "__id__": 121
     },
@@ -16758,10 +16756,6 @@
     "markBg": {
       "__id__": 8
     },
-    "nodeScroll": null,
-    "imgNotifyContent": null,
-    "markNotify": null,
-    "startPosNotify": null,
     "animBtnMenu": {
       "__id__": 140
     },

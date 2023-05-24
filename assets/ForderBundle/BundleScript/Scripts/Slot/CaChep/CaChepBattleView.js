@@ -94,16 +94,10 @@ cc.Class({
     ActiveButtonMenu() {
         this.activeButton = true;
         this.isSpin = false;
-        this.CheckEndChallenge();
-        this.CheckEndBattle();
-        this.UpdateCurrentQuest();
+       
     },
 
-    ShowCommandUseItemBonusTurn(todolist = null){
-        cc.log("ShowCommandUseItemBonusTurn");
-        if(todolist != null)
-            todolist.DoWork();
-    },
+ 
 
     UpdateWinValue(winMoney) {
         Global.OtherBattle.ShowAccountBalance();
@@ -116,9 +110,7 @@ cc.Class({
     },
 
     CheckBigWin(winMoney, mutil = 6) {
-        let isBigWin = false;
-        if(winMoney >= Global.dataBattle.betValue * mutil) 
-            isBigWin = true;
+        let isBigWin = false;       
         return isBigWin;
     },
 

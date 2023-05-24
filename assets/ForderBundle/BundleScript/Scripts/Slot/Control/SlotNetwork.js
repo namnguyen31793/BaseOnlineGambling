@@ -411,69 +411,7 @@ cc.Class({
     },
 
     //battle
-    BattlePlayerSpin(packet) {
-        let playerInfo = JSON.parse(packet[1]);
-        let rivalInfo = JSON.parse(packet[2]);
-        let matrix = packet[3];
-        let listLineWinData = packet[4];
-        let winNormalValue = packet[5];
-        let numberBonusSpin = packet[6];
-        let winBonusValue = packet[7];
-        let freeSpinLeft = packet[8];
-        let valueFreeSpin = packet[9];
-        let totalWin = packet[10];
-        let isTakeJackpot = packet[13];
-        let accountBalance = playerInfo.BattleScore;
-        this.slotView.OnGetSpinResult(0, matrix, listLineWinData, winNormalValue, winBonusValue, freeSpinLeft, totalWin, accountBalance, 
-            0, isTakeJackpot);
-        
-        let userTurn = playerInfo.BattleNormalTurn;
-        this.slotView.UpdateUserTurn(userTurn);
-
-    },
-
-    BattleRivalSpin(packet) {
-        let playerInfo = JSON.parse(packet[1]);
-        let rivalInfo = JSON.parse(packet[2]);
-        let matrix = packet[3];
-        let listLineWinData = packet[4];
-        let winNormalValue = packet[5];
-        let numberBonusSpin = packet[6];
-        let winBonusValue = packet[7];
-        let freeSpinLeft = packet[8];
-        let valueFreeSpin = packet[9];
-        let totalWin = packet[10];
-
-        let currentJackpotValue = packet[12];
-        let isTakeJackpot = packet[13];
-
-        let accountBalance = rivalInfo.BattleScore;
-        let rivalTurn = rivalInfo.BattleNormalTurn;
-        cc.log(Global.OtherBattle);
-        Global.SlotNetWork.slotView.UpdateRivalTurn(rivalTurn);
-        Global.OtherBattle.SetAccountBalance(accountBalance);
-        Global.OtherBattle.slotView.OnGetSpinResult(0, matrix, listLineWinData, winNormalValue, winBonusValue, numberBonusSpin,freeSpinLeft, totalWin, accountBalance, 
-            currentJackpotValue, isTakeJackpot);
-        // this.slotView.UpdateRivalSpinBattle(winNormalValue, winBonusValue, numberBonusSpin, freeSpinLeft, totalWin, accountBalance, isTakeJackpot, rivalTurn);
-    },
-
-    BattleEnd(packet) {
-        let status = packet[1];
-        let reward = packet[2];
-        let accountBalance = packet[3];
-        this.slotView.battleManager.isEnd = true;
-        this.slotView.SetEndBattle();
-        if(this.slotView.isGiveUpBattle) {
-            Global.UIManager.showEndBattlePopup(this.slotView.battleManager, status, reward, accountBalance);
-        } else {
-            this.cacheEndBattle = ()=>{
-                Global.UIManager.showEndBattlePopup(this.slotView.battleManager, status, reward, accountBalance);
-            };
-        }
-        
-        
-    },
-
+   
     //config
     GetRoomConfig(packet) {
         let config = [];
@@ -501,11 +439,7 @@ cc.Class({
     ActionCallGetTurnBonus(){
         this.toDoListNetwork.CreateList();
         this.toDoListNetwork.AddWork(()=>{
-            this.slotView.normalManager.EndBonus();
-            let data = {};
-            data[1] = this.slotView.slotType;//_GameId
-            data[2] = this.slotView.roomID;//_RoomId
-            require("SendRequest").getIns().MST_Client_Reward_Spin_Take_Reward(data);
+            this.slotView.normalManager.EndBonus();         
         },false);
         this.toDoListNetwork.Wait(0.5);
         this.toDoListNetwork.AddWork(()=>{
@@ -515,3 +449,4 @@ cc.Class({
         this.toDoListNetwork.Play();
     },
 });
+  

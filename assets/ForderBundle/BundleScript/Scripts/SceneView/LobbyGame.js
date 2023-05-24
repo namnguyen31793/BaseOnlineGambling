@@ -559,22 +559,8 @@ cc.Class({
         require("WalletController").getIns().AddListener(Global.LobbyView);
 		// require("SendRequest").getIns().MST_Client_Get_Daily_Spin_Info();
 		require("SyncTimeControl").getIns().SendPing();
-		require("SendRequest").getIns().MST_Client_Get_All_Mail();
+	
 		
-		require("SendRequest").getIns().MST_Client_Battle_Field_Get_Playing_Match();
-		require("SendRequest").getIns().MST_Client_Account_Bag_Get_Account_Info();
-		require("SendRequest").getIns().MST_Client_Ads_View_Complete_Config();
-		require("SendRequest").getIns().MST_Client_Ads_Get_Account_Info();
-
-		let data = {};
-		data[1] = Global.Enum.MISSION_TYPE.DAILY;
-		require("SendRequest").getIns().MST_Client_Event_Mission_Get_Mission_Config(data);
-		
-		//this.btnOnline.MissionOnlineAccountInfo();
-
-		this.scheduleOnce(this.processShowShare =  ()=>{
-			Global.UIManager.ShowShareMoney();
-		} , Global.RandomNumber(10,16));
 	},
 
 	SetTimeRegister(timeRegister) {

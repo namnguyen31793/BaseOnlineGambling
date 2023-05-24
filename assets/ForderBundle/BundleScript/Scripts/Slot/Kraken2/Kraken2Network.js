@@ -43,29 +43,7 @@ cc.Class({
             currentJackpotValue, isTakeJackpot);
     },
 
-    BattleRivalSpin(packet) {
-        cc.log(packet);
-        let playerInfo = JSON.parse(packet[1]);
-        let rivalInfo = JSON.parse(packet[2]);
-        let matrix = packet[3];
-        let listLineWinData = packet[4];
-        let winNormalValue = packet[5];
-        let numberBonusSpin = packet[6];
-        let winBonusValue = packet[7];
-        let freeSpinLeft = packet[8];
-        let valueFreeSpin = packet[9];
-        let totalWin = packet[10];
-        let currentJackpotValue = 0;
-        let isTakeJackpot = packet[13];
-
-        let accountBalance = rivalInfo.BattleScore;
-        let rivalTurn = rivalInfo.BattleNormalTurn;
-
-        Global.SlotNetWork.slotView.UpdateRivalTurn(rivalTurn);
-        Global.OtherBattle.SetAccountBalance(accountBalance);
-        Global.OtherBattle.slotView.OnGetSpinResult(0, matrix, listLineWinData, winNormalValue, winBonusValue, numberBonusSpin,freeSpinLeft, totalWin, accountBalance, 
-            currentJackpotValue, isTakeJackpot);
-    },
+   
 
     GetJackpotInfo(packet) {
         let listJackpot = [];
@@ -79,29 +57,6 @@ cc.Class({
         this.slotView.OnGetJackpotValue(listJackpot);
     },
 
-    //battle
-    BattlePlayerSpin(packet) {
-        let playerInfo = JSON.parse(packet[1]);
-        let rivalInfo = JSON.parse(packet[2]);
-        let matrix = packet[3];
-        let listLineWinData = packet[4];
-        let winNormalValue = packet[5];
-        let numberBonusSpin = packet[6];
-        let winBonusValue = packet[7];
-        let freeSpinLeft = packet[8];
-        let valueFreeSpin = packet[9];
-        let totalWin = packet[10];
-        let isTakeJackpot = packet[13];
-        let listLengthMatrixString = packet[14];
-        let accountBalance = playerInfo.BattleScore;
-        this.slotView.OnGetSpinResult(0, matrix, listLineWinData, winNormalValue, winBonusValue, numberBonusSpin,freeSpinLeft, totalWin, accountBalance, 
-            0, isTakeJackpot, listLengthMatrixString);
-        
-        let userTurn = playerInfo.BattleNormalTurn;
-        this.slotView.UpdateUserTurn(userTurn);
-
-    },
-    //end battle
-
+   
     
 });

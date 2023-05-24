@@ -128,56 +128,12 @@ var SlotNetworkManager = cc.Class({
                 if(Global.SlotNetWork) Global.SlotNetWork.ResponseServer(responseCode, packet);
                 break;
 
-            case Global.Enum.RESPONSE_CODE.MSG_SERVER_RPG_BATTLE_GAME_SPIN : 
-                if(Global.SlotNetWork) Global.SlotNetWork.ResponseServer(responseCode, packet);
-                break;
-            case Global.Enum.RESPONSE_CODE.MSG_SERVER_RPG_BATTLE_FIELD_START_GAME : 
-                if(Global.SlotNetWork) Global.SlotNetWork.ResponseServer(responseCode, packet);
-                break;
-            //tournament
-            case Global.Enum.RESPONSE_CODE.MSG_SERVER_EVENT_TOURNAMENT_TOP_PLAYER:
-                if(Global.SlotNetWork) Global.SlotNetWork.TournamentGetTopPlayer(packet);
-                break;
-            case Global.Enum.RESPONSE_CODE.MSG_SERVER_EVENT_TOURNAMENT_TOP_WINNER:
-                if(Global.SlotNetWork) Global.SlotNetWork.TournamentGetTopWinner(packet);
-                break;
-            //challenge
-            case Global.Enum.RESPONSE_CODE.MSG_SERVER_CHALLENGER_GAME_START:
-                if(Global.SlotNetWork) Global.SlotNetWork.ChallengeGameStart(packet);
-                break;
-            case Global.Enum.RESPONSE_CODE.MSG_SERVER_CHALLENGER_GAME_SPIN:
-                if(Global.SlotNetWork) Global.SlotNetWork.ChallengeGameSpin(packet);
-                break;
-            case Global.Enum.RESPONSE_CODE.MSG_SERVER_CHALLENGE_GAME_END:
-                if(Global.SlotNetWork) Global.SlotNetWork.ChallengeGameEnd(packet);
-                break;
-            //newbie
-            case Global.Enum.RESPONSE_CODE.MSG_SERVER_EVENT_MISSION_GET_ACCOUNT_INFO:
-                if(Global.SlotNetWork) Global.SlotNetWork.GetMissionInfo(packet);
-                break;
-            //battle
-            case Global.Enum.RESPONSE_CODE.MSG_SERVER_BATTLE_FIELD_GAME_SPIN:
-                if(Global.SlotNetWork) Global.SlotNetWork.BattlePlayerSpin(packet);
-                break;
-            case Global.Enum.RESPONSE_CODE.MSG_SERVER_BATTLE_FIELD_GAME_ADVERSARY_PLAYER_SPIN:
-                if(Global.SlotNetWork) Global.SlotNetWork.BattleRivalSpin(packet);
-                break;
-            case Global.Enum.RESPONSE_CODE.MSG_SERVER_BATTLE_FIELD_GAME_END:
-                if(Global.SlotNetWork) Global.SlotNetWork.BattleEnd(packet);
-                break;
-            //config
+          
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_GET_ROOM_CONFIG:
                 if(Global.SlotNetWork) Global.SlotNetWork.GetRoomConfig(packet);
                 break;
-            //x2
-            case Global.Enum.RESPONSE_CODE.MSG_SERVER_ADS_VIEW_X2_COMPLETED:
-                if(Global.SlotNetWork) Global.SlotNetWork.ViewX2Complete(packet);
-                break;
-            //rpg
-            case Global.Enum.RESPONSE_CODE.MSG_SERVER_RPG_BATTLE_GAME_SPIN:
-            case Global.Enum.RESPONSE_CODE.MSG_SERVER_RPG_BATTLE_FIELD_GAME_END:
-                if(Global.SlotNetWork) Global.SlotNetWork.ResponseServer(responseCode, packet);
-                break
+           
+            
             //CLIMB_STAIRS
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_CLIMB_STAIRS_GAME_JACKPOT_INFO:
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_CLIMB_STAIRS_GAME_SPIN:
