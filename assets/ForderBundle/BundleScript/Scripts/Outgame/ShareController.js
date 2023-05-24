@@ -20,14 +20,7 @@ cc.Class({
 
     captureScreen (captureScreenFilePath) {
 
-        // const width = cc.visibleRect.width;
-        // const height = cc.visibleRect.height;
-        // let texture = new cc.RenderTexture();
-        // texture.initWithSize(width, height);
-        // const backupRenderer = this.camera.targetTexture;
-        // this.camera.targetTexture = texture;
-        // this.camera.render();
-        // this.camera.targetTexture = backupRenderer;
+      
 
         let node = new cc.Node();
         node.parent = cc.director.getScene();

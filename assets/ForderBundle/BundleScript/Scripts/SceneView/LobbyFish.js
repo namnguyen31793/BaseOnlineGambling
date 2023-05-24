@@ -30,7 +30,7 @@ cc.Class({
 		// this.txtId.string = Global.MainPlayerInfo.accountId;
 		Global.Helper.GetAvata(this.imgAva);
 		Global.Helper.GetVipIcon(Global.MainPlayerInfo.vipLevel, this.iconVip);
-		this.OnUpdateDiamonView();
+		
 	},
 
     ClickJoinFishRoom(event, index) {
@@ -71,40 +71,7 @@ cc.Class({
 		require("ScreenManager").getIns().LoadScene(Global.Enum.SCREEN_CODE.INGAME_KILL_BOSS);
 	},
 
-	ClickShowGacha() {
-		Global.UIManager.showGacha();
-	},
-
-	OnUpdateDiamonView() {
-		let listItemData = require("BagController").getIns().listDataItem;
-		if(listItemData != null) {
-			for(let i = 0; i < listItemData.length; i++) {
-				if(listItemData[i].ItemId == 4) {
-					this.txtDiamon.string = Global.Helper.formatNumber(listItemData[i].Amount.toString());
-				}
-			}
-		}
-	},
-
-	ClickTest1() {
-		// if (cc.sys.os == cc.sys.OS_ANDROID) {
-        //     let className = "org/cocos2dx/javascript/AppActivity";
-        //     let methodName = "ChangeScreenLandScape";
-        //     let methodSignature = "()V";
-        //     console.log("click init load ads");
-        //     jsb.reflection.callStaticMethod(className, methodName, methodSignature);
-        // }
-	},
-
-	ClickTest2() {
-		// if (cc.sys.os == cc.sys.OS_ANDROID) {
-        //     let className = "org/cocos2dx/javascript/AppActivity";
-        //     let methodName = "ChangeScreenPotrait";
-        //     let methodSignature = "()V";
-        //     console.log("click init load ads");
-        //     jsb.reflection.callStaticMethod(className, methodName, methodSignature);
-        // }
-	},
+	
 
 	onDestroy() {
 		Global.LobbyFish = null;

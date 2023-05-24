@@ -47,8 +47,7 @@ cc.Class({
         // toDoList.AddWork(()=>slotView.CheckJackpot(isTakeJackpot, totalWin),false);
         slotView.CheckTimeShowPrize(winNormalValue);
         toDoList.AddWork(()=>slotView.ActiveButtonMenu(),false);
-        //check item
-        toDoList.AddWork(()=>this.slotView.ShowCommandUseItemBonusTurn(this.slotView.toDoList), true);
+        //check item    
         toDoList.AddWork(()=>slotView.ActionAutoSpin(),false);
         
         toDoList.Play();
@@ -119,11 +118,7 @@ cc.Class({
         }
     },
 
-    /*
-    ParseLineData(lineWinData) {
-        return JSON.parse(lineWinData);
-    },
-    */
+    
     EndBonus(){
         
     },

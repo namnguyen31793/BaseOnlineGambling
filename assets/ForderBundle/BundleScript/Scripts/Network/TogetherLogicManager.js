@@ -24,40 +24,13 @@ var TogetherLogicManager = cc.Class({
         }
         else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_UPDATE_PLAYER_BALANCE) {
             this.HandleUpdateBalance(operationResponse);
-        }
-        // else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_MINIPOKER_SPIN_RESPONSE) {
-        //     this.HandleResultSpinMiniPoker(operationResponse);
-        // }
-        else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_NEW_MAIL) {
-            this.HandleNewMail(packet);
-        }
-        else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_ACCEPT_MONEY_MAIL) {
-            this.HandleAcceptMoneyMail(packet);
-        }
-        else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_PLAY_DAILY_SPIN_RESPONSE) {
-            this.HandlePlayDailySpin(packet);
-        }
+        }         
         else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_NORMAL_NOTIFICATION) {
             this.HandleNotify(packet);
-        }
-        else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_TOPUP_INFO) {
-            this.HandleTopupInfoShop(packet);
-        }
+        }    
         else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_GUN_INFO) {
             this.HandleGunInfo(packet);
-        }
-        else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_DELETE_MAIL_RESPONSE) {
-            this.HandleDeleteMail(packet);
-        }
-        else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_UPDATE_PHONENUMBER) {
-            this.HandleUpdatePhoneNumber(packet);
-        }
-        else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_GUN_TAKE_JACKPOT_PERCENT_INFO) {
-            this.HandleTakeJackpotPercent(operationResponse);
-        }     
-        else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_GET_DAILY_SPIN_BONUS) {
-            this.HandleGetDailySpinBonus(operationResponse);
-        }
+        }   
         else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_TAKE_REWARD) {
             this.HandleTakeReward(packet);
         }
@@ -66,35 +39,13 @@ var TogetherLogicManager = cc.Class({
         }
         else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_OLDSCHOOL_GET_DETAIL_HISTORY) {
             this.HandleHistoryGameSlot(operationResponse);
-        }
-        else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_GET_SHOP_CONFIG) {
-            this.HandleGetShopConfig(operationResponse);
-        }
-        else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_RECEIVED_DIAMOND) {
-            this.HandleReceiveDiamond(operationResponse);
-        }
-        else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_SEND_UPDATE_DIAMOND) {
-            this.HandleUpdateDiamond(operationResponse);
-        }
+        }        
         else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_GET_MISSION_INFO_RESPONSE) {
             this.HandleGetMissionInfo(operationResponse);
-        }
-        else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_BUY_SHOP_PACKAGE_RESPONSE) {
-            this.HandleBuyShopPackage(operationResponse);
-        }
-        else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_GET_DAILY_TELCO_SPIN) {
-            this.HandleGetDailyTelcoSpin(packet);
-        }
+        }       
         else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_PING) {
             this.HandlePingTime(operationResponse);
-        }
-        else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_MOMO_ORDER_REQUEST) {
-            this.HandleMomoOderRequest(packet);
-        }
-        else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_TOP_TAKE_JACKPOT_RANK) {
-            this.HandleTopTakeJackpotRank(operationResponse);
-        }
-        
+        }     
         else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_EVENT_MISSION_DAILY_GET_LIST_REWARD_ACCOUNT){
             this.HandleEventMissionDailyGetListRewardAccount(packet);
         }
@@ -128,8 +79,7 @@ var TogetherLogicManager = cc.Class({
         Global.Helper.LogAction("login success");
         if (ScreenManager.getIns().currentScreen == Global.Enum.SCREEN_CODE.LOBBY) {
             Global.LobbyView.CheckLoadSuccess();
-            if(Global.LevelManager)
-                Global.LevelManager.GetLevelInfo();
+           
             Global.MainPlayerInfo.SetUpInfo(infoUser);
            
             Global.LobbyView.CheckShowMiniGame();
@@ -145,31 +95,7 @@ var TogetherLogicManager = cc.Class({
         }
     },
 
-    HandleTopupInfoShop(packet) {
-        let cardTopupInfosInString = packet[1];
-        let cardTopupInfosIn = [];
-        for (let i = 0; i < cardTopupInfosInString.length; i++) {
-            cardTopupInfosIn[i] = JSON.parse (cardTopupInfosInString[i]);
-        }
-        Global.cardTopupInfosIn = cardTopupInfosIn;
 
-        let cardTopupInfosOutString = packet[2];
-        let cardTopupInfosOut = [];
-        for (let i = 0; i < cardTopupInfosOutString.length; i++) {
-            cardTopupInfosOut [i] = JSON.parse (cardTopupInfosOutString [i]);
-        }
-        Global.cardTopupInfosOut = cardTopupInfosOut;
-
-        let bankInfosOutString = packet[3];
-        let bankInfosOut = [];
-        for (let i = 0; i < bankInfosOutString.length; i++) {
-            bankInfosOut [i] = JSON.parse (bankInfosOutString [i]);
-        }
-        Global.bankInfosOut = bankInfosOut;
-
-        let rateCashOutBank = packet[4];
-        Global.rateCashOutBank = rateCashOutBank;
-    },
 
     HandleUpdateBalance(operationResponse) {
         if (ScreenManager.getIns().currentScreen == Global.Enum.SCREEN_CODE.LOBBY || ScreenManager.getIns().currentScreen == Global.Enum.SCREEN_CODE.CITY) {
@@ -179,32 +105,7 @@ var TogetherLogicManager = cc.Class({
         }
     },
 
-    HandleReceiveDiamond(operationResponse) {
-        if (ScreenManager.getIns().currentScreen == Global.Enum.SCREEN_CODE.LOBBY) {
-            OutGameLogicManager.getIns().OutGameHandleResponse(operationResponse);
-        } else {
-            InGameLogicManager.getIns().InGameHandleResponse(operationResponse);
-        }
-    },
-
-    HandleUpdateDiamond(operationResponse) {
-        if (ScreenManager.getIns().currentScreen == Global.Enum.SCREEN_CODE.LOBBY) {
-            OutGameLogicManager.getIns().OutGameHandleResponse(operationResponse);
-        } else {
-            InGameLogicManager.getIns().InGameHandleResponse(operationResponse);
-        }
-    },
-
     HandlePingTime(operationResponse) {
-        if (ScreenManager.getIns().currentScreen == Global.Enum.SCREEN_CODE.LOBBY ||
-            ScreenManager.getIns().currentScreen == Global.Enum.SCREEN_CODE.CITY) {
-            OutGameLogicManager.getIns().OutGameHandleResponse(operationResponse);
-        } else {
-            InGameLogicManager.getIns().InGameHandleResponse(operationResponse);
-        }
-    },
-
-    HandleBuyShopPackage(operationResponse) {
         if (ScreenManager.getIns().currentScreen == Global.Enum.SCREEN_CODE.LOBBY) {
             OutGameLogicManager.getIns().OutGameHandleResponse(operationResponse);
         } else {
@@ -212,6 +113,7 @@ var TogetherLogicManager = cc.Class({
         }
     },
 
+ 
     HandleConfirmResponse (packet) {
         cc.log(packet);
         Global.UIManager.hideMiniLoading();
@@ -263,21 +165,6 @@ var TogetherLogicManager = cc.Class({
         Global.UIManager.showRewardPopup (Global.Enum.STATUS_GIFT_POPUP.REWARD, content);
     },
 
-    HandlePlayDailySpin(packet) {
-        let indexReward = packet[1];
-        let numberSpin = packet[2];
-        let accountBalance = packet[3];
-        Global.currentSpin = numberSpin;
-        if(Global.LuckySpinPopup != null) {
-            Global.LuckySpinPopup.PlaySpin (indexReward, numberSpin, () => {
-                Global.MainPlayerInfo.ingameBalance  = accountBalance;
-                if (require("ScreenManager").getIns().currentScreen == Global.Enum.SCREEN_CODE.LOBBY) {
-                    Global.LobbyView.UpdateInfoView();
-                }
-               
-            });
-        }
-    },
 
     HandleTakeReward(packet) {
         let content = packet[1];
@@ -294,111 +181,6 @@ var TogetherLogicManager = cc.Class({
         Global.UIManager.showServerRewardPopup (content, rewardSpin, rewardBalance);
     },
 
-    HandleUpdatePhoneNumber(packet) {
-        let number = packet[1];
-        Global.MainPlayerInfo.phoneNumber = number;
-        Global.ProfilePopup.SetInfoProfile();
-        Global.UIManager.showCommandPopup (Global.MyLocalization.GetText ("SUCCESS"));
-    },
-
-    HandleNewMail(packet) {
-        if (Global.GameConfig.FeatureConfig.MailFeature != Global.Enum.EFeatureStatus.Open)
-            return;
-        let mail = packet[1];
-        let mailObj = JSON.parse (mail);
-        Global.MainPlayerInfo.UpdateNewMail (mailObj);
-        cc.log(require("ScreenManager").getIns().currentScreen+"    "+(require("ScreenManager").getIns().currentScreen == Global.Enum.SCREEN_CODE.LOBBY));
-        if (require("ScreenManager").getIns().currentScreen == Global.Enum.SCREEN_CODE.LOBBY) {
-            Global.LobbyView.UpdateMailStatus ();
-            Global.LobbyView.RequestGetVipConfig();
-            Global.UIManager.showConfirmPopup(Global.MyLocalization.GetText("NEW_MAIL_OPEN"),()=>{
-                Global.UIManager.showMailPopup();
-            },null);
-        } else {
-            Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEW_MAIL_CLOSE"),null);
-        }
-    },
-
-    HandleAcceptMoneyMail(packet){
-        cc.log("HandleAcceptMoneyMail");
-        cc.log(packet);
-        if (Global.GameConfig.FeatureConfig.MailFeature != Global.Enum.EFeatureStatus.Open)
-            return;
-        let mailMoney = packet[1];
-        let currentAccountBalance = packet[2];
-        let rewardBonusDescription = packet[3];
-        let fishingShooting_AccountBag_Model = packet[4];       
-
-        Global.UIManager.showNotifyRewardPopup(mailMoney, rewardBonusDescription, currentAccountBalance);
-
-        //Global.UIManager.showCommandPopup(Global.Helper.formatString( Global.MyLocalization.GetText("ACCEPT_MONEY_MAIL"), [Global.Helper.formatNumber(mailMoney)]));
-        // if (require("ScreenManager").getIns().currentScreen == Global.Enum.SCREEN_CODE.LOBBY) {
-        //     Global.LobbyView.UpdateInfoView ();
-        // } else {
-        //     Global.MainPlayerInfo.ingameBalance = currentAccountBalance;
-        // }
-        //bag
-        let listData = [];
-        for (let i = 0; i < fishingShooting_AccountBag_Model.length; i++) {
-            listData[i] = JSON.parse(fishingShooting_AccountBag_Model[i]);
-        }   
-        require("BagController").getIns().UpdateBagInfo(listData);
-        
-        let currentScreen = require("ScreenManager").getIns().currentScreen;
-        if(currentScreen != 0 && currentScreen) 
-            if(currentScreen == Global.Enum.SCREEN_CODE.LOBBY){
-                require("WalletController").getIns().UpdateWallet(currentAccountBalance);
-                if(Global.LobbyView)
-                    Global.LobbyView.OnUpdateDiamonView();
-                if(Global.LobbyFish)
-                    Global.LobbyFish.OnUpdateDiamonView();
-            }
-    },
-
-    HandleDeleteMail(packet) {
-        let data = packet[1];
-        let listMailObj =[];
-        let numMailNotRead = 0;
-        for (let i = 0; i < data.length; i++) {
-            listMailObj [i] = JSON.parse (data [i]);
-            if (listMailObj [i].IsReaded == 0)
-                numMailNotRead += 1;
-        }
-
-        Global.MainPlayerInfo.SetUpMail (listMailObj, numMailNotRead);
-        if (require("ScreenManager").getIns().currentScreen == Global.Enum.SCREEN_CODE.LOBBY) {
-            Global.LobbyView.UpdateMailStatus ();
-        }
-        Global.MailPopup.SetInfoMail ();
-    },
-
-    HandleGetDailyTelcoSpin(packet) {
-        let index = packet[1];
-        let reward = packet[2];
-        if(Global.LuckySpinPopup != null) {
-            Global.LuckySpinPopup.UpdateResultBonus(index, reward);
-        }
-    },
-
-    HandleTopTakeJackpotRank(operationResponse) {
-        if (ScreenManager.getIns().currentScreen == Global.Enum.SCREEN_CODE.INGAME_KILL_BOSS) {
-            InGameLogicManager.getIns().InGameHandleResponse(operationResponse);
-        } else {
-            OutGameLogicManager.getIns().OutGameHandleResponse(operationResponse);
-        }
-    },
-
-    //shop
-
-    HandleMomoOderRequest(packet) {
-        if(Global.ShopPopup != null && Global.ShopPopup.node.active) {
-            let mobile = packet[1];
-            let description = packet[2];
-            let account = packet[3];
-            let rate = packet[4];
-            Global.ShopPopup.momoInObj.getComponent("ShopTabMomoIn").UpdateInfo(mobile, account, description, rate);
-        }
-    },
 
     //notify
     HandleNotify(packet) {
@@ -414,34 +196,7 @@ var TogetherLogicManager = cc.Class({
         
     },
 
-    //daily
-    HandleEventMissionDailyGetListRewardAccount(packet) {
-        if(Global.QuestPopup) {
-            let data = [];
-            for(let i = 0; i < packet[1].length; i++) {
-                data[i] = JSON.parse(packet[1][i]);
-            }
-            Global.QuestPopup.SetStateQuestInfo(data);
-        }
-    },
-
-    HandleEventMissionDailyGetTakeAccountReward(packet) {
-        let goldValue = packet[1];
-        let accountBalance = packet[2];
-        if(Global.QuestPopup) {
-            Global.QuestPopup.ShowEffect(accountBalance);
-        }
-    },
-
-    HandleEventMissionDailyGetMissionConfig(packet) {
-        if(Global.QuestPopup) {
-            let data = [];
-            for(let i = 0; i < packet[1].length; i++) {
-                data[i] = JSON.parse(packet[1][i]);
-            }
-            Global.QuestPopup.UpdateQuestInfo(data);
-        }
-    },
+  
 
     
 

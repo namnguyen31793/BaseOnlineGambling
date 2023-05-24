@@ -21,8 +21,7 @@ cc.Class({
 		this.currentLiveChannel = '';
 		this.currentIDChannel = 0;
 		this.currentTypeChannel = 0;
-		this.countAnimBigWinLive = 0;
-
+	
 		this.listButtonLive = [];
 		this.dataChannelInfo = [];
 		this.countTimeChat = 0;
@@ -58,7 +57,7 @@ cc.Class({
 
 		btnOnline : require("BtnOnline"),
 		showStartGame : require("ShowStartGame"),
-		settingLobby : require("SettingLobby"),
+	
 		showBigWin : require("ShowBigWinLobby"),
 		notifyManager : require("NotifyLobbyView"),
 		lbJackpot : [require("LbMonneyChange")],
@@ -93,7 +92,6 @@ cc.Class({
 
 		this.countLoad = 0;
 	
-		this.settingLobby.Init();
 
 	},
 
@@ -108,17 +106,6 @@ cc.Class({
 			Global.BtnMiniGame.Init();
 	},
 
-	CheckOneSignal() {
-		jsb.reflection.callStaticMethod("org/cocos2dx/javascript/AppActivity", "hello", "(Ljava/lang/String;)V", "this is a message from js");
-
-		// var result = jsb.reflection.callStaticMethod("org/cocos2dx/javascript/AppActivity", "sum", "(II)I", 3, 7);
-		let id = jsb.reflection.callStaticMethod("org/cocos2dx/javascript/AppActivity", "GetDeviceId", "(Ljava/lang/String;)I", "this is a message from js");
-		// console.log(result); //10	
-		console.log("GGGG id:"+id);	
-		this.scheduleOnce(()=>{
-			this.CheckOneSignal();
-		} , 2);
-	},
 
 
 	Init() {
@@ -249,21 +236,7 @@ cc.Class({
         }
     },
 
-	ClickButtonMiniPoker() {
-		Global.UIManager.showMiniPoker();
-	},
 
-	ClickButtonMiniSlot() {
-		Global.UIManager.showMiniSlot();
-	},
-
-	ClickButtonMiner() {
-		Global.UIManager.showMiniMiner();
-	},
-
-	ClickButtonLongPhung() {
-
-	},
 
 	ClickCommingSoon() {
 		if (!Global.isConnect) {
@@ -315,11 +288,7 @@ cc.Class({
 		this.showStartGame.Action();
 	},
 
-	UpdateNotify(content, speed) {
-		if (Global.GameConfig.FeatureConfig.NotifyLobbyFeautre != Global.Enum.EFeatureStatus.Open)
-			return;
-		// this.notifyUI.UpdateListNotify (content, speed);
-	},
+	
 
 
 
@@ -346,50 +315,12 @@ cc.Class({
 	},
 
 
-	OnUpdateDiamonView() {
-		let listItemData = require("BagController").getIns().listDataItem;
-        for(let i = 0; i < listItemData.length; i++) {
-            if(listItemData[i].ItemId == 4) {
-				this.txtDiamon.string = Global.Helper.formatNumber(listItemData[i].Amount.toString());
-            }
-        }
-	},
-
 	onDestroy() {	
 		Global.LobbyView = null;
 		require("WalletController").getIns().RemoveListener();
 	},
 
 
-
-
-	GetBigWin(response){
-		let lastScreenCode = require("ScreenManager").getIns().lastScreen;
-        if(lastScreenCode != 0 && lastScreenCode) {
-            if(lastScreenCode != Global.Enum.SCREEN_CODE.LOBBY && lastScreenCode != Global.Enum.SCREEN_CODE.LOGIN)
-				return;
-        }
-		let dataJson = JSON.parse(response);
-		let data = dataJson.d;
-		if(Global.LobbyView == null)
-			return;
-		Global.listDataBigWinLive = [];
-		for(let i = 0; i < data.length; i++){
-			let model = JSON.parse(data[i]);
-			if(model.length > 0){
-				let gametype = model[0].GameType;
-				Global.LobbyView.SetupEffectItemOutGame(gametype, model);
-				for(let i =0; i < model.length; i++){
-					Global.listDataBigWinLive.push(model[i]);
-				}
-			}
-		}
-		if(Global.listDataBigWinLive.length > 0) {
-			Global.LobbyView.showBigWin.Init();
-			Global.LobbyView.notifyManager.Init();
-		}
-		
-	},
 
 	SetupEffectItemOutGame(gametype, data){
 		for(let i = 0; i < Global.LobbyView.listEffItemOutGame.length; i++){
@@ -398,25 +329,7 @@ cc.Class({
 		}
 	},
 
-	GetTotalSpinGame(response){
-		let lastScreenCode = require("ScreenManager").getIns().lastScreen;
-        if(lastScreenCode != 0 && lastScreenCode) {
-            if(lastScreenCode != Global.Enum.SCREEN_CODE.LOBBY && lastScreenCode != Global.Enum.SCREEN_CODE.LOGIN)
-				return;
-        }
-		let dataJson = JSON.parse(response);
-		let data = dataJson.d;
-		// for(let i = 0; i < data.length; i++){
-		// 	let model = data[i];
-		// 	for(let j = 0; j < Global.LobbyView.listEffItemOutGame.length; j++){
-		// 		if(Global.LobbyView.listEffItemOutGame[j].typeGame == model.GameType){
-		// 			Global.LobbyView.listEffItemOutGame[j].UpdateTotalSpin(model.TotalCounterToDay);
-		// 			break;
-		// 		}
-		// 	}
-		// }
-	},
-	
+
 	GetJackpotValue(response) {
 		let lastScreenCode = require("ScreenManager").getIns().lastScreen;
         if(lastScreenCode != 0 && lastScreenCode) {

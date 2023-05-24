@@ -33,7 +33,7 @@ cc.Class({
         this.node.getComponent(cc.Animation).play("HidePopup");
         this.scheduleOnce(()=>{
             this.node.active = false;
-            Global.UIManager.hideMark();
+            Global.UIManager.hideMark();  
         } , 0.2);
     },
 

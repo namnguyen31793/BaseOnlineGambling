@@ -52,7 +52,6 @@ cc.Class({
         toDoList.AddWork(()=>{
             this.slotView.OnUpdateLastMatrix(lastMatrix);
         }, false);
-        toDoList.AddWork(()=>this.slotView.ShowCommandUseItemBonusTurn(this.slotView.toDoList),true);
         toDoList.AddWork(()=>this.slotView.ActiveButtonMenu(),false);
         toDoList.AddWork(()=>this.slotView.CheckStateAuto(),false);
         toDoList.Play();

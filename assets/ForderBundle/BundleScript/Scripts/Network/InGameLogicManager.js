@@ -28,14 +28,6 @@ var InGameLogicManager = cc.Class({
             this.HandleUpdateBalance(packet);
         } else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_NORMAL_NOTIFICATION) {
             this.HandleNotifyCashOut(packet);
-        } else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_RECEIVED_DIAMOND) {
-            this.HandleReceiveDiamond(packet);
-        } else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_SEND_UPDATE_DIAMOND) {
-            this.HandleUpdateDiamond(packet);
-        } else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_GET_SHOP_CONFIG) {
-            this.HandleGetShopConfig(packet);
-        } else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_BUY_SHOP_PACKAGE_RESPONSE) {
-            this.HandleBuyShopPackage(packet);
         } else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_TOP_TAKE_JACKPOT_RANK) {
             this.HandleTopJackpotRank(packet);
         } else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_GET_ACCOUNT_INFO) {
@@ -64,34 +56,7 @@ var InGameLogicManager = cc.Class({
         }
     },
 
-    HandleReceiveDiamond(packet) {
-        let accountId = packet[1];
-        let diamondBonus = packet[2];
-        let diamondBalance = packet[3];
-        require("FishNetworkManager").getIns().gamelogic.ReceiveDiamond(accountId, diamondBonus, diamondBalance);
-    },
-
-    HandleUpdateDiamond(packet) {
-        let accountId = packet[1];
-        let diamondBalance = packet[2];
-        require("FishNetworkManager").getIns().gamelogic.UpdateDiamond(accountId, diamondBalance);
-    },
-
-    HandleGetShopConfig(packet) {
-        let shopConfigString = packet[1];
-        let listData = [];
-        for (let i = 0; i < shopConfigString.length; i++) {
-            listData[i] = JSON.parse(shopConfigString[i]);
-        }
-        Global.InGameView.UpdateListItemDiamond(listData);
-    },
-
-    HandleBuyShopPackage(packet) {
-        let data = packet[1];
-        let accountBalance = packet[2];
-        let diamondBalance = packet[3];
-        require("FishNetworkManager").getIns().gamelogic.BuyShopSuccess(data, accountBalance, diamondBalance);
-    },
+  
 
     HandleTopJackpotRank(packet) {
         let listDataTopJackpotString = packet[1];
