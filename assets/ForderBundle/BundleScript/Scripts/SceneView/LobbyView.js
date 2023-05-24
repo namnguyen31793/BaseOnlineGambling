@@ -111,9 +111,9 @@ cc.Class({
 			Global.BaseNetwork.request(Global.ConfigLogin.GameConfigUrl, data, this.GetConfig);
 			Global.BaseNetwork.request(Global.ConfigLogin.GetRoomMulti, data, this.GetRoomMultiSlot);
 		} else {
-			Global.showLuckyBonus = true;
+			
 			this.CheckLoadSuccess();
-			this.UpdateInfoView();
+			this.Handle_JoinSlot(19)
 		}
 		
 	},
@@ -140,18 +140,7 @@ cc.Class({
 		}
 	},
 
-	UpdateInfoView() {
-		this.txtName.string = Global.MainPlayerInfo.nickName;
-		if(Global.MainPlayerInfo.ingameBalance < 1000000000) {
-			this.txtGold.string = Global.Helper.formatNumber(Global.MainPlayerInfo.ingameBalance);
-		} else {
-			this.txtGold.string = Global.Helper.formatNumberLong(Global.MainPlayerInfo.ingameBalance);
-		}
-		
-		this.txtVip.string = "VIP " + Global.MainPlayerInfo.vipLevel;
-		Global.Helper.GetAvata(this.imgAva);
-	},
-
+	
 	ClickJoinFishRoom_New(event, index) {
 		if (!Global.isConnect) {
 			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
@@ -209,6 +198,22 @@ cc.Class({
 		require("ScreenManager").getIns().LoadScene(Global.Enum.SCREEN_CODE.INGAME_SLOT);
 	},
 
+	Handle_JoinSlot(gameSlotID)
+	{
+		cc.log(Global.isLogin);
+		if (!Global.isLogin) {
+			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
+			return;
+		}
+		cc.log(Global.GameConfig.FeatureConfig);
+		if (!Global.Helper.CheckFunction(Global.GameConfig.FeatureConfig.SlotGame))
+			return;
+		
+		require("ScreenManager").getIns().roomType = gameSlotID;
+		require("ScreenManager").getIns().SetBetMoneyType(0);
+		require("ScreenManager").getIns().LoadScene(Global.Enum.SCREEN_CODE.INGAME_SLOT);
+	},
+
 	playSlotRealMoney(event, index) {
 		Global.AudioManager.ClickButton();
 		if (!Global.isLogin) {
@@ -246,11 +251,7 @@ cc.Class({
 		
 	},
 	
-	UpdateNotify(content, speed) {
-		if (Global.GameConfig.FeatureConfig.NotifyLobbyFeautre != Global.Enum.EFeatureStatus.Open)
-			return;
-		// this.notifyUI.UpdateListNotify (content, speed);
-	},
+
 
 	ShowNotifyCash(content, speed, repeat) {
 		// this.notifyUI.AddNotify (content, speed, repeat);

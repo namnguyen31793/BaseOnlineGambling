@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "a10ee2b2-1d9f-43b5-853f-0f0808e4d1d6",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1408,
+  "height": 792,
+  "platformSettings": {},
+  "subMetas": {
+    "SpinHubLogo": {
+      "ver": "1.0.4",
+      "uuid": "c5d6ed7d-fc5c-4454-b494-cbb679bf88f8",
+      "rawTextureUuid": "a10ee2b2-1d9f-43b5-853f-0f0808e4d1d6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1408,
+      "height": 792,
+      "rawWidth": 1408,
+      "rawHeight": 792,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

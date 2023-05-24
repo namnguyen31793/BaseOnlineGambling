@@ -54,10 +54,7 @@ var TogetherLogicManager = cc.Class({
         }
         else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_GUN_TAKE_JACKPOT_PERCENT_INFO) {
             this.HandleTakeJackpotPercent(operationResponse);
-        }
-        else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_BATTLE_ROOM_INFO) {
-            this.HandleBattleRoomInfo(operationResponse);
-        }
+        }     
         else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_GET_DAILY_SPIN_BONUS) {
             this.HandleGetDailySpinBonus(operationResponse);
         }
@@ -113,25 +110,10 @@ var TogetherLogicManager = cc.Class({
         }
         else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_EVENT_TOURNAMENT_TAKE_ACCOUNT_REWARD){
             this.HandleTakeTournamentReward(packet);
-        }
-        else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_BATTLE_FIELD_REGISTER){
-            this.HandleRegisterBattle(operationResponse);
-        }
-        else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_VIEW_ADS){
-            this.HandleViewAds(operationResponse);
-        }
-        else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_REWARD_SPIN_TAKE_REWARD){
-            this.HandleUseFreeSpin(packet);
-        }
+        }        
         else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_RETURN_REQUEST){
             this.HandleCheckReturnRequest(packet);
-        }
-        else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_RPG_BATTLE_FIELD_GET_CONFIG){
-            this.HandleRpgBattleGetConfig(packet);
-        }
-        else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_RPG_BATTLE_FIELD_REGISTER){
-            this.HandleRpgBattleRegister(packet);
-        }
+        }     
         else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_GET_VIP_INFO){
             this.HandleGetVipInfo(packet);
         }
@@ -149,15 +131,10 @@ var TogetherLogicManager = cc.Class({
             if(Global.LevelManager)
                 Global.LevelManager.GetLevelInfo();
             Global.MainPlayerInfo.SetUpInfo(infoUser);
-            Global.LobbyView.UpdateInfoView();
+           
             Global.LobbyView.CheckShowMiniGame();
-        } else if (ScreenManager.getIns().currentScreen == Global.Enum.SCREEN_CODE.CITY) {
-            Global.LobbyView.CheckLoadSuccess();
-            Global.LevelManager.GetLevelInfo();
-            Global.MainPlayerInfo.SetUpInfo(infoUser);
-            Global.CityView.UpdateInfoView();
-            Global.CityView.Init();
-        }
+            Global.LobbyView.Handle_JoinSlot(19)
+        } 
         let lastScreenCode = require("ScreenManager").getIns().lastScreen;
         if(lastScreenCode != 0 && lastScreenCode) {
             if(lastScreenCode == Global.Enum.SCREEN_CODE.INGAME_SLOT || lastScreenCode == Global.Enum.SCREEN_CODE.INGAME_KILL_BOSS)
@@ -508,31 +485,8 @@ var TogetherLogicManager = cc.Class({
         Global.RewardTourPopup.ShowEffect(accountBalance);
     },
 
-    //battle
-    HandleRegisterBattle(operationResponse) {
-        if (ScreenManager.getIns().currentScreen == Global.Enum.SCREEN_CODE.LOBBY || ScreenManager.getIns().currentScreen == Global.Enum.SCREEN_CODE.CITY) {
-            OutGameLogicManager.getIns().OutGameHandleResponse(operationResponse);
-        } else {
-            InGameLogicManager.getIns().InGameHandleResponse(operationResponse);
-        }
-    },
-
-    //ads
-    HandleViewAds(operationResponse) {
-        //IngameBalance packet 1
-    },
-
-    //item
-    HandleUseFreeSpin(packet) {
-        cc.log(packet);
-        let gameId = packet[1];
-        let roomId = packet[2];
-        let currentAmount = packet[3];
-        require("BagController").getIns().UpdateFreeItem(gameId, currentAmount);
-        // Global.SendTrackerLogView("Play Slot "+gameId);
-		require("ScreenManager").getIns().roomType = gameId;
-		require("ScreenManager").getIns().LoadScene(Global.Enum.SCREEN_CODE.INGAME_SLOT);
-    },
+   
+   
     //check
     HandleCheckReturnRequest(packet) {
         cc.log("check return request");
@@ -542,31 +496,9 @@ var TogetherLogicManager = cc.Class({
             Global.LobbyView.showStartGame.Action();
         }
     },
-    //rpg
-    HandleRpgBattleGetConfig(packet) {
-        let data = [];
-        for(let i = 0; i < packet[1].length; i++) {
-            data[i] = JSON.parse(packet[1][i]);
-        }
-        
-        Global.UIManager.preLoadPrefab("27/FindGameRpgPopup");
-        Global.UIManager.showFindRoomRpgPopup(data);
-    },
+   
 
-    HandleRpgBattleRegister(packet) {
-        cc.log(packet);
-        //1 account balance
-        //2 player info
-        //3 bot info
-        //4 gameId
-        //5 end live time second
-        //7 room config
-        Global.RpgConfig = packet;
-        let slotType = 27;
-        // Global.SendTrackerLogView("Play Slot "+slotType);
-		require("ScreenManager").getIns().roomType = slotType;
-		require("ScreenManager").getIns().LoadScene(Global.Enum.SCREEN_CODE.INGAME_SLOT);
-    },
+   
 
     //vip
     HandleGetVipInfo(packet) {

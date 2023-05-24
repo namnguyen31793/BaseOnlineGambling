@@ -37,8 +37,6 @@ var OutGameLogicManager = cc.Class({
         //     this.HandleResultSpinMiniPoker(packet);
         } else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_NORMAL_NOTIFICATION) {
             this.HandleNotifyCashOut(packet);
-        } else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_NOTIFICATION_LOBBY_INFO) {
-            this.HandleNotifyLobby(packet);
         } else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_JACKPOT_INFO) {
             this.HandleJackpotInfo(packet);
         } else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_ACCOUNT_HISTORY) {
@@ -105,12 +103,6 @@ var OutGameLogicManager = cc.Class({
             this.HandleGetConfigChallenge(packet);
         } else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_CHALLENGE_REGISTER_CONFIRM){
             this.HandleRegisterChallenge(packet);
-        } else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_BATTLE_FIELD_REGISTER){
-            this.HandleBattleFieldRegister(packet);
-        } else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_BATTLE_FIELD_GET_CONFIG){
-            this.HandleBattleFieldGetConfig(packet);
-        } else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_BATTLE_FIELD_GET_PLAYING_MATCH){
-            this.HandleBattleFieldGetPlayingMatch(packet);
         } else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_GET_LOGIN_REWARD){
             this.HandleGetLoginGiftReward(packet);
         }
@@ -169,19 +161,7 @@ var OutGameLogicManager = cc.Class({
         }
     },
 
-    HandleNotifyLobby(packet) {
-        let notify = packet[1];
-        let speed = packet[2];
-        if(Global.LobbyView != null)
-            Global.LobbyView.UpdateNotify(notify, speed);
-    },
-
-    HandleNotifyCashOut(packet) {
-        let content = packet[1];
-        let speed = packet[2];
-        let repeat = packet[3];
-        Global.LobbyView.ShowNotifyCash (content, speed, repeat);
-    },
+   
 
     HandleUpdateVipPoint(packet) {
         let levelVip = packet[1];
@@ -472,100 +452,8 @@ var OutGameLogicManager = cc.Class({
         cc.log(listData);
     },
 
-    HandleRegisterChallenge(packet) {
-        cc.log(packet);
-        Global.isChallenge = 1;
-        require("ScreenManager").getIns().roomType = 20;
-        require("ScreenManager").getIns().LoadScene(Global.Enum.SCREEN_CODE.INGAME_SLOT);
-    },
+  
+ 
 
-    //battle
-    HandleBattleFieldRegister(packet) {
-        cc.log(packet);
-        let accountBalance = packet[1];
-        let user = JSON.parse(packet[2]);
-        let rival = JSON.parse(packet[3]);
-        let gameId = packet[4];
-        let endTimeLive = packet[5];
-        let turnModelString = packet[6];
-        let betModel = packet[7];
-        let betReward = packet[8];
-        Global.betRewardBattle = betReward;
-        Global.MainPlayerInfo.ingameBalance = accountBalance;
-        Global.LobbyView.UpdateInfoView();
-        let turnModel = [];
-        if(turnModelString!= null && turnModelString.length > 0) {
-            for(let i = 0; i < turnModelString.length; i++) {
-                turnModel[i] = JSON.parse(turnModelString[i]);
-            }
-        }
-        let betValue = JSON.parse(betModel).Bet;
-        let dataBattle = {
-            rivalName : rival.Nickname,
-            myTurn : user.BattleNormalTurn,
-            rivalTurn : rival.BattleNormalTurn,
-            userScore : user.BattleScore,
-            rivalScore : rival.BattleScore,
-            endTimeLive : endTimeLive,
-            startTime : require("SyncTimeControl").getIns().GetCurrentTimeServer(),
-            turnModel : turnModel,
-            betValue : betValue,
-        };
-        Global.dataBattle = dataBattle;
-        if(Global.BattlePopup) {
-            Global.BattlePopup.UpdateResult(user, rival, gameId, endTimeLive, turnModel);
-        } else {
-            require("ScreenManager").getIns().roomType = gameId;
-		    require("ScreenManager").getIns().LoadScene(Global.Enum.SCREEN_CODE.INGAME_SLOT);
-        }
-    },
-
-    HandleBattleFieldGetConfig(packet) {
-        cc.log(packet);
-        let config = [];
-        for(let i = 0; i < packet[1].length; i++) {
-            config[i] = JSON.parse(packet[1][i]);
-        }
-        Global.LobbyView.battleShowLobby.UpdateConfig(config);
-        if(Global.CreateRoomBatlePopup) {
-            Global.CreateRoomBatlePopup.UpdateConfig(config);
-        }
-    },
-
-    HandleBattleFieldGetPlayingMatch(packet) {
-        cc.log(packet);
-        let gameId = packet[1];
-        let time = packet[2];
-        let betReward = packet[3];
-        Global.betRewardBattle = betReward;
-        Global.UIManager.showTimeConfirmPopup(Global.MyLocalization.GetText("CONTINUE_BATTLE"), time, gameId, ()=>{
-            let data = {};
-            data[1] = gameId;
-            require("SendRequest").getIns().MST_Client_Battle_Field_Continue_Battle_Match(data);
-        }, ()=>{
-            let data = {};
-            data[1] = gameId;
-            require("SendRequest").getIns().MST_Client_Battle_Field_Cancel_Battle_Match(data);
-        });
-    },
-
-    HandleGetLoginGiftReward(packet) {
-        cc.log(packet);
-        let continuousLogin_Reward_List = packet[1];
-        let login_Reward_List = packet[2];
-        let beforeBonueValueBalance = packet[3];
-        let continuousLoginRewardValue = packet[4];
-        let afterAcceptContinuousLoginRewardBalance  = packet[5];
-        let loginRewardValue  = packet[6];
-        let afterAcceptLoginRewardBalance  = packet[7];
-        let LoginDayCounter =  packet[8];
-        let ContinuousLoginDayCounter =  packet[9];
-        let bonusMoneyValue =  packet[10];
-        let vipBonusModel =  packet[11];
-        let EventGame_VipBonusConfig =  packet[12];
-        Global.UIManager.showLoginGiftPopup(continuousLogin_Reward_List, login_Reward_List, beforeBonueValueBalance, continuousLoginRewardValue,
-            afterAcceptContinuousLoginRewardBalance, loginRewardValue, afterAcceptLoginRewardBalance, LoginDayCounter, ContinuousLoginDayCounter,
-            bonusMoneyValue, vipBonusModel, EventGame_VipBonusConfig);
-    }
 });
 module.exports = OutGameLogicManager;

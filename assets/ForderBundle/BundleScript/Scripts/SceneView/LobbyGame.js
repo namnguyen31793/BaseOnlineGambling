@@ -10,10 +10,7 @@ cc.Class({
 		this.countTime = 0;
 		this.bonusTime = 0;
 		this.notifyUI = null;
-
-		this.countTimeGetBigWin = 0;
-		this.countTimeTotalSpinGame = 0;
-		this.countTimeGetLogin = 0;
+	
 		this.countTimeRandomLogin = 0;
 		this.infoLoginCollecsion = null;
 
@@ -84,14 +81,6 @@ cc.Class({
 		Global.LobbyView = this;
 
 		this.LoadMussicBackgroud();
-		
-
-		//get list bigWin
-		this.SendGetListBigWin();
-		//get list login online
-		this.SendGetLoginCollecsion();
-		//get total spin tung game
-		this.SendGetTotalSpin();
 
 		if (Global.isLogin) {
 			this.Connect();
@@ -103,32 +92,9 @@ cc.Class({
 		}
 
 		this.countLoad = 0;
-		// let funNext = () => {
-		// 	cc.log("fun next");
-		// 	this.CheckLoadSuccess();
-		// }
-		// Global.UIManager.showLoading();
-		// if (Global.UIManager) {
-		// 	Global.UIManager.preLoadPopupInRes(funNext);
-		// } else {
-		// 	funNext();
-		// }
+	
 		this.settingLobby.Init();
 
-		Global.DownloadManager.LoadPrefab("Banner2","banner", (prefab)=>{
-            let notify = cc.instantiate(prefab);
-            notify.parent = Global.LobbyView.bannerContent;
-            
-        });
-	},
-
-	OnCheckMail() {
-		this.countCheckMail += 1;
-		if(this.countCheckMail == 2) {
-			Global.UIManager.showConfirmPopup(Global.MyLocalization.GetText("NEW_MAIL_OPEN"),()=>{
-                Global.UIManager.showMailPopup();
-            },null);
-		}
 	},
 
 	CheckLoadSuccess() {
@@ -173,7 +139,7 @@ cc.Class({
 
 	Connect() {
 		this.Init();
-		cc.log("check show free bonus:"+this.firstLogin);
+		
 		if (Global.isConnect == false) {
 			var data = {
 			}
@@ -185,14 +151,7 @@ cc.Class({
 			this.RequestGetFishConfig();
 		} else {
 			Global.showLuckyBonus = true;
-			this.CheckLoadSuccess();
-			this.UpdateInfoView();
-			this.RequestGetVipConfig();
-			this.OnCheckMail();
-			if(Global.LevelManager)
-                Global.LevelManager.GetLevelInfo();
-			if(!this.firstLogin)
-			 	require("SendRequest").getIns().MST_Client_FreeReward_Show_Banner();
+			this.CheckLoadSuccess();		
 		}
 	},
 	LoadMussicBackgroud()
@@ -233,17 +192,6 @@ cc.Class({
 	},
 	
 
-	UpdateInfoView() {
-		cc.log(Global.MainPlayerInfo);
-		this.txtName.string = Global.MainPlayerInfo.nickName;
-		if(Global.MainPlayerInfo.ingameBalance < 1000000000) {
-			this.txtGold.string = Global.Helper.formatNumber(Global.MainPlayerInfo.ingameBalance);
-		} else {
-			this.txtGold.string = Global.Helper.formatNumberLong(Global.MainPlayerInfo.ingameBalance);
-		}
-		
-		Global.Helper.GetAvata(this.imgAva);
-	},
 
 	ClickJoinFishRoom(event, index) {
 		if (!Global.isConnect) {
@@ -251,13 +199,7 @@ cc.Class({
 			return;
 		}
 		Global.AudioManager.ClickButton();
-		// for (var i = 0; i < Global.GameConfig.ListRoomConfig.length; i++) {
-		// 	if (Global.GameConfig.ListRoomConfig[i].RoomId == index) {
-		// 		if (Global.MainPlayerInfo.ingameBalance < Global.GameConfig.ListRoomConfig[i].MinMoney) {
-		// 			Global.UIManager.showCommandPopup(Global.Helper.formatString(Global.MyLocalization.GetText("MIN_MONEY_JOIN_ROOM"), [Global.Helper.formatNumber(Global.GameConfig.ListRoomConfig[i].MinMoney)]), null);
-		// 		}
-		// 	}
-		// }
+	
 		if(index == 3) {
 			CONFIG.MULTI_PLAYER = true;
 		} else {
@@ -278,81 +220,11 @@ cc.Class({
 		} else {
 			CONFIG.MULTI_PLAYER = false;
 		}
-		// for (var i = 0; i < Global.GameConfig.ListRoomConfig.length; i++) {
-		// 	if (Global.GameConfig.ListRoomConfig[i].RoomId == index) {
-		// 		if (Global.MainPlayerInfo.ingameBalance < Global.GameConfig.ListRoomConfig[i].MinMoney) {
-		// 			Global.UIManager.showCommandPopup(Global.Helper.formatString(Global.MyLocalization.GetText("MIN_MONEY_JOIN_ROOM"), [Global.Helper.formatNumber(Global.GameConfig.ListRoomConfig[i].MinMoney)]), null);
-		// 		}
-		// 	}
-		// }
+		
 		require("ScreenManager").getIns().roomType = index;
 		require("ScreenManager").getIns().LoadScene(Global.Enum.SCREEN_CODE.INGAME_KILL_BOSS);
 	},
 
-	ClickShowGiftPopup() {
-		if (!Global.isConnect) {
-			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
-			return;
-		}
-		Global.AudioManager.ClickButton();
-		Global.UIManager.showWeeklyRewardPopup(Global.Enum.STATUS_GIFT_POPUP.ATTENDANCE);
-	},
-
-	ClickBtnAchievementPopup() {
-		if (!Global.isConnect) {
-			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
-			return;
-		}
-		Global.AudioManager.ClickButton();
-		Global.UIManager.showAchievementPopup();
-	},
-
-	ClickShowQuestPopup() {
-		if (!Global.isConnect) {
-			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
-			return;
-		}
-		Global.AudioManager.ClickButton();
-		Global.UIManager.showQuestPopup();
-		
-		
-	},
-
-	ClickShowVipInfoPopup() {
-		if (!Global.isConnect) {
-			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
-			return;
-		}
-		Global.AudioManager.ClickButton();
-		Global.UIManager.showVipInfoPopup();
-	},
-
-	ClickBtnNews() {
-		if (!Global.isConnect) {
-			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
-			return;
-		}
-		Global.AudioManager.ClickButton();
-		Global.UIManager.showEventPopup(Global.Enum.STATE_EVENT.NEWS);
-	},
-
-	ClickBtnEvent() {
-		if (!Global.isConnect) {
-			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
-			return;
-		}
-		Global.AudioManager.ClickButton();
-		Global.UIManager.showEventPopup(Global.Enum.STATE_EVENT.EVENT);
-	},
-
-	ClickBtnSupport() {
-		if (!Global.isConnect) {
-			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
-			return;
-		}
-		Global.AudioManager.ClickButton();
-		Global.UIManager.ShowSupportPopup();
-	},
 
 	ClickBtnSpin() {
 		if (!Global.isConnect) {
@@ -367,70 +239,7 @@ cc.Class({
 		Global.UIManager.showLuckySpinPopup (Global.listResult, Global.currentSpin);
 	},
 
-	ClickBtnSetting() {
-		if (!Global.isConnect) {
-			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
-			return;
-		}
-		Global.AudioManager.ClickButton();
-		Global.UIManager.showSettingPopup();
-
-		
-	},
-
-	ClickBtnGiftCode() {
-		if (!Global.isConnect) {
-			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
-			return;
-		}
-		Global.AudioManager.ClickButton();
-		Global.UIManager.showGiftCodePopup();
-	},
-
-	ClickBtnMail() {
-		if (!Global.isConnect) {
-			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
-			return;
-		}
-		Global.AudioManager.ClickButton();
-		Global.UIManager.showMailPopup();
-	},
-
-	ClickBtnRank() {
-		if (!Global.isConnect) {
-			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
-			return;
-		}
-		Global.AudioManager.ClickButton();
-		Global.UIManager.showRankPopup();
-	},
-
-	ClickBtnHistory() {
-		if (!Global.isConnect) {
-			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
-			return;
-		}
-		Global.AudioManager.ClickButton();
-		Global.UIManager.showHistoryPopup();
-	},
-
-	ClickBtnProfilePopup() {
-		if (!Global.isConnect) {
-			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
-			return;
-		}
-		Global.AudioManager.ClickButton();
-		Global.UIManager.showProfilePopup();
-	},
-
-	ClickBtnCollection() {
-		if (!Global.isConnect) {
-			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
-			return;
-		}
-		Global.AudioManager.ClickButton();
-		Global.UIManager.showCollectionPopup();
-	},
+	
 
     ClickChangeStatusMusic(event, data) {
         if(this.toggleMusic.isChecked) {
@@ -465,37 +274,7 @@ cc.Class({
 		Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("COMMING_SOON"));
 	},
 
-	ClickTest2() {
-		cc.log("11111111111111111111");
-		console.log("send MST_Client_Event_Get_ReferenceInfo");
-		require("SendRequest").getIns().MST_Client_Event_Get_ReferenceInfo();
-
-    },
-
-	ClickPigBank() {
-		if (!Global.isConnect) {
-			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
-			return;
-		}
-		Global.AudioManager.ClickButton();
-		require("SendRequest").getIns().MST_Client_Event_PingBank_Get_Current_PigBank_Info();
-	},
-
-	UpdateMailStatus() {
-		let numberMailNotRead = 0;
-		for(let i = 0; i < Global.MainPlayerInfo.listMail.length; i++) {
-			if(Global.MainPlayerInfo.listMail[i].IsReaded == 0) {
-				numberMailNotRead += 1;
-			}
-		}
-		if(numberMailNotRead > 0) {
-			this.mailObj.active = true;
-			// this.mailObj.getComponentInChildren(cc.Label).string = numberMailNotRead.toString();
-		} else {
-			this.mailObj.active = false;
-		}
-	},
-
+	
 	playSlot(event, index) {
 		Global.AudioManager.ClickButton();
 		if (!Global.isLogin) {
@@ -509,55 +288,16 @@ cc.Class({
 		require("ScreenManager").getIns().LoadScene(Global.Enum.SCREEN_CODE.INGAME_SLOT);
 	},
 
-	ClickBtnShopCashIn() {
-		Global.AudioManager.ClickButton();
-		if (!Global.isLogin) {
-			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
-			return;
-		}
-		// if(Global.GameConfig.FeatureConfig.CashinLobbyFeature != Global.Enum.EFeatureStatus.Open) {
-		// 	return;
-		// }
-		Global.UIManager.showShopPopup();
-		Global.AudioManager.ClickButton();
+	
 
-	},
-
-	ClickBtnGiftCode() {
-		Global.UIManager.showShopPopup(false);
-		Global.AudioManager.ClickButton();
-	},
-
-	ClickBtnShopCashOut() {
-		Global.AudioManager.ClickButton();
-
-	},
-
-	ClickCity() {
-		Global.AudioManager.ClickButton();
-		if (!Global.isLogin) {
-			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
-			return;
-		}
-		require("ScreenManager").getIns().LoadScene(Global.Enum.SCREEN_CODE.CITY);
-	},
-
-	ClickBtnGrateful() {
-		Global.AudioManager.ClickButton();
-		if (!Global.isLogin) {
-			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
-			return;
-		}
-		Global.UIManager.ShowGratefulPopup();
-	},
 
 	CheckShowMiniGame() {
 		if(!Global.isConnect)
 			return;
-		this.RequestGetVipConfig();
+	
 		require("WalletController").getIns().init();
         require("WalletController").getIns().AddListener(Global.LobbyView);
-		// require("SendRequest").getIns().MST_Client_Get_Daily_Spin_Info();
+		
 		require("SyncTimeControl").getIns().SendPing();
 	
 		
@@ -581,9 +321,7 @@ cc.Class({
 		// this.notifyUI.UpdateListNotify (content, speed);
 	},
 
-	ShowNotifyCash(content, speed, repeat) {
-		// this.notifyUI.AddNotify (content, speed, repeat);
-	},
+
 
 	ShowPopupChoiceFish() {
 		Global.AudioManager.ClickButton();
@@ -617,52 +355,13 @@ cc.Class({
         }
 	},
 
-	onDestroy() {
-		if(this.processShowShare != null)
-            this.unschedule(this.processShowShare);
+	onDestroy() {	
 		Global.LobbyView = null;
 		require("WalletController").getIns().RemoveListener();
 	},
 
-	update(dt) {
-		this.countTimeGetBigWin += dt;
-		this.countTimeTotalSpinGame += dt;
-		this.countTimeGetLogin += dt;
-		this.countTimeRandomLogin += dt;
-		this.countTimeChat += dt;
-		if(this.countTimeGetBigWin > TIME_GET_BIGWIN){
-			this.SendGetListBigWin();
-		}
-		if(this.countTimeTotalSpinGame > TIME_GET_SPIN){
-			this.SendGetTotalSpin();
-		}
-		// if(this.countTimeGetLogin > TIME_GET_LOGIN){
-		// 	this.SendGetLoginCollecsion();
-		// }
-		// if(this.countTimeRandomLogin > TIME_RANDOM_LOGIN){
-		// 	this.RandomLoginCollecsion();
-		// }
-		// if(this.viewLive){
-		// 	if(this.countTimeChat > 3){
-		// 		this.countTimeChat = 0;// Global.RandomNumber(0,2);
-		// 		cc.log(this.countTimeChat);
-		// 		//dang trong kenh thi day chay vao
-		// 		if(this.currentTypeChannel != 0){
-		// 			// let data = {
-		// 			// 	Nickname : "Vip123",
-		// 			// 	ChatContent : "Chào mừng bạn tham gia trò chơi "+this.countTimeChat,
-		// 			// 	Type :	1,	//1 chat, 2 thong bao thoat va vao phong, 3 thong bao donate
-		// 			// 	Gold: 0
-		// 			// }
-		// 			this.LiveChatView.addChat(data);
-		// 		}
-		// 	}
-		// }
-	},
 
-	TestShowHome(){
-		require("ScreenManager").getIns().LoadScene(Global.Enum.SCREEN_CODE.HOME_VIEW);
-	},
+
 
 	GetBigWin(response){
 		let lastScreenCode = require("ScreenManager").getIns().lastScreen;
@@ -754,36 +453,6 @@ cc.Class({
 		Global.listWin = dataJson.d;
 	},
 
-	SendGetListBigWin(){
-		var data = {
-			version: CONFIG.VERSION,
-			os: require("ReceiveResponse").getIns().GetPlatFrom(),
-			merchantid: CONFIG.MERCHANT,
-		}
-		this.countTimeGetBigWin = 0;
-		Global.BaseNetwork.request(Global.ConfigLogin.GetBigWinUrl, data, this.GetBigWin);
-	},
-
-	SendGetTotalSpin(){
-		var data = {
-			version: CONFIG.VERSION,
-			os: require("ReceiveResponse").getIns().GetPlatFrom(),
-			merchantid: CONFIG.MERCHANT,
-		}
-		this.countTimeTotalSpinGame = 0;
-		// Global.BaseNetwork.request(Global.ConfigLogin.GetTotalSpinGame, data, this.GetTotalSpinGame);
-		Global.BaseNetwork.requestGet(CONFIG.BASE_API_LINK+"v1/Services-effect/GetJackpotSlotLobby", data, this.GetJackpotValue);
-	},
-
-	SendGetLoginCollecsion(){
-		var data = {
-			version: CONFIG.VERSION,
-			os: require("ReceiveResponse").getIns().GetPlatFrom(),
-			merchantid: CONFIG.MERCHANT,
-		}
-		this.countTimeGetLogin = 0;
-		Global.BaseNetwork.request(Global.ConfigLogin.GetLoginCollection, data, this.GetLoginCollecsion);
-	},
 
 	GetRoomMultiSlot(response){
 		let dataJson = JSON.parse(response);
@@ -794,31 +463,14 @@ cc.Class({
 		}
 	},
 
-	ClickShowDemoCity(){
-		Global.UIManager.ShowDemoCity();
-	},
-
+	
 	ClickChangeBetMoneyType(){
 		require("ScreenManager").getIns().LoadScene(Global.Enum.SCREEN_CODE.LOBBY_MONEY);
 		// require("ScreenManager").getIns().ChangeBetMoneyType();
 		// this.playSlot(null, 20);
 	},
 			
-	ClickShowBag() {
-		if (!Global.isConnect) {
-			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
-			return;
-		}
-		Global.UIManager.showBag();
-	},
 
-	ClickBanner() {
-		
-	},
-
-	RequestGetVipConfig() {
-		require("SendRequest").getIns().MST_Client_Get_Vip_Config_Info();
-	},
 
 	
 });

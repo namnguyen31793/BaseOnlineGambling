@@ -40,22 +40,18 @@ var InGameLogicManager = cc.Class({
             this.HandleTopJackpotRank(packet);
         } else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_GET_ACCOUNT_INFO) {
             this.HandleLeaveRoomFish(packet);
-        } else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_BATTLE_FIELD_REGISTER){
-            this.HandleBattleFieldRegister(packet);
         } 
     },
 
     HandleNotifyInGame(packet) {
         let notifyfString = packet[1];
         let notifyData = JSON.parse(notifyfString);
-        require("FishNetworkManager").getIns().gamelogic.NotifyInGame (notifyData);
+        require("FishNetworkManager").getIns().gamelogic.NotifyInGame (notifyData);   
     },
 
     HandlePingTime(packet) {
         require("SyncTimeControl").getIns().HandlePing(packet);
-        if (require("ScreenManager").getIns().currentScreen == Global.Enum.SCREEN_CODE.INGAME_SLOT) {
-            Global.SlotNetWork.slotView.OnUpdateTime();
-        }
+        
     },
 
     HandleUpdateBalance(packet) {
@@ -121,39 +117,6 @@ var InGameLogicManager = cc.Class({
         Global.GameLogic.LeaveRoom(accountBalance);
     },
 
-    HandleBattleFieldRegister(packet) {
-        let accountBalance = packet[1];
-        let user = JSON.parse(packet[2]);
-        let rival = JSON.parse(packet[3]);
-        let gameId = packet[4];
-        let endTimeLive = packet[5];
-        let turnModelString = packet[6];
-        let betModel = packet[7];
-        let betReward = packet[8];
-        Global.betRewardBattle = betReward;
-        Global.MainPlayerInfo.ingameBalance = accountBalance;
-        let turnModel = [];
-        let betValue = JSON.parse(betModel).Bet;
-        if(turnModelString!= null && turnModelString.length > 0) {
-            for(let i = 0; i < turnModelString.length; i++) {
-                turnModel[i] = JSON.parse(turnModelString[i]);
-            }
-        }
-        let dataBattle = {
-            rivalName : rival.Nickname,
-            myTurn : user.BattleNormalTurn,
-            rivalTurn : rival.BattleNormalTurn,
-            userScore : user.BattleScore,
-            rivalScore : rival.BattleScore,
-            endTimeLive : endTimeLive,
-            startTime : require("SyncTimeControl").getIns().GetCurrentTimeServer(),
-            turnModel : turnModel,
-            betValue : betValue,
-        };
-        Global.dataBattle = dataBattle;
-        cc.log(dataBattle);
-        require("ScreenManager").getIns().roomType = gameId;
-        require("ScreenManager").getIns().LoadScene(Global.Enum.SCREEN_CODE.INGAME_SLOT);
-    },
+   
 });
 module.exports = InGameLogicManager;

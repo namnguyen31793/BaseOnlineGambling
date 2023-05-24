@@ -68,8 +68,7 @@ cc.Class({
        
         this.soundControl.Init();
         this.soundControl.PlayBackgroundMusic();
-        if(Global.isChallenge==0 && Global.dataBattle == null)
-            this.netWork.RequestGetInfoRoom();
+        this.netWork.RequestGetInfoRoom();
        
         this.CallRequestGetJackpotInfo();
         this.AddScheduleAnimWait();
@@ -258,13 +257,11 @@ cc.Class({
 
     UpdateMoneyNormalGame(winMoney, accountBalance) {
         let betValue = this.totalBetValue;
-        if(this.isFree || this.isBonus || Global.isChallenge != 0 || Global.dataBattle != null)
+        if(this.isFree || this.isBonus)
             betValue = 0;
-        if(!this.isBattle) {
-            require("WalletController").getIns().PushBalance(this.slotType, betValue, winMoney, accountBalance);
-        } else {
-
-        }
+        
+         require("WalletController").getIns().PushBalance(this.slotType, betValue, winMoney, accountBalance);
+        
     },
 
     UpdateMoneyResult(winNormalValue, totalValue, isTakeJackpot, isWaitRunMoneyWin = false) {
