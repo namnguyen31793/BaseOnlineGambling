@@ -138,10 +138,7 @@ cc.Class({
             
             let msgData = {};
             msgData[1] = Global.CookieValue;
-            msgData[2] = CONFIG.MERCHANT;
-            msgData[3] = source;
-            msgData[4] = CONFIG.VERSION;
-            msgData[5] = 1;
+         
             require("SendRequest").getIns().MST_Client_Login(msgData);
 
     },
