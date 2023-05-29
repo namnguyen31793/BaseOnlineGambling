@@ -46,9 +46,9 @@ cc.Class({
         connect.addResponseListener(Global.Enum.NETWORK_TARGET_CODE.LOBBY, (data) => {
             require("ReceiveResponse").getIns().reviceData(data);
         });
-        connect.addResponseListener(Global.Enum.NETWORK_TARGET_CODE.FISH_SHOOTING, (data) => {
-            require("FishNetworkManager").getIns().HandleResponse(data);
-        });
+        // connect.addResponseListener(Global.Enum.NETWORK_TARGET_CODE.FISH_SHOOTING, (data) => {
+        //     require("FishNetworkManager").getIns().HandleResponse(data);
+        // });
         connect.addResponseListener(Global.Enum.NETWORK_TARGET_CODE.SLOT_MACHINE, (data) => {
             require("SlotNetworkManager").getIns().HandleResponse(data);
         });
@@ -136,9 +136,12 @@ cc.Class({
                 source = "4";
             }
             
+            let utf8Encode = new TextEncoder();
             let msgData = {};
             msgData[1] = Global.CookieValue;
-         
+            msgData[2] = Global.encryptedData;//utf8Encode.encode(Global.encryptedData);
+            msgData[3] = Global.checksum;
+            msgData[4] = Global.agent;
             require("SendRequest").getIns().MST_Client_Login(msgData);
 
     },

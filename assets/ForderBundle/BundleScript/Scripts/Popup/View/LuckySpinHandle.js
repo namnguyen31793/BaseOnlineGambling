@@ -4,7 +4,6 @@ cc.Class({
         startRot : {
             default : 0,
         },
-        wheel : require("FishingWheelView"),
         
     },
 

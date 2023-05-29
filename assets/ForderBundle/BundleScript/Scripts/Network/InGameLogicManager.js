@@ -16,10 +16,10 @@ var InGameLogicManager = cc.Class({
             this.HandleLoginResponse(packet);
         } else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_PING) {
             this.HandlePingTime(packet);
-            if(require("FishNetworkManager").getIns().gamelogic) {
-				require("FishNetworkManager").getIns().gamelogic.CheckIce();
-				require("FishCollection").getIns().UpdateCurrentMoveTime();
-			}
+            // if(require("FishNetworkManager").getIns().gamelogic) {
+			// 	require("FishNetworkManager").getIns().gamelogic.CheckIce();
+			// 	require("FishCollection").getIns().UpdateCurrentMoveTime();
+			// }
         } else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_CONFIRM_MESSAGE) {
             this.HandleConfirmResponce(packet);
         } else if (responseCode == Global.Enum.RESPONSE_CODE.MST_SERVER_SEND_NOTIFICATION) {

@@ -183,7 +183,7 @@
       "array": [
         0,
         0,
-        359.4005425705421,
+        280.59223082615813,
         0,
         0,
         0,
@@ -2678,7 +2678,7 @@
       "__id__": 54
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 56
@@ -3229,7 +3229,7 @@
         "__id__": 68
       }
     ],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 70
@@ -3417,7 +3417,7 @@
         "__id__": 72
       }
     ],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 74
@@ -3611,7 +3611,7 @@
         "__id__": 82
       }
     ],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 85
@@ -4083,7 +4083,7 @@
         "__id__": 93
       }
     ],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 96
@@ -10283,45 +10283,10 @@
       "__id__": 51
     },
     "_enabled": true,
-    "inputUserNameLoginWeb": {
-      "__id__": 85
-    },
-    "inputPassWordLoginWeb": {
-      "__id__": 96
-    },
-    "inputUserNameLoginMobile": {
-      "__id__": 136
-    },
-    "inputPassWordLoginMobile": {
-      "__id__": 147
-    },
     "loginObj": null,
-    "captchaLoginObj": null,
-    "captchaRegisterImg": {
-      "__id__": 208
-    },
-    "captchaLoginImg": null,
-    "inputUserNameRegister": {
-      "__id__": 175
-    },
-    "inputPassWordRegister": {
-      "__id__": 186
-    },
-    "inputRePassWordRegister": {
-      "__id__": 197
-    },
-    "inputCaptchaRegister": {
-      "__id__": 214
-    },
     "openMiniLogin": false,
     "lbVersion": {
       "__id__": 53
-    },
-    "headerWeb": {
-      "__id__": 54
-    },
-    "headerMobile": {
-      "__id__": 101
     },
     "_id": "30pJX0rUFEpaHPxh2xu8Tx"
   },

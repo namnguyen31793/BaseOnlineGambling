@@ -133,9 +133,9 @@ cc.Class({
 			cc.log("-------------first login-------------");
 			this.firstLogin = true;
 			cc.log(Global.ConfigLogin);
-			Global.BaseNetwork.request(Global.ConfigLogin.GameConfigUrl, data, this.GetConfig);
-			Global.BaseNetwork.request(Global.ConfigLogin.GetRoomMulti, data, this.GetRoomMultiSlot);
-			this.RequestGetFishConfig();
+			//Global.BaseNetwork.request(Global.ConfigLogin.GameConfigUrl, data, this.GetConfig);
+			//Global.BaseNetwork.request(Global.ConfigLogin.GetRoomMulti, data, this.GetRoomMultiSlot);
+			//this.RequestGetFishConfig();
 		} else {
 			Global.showLuckyBonus = true;
 			this.CheckLoadSuccess();		

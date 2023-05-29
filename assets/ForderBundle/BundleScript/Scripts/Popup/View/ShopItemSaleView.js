@@ -1,7 +1,6 @@
 
 
 cc.Class({
-    extends: require("ShopItemNormalView"),
     ctor() {
         
     },

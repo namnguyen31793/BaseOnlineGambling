@@ -1,5 +1,4 @@
 
-var GameLogic = require("GameLogic");
 var FishNetworkManager = cc.Class({
     statics: {
         getIns() {
