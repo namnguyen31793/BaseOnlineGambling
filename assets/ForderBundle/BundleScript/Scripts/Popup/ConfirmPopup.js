@@ -4,7 +4,7 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-      content:cc.RichText,
+      content:cc.Label,
       time:cc.Label,
     },
 

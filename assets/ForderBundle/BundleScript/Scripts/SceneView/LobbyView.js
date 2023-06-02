@@ -80,8 +80,11 @@ cc.Class({
 		if (Global.isConnect == false) {
 			var data = {
 			}
-			Global.BaseNetwork.request(Global.ConfigLogin.GameConfigUrl, data, this.GetConfig);
-			Global.BaseNetwork.request(Global.ConfigLogin.GetRoomMulti, data, this.GetRoomMultiSlot);
+			
+			Global.NetworkManager.init("");
+			Global.NetworkManager.connect_sv();
+			// Global.BaseNetwork.request(Global.ConfigLogin.GameConfigUrl, data, this.GetConfig);
+			Global.BaseNetwork.request("https://devweb.allwinslots.asia/gameserver/api/config/GetRoomMultiSlot", data, this.GetRoomMultiSlot);
 		} else {
 			
 			this.CheckLoadSuccess();
@@ -144,9 +147,6 @@ cc.Class({
 			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
 			return;
 		}
-		cc.log(Global.GameConfig.FeatureConfig);
-		if (!Global.Helper.CheckFunction(Global.GameConfig.FeatureConfig.SlotGame))
-			return;
 		// Global.SendTrackerLogView("Play Slot "+index);
 		require("ScreenManager").getIns().roomType = index;
 		require("ScreenManager").getIns().SetBetMoneyType(0);
@@ -160,9 +160,6 @@ cc.Class({
 			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
 			return;
 		}
-		cc.log(Global.GameConfig.FeatureConfig);
-		if (!Global.Helper.CheckFunction(Global.GameConfig.FeatureConfig.SlotGame))
-			return;
 		
 		require("ScreenManager").getIns().roomType = gameSlotID;
 		require("ScreenManager").getIns().SetBetMoneyType(0);

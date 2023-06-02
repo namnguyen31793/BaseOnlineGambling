@@ -5,13 +5,6 @@ cc.Class({
         Global.countAvaFake = 0;
         var data = {
         }
-        Global.BaseNetwork.requestGet(CONFIG.BASE_API_LINK+"v1/Services-config/GetCountAvata", data, (response)=>{
-            let dataJson = JSON.parse(response);
-            cc.log(dataJson);
-            if(dataJson.c == 0) {
-                Global.countAvaFake = dataJson.d;
-            }
-        });
         this.listAvaFake = [];
         this.listCacheAva = {};
     },

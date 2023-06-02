@@ -2,18 +2,18 @@ cc.Class({
     extends: require("BaseNetwork"),
 
     start() {
-        let data = {};
-		let link = "https://devip.allwinslots.asia/v1/Services-config/Getmd5";
-		if(CONFIG.MERCHANT == 3){
-			link = "https://md5.sieuca.net/v1/Services-config/Getmd5";
-		}else if(CONFIG.MERCHANT == 2){
-			link = "https://md5.banca.city/v1/Services-config/Getmd5";
-		}
-        this.requestGet(link, data, (response)=>{
-		 	let dataJson = JSON.parse(response);
-             Global.keyMd5 = dataJson;
+        // let data = {};
+		// let link = "https://devip.allwinslots.asia/v1/Services-config/Getmd5";
+		// if(CONFIG.MERCHANT == 3){
+		// 	link = "https://md5.sieuca.net/v1/Services-config/Getmd5";
+		// }else if(CONFIG.MERCHANT == 2){
+		// 	link = "https://md5.banca.city/v1/Services-config/Getmd5";
+		// }
+        // this.requestGet(link, data, (response)=>{
+		//  	let dataJson = JSON.parse(response);
+        //      Global.keyMd5 = dataJson;
             
-         });
+        //  });
     },
 
     request(link, data, event) {

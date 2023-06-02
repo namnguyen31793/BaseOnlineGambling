@@ -83,7 +83,7 @@ var TogetherLogicManager = cc.Class({
             Global.MainPlayerInfo.SetUpInfo(infoUser);
            
             Global.LobbyView.CheckShowMiniGame();
-            Global.LobbyView.Handle_JoinSlot(20)
+            Global.LobbyView.Handle_JoinSlot(Global.GameId)
         } 
         let lastScreenCode = require("ScreenManager").getIns().lastScreen;
         if(lastScreenCode != 0 && lastScreenCode) {

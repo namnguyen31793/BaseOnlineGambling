@@ -26,6 +26,7 @@ cc.Class({
 	},
 
 	getParamsFromHeader(){
+		Global.GameId = 19;
 		const location = window.location;
 		console.log(location.href);
 		var params = location.href.split("?")[1];
@@ -49,6 +50,14 @@ cc.Class({
 			Global.checksum = decodeURIComponent(result["checksum"])
 		if(result["agent"] != null)
 			Global.agent = parseInt(result["agent"])
+		if(result["platform"] != null)
+			Global.platform = parseInt(result["platform"])
+		if(result["ip"] != null)
+			Global.ip = parseInt(result["ip"])
+		if(result["deviceId"] != null)
+			Global.deviceId = parseInt(result["deviceId"])
+		if(result["gameId"] != null)
+			Global.GameId = parseInt(result["gameId"])
 		//send request api
         ApiController.RequestGetConnectInfo(result["agent"], result["encryptedData"], result["checksum"], (data) => {
             this.HandlelGetConnectInfo(data);

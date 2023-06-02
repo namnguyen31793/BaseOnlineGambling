@@ -35,8 +35,21 @@ cc.Class({
             os: require("ReceiveResponse").getIns().GetPlatFrom(),
             merchantid: CONFIG.MERCHANT,
         }
-        Global.BaseNetwork.request(CONFIG.CONFIG_LINK, data, this.reviceConfig);
+        //Global.BaseNetwork.request(CONFIG.CONFIG_LINK, data, this.reviceConfig);
         this.GetDeviceId();
+        //new
+        Global.ConfigScene.loadObj.active = true;
+        if (cc.sys.isNative)
+            Global.Helper.RandomHint(Global.ConfigScene.txt);
+            if(Global.language == "vi") {
+                Global.DownloadManager.LoadScene("Lobby","LobbyScene", (scene)=>{
+                    cc.director.runScene(scene);
+                },3)
+            } else {
+                Global.DownloadManager.LoadScene("LobbyEng","LobbyScene", (scene)=>{
+                    cc.director.runScene(scene);
+                },3)
+            }
     },
 
     GetDeviceId() {

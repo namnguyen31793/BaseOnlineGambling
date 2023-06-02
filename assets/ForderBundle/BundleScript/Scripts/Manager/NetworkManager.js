@@ -19,7 +19,7 @@ cc.Class({
 
     init(ip) {
 
-        ip = Global.GameConfig.UrlGameLogic.GetServerLogicAddress;
+        ip = Global.GetServerLogicAddress;
         //ip = "192.168.1.11:9090";//Global.GameConfig.UrlGameLogic.GetServerLogicAddress;
         var connect = new Photon.PhotonPeer(Photon.ConnectionProtocol.Ws, ip);
         // connect.keepAliveTimeoutMs = 170000;
