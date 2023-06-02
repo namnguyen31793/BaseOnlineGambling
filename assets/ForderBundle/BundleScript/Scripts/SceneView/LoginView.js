@@ -54,10 +54,10 @@ cc.Class({
 			Global.platform = parseInt(result["platform"])
 		if(result["ip"] != null)
 			Global.ip = parseInt(result["ip"])
-		if(result["deviceId"] != null)
-			Global.deviceId = parseInt(result["deviceId"])
-		if(result["gameId"] != null)
-			Global.GameId = parseInt(result["gameId"])
+		if(result["deviceid"] != null)
+			Global.deviceId = parseInt(result["deviceid"])
+		if(result["gameid"] != null)
+			Global.GameId = parseInt(result["gameid"])
 		//send request api
         ApiController.RequestGetConnectInfo(result["agent"], result["encryptedData"], result["checksum"], (data) => {
             this.HandlelGetConnectInfo(data);

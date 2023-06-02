@@ -81,7 +81,7 @@ var TogetherLogicManager = cc.Class({
             Global.LobbyView.CheckLoadSuccess();
            
             Global.MainPlayerInfo.SetUpInfo(infoUser);
-           
+            console.log(Global.GameId);
             Global.LobbyView.CheckShowMiniGame();
             Global.LobbyView.Handle_JoinSlot(Global.GameId)
         } 
