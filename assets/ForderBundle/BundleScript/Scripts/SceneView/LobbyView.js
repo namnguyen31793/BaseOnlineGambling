@@ -80,17 +80,23 @@ cc.Class({
 		if (Global.isConnect == false) {
 			var data = {
 			}
+			// Global.BaseNetwork.request(Global.ConfigLogin.GameConfigUrl, data, this.GetConfig);
+			Global.BaseNetwork.request(CONFIG.BASE_API_LINK+"api/config/GetRoomMultiSlot", data, this.GetRoomMultiSlot);
+		} else {
+			this.CheckLoadSuccess();
+		}
+	},
+
+    GetRoomMultiSlot(response){
+		let dataJson = JSON.parse(response);
+		if (dataJson.c != 0) {
+			Global.SlotRoomMuitlConfig = [];
+		} else {
+			Global.SlotRoomMuitlConfig = dataJson.d;
 			
 			Global.NetworkManager.init("");
 			Global.NetworkManager.connect_sv();
-			// Global.BaseNetwork.request(Global.ConfigLogin.GameConfigUrl, data, this.GetConfig);
-			Global.BaseNetwork.request("https://devweb.allwinslots.asia/gameserver/api/config/GetRoomMultiSlot", data, this.GetRoomMultiSlot);
-		} else {
-			
-			this.CheckLoadSuccess();
-			
 		}
-		
 	},
 
 	GetConfig(response) {
@@ -194,15 +200,6 @@ cc.Class({
 	},
 
 	UpdateTime() {
-	},
-
-    GetRoomMultiSlot(response){
-		let dataJson = JSON.parse(response);
-		if (dataJson.c != 0) {
-			Global.SlotRoomMuitlConfig = [];
-		} else {
-			Global.SlotRoomMuitlConfig = dataJson.d;
-		}
 	},
 
 	ClickChangeBetMoneyType(){

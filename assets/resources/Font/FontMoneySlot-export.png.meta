@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "d312bfe9-88b6-4117-9f0e-2000f35559a7",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 512,
+  "height": 256,
+  "platformSettings": {},
+  "subMetas": {
+    "FontMoneySlot-export": {
+      "ver": "1.0.4",
+      "uuid": "ea585638-57de-43d5-b4b1-3a752a517448",
+      "rawTextureUuid": "d312bfe9-88b6-4117-9f0e-2000f35559a7",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -86.5,
+      "offsetY": 2.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 339,
+      "height": 251,
+      "rawWidth": 512,
+      "rawHeight": 256,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

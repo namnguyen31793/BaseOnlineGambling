@@ -45380,7 +45380,9 @@
     "_fontSize": 20,
     "_lineHeight": 72,
     "_enableWrapText": true,
-    "_N$file": null,
+    "_N$file": {
+      "__uuid__": "87d786ea-4fd4-4c37-a600-ea4ba3a75f7f"
+    },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
     "_batchAsBitmap": false,
@@ -47426,12 +47428,6 @@
     },
     "soundControl": {
       "__id__": 1318
-    },
-    "tournamentView": {
-      "__id__": 1302
-    },
-    "challengeView": {
-      "__id__": 1143
     },
     "isBattle": false,
     "isCreateListUser": true,
