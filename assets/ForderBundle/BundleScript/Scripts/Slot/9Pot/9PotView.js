@@ -25,7 +25,7 @@ cc.Class({
     OnGetAccountInfo(accountBalance, freeSpin, totalBetValue, jackpotValue, lastPrizeValue, lineData, extandMatrix) {
         this.lineData = lineData;
         this.menuView.UpdateBetValue(totalBetValue);
-        this.normalManager.OnGetAccountInfo(accountBalance, freeSpin, totalBetValue, jackpotValue, lastPrizeValue, lineData, extandMatrix);
+        this._super(accountBalance, freeSpin, totalBetValue, jackpotValue, lastPrizeValue, lineData, extandMatrix);
     },
 
 
@@ -157,8 +157,9 @@ cc.Class({
     },
 
     UpdateTotalBetValue(betValue) {
-        cc.log("update total bet value:"+betValue);
-        this.totalBetValue = (betValue/20) * this.lineData;
+        cc.log("9 pot update total bet value:"+betValue);
+        //this.totalBetValue = (betValue/20) * this.lineData;
+        this.totalBetValue = betValue;
         this.maxTotalBetValue = betValue;
         this.menuView.UpdateTotalBetValue(betValue);
     },
@@ -169,6 +170,7 @@ cc.Class({
     },
 
     GetBetValue() {
+        cc.log("GetBetValue: "+this.totalBetValue);
         return this.totalBetValue;
     },
 });
