@@ -93,7 +93,7 @@ cc.Class({
 			Global.SlotRoomMuitlConfig = [];
 		} else {
 			Global.SlotRoomMuitlConfig = dataJson.d;
-			
+			//cc.log("--------GetRoomMultiSlot "+response);
 			Global.NetworkManager.init("");
 			Global.NetworkManager.connect_sv();
 		}
