@@ -10,9 +10,10 @@ window.CONFIG = {
 	ACTIVE_ADS: false,
 	MULTI_PLAYER: false,
 	
-	 CONFIG_LINK: 'https://devweb.allwinslots.asia/gameserver/api/config/getconfigurl',
-	 BASE_API_LINK: 'https://devweb.allwinslots.asia/gameserver/',
-	
+	CONFIG_LINK: 'https://devweb.allwinslots.asia/gameserver/api/config/getconfigurl',
+	BASE_API_LINK: 'https://devweb.allwinslots.asia/gameserver/',
+
+	BASE_SPIN_HUB_LINK: 'https://spinhub.peachtea.life/',
 	IS_MAP: true,
 	IS_NATIVE:true,
 

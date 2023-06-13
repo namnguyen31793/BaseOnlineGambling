@@ -1,7 +1,8 @@
 window.ApiController = {
 
     RequestGetConnectInfo(agentId,encryptedData, checksum, callback, errorCallBack){
-        var link= "https://providerserver.allwinslots.asia/"+"v1/ProviderGame/GetInfoConnect?agentId="+agentId+"&encryptedData="+encryptedData+"&checksum="+checksum;
+        var link= CONFIG.BASE_SPIN_HUB_LINK+"v1/ProviderGame/GetInfoConnect?agentId="+agentId+"&encryptedData="+encryptedData+"&checksum="+checksum;
+        //var link= "https://providerserver.allwinslots.asia/"+"v1/ProviderGame/GetInfoConnect?agentId="+agentId+"&encryptedData="+encryptedData+"&checksum="+checksum;
         console.log(link);
         this.BaseCallGet(link, callback, errorCallBack);
     },
