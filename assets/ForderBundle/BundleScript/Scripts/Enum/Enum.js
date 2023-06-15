@@ -195,6 +195,7 @@ cc.Class({
 
             //nickname
             MSG_CLIENT_CHANGE_DISPLAY_NAME_REQUEST : 103,
+            MSG_CLIENT_SLOT_GAME_CONFIG_INFO : 104,
         
             //region Ban Ca
             MST_CLIENT_SHOOTING : 201,
@@ -529,6 +530,7 @@ cc.Class({
             
             //nickname
             MSG_SERVER_CHANGE_DISPLAY_NAME_REQUEST : 128,
+            MSG_SERVER_GET_GAME_CONFIG : 129,
         
             //region Ban Ca
             MST_SERVER_TAKE_JACKPOT : 201,

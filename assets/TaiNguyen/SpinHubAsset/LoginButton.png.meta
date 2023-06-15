@@ -9,7 +9,16 @@
   "packable": true,
   "width": 647,
   "height": 386,
-  "platformSettings": {},
+  "platformSettings": {
+    "web": {
+      "formats": [
+        {
+          "name": "webp",
+          "quality": 80
+        }
+      ]
+    }
+  },
   "subMetas": {
     "LoginButton": {
       "ver": "1.0.4",

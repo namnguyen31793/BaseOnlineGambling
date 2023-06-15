@@ -6,7 +6,6 @@ cc.Class({
     },
 
     properties: {
-        gem : cc.Node,
         // animQueenGold : cc.Animation,
         animChangeItem : cc.Animation,
         multi : cc.Label,
@@ -76,7 +75,7 @@ cc.Class({
     },
 
     PlayAnimChangeItem(){
-        this.animChangeItem.play("BoomBonus");
+        //this.animChangeItem.play("BoomBonus");
     },
 
     SetValueWild(value){
@@ -92,9 +91,8 @@ cc.Class({
     ResetUI(){
         // this.animQueenGold.stop();
         // this.animQueenGold.getComponent(cc.Sprite).spriteFrame = null;
-        this.animChangeItem.stop();
-        this.animChangeItem.getComponent(cc.Sprite).spriteFrame = null;
-        this.gem.active = false;
+        // this.animChangeItem.stop();
+        // this.animChangeItem.getComponent(cc.Sprite).spriteFrame = null;
         this.HideValueWild();
     },
 });

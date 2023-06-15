@@ -9,7 +9,32 @@
   "packable": true,
   "width": 1575,
   "height": 750,
-  "platformSettings": {},
+  "platformSettings": {
+    "web": {
+      "formats": [
+        {
+          "name": "webp",
+          "quality": 80
+        }
+      ]
+    },
+    "ios": {
+      "formats": [
+        {
+          "name": "webp",
+          "quality": 80
+        }
+      ]
+    },
+    "android": {
+      "formats": [
+        {
+          "name": "webp",
+          "quality": 80
+        }
+      ]
+    }
+  },
   "subMetas": {
     "background.1e531326966cec46e759b8686262bef4": {
       "ver": "1.0.4",

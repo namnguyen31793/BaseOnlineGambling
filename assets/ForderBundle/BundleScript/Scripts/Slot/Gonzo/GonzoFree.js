@@ -6,7 +6,6 @@ cc.Class({
 
     properties: {
         freeTurn : cc.Animation,
-        effectChangeTurn : cc.Animation,
     },
 
     ShowFree(numberFree, isNotify, winNormalValue = 0) {
@@ -28,7 +27,6 @@ cc.Class({
         if(this.slotView.isFree) {
             this.toDoList.AddWork(()=>{
                 this.SetTextFree();
-                this.effectChangeTurn.play();
             }, false);
             //wait anim item Spec destroy
             

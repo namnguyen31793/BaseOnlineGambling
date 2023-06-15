@@ -9,7 +9,6 @@ cc.Class({
 
     properties: {
         freeTurn : cc.Animation,
-        effectChangeTurn : cc.Animation,
         //effectChangeBgFree : cc.Animation,
         txtImgFreeEnd : cc.Node,
         effectBackground : cc.Animation,
@@ -36,7 +35,6 @@ cc.Class({
         if(this.slotView.isFree) {
             this.toDoList.AddWork(()=>{
                 this.SetTextFree();
-                this.effectChangeTurn.play();
             }, false);
             
             if(winNormalValue > 0){
@@ -102,7 +100,6 @@ cc.Class({
         cc.sys.localStorage.setItem("Key_Free_Thai" , this.cacheTotalSpin);
 
         this.lbFreeTurn.string = this.numberFreeSpin.toString();
-        this.effectChangeTurn.play();
     },
 
     SetTextFree()

@@ -7,7 +7,7 @@ cc.Class({
 
     properties: {
         freeTurn : cc.Animation,
-        effectChangeTurn : cc.Animation,
+        //effectChangeTurn : cc.Animation,
         animFree : cc.Animation,
     },
 
@@ -33,7 +33,7 @@ cc.Class({
         if(this.slotView.isFree) {
             this.toDoList.AddWork(()=>{
                 this.SetTextFree();
-                this.effectChangeTurn.play();
+                //this.effectChangeTurn.play();
             }, false);
             if(winNormalValue > 0){
                 this.toDoList.AddWork(()=>this.slotView.UpdateLineWinData(lineWin),false);

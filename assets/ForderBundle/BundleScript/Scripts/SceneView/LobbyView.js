@@ -80,8 +80,9 @@ cc.Class({
 		if (Global.isConnect == false) {
 			var data = {
 			}
-			// Global.BaseNetwork.request(Global.ConfigLogin.GameConfigUrl, data, this.GetConfig);
-			Global.BaseNetwork.request(CONFIG.BASE_API_LINK+"api/config/GetRoomMultiSlot", data, this.GetRoomMultiSlot);
+			//Global.BaseNetwork.request(CONFIG.BASE_API_LINK+"api/config/GetRoomMultiSlot", data, this.GetRoomMultiSlot);
+			Global.NetworkManager.init("");
+			Global.NetworkManager.connect_sv();
 		} else {
 			this.CheckLoadSuccess();
 		}
@@ -94,27 +95,10 @@ cc.Class({
 		} else {
 			Global.SlotRoomMuitlConfig = dataJson.d;
 			//cc.log("--------GetRoomMultiSlot "+response);
-			Global.NetworkManager.init("");
-			Global.NetworkManager.connect_sv();
+			// Global.NetworkManager.init("");
+			// Global.NetworkManager.connect_sv();
 		}
 	},
-
-	GetConfig(response) {
-		let dataJson = JSON.parse(response);
-		if (dataJson.c != 0) {
-			this.CheckLoadSuccess();
-			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText(dataJson.m), this.Connect);
-		} else {
-			Global.GameConfig = dataJson.d;
-			Global.NetworkManager.init("");
-			Global.NetworkManager.connect_sv();
-
-			
-		}
-	},
-
-	
-
 	
 	ClickJoinFishRoom_New(event, index) {
 		if (!Global.isConnect) {
@@ -190,7 +174,9 @@ cc.Class({
 		require("SyncTimeControl").getIns().SendPing();
 	
 		this.showStartGame.Action();
-
+		let msgData = {};
+		msgData[1] = Global.GameId;
+		require("SendRequest").getIns().MST_Client_Slot_Get_Game_Config_Info(msgData);
 	},
 
 

@@ -9,7 +9,32 @@
   "packable": true,
   "width": 1640,
   "height": 393,
-  "platformSettings": {},
+  "platformSettings": {
+    "web": {
+      "formats": [
+        {
+          "name": "webp",
+          "quality": 80
+        }
+      ]
+    },
+    "android": {
+      "formats": [
+        {
+          "name": "webp",
+          "quality": 80
+        }
+      ]
+    },
+    "ios": {
+      "formats": [
+        {
+          "name": "webp",
+          "quality": 80
+        }
+      ]
+    }
+  },
   "subMetas": {
     "animfooter": {
       "ver": "1.0.4",
@@ -22,10 +47,10 @@
       "offsetY": 0,
       "trimX": 2,
       "trimY": 2,
-      "width": 1636,
-      "height": 389,
-      "rawWidth": 1640,
-      "rawHeight": 393,
+      "width": 416,
+      "height": 689,
+      "rawWidth": 420,
+      "rawHeight": 693,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,

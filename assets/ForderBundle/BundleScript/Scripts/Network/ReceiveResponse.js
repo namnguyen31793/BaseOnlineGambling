@@ -147,6 +147,8 @@ var ReceiveResponse = cc.Class({
             TogetherLogicManager.getIns().TogetherHandleResponse (operationResponse);
         } else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_SET_NICKNAME) {
             TogetherLogicManager.getIns().TogetherHandleResponse (operationResponse);
+        }else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_GET_GAME_CONFIG) {
+            TogetherLogicManager.getIns().TogetherHandleResponse (operationResponse);
         }
         
         //region mini slot

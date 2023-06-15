@@ -71,6 +71,9 @@ var TogetherLogicManager = cc.Class({
         else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_SET_NICKNAME){
             this.HandleChangeDisplayName(packet);
         }
+        else if (responseCode == Global.Enum.RESPONSE_CODE.MSG_SERVER_GET_GAME_CONFIG){
+            this.HandleGetGameCOnfig(packet);
+        }
     },
 
     HandleLoginResponse(packet) {
@@ -290,6 +293,23 @@ var TogetherLogicManager = cc.Class({
         if(Global.SetNamePopup) {
             Global.SetNamePopup.GetResult(defaultDisplayName, messageError, isResult);
         }
+    },
+    HandleGetGameCOnfig(packet) {
+        cc.log("------------------HandleGetGameCOnfig");
+        cc.log(packet);
+        let gameConfigList = packet[1];
+        let listgameConfigList = [];
+        for (let i = 0; i < gameConfigList.length; i++) {
+            listgameConfigList[i] = JSON.parse(gameConfigList[i]);
+        }
+
+        let data = {
+            GameId : Global.GameId,
+            RoomMultiInfo : JSON.stringify(listgameConfigList),
+        }
+        Global.SlotRoomMuitlConfig = [];
+        Global.SlotRoomMuitlConfig[0] = data;
+
     },
 });
 module.exports = TogetherLogicManager;
