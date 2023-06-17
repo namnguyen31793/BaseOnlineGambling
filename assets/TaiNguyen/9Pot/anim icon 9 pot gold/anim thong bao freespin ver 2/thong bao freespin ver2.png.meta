@@ -9,7 +9,32 @@
   "packable": true,
   "width": 1962,
   "height": 680,
-  "platformSettings": {},
+  "platformSettings": {
+    "ios": {
+      "formats": [
+        {
+          "name": "webp",
+          "quality": 80
+        }
+      ]
+    },
+    "web": {
+      "formats": [
+        {
+          "name": "webp",
+          "quality": 80
+        }
+      ]
+    },
+    "android": {
+      "formats": [
+        {
+          "name": "webp",
+          "quality": 80
+        }
+      ]
+    }
+  },
   "subMetas": {
     "thong bao freespin ver2": {
       "ver": "1.0.4",
