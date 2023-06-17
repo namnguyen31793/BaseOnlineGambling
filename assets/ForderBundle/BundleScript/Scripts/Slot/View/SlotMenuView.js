@@ -39,13 +39,13 @@ cc.Class({
     },
 
     onLoad() {
-        let wScene = cc.winSize.width/2;
-         if(wScene < 1344/2) {
-            if(this.btnLevel)
-                this.btnLevel.x = -wScene+100;
-            if(this.animBtnMenu && this.animBtnMenu.node)
-                this.animBtnMenu.node.x = wScene - 45;
-         }
+        // let wScene = cc.winSize.width/2;
+        //  if(wScene < 1344/2) {
+        //     if(this.btnLevel)
+        //         this.btnLevel.x = -wScene+100;
+        //     if(this.animBtnMenu && this.animBtnMenu.node)
+        //         this.animBtnMenu.node.x = wScene - 45;
+        //  }
          if(Global.isTutorial >= 1) {
             this.animBtnMenu.node.opacity = 150;
          }
@@ -287,7 +287,7 @@ cc.Class({
         } else {
             Global.UIManager.showMiniLoading();
             let menu = this;
-            Global.DownloadManager.LoadPrefab("Help"+this.slotView.slotType.toString(),this.linkHelpView, (prefab)=>{
+            Global.DownloadManager.LoadPrefab(this.slotView.slotType.toString(),this.linkHelpView, (prefab)=>{
                 let help = cc.instantiate(prefab);
                 menu.slotView.node.addChild(help, 10000);
                 menu.slotView.helpView = help.getComponent("SlotHelpView");
@@ -299,7 +299,7 @@ cc.Class({
     ClickMusic(toggle, data) {
         this.slotView.ChangeStateMusic(toggle.isChecked);
         this.slotView.ChangeStateSound(toggle.isChecked);
-        this.toggleAudio.node.getChildByName("Background").active = !toggle.isChecked;
+        //this.toggleAudio.node.getChildByName("Background").active = !toggle.isChecked;
     },
 
     ClickSound(toggle, data) {
@@ -316,7 +316,7 @@ cc.Class({
             Global.AudioManager.ChangeValueMusic(0);
             Global.AudioManager.ChangeValueSound(0);
         }
-        this.toggleAudio.node.getChildByName("Background").active = !toggle.isChecked;
+        //this.toggleAudio.node.getChildByName("Background").active = !toggle.isChecked;
     },
 
     GetBetValue() {
