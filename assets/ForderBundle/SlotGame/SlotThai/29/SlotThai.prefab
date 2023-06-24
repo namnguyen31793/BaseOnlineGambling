@@ -19557,7 +19557,7 @@
     "_frameCache": null,
     "_curFrame": null,
     "_skeletonCache": null,
-    "_animationName": "active",
+    "_animationName": "active-waiting",
     "_animationQueue": [],
     "_headAniInfo": null,
     "_playTimes": 1,

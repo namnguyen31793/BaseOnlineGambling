@@ -16,11 +16,7 @@ cc.Class({
         this.node.children[0].addComponent(cc.BlockInputEvents);
         if(this.skeleton == null)
             return;
-        if(CONFIG.MERCHANT == "3"){
-            this.skeleton.skeletonData = this.data;
-            this.skeleton.timeScale = 1;  
-            this.skeleton.setAnimation(0, "animation", true);
-        }
+
     },
 
     onKeyDown(event) {

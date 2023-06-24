@@ -149,6 +149,7 @@ cc.Class({
     },
 
     SetWildExpandingItem(toDoList) {
+        cc.log(this.listDataWildExpanding)
         if(this.listDataWildExpanding.length == 0){
             if(toDoList != null)
                 toDoList.DoWork();
@@ -159,7 +160,7 @@ cc.Class({
                     var wildObj = cc.instantiate(this.itemWildExpading);
                     wildObj.parent = this.wildContent;
                     wildObj.active = true;
-                    wildObj.setPosition(listItem[this.listDataWildExpanding[i].pos].node.getPosition(), 0);
+                    wildObj.setPosition(listItem[this.listDataWildExpanding[i].pos].node.getPosition().x, -10);
                     wildObj.scale = 1;
                     wildObj.getComponent("ThaiItemSlotView").SetSkinExpading();
                     this.listWildExpanding[this.listDataWildExpanding[i].pos] = wildObj.getComponent("ThaiItemSlotView");
@@ -219,7 +220,6 @@ cc.Class({
                     var wildObj = cc.instantiate(this.itemWildExpading);
                     wildObj.parent = this.wildContent;
                     wildObj.active = true;
-                    let vector = 
                     wildObj.setPosition(listItem[this.listDataWildExpanding[i].pos].node.getPosition().x, 0);
                     wildObj.scale = 1;
                     wildObj.getComponent("ThaiItemSlotView").SetSkinExpading();
