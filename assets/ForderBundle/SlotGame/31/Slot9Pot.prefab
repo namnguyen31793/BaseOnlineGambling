@@ -35467,6 +35467,9 @@
     "SpineShowPot": {
       "__id__": 886
     },
+    "AwakePotPopup": {
+      "__uuid__": "38447e8c-25f6-42e5-9328-bc65885a64b5"
+    },
     "_id": ""
   },
   {
@@ -38965,6 +38968,12 @@
     },
     "_enabled": true,
     "isBattle": false,
+    "BigWinSound": {
+      "__uuid__": "b043d49e-0c8c-4daa-a5a5-62ca4898c7c2"
+    },
+    "BgMusicSound": {
+      "__uuid__": "b85a7f57-d47c-4dd9-af12-ac31539ebf82"
+    },
     "_id": ""
   },
   {

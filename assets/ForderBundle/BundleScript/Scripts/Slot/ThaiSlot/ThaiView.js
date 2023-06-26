@@ -21,6 +21,14 @@ cc.Class({
     OnGetSpinResult(spinId, matrix, listLineWinData, winNormalValue, winBonusValue, bonusTurn, freeSpinLeft, totalWin, accountBalance, currentJackpotValue, isTakeJackpot, extendMatrixDescription) {
         this.normalManager.OnGetSpinResult(spinId, matrix, listLineWinData, winNormalValue, winBonusValue, bonusTurn,freeSpinLeft, totalWin, accountBalance, 
             currentJackpotValue, isTakeJackpot, extendMatrixDescription);
+        this.soundControl.HandleMatrixSound(matrix, listLineWinData, winNormalValue, winBonusValue, bonusTurn,freeSpinLeft, totalWin, accountBalance, 
+        currentJackpotValue, isTakeJackpot, extendMatrixDescription);
+        
+   
+        /*
+        cc.log("MATRIX : "+matrix);
+        cc.log("MATRIX : "+matrix);
+        */
     },
 
     OnSpinDone() {
@@ -40,6 +48,7 @@ cc.Class({
     },
 
     SetFreeSpin(numberFree, isNotify = false, lineWin, winNormalValue, totalWin) {
+      
         this.freeManager.ShowFree(numberFree, isNotify, lineWin, winNormalValue, totalWin);
     },
 

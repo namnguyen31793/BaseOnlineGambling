@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Slot",
+    "_name": "SlotMaya",
     "_objFlags": 512,
     "_parent": null,
     "_children": [
@@ -39412,6 +39412,9 @@
     },
     "_enabled": true,
     "isBattle": false,
+    "BigWinSound": {
+      "__uuid__": "b043d49e-0c8c-4daa-a5a5-62ca4898c7c2"
+    },
     "_id": ""
   },
   {

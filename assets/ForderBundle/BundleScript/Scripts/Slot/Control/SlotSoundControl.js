@@ -20,7 +20,8 @@ cc.Class({
 
     properties: {
 		isBattle: false,
-
+        BigWinSound : cc.AudioClip,
+        BgMusicSound : cc.AudioClip
     },
 
     Init() {
@@ -49,9 +50,16 @@ cc.Class({
 
     PlayBackgroundMusic() {
         if(this.isPlayMusic)
+            if(this.BgMusicSound != null)
+            {
+                cc.audioEngine.playEffect(this.BgMusicSound,true);       
+            }
+            else
+            {
             this.soundManager.playMusicBackground(this.bgLink, 0.3, ()=>{
                 this.soundManager2.playMusicBackground("Slot", this.bgLink, 0.6);
             });
+             }
     },
 
     ChangeStateMusic(state) {
@@ -132,7 +140,8 @@ cc.Class({
     },
 
     PlayBigWin() {
-        this.PlaySound(this.bigWinLink);
+        //this.PlaySound(this.bigWinLink);        
+        cc.audioEngine.playEffect(this.BigWinSound, false);         
     },
 
     PlaySpinStart() {
@@ -166,5 +175,10 @@ cc.Class({
             });
         }
             
+    },
+    HandleMatrixSound(matrix, listLineWinData, winNormalValue, winBonusValue, bonusTurn,freeSpinLeft, totalWin, accountBalance, 
+        currentJackpotValue, isTakeJackpot, extendMatrixDescription)
+    {
+
     },
 });

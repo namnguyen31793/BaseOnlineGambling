@@ -36021,6 +36021,15 @@
     },
     "_enabled": true,
     "isBattle": false,
+    "BigWinSound": {
+      "__uuid__": "b043d49e-0c8c-4daa-a5a5-62ca4898c7c2"
+    },
+    "BgMusicSound": {
+      "__uuid__": "cf99a418-bfc5-4817-82cf-b5f5364b42b0"
+    },
+    "jumpWild": {
+      "__uuid__": "00603664-8d59-4e3f-8907-5d0756b8224e"
+    },
     "_id": ""
   },
   {

@@ -38607,6 +38607,15 @@
     },
     "_enabled": true,
     "isBattle": false,
+    "BigWinSound": {
+      "__uuid__": "b043d49e-0c8c-4daa-a5a5-62ca4898c7c2"
+    },
+    "BgMusicSound": {
+      "__uuid__": "b574759c-3c48-4e4b-b21d-042c384c8c6b"
+    },
+    "reelSpin": {
+      "__uuid__": "54cb8ddc-33a4-4f7e-8fdf-ae69b6405898"
+    },
     "_id": ""
   },
   {

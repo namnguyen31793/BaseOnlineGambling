@@ -26254,6 +26254,9 @@
     "effectBackground": {
       "__id__": 16
     },
+    "startFreeSound": {
+      "__uuid__": "d19227ab-e3b3-47a8-920b-f4848492cc25"
+    },
     "_id": ""
   },
   {
@@ -27784,7 +27787,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 249.35,
+      "width": 249.89,
       "height": 60.48
     },
     "_anchorPoint": {
@@ -28818,7 +28821,7 @@
       "__uuid__": "800397e0-40a6-4881-927c-ac2ed465cc1f"
     },
     "_texture": null,
-    "_stopped": false,
+    "_stopped": true,
     "playOnLoad": true,
     "autoRemoveOnFinish": false,
     "totalParticles": 70,
@@ -29006,8 +29009,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 681.93,
-      "height": 413.1
+      "width": 784,
+      "height": 538
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -30636,6 +30639,19 @@
     },
     "_enabled": true,
     "isBattle": false,
+    "BigWinSound": {
+      "__uuid__": "b043d49e-0c8c-4daa-a5a5-62ca4898c7c2"
+    },
+    "BgMusicSound": null,
+    "expanderWildSound": {
+      "__uuid__": "2bb835e1-19a1-4b4a-87b7-962525358dfb"
+    },
+    "stayWildSound": {
+      "__uuid__": "3e73dae1-c414-4c75-8b0a-d33efed76847"
+    },
+    "scatterSound": {
+      "__uuid__": "b1dad796-6481-408a-bfc4-21b8d5da5a44"
+    },
     "_id": ""
   },
   {

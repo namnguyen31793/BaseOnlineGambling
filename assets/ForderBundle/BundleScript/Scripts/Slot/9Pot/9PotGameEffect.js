@@ -18,6 +18,7 @@ cc.Class({
         notifyPotObj : cc.Node,
         lbNotifyPot : cc.Label,
         SpineShowPot : sp.Skeleton,
+        AwakePotPopup: cc.AudioClip,
     },
     
 
@@ -85,6 +86,7 @@ cc.Class({
         this.SpineShowPot.setSkin(nameSkin);
         this.notifyPotObj.active = true;
         this.SpineShowPot.setAnimation(0, 'xuat hien', false);  
+        cc.audioEngine.playEffect(this.AwakePotPopup, false);   
     },
 
     SetValueWinPot(num){

@@ -12,6 +12,7 @@ cc.Class({
         //effectChangeBgFree : cc.Animation,
         txtImgFreeEnd : cc.Node,
         effectBackground : cc.Animation,
+        startFreeSound : cc.AudioClip,
     },
 
     ShowFree(numberFree, isNotify, lineWin, winNormalValue = 0, totalWin = 0) {
@@ -91,6 +92,7 @@ cc.Class({
         }else{
             this.freeTurn.play("EffectShowFree");
             this.effectBackground.play("animStartNight");
+            cc.audioEngine.playEffect(this.startFreeSound, false);       
         }
     },
     

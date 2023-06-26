@@ -21,6 +21,8 @@ cc.Class({
     OnGetSpinResult(spinId, matrix, listLineWinData, winNormalValue, winBonusValue, bonusTurn, freeSpinLeft, totalWin, accountBalance, currentJackpotValue, isTakeJackpot, extendMatrixDescription) {
         this.normalManager.OnGetSpinResult(spinId, matrix, listLineWinData, winNormalValue, winBonusValue, bonusTurn,freeSpinLeft, totalWin, accountBalance, 
             currentJackpotValue, isTakeJackpot, extendMatrixDescription);
+        this.soundControl.HandleMatrixSound(matrix, listLineWinData, winNormalValue, winBonusValue, bonusTurn,freeSpinLeft, totalWin, accountBalance, 
+                currentJackpotValue, isTakeJackpot, extendMatrixDescription);
     },
 
     OnSpinDone() {
