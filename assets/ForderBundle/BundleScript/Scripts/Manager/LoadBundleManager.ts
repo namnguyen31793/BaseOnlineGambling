@@ -46,13 +46,9 @@ export default class LoadBundleManager extends cc.Component {
         }
        
         if(bundle) {
-            Global.DownloadManager.SendTrackingStart(link, version);
             bundle.load(link, function(count, total) {
-                if(isLoading > 0)
-                    Global.DownloadManager.UpdatePercentLoad(count/total, isLoading);
             }, function (err, prefab) {
                 if(err != null) {
-                    Global.DownloadManager.SendTrackingEnd(link, version, false);
                     if(isLoading == 2)
                         Global.UIManager.hideMiniLoading();
                     else if(isLoading == 1) {
@@ -62,7 +58,6 @@ export default class LoadBundleManager extends cc.Component {
                     }
                     return;
                 }
-                Global.DownloadManager.SendTrackingEnd(link, version, true);
                 event(prefab);
             }.bind(this));
         }
@@ -77,13 +72,12 @@ export default class LoadBundleManager extends cc.Component {
         }
         else
         {
+            console.log("-------------------LoadAssest-----------------");
             bundle = cc.assetManager.getBundle(bName);
         }
        
         if(bundle) {
             bundle.load(link, type, function(count, total) {
-                if(isLoading > 0)
-                    Global.DownloadManager.UpdatePercentLoad(count/total, isLoading);
             }, function (err, prefab) {
                 event(prefab);
             }.bind(this));
@@ -99,14 +93,12 @@ export default class LoadBundleManager extends cc.Component {
         }
         else
         {
+            console.log("-------------------LoadScene-----------------");
             bundle = cc.assetManager.getBundle(bName);
         }
        
         if(bundle) {
-            Global.DownloadManager.SendTrackingStart(link, version);
             bundle.loadScene(link, function(count, total) {
-                if(isLoading > 0)
-                    Global.DownloadManager.UpdatePercentLoad(count/total, isLoading);
             }, function (err, scene) {
                 // if(err != null) {
                 //     console.log(err.toString());
@@ -115,7 +107,6 @@ export default class LoadBundleManager extends cc.Component {
                 //     Global.DownloadManager.SendTrackingEnd(link, version,false);
                 //     return;
                 // }
-                Global.DownloadManager.SendTrackingEnd(link, version,true);
                 event(scene);
             }.bind(this));
         }

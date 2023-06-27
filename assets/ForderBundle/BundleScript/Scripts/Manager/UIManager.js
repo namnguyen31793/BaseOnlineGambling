@@ -264,8 +264,10 @@ cc.Class({
 	},
 
 	showAlertMini(text) {
-		this.animAlert.getComponentInChildren(cc.Label).string = text;
-		this.animAlert.play();
+		if(this.animAlert != null){
+			this.animAlert.getComponentInChildren(cc.Label).string = text;
+			this.animAlert.play();
+		}
 	},
 
 	showMark() {

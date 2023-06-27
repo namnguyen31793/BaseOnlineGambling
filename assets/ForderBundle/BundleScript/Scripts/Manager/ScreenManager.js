@@ -73,10 +73,12 @@ var ScreenManager = cc.Class({
                 }
             },1)
         } else if (screenCode == Global.Enum.SCREEN_CODE.INGAME_SLOT) {
+            console.log("start load ingame slot");
             Global.UIManager.showLoading();
             this.currentScreen = Global.Enum.SCREEN_CODE.INGAME_SLOT;
-            Global.AudioManager.PlayMusicInGameSlot();
+            //Global.AudioManager.PlayMusicInGameSlot();
             Global.DownloadManager.LoadScene("Slot","InGameSlot", (scene)=>{
+                console.log("show ingame slot");
                 cc.director.runScene(scene);
             })
         }

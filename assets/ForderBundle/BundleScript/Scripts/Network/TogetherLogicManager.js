@@ -79,7 +79,7 @@ var TogetherLogicManager = cc.Class({
     HandleLoginResponse(packet) {
         let infoUser = JSON.parse(packet[1]);
         Global.RegisterDate = new Date(infoUser.RegisterDate);
-        Global.Helper.LogAction("login success");
+        //Global.Helper.LogAction("login success");
         if (ScreenManager.getIns().currentScreen == Global.Enum.SCREEN_CODE.LOBBY) {
             Global.LobbyView.CheckLoadSuccess();
            
@@ -88,11 +88,11 @@ var TogetherLogicManager = cc.Class({
             Global.LobbyView.CheckShowMiniGame();
             Global.LobbyView.Handle_JoinSlot(Global.GameId)
         } 
-        let lastScreenCode = require("ScreenManager").getIns().lastScreen;
-        if(lastScreenCode != 0 && lastScreenCode) {
-            if(lastScreenCode == Global.Enum.SCREEN_CODE.INGAME_SLOT || lastScreenCode == Global.Enum.SCREEN_CODE.INGAME_KILL_BOSS)
-                require("ScreenManager").getIns().LoadScene(lastScreenCode);
-        }
+        //let lastScreenCode = require("ScreenManager").getIns().lastScreen;
+        // if(lastScreenCode != 0 && lastScreenCode) {
+        //     if(lastScreenCode == Global.Enum.SCREEN_CODE.INGAME_SLOT || lastScreenCode == Global.Enum.SCREEN_CODE.INGAME_KILL_BOSS)
+        //         require("ScreenManager").getIns().LoadScene(lastScreenCode);
+        // }
         if(Global.CommandPopup && Global.CommandPopup.node && Global.CommandPopup.node.active) {
             Global.CommandPopup.Hide();
         }

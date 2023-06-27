@@ -1,8 +1,8 @@
 {
   "ver": "1.1.2",
-  "uuid": "3cc122d3-23e8-4aea-a355-297ef9f36f89",
-  "isBundle": true,
-  "bundleName": "TutorialPopup",
+  "uuid": "d98655da-23b9-44b1-b848-48de31bfdee0",
+  "isBundle": false,
+  "bundleName": "",
   "priority": 1,
   "compressionType": {},
   "optimizeHotUpdate": {},

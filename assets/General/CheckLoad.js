@@ -68,6 +68,7 @@ cc.Class({
 
             Global.BaseNetwork.request(CONFIG.BASE_API_LINK+"api/config/GetVersionBundle", data, (response)=> {
 			// Global.BaseNetwork.request(CONFIG.BASE_API_LINK+"api/config/GetVersionBundle", data, (response)=> {
+                console.log(dataJson)
                 let dataJson = JSON.parse(response);
                 let d = JSON.parse(dataJson);
                 Global.CheckLoad.data = d;
