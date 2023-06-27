@@ -11,6 +11,8 @@ cc.Class({
         isBattle : {
             default: false,
         },
+        XuanHienBonus_Sound : cc.AudioClip,
+        DapKich_Sound : cc.AudioClip,
     },
 
     Init(slotView) {
@@ -18,6 +20,7 @@ cc.Class({
     },
 
     ShowBonusGame(bonusTurn) {
+    
         this.stateBonus = 1;
         this.lbTurn.string = bonusTurn.toString();
         this.lbNotifyTurn.string = bonusTurn.toString();
@@ -27,8 +30,10 @@ cc.Class({
         this.toDoList.AddWork(()=>{
             this.notifyBonus.active = true;
             this.notifyBonus.getComponent(cc.Animation).play("NotifyBonus");
+            cc.audioEngine.playEffect(this.XuanHienBonus_Sound, false);       
         }, false);
         this.toDoList.Wait(0.5);
+       
         this.toDoList.AddWork(()=>{
             let children = this.notifyBonus.children[1].children;
             for(let i = 0; i < children.length; i++) {
@@ -190,6 +195,13 @@ cc.Class({
             this.toDoList.AddWork(()=>{
                 if(!this.isBattle) {
                     this.character.playAnimation("stampinghunter", 0);
+                  //  cc.audioEngine.playEffect(this.DapKich_Sound, false);   
+                }
+            }, false);
+            this.toDoList.Wait(0.4);
+            this.toDoList.AddWork(()=>{
+                if(!this.isBattle) {           
+                    cc.audioEngine.playEffect(this.DapKich_Sound, false);   
                 }
             }, false);
             this.toDoList.Wait(0.7);

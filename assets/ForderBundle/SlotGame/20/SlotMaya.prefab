@@ -21107,6 +21107,9 @@
     "itemFree": {
       "__id__": 470
     },
+    "BigItemSound": {
+      "__uuid__": "081571c6-0423-4fbf-bf37-9dfda7e9a2ab"
+    },
     "_id": ""
   },
   {
@@ -29208,6 +29211,12 @@
       "__id__": 38
     },
     "isBattle": false,
+    "XuanHienBonus_Sound": {
+      "__uuid__": "92493be1-98ea-42c5-911c-a007cd80bc89"
+    },
+    "DapKich_Sound": {
+      "__uuid__": "edf3e6bb-b92a-4661-b973-6f6e939a3356"
+    },
     "_id": ""
   },
   {
@@ -31310,7 +31319,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 99.9,
+      "width": 95.42,
       "height": 264
     },
     "_anchorPoint": {
@@ -36472,6 +36481,12 @@
     "animNotifyEnd": {
       "__id__": 1014
     },
+    "XuanHienFree_Sound": {
+      "__uuid__": "92493be1-98ea-42c5-911c-a007cd80bc89"
+    },
+    "StartFreeNotifi_Sound": {
+      "__uuid__": "d0d093d3-8b50-4123-ac35-54d6726cf770"
+    },
     "_id": ""
   },
   {
@@ -36605,7 +36620,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 99.9,
+      "width": 95.42,
       "height": 264
     },
     "_anchorPoint": {
@@ -39415,6 +39430,7 @@
     "BigWinSound": {
       "__uuid__": "b043d49e-0c8c-4daa-a5a5-62ca4898c7c2"
     },
+    "BgMusicSound": null,
     "_id": ""
   },
   {

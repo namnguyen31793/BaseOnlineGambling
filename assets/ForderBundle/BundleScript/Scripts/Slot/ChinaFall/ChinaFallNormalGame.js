@@ -18,6 +18,12 @@ cc.Class({
             default: [],
             type: cc.Animation,
         },
+
+        hadesLaugh_Sound : {
+            default: [],
+            type: cc.AudioClip,
+        },
+
     },
 
     ctor() {
@@ -89,14 +95,16 @@ cc.Class({
                 toDoList.AddWork(()=>slotView.ShowMoneyWinStep((listWinStepDataModel[i-1]/listMultiStepModel[i-1])* this.slotView.GetBetValue()),false);
                 toDoList.AddWork(()=>slotView.DropMatrix(listMatrix[i], listWinStepDataModel[i-1], listMultiStepModel[i-1], i),true);
                 //anim hades
-                if(i < 4){
-                    toDoList.AddWork(()=> this.playAnimHades(),false);
+                if(i < 4){                
+                    toDoList.AddWork(()=> this.playAnimHades(i),false);
                     toDoList.Wait(1);
                     //update chieu dai ma tran
                     toDoList.AddWork(()=>this.playTweenCurain(listLengthMatrix[i]),false);
                     toDoList.Wait(0.7);
+                   
                     //update multi
                     toDoList.AddWork(()=>this.playAnimFire(listMultiStepModel[i]),false);
+                  
                 }
                 //toDoList.AddWork(()=>this.animFireMutil[listMultiStepModel[i-1]].play("AnimFireMutil"),false);
                 toDoList.Wait(0.2);
@@ -240,10 +248,11 @@ cc.Class({
         this.Curtain.runAction(cc.sequence(cc.delayTime(0.3),cc.moveTo(0.5,cc.v2(this.Curtain.x,endPos))));       
     },
 
-    playAnimHades(){
+    playAnimHades(animationIndex){
         this.hadesCharacter.play("HadesActive");
         this.isPlayAnimHades = true;
         this.timePlayAnimHades = 0;
+        cc.audioEngine.playEffect(this.hadesLaugh_Sound[animationIndex-1], false);  
     },
 
     resetLengthMatrix(){
@@ -259,7 +268,9 @@ cc.Class({
             this.listMultiNote[i].active = false;
         }
         if(num <= this.listMultiNote.length)
+        {
             this.listMultiNote[num-1].active = true;
+        }
     },
 
     playAnimFire(num){

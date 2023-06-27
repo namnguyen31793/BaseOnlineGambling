@@ -11,6 +11,7 @@ cc.Class({
         spinFreeObj : cc.Node,
         stopFreeObj : cc.Node,
         itemFree : require("ItemMaya"),
+        BigItemSound : cc.AudioClip,
     },
 
     SetSizeMatrix() {
@@ -128,7 +129,11 @@ cc.Class({
         this._super(isSet);
         if(this.stateSpin == 2 || isSet) {
             if(this.slotView.isFree) {
+             
                 this.slotView.itemManager.SetImageBig(this.cacheMatrix[1], this.itemFree);
+                this.scheduleOnce(()=>{
+                    cc.audioEngine.playEffect(this.BigItemSound, false);       
+                } , 1); 
             }
         }
     },

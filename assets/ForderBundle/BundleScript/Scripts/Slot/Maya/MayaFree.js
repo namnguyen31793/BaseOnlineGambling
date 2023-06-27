@@ -1,6 +1,11 @@
 cc.Class({
     extends: require("CaChepFree"),
 
+    properties: {      
+        XuanHienFree_Sound : cc.AudioClip,
+        StartFreeNotifi_Sound: cc.AudioClip,
+    },
+
     ShowFree(numberFree, isNotify, lineWin, winNormalValue, totalWin) {
         this.toDoList.CreateList();
         this.numberFreeSpin = numberFree;
@@ -12,6 +17,7 @@ cc.Class({
                 this.lbNotifyTurn.string = numberFree.toString();
                 this.notifyFree.active = true;
                 this.notifyFree.getComponent(cc.Animation).play("NotifyBonus");
+                cc.audioEngine.playEffect(this.StartFreeNotifi_Sound, false);       
             }, false);
             this.toDoList.Wait(0.5);
             this.toDoList.AddWork(()=>{
@@ -56,6 +62,7 @@ cc.Class({
             this.toDoList.Wait(0.54);
             this.toDoList.AddWork(()=>{
                 this.animFree.play("GateStart");
+                cc.audioEngine.playEffect(this.XuanHienFree_Sound, false);       
             }, false);
             this.toDoList.Wait(0.5);
             this.toDoList.AddWork(()=>{

@@ -40067,6 +40067,20 @@
         "__id__": 1149
       }
     ],
+    "hadesLaugh_Sound": [
+      {
+        "__uuid__": "2819f252-1226-4c05-81ed-db596d5a5d40"
+      },
+      {
+        "__uuid__": "1ac06c5e-e761-4a2a-968c-dcb4bba87bf4"
+      },
+      {
+        "__uuid__": "0621fefe-2958-46bd-8ad2-7d26aefcdc10"
+      },
+      {
+        "__uuid__": "af7f6af4-82a8-4724-82da-c8d3c07bd705"
+      }
+    ],
     "_id": ""
   },
   {
@@ -51990,6 +52004,7 @@
     "BigWinSound": {
       "__uuid__": "b043d49e-0c8c-4daa-a5a5-62ca4898c7c2"
     },
+    "BgMusicSound": null,
     "_id": ""
   },
   {
