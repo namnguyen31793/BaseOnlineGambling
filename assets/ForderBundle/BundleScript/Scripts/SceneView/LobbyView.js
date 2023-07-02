@@ -35,12 +35,10 @@ cc.Class({
 
 	properties: {
 		loginPanel: cc.Node,
-		pathTxt : cc.TextAsset,
 		//
 		markBg : cc.Node,
 
 		lbTimeSale : cc.Label,
-		showStartGame : require("ShowStartGame"),
 		
 	},
 
@@ -80,43 +78,12 @@ cc.Class({
 		if (Global.isConnect == false) {
 			var data = {
 			}
-			//Global.BaseNetwork.request(CONFIG.BASE_API_LINK+"api/config/GetRoomMultiSlot", data, this.GetRoomMultiSlot);
 			Global.NetworkManager.init("");
 			Global.NetworkManager.connect_sv();
 		} else {
 			this.CheckLoadSuccess();
 		}
 	},
-
-    GetRoomMultiSlot(response){
-		let dataJson = JSON.parse(response);
-		if (dataJson.c != 0) {
-			Global.SlotRoomMuitlConfig = [];
-		} else {
-			Global.SlotRoomMuitlConfig = dataJson.d;
-			//cc.log("--------GetRoomMultiSlot "+response);
-			// Global.NetworkManager.init("");
-			// Global.NetworkManager.connect_sv();
-		}
-	},
-	
-	ClickJoinFishRoom_New(event, index) {
-		if (!Global.isConnect) {
-			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
-			return;
-		}
-		
-		if(index == 3) {
-			CONFIG.MULTI_PLAYER = true;
-		} else {
-			CONFIG.MULTI_PLAYER = false;
-		}
-		
-
-		require("ScreenManager").getIns().roomType = index;
-		require("ScreenManager").getIns().LoadScene(Global.Enum.SCREEN_CODE.INGAME_KILL_BOSS);
-	},
-
 	
 
 	ClickCommingSoon() {
@@ -162,18 +129,16 @@ cc.Class({
 			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NEED_LOGIN"));
 			return;
 		}
-
 	},
-	
 
 	CheckShowMiniGame() {
 		if(!Global.isConnect)
 			return;
 		require("WalletController").getIns().init();
         require("WalletController").getIns().AddListener(Global.LobbyView);
-		require("SyncTimeControl").getIns().SendPing();
+		//require("SyncTimeControl").getIns().SendPing();
 	
-		this.showStartGame.Action();
+		//this.showStartGame.Action();
 		let msgData = {};
 		msgData[1] = Global.GameId;
 		require("SendRequest").getIns().MST_Client_Slot_Get_Game_Config_Info(msgData);
