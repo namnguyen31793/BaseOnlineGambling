@@ -301,7 +301,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 1575,
-      "height": 748
+      "height": 742
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1159,8 +1159,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 1226,
-      "height": 341
+      "width": 1156,
+      "height": 308
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -15396,7 +15396,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 724,
+      "width": 684,
       "height": 150
     },
     "_anchorPoint": {
@@ -23346,7 +23346,7 @@
       "ctor": "Float64Array",
       "array": [
         0,
-        0.938,
+        -600,
         0,
         0,
         0,
@@ -26795,6 +26795,7 @@
     "BigWinSound": {
       "__uuid__": "b043d49e-0c8c-4daa-a5a5-62ca4898c7c2"
     },
+    "BgMusicSound": null,
     "_id": ""
   },
   {
