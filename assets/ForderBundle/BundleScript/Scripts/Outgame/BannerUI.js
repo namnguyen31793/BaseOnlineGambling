@@ -14,6 +14,7 @@ cc.Class({
 
     start() {
         let current = this;
+        /*
         var data = {
 			version: CONFIG.VERSION,
 			os: require("ReceiveResponse").getIns().GetPlatFrom(),
@@ -28,6 +29,7 @@ cc.Class({
                 current.isRun = true;
             current.SetInfo();
         });
+        */
     },
 
     onLoad() {

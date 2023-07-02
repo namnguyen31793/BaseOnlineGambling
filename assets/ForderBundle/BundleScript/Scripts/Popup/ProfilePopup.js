@@ -14,16 +14,18 @@ cc.Class({
     },
 
     start() {
-        Global.Helper.GetAvata(this.avata);
+      //  Global.Helper.GetAvata(this.avata);
     },
 
     show() {
+        /*
         Global.UIManager.hideMiniLoading();
 		this.node.setSiblingIndex(this.node.parent.children.length-1);
 		this.node.active = true;
 		this.node.getComponent(cc.Animation).play("ShowPopup");
         this.SetInfoProfile();
         Global.LobbyView.RequestGetVipConfig();
+        */
     },
 
     SetInfoProfile() {

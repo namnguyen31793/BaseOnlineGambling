@@ -23,22 +23,19 @@ cc.Class({
     },
 
     show() {
+
         this.node.setSiblingIndex(this.node.parent.children.length-1);
         this.node.active = true;
+        
+        /*
         require("SendRequest").getIns().MST_Client_Get_Vip_Config_Info();
-        // for(let i = 0; i < 10; i++) {
-        //     if(i < Global.MainPlayerInfo.vipLevel) {
-        //         this.iconVip[i].spriteFrame = this.imgActive[i];
-        //     } else {
-        //         this.iconVip[i].spriteFrame = this.imgUnActive[i];
-        //     }
-            
-        // }
+        
         if(Global.GameConfig != null && Global.GameConfig.FeatureConfig.CashinLobbyFeature == Global.Enum.EFeatureStatus.Open) {
 			this.btnShop.active = true;
 		} else {
             this.btnShop.active = false;
         }
+        */
     },
 
     GetVipInfo(listVipInfo, des, dq) {

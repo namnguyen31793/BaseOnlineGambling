@@ -79,7 +79,7 @@ cc.Class({
 		Global.Enum.FISH_BOSS_TYPE.TYPE_FISH_GOD_OF_WEALTH = 122;
 		Global.LobbyView = this;
 
-		this.LoadMussicBackgroud();
+		//this.LoadMussicBackgroud();
 
 		if (Global.isLogin) {
 			this.Connect();

@@ -17,7 +17,7 @@ cc.Class({
     // onLoad () {},
 
     start() {
-        this.createRandomIcon();
+        //this.createRandomIcon();
     },
 
     randomBetween(min, max) {

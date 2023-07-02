@@ -23,9 +23,11 @@ cc.Class({
     },
 
     start() {
+        /*
         this.startPos = this.node.getPosition();
         this.countTime = Global.RandomNumber(0,10);
         this.CreateNewState();
+        */
     },
 
     ClickJoin() {
