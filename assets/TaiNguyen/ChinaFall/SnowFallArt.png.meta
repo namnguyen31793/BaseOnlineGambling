@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "9a34f7d0-9461-490c-a1ce-69e2323e516b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 447,
+  "height": 78,
+  "platformSettings": {},
+  "subMetas": {
+    "SnowFallArt": {
+      "ver": "1.0.4",
+      "uuid": "0539279f-d722-4daf-9a67-c0a9ef0cb8db",
+      "rawTextureUuid": "9a34f7d0-9461-490c-a1ce-69e2323e516b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 446,
+      "height": 78,
+      "rawWidth": 447,
+      "rawHeight": 78,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

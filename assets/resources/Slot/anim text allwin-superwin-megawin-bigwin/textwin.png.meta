@@ -17,6 +17,9 @@
           "quality": 80
         }
       ]
+    },
+    "default": {
+      "formats": []
     }
   },
   "subMetas": {

@@ -35,7 +35,6 @@ cc.Class({
 
 	properties: {
 		loginPanel: cc.Node,
-		//
 		markBg : cc.Node,
 
 		lbTimeSale : cc.Label,
@@ -47,7 +46,7 @@ cc.Class({
 		this.markBg.width = cc.winSize.width;
 
 		if (Global.isLogin) {
-			this.Connect();	
+			this.Connect();		
 			this.loginPanel.active = false;
 		} else {
 			this.loginPanel.active = true;

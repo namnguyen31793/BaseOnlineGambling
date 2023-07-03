@@ -22,7 +22,7 @@ cc.Class({
     ////////////////////////////////////////////////////////////
 
     ResponseServer(code, packet) {
-        cc.log(JSON.stringify(packet));
+      
         switch (code) {
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_RPG_BATTLE_GAME_SPIN:
                 this.GetSpinResult(packet);

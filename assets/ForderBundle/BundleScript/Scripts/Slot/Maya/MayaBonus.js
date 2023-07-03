@@ -230,8 +230,10 @@ cc.Class({
 
     UpdateBonusTurn(bonusTurn, isActive) {
         if(isActive) {
+            /*
             if(bonusTurn >= this.cacheBonusTurn)
                 this.effectChangeTurn.play();
+            */
             this.lbTurn.string = bonusTurn;
         } else {
             this.bonusObj.active = false;

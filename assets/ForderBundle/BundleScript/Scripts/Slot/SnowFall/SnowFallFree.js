@@ -40,7 +40,7 @@ cc.Class({
         if(this.slotView.isFree) {
             this.toDoList.AddWork(()=>{
                 this.SetTextFree();
-                this.effectChangeTurn.play();
+                //this.effectChangeTurn.play();
             }, false);
             //wait anim item Spec destroy
             this.toDoList.Wait(1);
@@ -142,7 +142,7 @@ cc.Class({
         cc.sys.localStorage.setItem("Key_Free_SnowFall" , this.cacheTotalSpin);
 
         this.lbFreeTurn.string = this.numberFreeSpin.toString()+"/"+this.cacheTotalSpin.toString();
-        this.effectChangeTurn.play();
+       // this.effectChangeTurn.play();
     },
 
     SetTextFree()
