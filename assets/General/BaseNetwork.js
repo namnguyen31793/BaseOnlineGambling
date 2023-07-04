@@ -60,17 +60,13 @@ cc.Class({
 			if (http.readyState === 4 && (http.status >= 200 && http.status < 300)) {
 				
 				try{
-				  //  cc.log(cc.sys.localstorge);
-				  //cc.log(getCookie(CONFIG.COOKIENAME));
+				
 				} catch(err) {
 					
 				}
 			   
-				//Global.CookieValue = this.getCookieV2(CONFIG.COOKIENAME);
-			  //  cc.log("cookie:"+Global.CookiValue);*/
 				event(http.responseText);
-			   // return http.responseText;
-			  //this.reviceConfig(http.responseText);
+			  
 			}
 		  }
 		  

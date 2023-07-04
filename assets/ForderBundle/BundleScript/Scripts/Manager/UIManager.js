@@ -345,7 +345,7 @@ cc.Class({
 	},
 
 	start() { 
-		this.parentMiniGame.setSiblingIndex(0);
+		//this.parentMiniGame.setSiblingIndex(0);
 		
 	},
 

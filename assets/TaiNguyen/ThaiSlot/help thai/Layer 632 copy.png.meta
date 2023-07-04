@@ -9,7 +9,16 @@
   "packable": true,
   "width": 47,
   "height": 65,
-  "platformSettings": {},
+  "platformSettings": {
+    "web": {
+      "formats": [
+        {
+          "name": "webp",
+          "quality": 80
+        }
+      ]
+    }
+  },
   "subMetas": {
     "Layer 632 copy": {
       "ver": "1.0.4",

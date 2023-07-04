@@ -9,7 +9,16 @@
   "packable": true,
   "width": 317,
   "height": 478,
-  "platformSettings": {},
+  "platformSettings": {
+    "web": {
+      "formats": [
+        {
+          "name": "webp",
+          "quality": 95
+        }
+      ]
+    }
+  },
   "subMetas": {
     "hoa sen": {
       "ver": "1.0.4",

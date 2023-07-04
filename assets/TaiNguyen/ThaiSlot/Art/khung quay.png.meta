@@ -9,7 +9,16 @@
   "packable": true,
   "width": 984,
   "height": 662,
-  "platformSettings": {},
+  "platformSettings": {
+    "web": {
+      "formats": [
+        {
+          "name": "webp",
+          "quality": 90
+        }
+      ]
+    }
+  },
   "subMetas": {
     "khung quay": {
       "ver": "1.0.4",

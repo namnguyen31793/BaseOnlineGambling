@@ -9,7 +9,16 @@
   "packable": true,
   "width": 622,
   "height": 448,
-  "platformSettings": {},
+  "platformSettings": {
+    "web": {
+      "formats": [
+        {
+          "name": "webp",
+          "quality": 90
+        }
+      ]
+    }
+  },
   "subMetas": {
     "free": {
       "ver": "1.0.4",

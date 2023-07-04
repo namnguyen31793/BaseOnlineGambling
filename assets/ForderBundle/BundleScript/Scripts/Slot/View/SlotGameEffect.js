@@ -79,6 +79,7 @@ cc.Class({
     },
 
     ClickCloseFree() {
+        if(this.freeObj != null)
         this.freeObj.active = false;
     },
 
@@ -88,6 +89,9 @@ cc.Class({
     },
 
     ClickCloseBonus() {
+        if(this.bonusObj == null)
+        return;
+        
         this.bonusObj.active = false;
         if(this.actBonus) {
             this.actBonus();

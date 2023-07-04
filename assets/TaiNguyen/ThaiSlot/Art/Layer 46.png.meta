@@ -9,7 +9,24 @@
   "packable": true,
   "width": 1575,
   "height": 750,
-  "platformSettings": {},
+  "platformSettings": {
+    "web": {
+      "formats": [
+        {
+          "name": "webp",
+          "quality": 60
+        }
+      ]
+    },
+    "default": {
+      "formats": [
+        {
+          "name": "webp",
+          "quality": 80
+        }
+      ]
+    }
+  },
   "subMetas": {
     "Layer 46": {
       "ver": "1.0.4",

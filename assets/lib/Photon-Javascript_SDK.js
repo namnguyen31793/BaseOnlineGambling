@@ -435,6 +435,7 @@ var Photon;
             @method Photon.PhotonPeer#connect
         */
         PhotonPeer.prototype.connect = function (appid) {
+            cc.log(">>> PHOTON PEER: CONNECT");
             var _this = this;
             this._sessionid = undefined;
             var url = this.url + "/" + appid + "?libversion=4.1.0.0";

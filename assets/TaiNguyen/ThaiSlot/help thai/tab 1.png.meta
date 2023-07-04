@@ -9,7 +9,16 @@
   "packable": true,
   "width": 948,
   "height": 496,
-  "platformSettings": {},
+  "platformSettings": {
+    "web": {
+      "formats": [
+        {
+          "name": "webp",
+          "quality": 80
+        }
+      ]
+    }
+  },
   "subMetas": {
     "tab 1": {
       "ver": "1.0.4",
