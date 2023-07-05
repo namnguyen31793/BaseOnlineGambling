@@ -252,7 +252,16 @@ cc.Class({
         this.hadesCharacter.play("HadesActive");
         this.isPlayAnimHades = true;
         this.timePlayAnimHades = 0;
-        cc.audioEngine.playEffect(this.hadesLaugh_Sound[animationIndex-1], false);  
+        if(animationIndex>1)
+        {
+            cc.audioEngine.playEffect(this.hadesLaugh_Sound[animationIndex-1], false); 
+        }
+        else
+        {
+            let rand = Global.RandomNumber(0, 100);
+            if(rand < 30)
+                cc.audioEngine.playEffect(this.hadesLaugh_Sound[animationIndex-1], false); 
+        } 
     },
 
     resetLengthMatrix(){
