@@ -8,4 +8,8 @@ cc.Class({
         this.linkHelpView = "HuongDanChoi";
     },
 
+    SetLastPrizeDrop(value) {
+        this.UpdateWinValue(value);
+    },
+
 });

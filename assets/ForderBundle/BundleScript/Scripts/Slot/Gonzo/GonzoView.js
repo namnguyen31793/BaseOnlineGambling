@@ -159,8 +159,8 @@ cc.Class({
                         this.toDoList.DoWork();
                     }
                 } else {
-                    //this.menuView.ResetValueCacheWin();
-                    this.menuView.HideWinValueCache();
+                    this.menuView.ResetValueCacheWin();
+                    //this.menuView.HideWinValueCache();
                     this.PlayBigWin();
                     this.effectManager.ShowBigWin(winNormalValue, this.toDoList, true, false);
                 }
@@ -168,8 +168,8 @@ cc.Class({
                 this.toDoList.DoWork();
             }
         }else{
-            //this.menuView.ResetValueCacheWin();
-            this.menuView.HideWinValueCache();
+            this.menuView.ResetValueCacheWin();
+            //this.menuView.HideWinValueCache();
             this.PlayJackpot();
             this.effectManager.ShowJackpot(totalValue, this.toDoList, false);
         }  
