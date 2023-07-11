@@ -3,6 +3,7 @@ cc.Class({
 
     properties: {
         nodeGame: cc.Node,
+        nodeDemo: cc.Node,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -73,7 +74,9 @@ cc.Class({
             }
 		}, 1);  
 
-       
+        if(Global.agent == 0){
+            this.nodeDemo.active = true;
+        }
         
     },
 
