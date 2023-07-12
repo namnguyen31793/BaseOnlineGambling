@@ -38,7 +38,7 @@ cc.Class({
         if(this.slotView.isFree) {
             this.toDoList.AddWork(()=>{
                 this.SetTextFree();
-                this.effectChangeTurn.play();
+                //this.effectChangeTurn.play();
             }, false);
             
             if(winNormalValue > 0){
