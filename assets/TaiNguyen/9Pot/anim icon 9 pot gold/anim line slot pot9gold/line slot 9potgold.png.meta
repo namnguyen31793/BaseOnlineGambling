@@ -19,12 +19,7 @@
       ]
     },
     "web": {
-      "formats": [
-        {
-          "name": "webp",
-          "quality": 80
-        }
-      ]
+      "formats": []
     },
     "ios": {
       "formats": [

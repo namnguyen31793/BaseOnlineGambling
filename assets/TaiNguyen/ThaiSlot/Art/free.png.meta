@@ -11,12 +11,7 @@
   "height": 448,
   "platformSettings": {
     "web": {
-      "formats": [
-        {
-          "name": "webp",
-          "quality": 90
-        }
-      ]
+      "formats": []
     }
   },
   "subMetas": {

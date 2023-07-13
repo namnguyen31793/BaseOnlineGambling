@@ -11,12 +11,7 @@
   "height": 512,
   "platformSettings": {
     "web": {
-      "formats": [
-        {
-          "name": "webp",
-          "quality": 80
-        }
-      ]
+      "formats": []
     },
     "android": {
       "formats": [
