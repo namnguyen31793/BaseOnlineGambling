@@ -46,8 +46,7 @@ var OutGameLogicManager = cc.Class({
        
         Global.MainPlayerInfo.SetUpInfo(JSON.parse(packet[1]));
        
-        Global.LobbyView.CheckShowMiniGame();
-        
+      
         let lastScreenCode = require("ScreenManager").getIns().lastScreen;
         if(lastScreenCode != 0 && lastScreenCode) {
             if(lastScreenCode == Global.Enum.SCREEN_CODE.INGAME_SLOT || lastScreenCode == Global.Enum.SCREEN_CODE.INGAME_KILL_BOSS)

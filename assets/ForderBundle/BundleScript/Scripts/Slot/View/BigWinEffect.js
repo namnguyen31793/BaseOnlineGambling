@@ -23,6 +23,10 @@ cc.Class({
         lbMoney : require("LbMonneyChange"),
         imgSkeleton : sp.Skeleton,  
         nodeParticle : cc.Node,
+        AllWin_Skeleton : sp.Skeleton,  
+        BigWin_Skeleton : sp.Skeleton,  
+        MegaWin_Skeleton : sp.Skeleton,  
+        SuperWin_Skeleton : sp.Skeleton,  
     },
 
     start() {
@@ -84,6 +88,11 @@ cc.Class({
 
     RunEffect(isJackpot, winMoney, betValue, toDoList) {
         this.toDoList = toDoList;
+        this.AllWin_Skeleton.node.active = false;
+        this.BigWin_Skeleton.node.active = false;
+        this.MegaWin_Skeleton.node.active = false;
+        this.SuperWin_Skeleton.node.active = false;
+        this.imgSkeleton.node.active = false;
         let heso = winMoney/betValue;
         if(heso <= 4)
             this.time = heso / 4;
@@ -105,33 +114,52 @@ cc.Class({
             this.node.children[i].active = true;
         let line = this.slotView.lineData;
         if(isJackpot){
-            if(this.imgSkeleton) {
-                this.imgSkeleton.setAnimation(0, 'allwin-xuathien', false);
+            if(this.AllWin_Skeleton) {
+                this.AllWin_Skeleton.setAnimation(0, 'animation', false);
+                /*
                 this.scheduleOnce(()=>{
                     this.imgSkeleton.timeScale = 1;
                     this.imgSkeleton.setAnimation(0, 'allwin-tienchay', true);
                 } , 0.8);  
+                */
             }
             
         }else{
             if(this.imgSkeleton) {
-                this.imgSkeleton.setAnimation(0, 'bigwin-xuathien', false);
+               
+                /*
                 this.scheduleOnce(()=>{
                     this.imgSkeleton.timeScale = 1;
                     this.imgSkeleton.setAnimation(0, 'bigwin-tienchay', true);
                 } , 1);  
-                if((heso/line) >= 30){
-                    this.scheduleOnce(()=>{
-                        this.imgSkeleton.timeScale = 1.5;
-                        this.imgSkeleton.setAnimation(0, 'megawin-tienchay', true);
-                    } , 2.5); 
-                }
-                if((heso/line) >= 60){
+                */
+                if((heso/line) >= 20){
+                    this.SuperWin_Skeleton.node.active = true;
+                    this.SuperWin_Skeleton.setAnimation(0, 'animation', false);
+                    /*
                     this.scheduleOnce(()=>{
                         this.imgSkeleton.timeScale = 2;
                         this.imgSkeleton.setAnimation(0, 'superwin-tienchay', true);
                     } , 4); 
+                    */
                 }
+                else if((heso/line) >= 10){
+                    this.MegaWin_Skeleton.node.active = true;
+                    this.MegaWin_Skeleton.setAnimation(0, 'animation', false);
+                    /*
+                    this.scheduleOnce(()=>{
+                        this.imgSkeleton.timeScale = 1.5;
+                        this.imgSkeleton.setAnimation(0, 'megawin-tienchay', true);
+                    } , 2.5); 
+                    */
+                }
+                else
+                {
+                    this.BigWin_Skeleton.node.active = true;
+                    this.BigWin_Skeleton.setAnimation(0, 'animation', false);
+                }
+                
+                
             }
             
         }
@@ -152,11 +180,19 @@ cc.Class({
 
     EndBigWin() {
         cc.log("end BigWin");
+        this.AllWin_Skeleton.node.active = false;
+        this.BigWin_Skeleton.node.active = false;
+        this.MegaWin_Skeleton.node.active = false;
+        this.SuperWin_Skeleton.node.active = false;
+       // this.imgSkeleton.node.active = false;
+
         for(let i = 0; i < this.node.children.length; i++)
             this.node.children[i].active = false;
         this.mark.active = false;
+        /*
         if(this.imgSkeleton)
             this.imgSkeleton.loop = false;
+            */
         if(this.nodeParticle)
             this.nodeParticle.active = false;
         //game nổ sập đã cộng tiền ở các lượt rơi, k cộng tiền 1 lần nữa ở bigwin

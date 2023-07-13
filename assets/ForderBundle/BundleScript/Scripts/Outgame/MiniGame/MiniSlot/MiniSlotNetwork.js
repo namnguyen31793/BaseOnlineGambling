@@ -4,7 +4,7 @@ cc.Class({
     extends: require("SlotNetwork"),
 
     ResponseServer(code, packet) {
-        cc.log(JSON.stringify(packet));
+     
         switch (code) {
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_NEW_MINISLOT_GET_ACCOUNT_INFO:
                 cc.log("MSG_SERVER_NEW_MINISLOT_GET_ACCOUNT_INFO");

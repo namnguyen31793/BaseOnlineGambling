@@ -1,0 +1,76 @@
+
+megawin.png
+size: 1631,771
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+coin
+  rotate: false
+  xy: 813, 63
+  size: 564, 347
+  orig: 568, 350
+  offset: 2, 1
+  index: -1
+megawin/2_frame
+  rotate: false
+  xy: 813, 412
+  size: 618, 357
+  orig: 630, 364
+  offset: 6, 2
+  index: -1
+megawin/2_khung
+  rotate: true
+  xy: 1433, 342
+  size: 427, 93
+  orig: 431, 99
+  offset: 2, 3
+  index: -1
+megawin/2_mega
+  rotate: false
+  xy: 2, 2
+  size: 572, 178
+  orig: 576, 182
+  offset: 2, 2
+  index: -1
+megawin/2_star1
+  rotate: true
+  xy: 1528, 597
+  size: 172, 72
+  orig: 174, 83
+  offset: 1, 1
+  index: -1
+megawin/2_star2
+  rotate: true
+  xy: 1528, 423
+  size: 172, 72
+  orig: 175, 83
+  offset: 2, 1
+  index: -1
+megawin/2_star3
+  rotate: false
+  xy: 576, 61
+  size: 225, 119
+  orig: 227, 122
+  offset: 1, 2
+  index: -1
+megawin/2_star4
+  rotate: true
+  xy: 1510, 116
+  size: 224, 119
+  orig: 227, 122
+  offset: 2, 1
+  index: -1
+megawin/2_win
+  rotate: true
+  xy: 1379, 34
+  size: 306, 129
+  orig: 312, 135
+  offset: 3, 4
+  index: -1
+tubu
+  rotate: false
+  xy: 2, 182
+  size: 809, 587
+  orig: 811, 589
+  offset: 1, 1
+  index: -1

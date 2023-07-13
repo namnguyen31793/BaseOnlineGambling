@@ -30,6 +30,7 @@ cc.Class({
     },
 
     CreateSpinColumn(slotView, startObj, distanceY, numberItemAbove, numberItemBelow, numberRow, numberColumn, numberSpeed) {
+        cc.log("Start Object: "+ startObj);
         this.slotView = slotView;
         this.distanceY = distanceY;
         this.startPos = startObj.y;

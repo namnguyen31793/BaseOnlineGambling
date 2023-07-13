@@ -4,7 +4,7 @@ cc.Class({
     extends: require("SlotNetwork"),
 
     ResponseServer(code, packet) {
-        cc.log(JSON.stringify(packet));
+    
         switch (code) {
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_CHINA_QUEEN_GAME_GET_ACCOUNT_INFO:
                 cc.log(packet);

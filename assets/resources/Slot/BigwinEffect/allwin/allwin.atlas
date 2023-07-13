@@ -1,0 +1,83 @@
+
+allwin.png
+size: 2002,813
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+allwin/4_all
+  rotate: false
+  xy: 591, 29
+  size: 431, 190
+  orig: 436, 194
+  offset: 3, 3
+  index: -1
+allwin/4_cup
+  rotate: true
+  xy: 1531, 102
+  size: 360, 304
+  orig: 360, 305
+  offset: 0, 0
+  index: -1
+allwin/4_frame
+  rotate: true
+  xy: 591, 221
+  size: 590, 507
+  orig: 592, 509
+  offset: 1, 1
+  index: -1
+allwin/4_star1
+  rotate: true
+  xy: 1100, 525
+  size: 286, 323
+  orig: 296, 325
+  offset: 5, 1
+  index: -1
+allwin/4_star2
+  rotate: true
+  xy: 1100, 237
+  size: 286, 323
+  orig: 296, 325
+  offset: 5, 1
+  index: -1
+allwin/4_win
+  rotate: false
+  xy: 1024, 50
+  size: 410, 169
+  orig: 423, 176
+  offset: 7, 1
+  index: -1
+bigwin/1_khung
+  rotate: true
+  xy: 1436, 35
+  size: 427, 93
+  orig: 431, 99
+  offset: 2, 3
+  index: -1
+coin
+  rotate: false
+  xy: 1436, 464
+  size: 564, 347
+  orig: 568, 350
+  offset: 2, 1
+  index: -1
+superwin/3_light3
+  rotate: false
+  xy: 1651, 15
+  size: 121, 85
+  orig: 126, 89
+  offset: 3, 1
+  index: -1
+superwin/3_light4
+  rotate: false
+  xy: 1531, 11
+  size: 118, 89
+  orig: 123, 94
+  offset: 3, 3
+  index: -1
+tubu
+  rotate: true
+  xy: 2, 2
+  size: 809, 587
+  orig: 811, 589
+  offset: 1, 1
+  index: -1

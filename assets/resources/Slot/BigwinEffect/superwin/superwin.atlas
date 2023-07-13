@@ -1,0 +1,83 @@
+
+superwin.png
+size: 2007,691
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bigwin/1_khung
+  rotate: false
+  xy: 879, 7
+  size: 427, 93
+  orig: 431, 99
+  offset: 2, 3
+  index: -1
+coin
+  rotate: true
+  xy: 1384, 125
+  size: 564, 347
+  orig: 568, 350
+  offset: 2, 1
+  index: -1
+superwin/3_frame
+  rotate: true
+  xy: 2, 26
+  size: 663, 569
+  orig: 665, 571
+  offset: 1, 1
+  index: -1
+superwin/3_leaf1
+  rotate: false
+  xy: 693, 5
+  size: 91, 95
+  orig: 93, 97
+  offset: 1, 1
+  index: -1
+superwin/3_leaf2
+  rotate: false
+  xy: 1515, 9
+  size: 89, 114
+  orig: 91, 116
+  offset: 1, 1
+  index: -1
+superwin/3_light3
+  rotate: true
+  xy: 1428, 2
+  size: 121, 85
+  orig: 126, 89
+  offset: 3, 1
+  index: -1
+superwin/3_light4
+  rotate: false
+  xy: 1308, 11
+  size: 118, 89
+  orig: 123, 94
+  offset: 3, 3
+  index: -1
+superwin/3_loa1
+  rotate: true
+  xy: 573, 4
+  size: 96, 118
+  orig: 98, 120
+  offset: 1, 1
+  index: -1
+superwin/3_loa2
+  rotate: false
+  xy: 786, 5
+  size: 91, 95
+  orig: 93, 97
+  offset: 1, 1
+  index: -1
+superwin/3_superwin
+  rotate: true
+  xy: 1733, 140
+  size: 549, 272
+  orig: 551, 274
+  offset: 1, 1
+  index: -1
+tubu
+  rotate: false
+  xy: 573, 102
+  size: 809, 587
+  orig: 811, 589
+  offset: 1, 1
+  index: -1

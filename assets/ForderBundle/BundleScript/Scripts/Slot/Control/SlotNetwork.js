@@ -131,7 +131,7 @@ cc.Class({
     ////////////////////////////////////////////////////////////
 
     ResponseServer(code, packet) {
-        cc.log(JSON.stringify(packet));
+      
         switch (code) {
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_OLDSCHOOL_GET_ACCOUNT_INFO:
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_REAL_MONEY_MAYA_GAME_GET_ACCOUNT_INFO:
