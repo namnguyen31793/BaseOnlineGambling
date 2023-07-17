@@ -12,6 +12,9 @@ cc.Class({
     },
 
     onLoad() {
+        
+        Global.Helper.GetLoadingGameSlot(require("ScreenManager").getIns().roomType , this.bg);
+
         this.node.children[0].addComponent(cc.BlockInputEvents);
         let r = Global.RandomNumber(0, this.img.length);
         if(Global.indexBgLoading == null)

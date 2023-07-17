@@ -90,6 +90,21 @@ cc.Class({
         // });
     },
 
+    GetLoadingGameSlot(gameid, spr) {
+        if(gameid == 0)
+            spr.node.active = false;
+        else {
+            spr.node.active = true;
+            Global.DownloadManager.LoadAssest("Slot",cc.SpriteFrame,"BGGame/"+gameid, (pre)=>{
+                if(spr != null&& spr.materials != null)
+                    spr.spriteFrame = pre;
+                else {
+                    console.log("-------------------eror-----------------");
+                }
+            });
+        }
+    },
+
     GetAvaFake(spr, numb, event = null) {
         let check = parseInt(numb%500);
         if(check >= 450 || (CONFIG.IS_NATIVE && !cc.sys.isNative)) {
