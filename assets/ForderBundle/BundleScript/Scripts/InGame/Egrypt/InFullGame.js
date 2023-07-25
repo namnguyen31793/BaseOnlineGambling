@@ -85,8 +85,10 @@ cc.Class({
     },
 
     SendLeaveRoom(){
-        require("SendRequest").getIns().MST_Client_Slot_Leave_Room();
-        Global.UIManager.showLoading();
+        let msg = {};
+        msg[40] = require("ScreenManager").getIns().roomType;
+        require("SendRequest").getIns().MST_Client_Slot_Leave_Room(msg);
+        Global.UIManager.showLoadingNotHide();
     },
 
     // update (dt) {},

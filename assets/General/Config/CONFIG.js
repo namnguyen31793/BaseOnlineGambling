@@ -12,8 +12,14 @@ window.CONFIG = {
 	
 	CONFIG_LINK: 'https://devweb.allwinslots.asia/gameserver/api/config/getconfigurl',
 	BASE_API_LINK: 'https://devweb.allwinslots.asia/gameserver/',
+	BASE_SPIN_HUB_LINK: 'https://spinhubclient.peachtea.life/',
 
-	BASE_SPIN_HUB_LINK: 'https://spinhub.peachtea.life/',
+	
+	// CONFIG_LINK: 'https://devweb.allwinslots.asia/gameserver/api/config/getconfigurl',
+	// BASE_API_LINK: 'https://devweb.allwinslots.asia/gameserver/',
+	// BASE_SPIN_HUB_LINK: 'https://providerserver.allwinslots.asia/',
+
+
 	IS_MAP: true,
 	IS_NATIVE:true,
 

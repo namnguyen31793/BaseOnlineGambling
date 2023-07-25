@@ -232,8 +232,8 @@ var SendRequest = cc.Class({
         Global.NetworkManager.sendRequest(Global.Enum.REQUEST_CODE.MST_CLIENT_SLOT_GET_TOP_JACKPOT, msg, Global.Enum.NETWORK_TARGET_CODE.SLOT_MACHINE);
     },
 
-    MST_Client_Slot_Leave_Room() {
-        Global.NetworkManager.sendRequest(Global.Enum.REQUEST_CODE.MST_CLIENT_SLOT_LEAVE_ROOM, {}, Global.Enum.NETWORK_TARGET_CODE.SLOT_MACHINE);
+    MST_Client_Slot_Leave_Room(msg) {
+        Global.NetworkManager.sendRequest(Global.Enum.REQUEST_CODE.MST_CLIENT_SLOT_LEAVE_ROOM, msg, Global.Enum.NETWORK_TARGET_CODE.SLOT_MACHINE);
     },
 
     MST_Client_Slot_Mission_Get_Current_Mission() {

@@ -257,6 +257,10 @@ cc.Class({
 		cc.log("show loading");
 	},
 
+	showLoadingNotHide() {
+		this.loading.node.active = true;
+	},
+
 	hideLoading() {
 		this.isCountTime = false;
 		this.loading.node.active = false;
