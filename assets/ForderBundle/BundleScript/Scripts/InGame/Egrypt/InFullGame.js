@@ -63,7 +63,7 @@ cc.Class({
 			url = "Slot9Pot";
         }else if(require("ScreenManager").getIns().roomType == 32){
             bName = "32";
-			url = "SlotKraken2";
+			url = "SlotSweetBonanza";
         }else if(require("ScreenManager").getIns().roomType == 1001){
             bName = "PlinkoBase";
 			url = "PlinkoBase";
