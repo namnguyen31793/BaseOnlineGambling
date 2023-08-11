@@ -138,7 +138,7 @@ cc.Class({
             
             let utf8Encode = new TextEncoder();
             let msgData = {};
-            if(CONFIG.MERCHANT == "1") {
+            if(!CONFIG.INET) {
                 msgData[1] = Global.CookieValue;
                 msgData[2] = Global.encryptedData;//utf8Encode.encode(Global.encryptedData);
                 msgData[3] = Global.checksum;

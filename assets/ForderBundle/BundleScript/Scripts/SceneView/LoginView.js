@@ -11,7 +11,8 @@ cc.Class({
 	},
 
 	onEnable(){
-		if(CONFIG.MERCHANT == "1") {
+		cc.log("onEnable "+CONFIG.MERCHANT);
+		if(!CONFIG.INET) {
 			this.getParamsFromHeaderSpinHub();
 		}else{
 			this.getParamsFromHeaderInet();
@@ -63,7 +64,7 @@ cc.Class({
 		if(Global.ssoKey == null)
 			return;
 		//send request agent 0 để lay connect server 
-        ApiController.RequestGetConnectInfoInet(0, result["encryptedData"], result["checksum"], (data) => {
+        ApiController.RequestGetConnectInfo(0, result["encryptedData"], result["checksum"], (data) => {
             this.HandlelGetConnectInfo(data);
         }, this.ErrorCallBack);
 	},

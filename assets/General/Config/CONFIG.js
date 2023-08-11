@@ -20,12 +20,13 @@ window.CONFIG = {
 	BASE_SPIN_HUB_LINK: 'https://providerserver.allwinslots.asia/',
 
 	IS_MAP: true,
+	INET: true,
 	IS_NATIVE:true,
 
 	TX_BET_PERIOD: 60,
 	TX_AWARD_PERIOD: 20,
 	FAKE_GAME : false,
-	MERCHANT : "2",	//1-spinhub connect, 2 inet
+	MERCHANT : "1",	//1-spinhub connect, 2 inet
 	VERSION : "1.0.1",	//sieuca 1.0.5, city 1.1.6
 	IP_SEND : "207.148.122.123",
 	//special gun type
