@@ -11,7 +11,11 @@ cc.Class({
 	},
 
 	onEnable(){
-		this.getParamsFromHeader();
+		if(CONFIG.MERCHANT == "1") {
+			this.getParamsFromHeaderSpinHub();
+		}else{
+			this.getParamsFromHeaderInet();
+		}
 		this.lbVersion.string = CONFIG.VERSION;	
 	},
 
@@ -25,7 +29,46 @@ cc.Class({
 		Global.LoginView = null;
 	},
 
-	getParamsFromHeader(){
+	getParamsFromHeaderInet(){
+		cc.log("getParamsFromHeaderInet ");
+		Global.GameId = 19;
+		Global.uitype = 1;
+		const location = window.location;
+		console.log(location.href);
+		var params = location.href.split("?")[1];
+		if(params == null ||params == "")
+			return;
+		var parts = params.split("&");
+		var result = {};
+		for(var i = 0; i < parts.length; i++){
+			var part = parts[i].split("=");
+			result[part[0]] = part[1];
+		}
+		console.log("--------------------");
+		console.log(result);
+		if(result["ssoKey"] != null)
+			Global.ssoKey = decodeURIComponent(result["ssoKey"])
+		if(result["agent"] != null)
+			Global.agent = parseInt(result["agent"])
+		if(result["gameID"] != null)
+			Global.GameId = parseInt(result["gameID"])
+		if(result["platform"] != null)
+			Global.platform = parseInt(result["platform"])
+		if(result["ip"] != null)
+			Global.ip = parseInt(result["ip"])
+		if(result["deviceid"] != null)
+			Global.deviceId = parseInt(result["deviceid"])
+		if(result["uitype"] != null)
+			Global.uitype = parseInt(result["uitype"])
+		if(Global.ssoKey == null)
+			return;
+		//send request agent 0 để lay connect server 
+        ApiController.RequestGetConnectInfoInet(0, result["encryptedData"], result["checksum"], (data) => {
+            this.HandlelGetConnectInfo(data);
+        }, this.ErrorCallBack);
+	},
+
+	getParamsFromHeaderSpinHub(){
 		Global.GameId = 19;
 		Global.uitype = 1;
 		const location = window.location;

@@ -138,10 +138,17 @@ cc.Class({
             
             let utf8Encode = new TextEncoder();
             let msgData = {};
-            msgData[1] = Global.CookieValue;
-            msgData[2] = Global.encryptedData;//utf8Encode.encode(Global.encryptedData);
-            msgData[3] = Global.checksum;
-            msgData[4] = Global.agent;
+            if(CONFIG.MERCHANT == "1") {
+                msgData[1] = Global.CookieValue;
+                msgData[2] = Global.encryptedData;//utf8Encode.encode(Global.encryptedData);
+                msgData[3] = Global.checksum;
+                msgData[4] = Global.agent;
+            }else{
+                msgData[1] = Global.ssoKey;
+                msgData[2] = "";
+                msgData[3] = "";
+                msgData[4] = Global.agent;
+            }
             require("SendRequest").getIns().MST_Client_Login(msgData);
 
     },
