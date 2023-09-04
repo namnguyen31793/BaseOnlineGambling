@@ -1,0 +1,71 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "AnimSky",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 10.033333333333333,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Layer 2": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -1000
+            },
+            {
+              "frame": 6.5,
+              "value": 1000
+            }
+          ]
+        }
+      },
+      "Layer 3": {
+        "props": {
+          "x": [
+            {
+              "frame": 4.516666666666667,
+              "value": -1000
+            },
+            {
+              "frame": 9,
+              "value": 1200
+            }
+          ]
+        }
+      },
+      "Layer 4": {
+        "props": {
+          "x": [
+            {
+              "frame": 1.5166666666666666,
+              "value": 1000
+            },
+            {
+              "frame": 6.433333333333334,
+              "value": -1000
+            }
+          ]
+        }
+      },
+      "Layer 5": {
+        "props": {
+          "x": [
+            {
+              "frame": 4.016666666666667,
+              "value": 1200
+            },
+            {
+              "frame": 10.033333333333333,
+              "value": -1200
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

@@ -1,26 +1,17 @@
 
 window.CONFIG = {
-	// DOMAIN_NAME: 'allwinslots.asia',
-	// COOKIE_NAME: '.allwinslots.asia',
-	// CONFIG_LINK: 'https://allwinslots.asia/gameserver/api/config/getconfigurl',
 
 	//alpha 100 co web dau
 	// DOMAIN_NAME: 'banca.city',
 	// COOKIE_NAME: '.banca.city',
 	ACTIVE_ADS: false,
 	MULTI_PLAYER: false,
-	
-	// CONFIG_LINK: 'https://devweb.allwinslots.asia/gameserver/api/config/getconfigurl',
-	// BASE_API_LINK: 'https://devweb.allwinslots.asia/gameserver/',
-	// BASE_SPIN_HUB_LINK: 'https://spinhubclient.peachtea.life/',
 
-	
-	CONFIG_LINK: 'https://devweb.allwinslots.asia/gameserver/api/config/getconfigurl',
-	BASE_API_LINK: 'https://devweb.allwinslots.asia/gameserver/',
+	//BASE_SPIN_HUB_LINK: 'https://spinhubclient.peachtea.life/',	//--server 127 
 	BASE_SPIN_HUB_LINK: 'https://providerserver.allwinslots.asia/',
+	INET: false,
 
 	IS_MAP: true,
-	INET: true,
 	IS_NATIVE:true,
 
 	TX_BET_PERIOD: 60,

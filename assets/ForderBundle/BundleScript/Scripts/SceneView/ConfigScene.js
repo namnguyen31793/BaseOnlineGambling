@@ -35,7 +35,6 @@ cc.Class({
             os: require("ReceiveResponse").getIns().GetPlatFrom(),
             merchantid: CONFIG.MERCHANT,
         }
-        //Global.BaseNetwork.request(CONFIG.CONFIG_LINK, data, this.reviceConfig);
         this.GetDeviceId();
         //new
         Global.ConfigScene.loadObj.active = true;
