@@ -11,12 +11,8 @@ cc.Class({
 	},
 
 	onEnable(){
-		cc.log("onEnable "+CONFIG.MERCHANT);
-		if(!CONFIG.INET) {
-			this.getParamsFromHeaderSpinHub();
-		}else{
-			this.getParamsFromHeaderInet();
-		}
+		this.getParamsFromHeaderSpinHub();
+		
 		this.lbVersion.string = CONFIG.VERSION;	
 	},
 
@@ -34,6 +30,7 @@ cc.Class({
 		cc.log("getParamsFromHeaderInet ");
 		Global.GameId = 19;
 		Global.uitype = 1;
+		CONFIG.INET = true;
 		const location = window.location;
 		console.log(location.href);
 		var params = location.href.split("?")[1];
@@ -53,6 +50,8 @@ cc.Class({
 			Global.agent = parseInt(result["agent"])
 		if(result["gameid"] != null)
 			Global.GameId = parseInt(result["gameid"])
+		else if(result["gameId"] != null)
+			Global.GameId = parseInt(result["gameId"])
 		if(result["platform"] != null)
 			Global.platform = parseInt(result["platform"])
 		if(result["ip"] != null)
@@ -83,6 +82,11 @@ cc.Class({
 			var part = parts[i].split("=");
 			result[part[0]] = part[1];
 		}
+		//check inet have ssokey
+		if(result["ssoKey"] != null){
+			this.getParamsFromHeaderInet();
+			return;
+		}
 		console.log("--------------------");
 		console.log(result);
 		if(result["encryptedData"] == null && result["checksum"] == null && result["agent"] == null){
@@ -103,6 +107,8 @@ cc.Class({
 			Global.deviceId = parseInt(result["deviceid"])
 		if(result["gameid"] != null)
 			Global.GameId = parseInt(result["gameid"])
+		else if(result["gameId"] != null)
+			Global.GameId = parseInt(result["gameId"])
 		if(result["uitype"] != null)
 			Global.uitype = parseInt(result["uitype"])
 		//send request api

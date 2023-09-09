@@ -25,8 +25,11 @@ cc.Class({
     },
 
     ShowEffectWin() {
-        this._super();
-        this.icon.node.getComponent(cc.Animation).play("AnimScaleItem");
+        //this._super();
+        if(this.idCache == 1){
+            this.icon.node.getComponent(cc.Animation).play("AnimScaleFree");
+        }else
+            this.icon.node.getComponent(cc.Animation).play("AnimScaleItem");
     },
 
     PlayAnimation(animationName, color, timeScale) {
