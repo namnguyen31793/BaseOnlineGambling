@@ -54,7 +54,7 @@ cc.Class({
         let extend = this.ParseExtendData(extandMatrix);
         let listWinStepDataModel = this.ParseListWinData(extandMatrix);
 
-        this.slotView.UpdateMatrix(listMatrix[0]);
+        this.slotView.UpdateMatrix(listMatrix[0], this.listMultiExtraFree[0]);
 
         let mAccountBalance = accountBalance;
         if(this.slotView.isBonus)

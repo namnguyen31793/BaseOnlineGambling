@@ -50,8 +50,9 @@ cc.Class({
         // this.listCountPreWin[0] = 2;
     },
 
-    UpdateMatrix(matrix) {
+    UpdateMatrix(matrix, listMultiWild) {
         this.cacheMatrix = matrix;
+        this.listMultiWildCache = listMultiWild;
         this.OnCheckUpdateMatrix();
     },
 
@@ -59,7 +60,8 @@ cc.Class({
         this.stateSpin += 1;
         if(this.stateSpin == 2) {
             for(let i = 0; i < this.cacheMatrix.length; i++) {
-                this.slotView.itemManager.SetImage(this.cacheMatrix[i], this.listItem[i], i);
+                //this.slotView.itemManager.SetImage(this.cacheMatrix[i], this.listItem[i], i);
+                this.slotView.itemManager.SetImage(this.cacheMatrix[i], this.listItem[i], i, this.listMultiWildCache[i]);
             }
         }
     },
@@ -124,7 +126,7 @@ cc.Class({
         let listIndex = [];
         this.toDoList.CreateList();
 
-        //show bien mat item va danh set xuong
+        //show bien mat item
         if(this.slotView.drawLineManager.listLineWin.length > 0) {
             this.toDoList.AddWork(()=>{
                     for(let i = 0; i < this.slotView.drawLineManager.listLineWin[0].length; i++) {

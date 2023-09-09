@@ -28,6 +28,8 @@ cc.Class({
         //this._super();
         if(this.idCache == 1){
             this.icon.node.getComponent(cc.Animation).play("AnimScaleFree");
+        }else if(this.idCache == 3){
+            this.icon.node.getComponent(cc.Animation).play("AnimScaleHeart");
         }else
             this.icon.node.getComponent(cc.Animation).play("AnimScaleItem");
     },

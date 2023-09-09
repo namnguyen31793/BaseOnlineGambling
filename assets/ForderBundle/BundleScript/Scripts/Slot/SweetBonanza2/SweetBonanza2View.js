@@ -57,10 +57,6 @@ cc.Class({
         this.freeManager.ShowFree(numberFree, isNotify, winNormalValue, extend, listPosExtend);
     },
 
-    UpdateMatrix(matrix) {
-        this.spinManager.UpdateMatrix(matrix);
-    },
-
     SetWildFree(listMultiWild){
         this.spinManager.SetWildFree(listMultiWild);
     },
@@ -101,6 +97,10 @@ cc.Class({
                 this.SetWildFree(this.listMultiWild);
             
         }
+    },
+
+    UpdateMatrix(matrix, listMultiWild) {
+        this.spinManager.UpdateMatrix(matrix, listMultiWild);
     },
 
     DropMatrix(matrix, listMultiWild, winMoneyStep, index){
