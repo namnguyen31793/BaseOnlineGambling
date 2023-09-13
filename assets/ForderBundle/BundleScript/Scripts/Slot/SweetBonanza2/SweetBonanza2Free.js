@@ -4,6 +4,7 @@ cc.Class({
         this.cacheValueMulti = 0;
         this.listEffect = [];
         this.listFireBall = [];
+        this.cacheMulti = 0;
     },
 
     properties: {
@@ -21,7 +22,7 @@ cc.Class({
                 this.ClearTotalWinCache();
                 this.slotView.effectManager.ShowNotifyFree(numberFree);
             }, false);
-            this.toDoList.Wait(2.5);
+            this.toDoList.Wait(1.8);
             this.toDoList.AddWork(()=>{
                 //this.notifyFree.active = false;
                 this.slotView.HideNotifyWinFree();
@@ -37,23 +38,14 @@ cc.Class({
                 this.toDoList.AddWork(()=>{
                     this.CreateWinMoneyWithMutl(winNormalValue/extend, winNormalValue, extend);
                 },false);
-                if(listPosExtend.length > 0) {
-                    this.MultiFly(listPosExtend); 
-                } 
-                this.toDoList.Wait(1.0);
-                this.toDoList.AddWork(()=>{
-                    for(let i = 0; i < this.listEffect.length; i++) {
-                        this.listEffect[i].destroy();
-                    }
-                    this.listEffect = [];
-                }, false);
-                this.toDoList.Wait(2.5);
+                this.MultiFly(listPosExtend, extend, winNormalValue, this.toDoList); 
+                this.toDoList.Wait(2);
                 this.toDoList.AddWork(()=>{
                     this.HideWinMoneyWithMutl();
                 }, false);
             } 
             if(winNormalValue > 0)
-                this.toDoList.AddWork(()=>this.UpdateMoneyResultFree(winNormalValue - winNormalValue/extend, winNormalValue, this.toDoList, false),true);
+                this.toDoList.AddWork(()=>this.UpdateMoneyResultFree( winNormalValue, this.toDoList, false),true);
         }
         if(numberFree > 0 && !this.slotView.isFree) {
             this.toDoList.AddWork(()=>{
@@ -83,7 +75,7 @@ cc.Class({
     },
 
     playAnimStartFree(isStart){
-        this.slotView.ShowBoxMulti(isStart);
+        //this.slotView.ShowBoxMulti(isStart);
         this.slotView.normalManager.showBGFree(isStart);
     },
 
@@ -102,29 +94,31 @@ cc.Class({
         this.cacheValueMulti += 1;
     },
     
-    UpdateMoneyResultFree(winNormalValue, totalWin, toDoList, isWaitRunMoneyWin = false) {
+    UpdateMoneyResultFree(totalWin, toDoList, isWaitRunMoneyWin = false) {
         require("WalletController").getIns().TakeBalance(this.slotView.slotType)
-        this.AddTotalWin(winNormalValue);
-        let isBigWin = this.slotView.CheckBigWin(winNormalValue);
-        if(winNormalValue > 0) {
+        this.AddTotalWin(totalWin);
+        let isBigWin = this.slotView.CheckBigWin(totalWin);
+        cc.log("UpdateMoneyResultFree "+totalWin+" - isBigWin "+isBigWin);
+        if(totalWin > 0) {
             if(!isBigWin) {
                 this.slotView.PlayWinMoney();
                 //this.slotView.effectManager.ShowWinMoney(winNormalValue);
                 if(isWaitRunMoneyWin) {
                     this.slotView.scheduleOnce(()=>{
-                        this.slotView.UpdateWinValue(winNormalValue);
+                        this.slotView.UpdateWinValue(totalWin);
                         toDoList.DoWork();
                     } , 2);  
                 }else{
-                    this.slotView.UpdateWinValue(winNormalValue);
+                    this.slotView.UpdateWinValue(totalWin);
                     toDoList.DoWork();
                 }
             } else {
                 this.slotView.PlayBigWin();
-                this.slotView.effectManager.ShowBigWin(winNormalValue, toDoList);
+                this.slotView.effectManager.ShowBigWin(totalWin, toDoList);
+                this.slotView.UpdateWinValue(totalWin);
             }
         } else {
-            this.slotView.UpdateWinValue(winNormalValue);
+            this.slotView.UpdateWinValue(totalWin);
             toDoList.DoWork();
         }
     },
@@ -132,10 +126,29 @@ cc.Class({
     CreateWinMoneyWithMutl(value, total, multi){
         this.effectShowMoneyStep.active = true;
 
-        this.effectShowMoneyStep.getChildByName("money").getComponent(cc.Label).string =  Global.Helper.formatNumber(value);
-        this.effectShowMoneyStep.getChildByName("total").getComponent(cc.Label).string =  Global.Helper.formatNumber(total);
-        this.effectShowMoneyStep.getChildByName("multi").getComponent(cc.Label).string = "x"+ multi;
-        this.effectShowMoneyStep.getComponent(cc.Animation).play("WinMoneyStep");
+        this.effectShowMoneyStep.getChildByName("money").getComponent("LbMonneyChange").reset();
+        this.effectShowMoneyStep.getChildByName("money").getComponent("LbMonneyChange").setMoney(value);
+        this.effectShowMoneyStep.getChildByName("total").getComponent("LbMonneyChange").reset();
+        this.effectShowMoneyStep.getChildByName("total").getComponent(cc.Label).string = "";
+        this.effectShowMoneyStep.getChildByName("multi").getComponent(cc.Label).string = "";
+        // this.effectShowMoneyStep.getComponent(cc.Animation).play("WinMoneyStep");
+        this.cacheMulti = 0;
+    },
+
+    UpdateWinMoneyMutil(multi, isEnd = false){
+        if(!isEnd)
+            this.cacheMulti += multi;
+        else
+            this.cacheMulti = multi;
+        this.effectShowMoneyStep.getChildByName("multi").getComponent(cc.Label).string = "x"+this.cacheMulti;
+    },
+
+    EndWinMoneyWithMutl(total){
+        this.effectShowMoneyStep.getChildByName("money").getComponent("LbMonneyChange").reset();
+        this.effectShowMoneyStep.getChildByName("money").getComponent(cc.Label).string = "";
+        this.effectShowMoneyStep.getChildByName("multi").getComponent(cc.Label).string = "";
+        this.effectShowMoneyStep.getChildByName("total").getComponent("LbMonneyChange").reset();
+        this.effectShowMoneyStep.getChildByName("total").getComponent("LbMonneyChange").setMoney(total);
     },
 
     HideWinMoneyWithMutl(){
@@ -145,30 +158,49 @@ cc.Class({
         this.effectShowMoneyStep.getChildByName("multi").getComponent(cc.Label).string = "";
     },
 
-    MultiFly(listHaveWild) {
+    MultiFly(listHaveWild, multi, total, toDoList) {
         cc.log(listHaveWild)
+        if(listHaveWild.length == 0)
+            return;
         let listItem = this.slotView.spinManager.listItem;
-        for(let i = 0; i < listHaveWild.length; i++) {
-            if(listHaveWild[i] != null){
-                cc.log("i "+i)
-                for(let j = 0; j < 30; j++) {
-                    if(listHaveWild[i][j] != null){
-                        cc.log(listHaveWild[i][j])
-                        this.CreateEffectFlyItem(listItem[j].node.getPosition(), listHaveWild[i][j]);
-                    }
+        if(listHaveWild[listHaveWild.length-1] != null){
+            for(let j = 0; j < 30; j++) {
+                if(listHaveWild[listHaveWild.length-1][j] != null){
+                    cc.log(listHaveWild[listHaveWild.length-1][j])
+                    toDoList.AddWork(()=>{
+                        listItem[j].ShowEffectBoom();
+                        this.CreateEffectFlyItem(listItem[j].node.getPosition(), listHaveWild[listHaveWild.length-1][j]);
+                    }, false);
+                    toDoList.Wait(0.6);
+                    toDoList.AddWork(()=>{
+                        for(let i = 0; i < this.listEffect.length; i++) {
+                            this.listEffect[i].destroy();
+                        }
+                        this.listEffect = [];
+                    }, false);
+                    toDoList.AddWork(()=>{
+                        this.UpdateWinMoneyMutil(parseInt(listHaveWild[listHaveWild.length-1][j]));
+                    }, false);
                 }
             }
         }
+
+        toDoList.AddWork(()=>{
+            this.UpdateWinMoneyMutil(multi, true);
+        }, false);
+        toDoList.Wait(1);
+        toDoList.AddWork(()=>{
+            this.EndWinMoneyWithMutl(total);
+        }, false);
     },
 
     CreateEffectFlyItem(pos, value){
         let eff = cc.instantiate(this.posFlyMulti);
-        var target = this.effectShowMoneyStep.getPosition();
         eff.parent = this.posFlyMulti.parent;
         eff.setPosition(pos);
         eff.active = true;
         eff.getChildByName("value").getComponent(cc.Label).string = "x"+ Global.Helper.formatNumber(value);
-        eff.runAction(cc.moveTo(0.5, cc.v2(target.x+100, target.y)).easing(cc.easeSineOut()));    
+        eff.runAction(cc.moveTo(0.5, cc.v2(30, 240)).easing(cc.easeSineOut()));    
         this.listEffect[this.listEffect.length] = eff;
     },
     

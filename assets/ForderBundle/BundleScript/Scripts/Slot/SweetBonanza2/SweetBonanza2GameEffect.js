@@ -8,6 +8,7 @@ cc.Class({
 
     properties: {
         objTextFree : cc.Node,
+        objTextFreeEnd : cc.Node,
     },
     
 
@@ -27,6 +28,7 @@ cc.Class({
         this.freeObj.getComponent(cc.Animation).play("EffectFreeSpin");;
         this.lbFree.string = freeSpinTurn;
         this.objTextFree.active = true;
+        this.objTextFreeEnd.active = false;
     },
 
     ShowNotifyWinFree(num) {
@@ -35,6 +37,7 @@ cc.Class({
         this.freeObj.getComponent(cc.Animation).play("EffectFreeSpin");;
         this.lbFree.string = "X" + Global.Helper.formatNumber(num);
         this.objTextFree.active = false;
+        this.objTextFreeEnd.active = true;
     },
 
     HideNotifyWinFree(){

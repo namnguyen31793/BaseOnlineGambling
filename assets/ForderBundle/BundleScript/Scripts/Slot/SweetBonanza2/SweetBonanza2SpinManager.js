@@ -77,20 +77,6 @@ cc.Class({
         }
     },
 
-    SetWildFree(listMultiWild){
-        for(let temp in listMultiWild){
-            if(parseInt(listMultiWild[temp]) > 1)
-                this.listItem[temp].SetValueWild("X"+parseInt(listMultiWild[temp]));
-            else
-                this.listItem[temp].HideValueWild();
-        }
-    },
-
-    HideWildFree(){
-        for(let i = 0; i < this.listItem.length; i++) {
-            this.listItem[i].HideValueWild();
-        }
-    },
 
     PlaySpinColumn(timeDistanceColumn) {
         cc.log("nodeEffect PlaySpinColumn "+this.nodeEffect.enabled);

@@ -34,6 +34,12 @@ cc.Class({
             this.icon.node.getComponent(cc.Animation).play("AnimScaleItem");
     },
 
+    ShowEffectBoom() {
+        //this._super();
+        this.icon.node.getComponent(cc.Animation).play("animMinNo");
+        this.multi.node.active = false;
+    },
+
     PlayAnimation(animationName, color, timeScale) {
         //.node.color = color;
         //timeScale
