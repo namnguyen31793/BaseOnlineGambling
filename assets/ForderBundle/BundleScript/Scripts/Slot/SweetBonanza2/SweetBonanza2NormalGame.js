@@ -73,7 +73,6 @@ cc.Class({
             for(let i = 1; i < listMatrix.length; i++){
                 //roi ma tran moi
                 toDoList.AddWork(()=>slotView.DropMatrix(listMatrix[i], this.listMultiExtraFree[i], listWinStepDataModel[i-1], i),true);              
-                //show line win cua ma tran moi
                 toDoList.AddWork(()=>slotView.UpdateLineWinData(listLineWinDataModel[i]),true);
             }
         }

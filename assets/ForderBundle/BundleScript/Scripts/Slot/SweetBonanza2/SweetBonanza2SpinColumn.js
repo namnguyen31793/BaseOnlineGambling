@@ -75,10 +75,6 @@ cc.Class({
 
     FallItem(item,delayTime, timeFall, indexRow, step) {
         let y = item.y;
-        // item.runAction(cc.sequence(cc.delayTime(delayTime),cc.moveTo(timeFall, cc.v2(item.x, y - (TOTAL_DIS_UP-(6-indexRow)*SUB_DIS_UP) - this.distanceY * step))));
-        // item.runAction(cc.sequence(cc.delayTime(delayTime+timeFall),cc.moveTo(TIME_UP,  cc.v2(item.x, y - this.distanceY * step))));
-        // this.scheduleOnce(()=>{
-        // } , (delayTime+timeFall));   
         item.stopActionByTag(1);
         item.stopActionByTag(2);
         item.runAction(cc.sequence(cc.delayTime(delayTime),cc.moveTo(timeFall, cc.v2(item.x, y - this.distanceY * step)))).setTag(1);
