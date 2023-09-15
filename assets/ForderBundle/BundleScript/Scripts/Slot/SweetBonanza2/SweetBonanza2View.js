@@ -45,7 +45,7 @@ cc.Class({
             if(this.isBonus) {
                 this.bonusManager.CheckBonus(bonusTurn);
             } else {
-                this.scheduleOnce(()=>{
+                this.scheduleOnce(()=>{  
                     this.toDoList.DoWork();
                 } , 1);
             }
