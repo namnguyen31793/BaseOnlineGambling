@@ -26,11 +26,40 @@ cc.Class({
 
     ShowEffectWin() {
         //this._super();
+        cc.log("this.idCache: "+this.idCache);
         if(this.idCache == 1){
             this.icon.node.getComponent(cc.Animation).play("AnimScaleFree");
-        }else if(this.idCache == 3){
+        }  
+        else if(this.idCache == 2){
+            this.icon.node.getComponent(cc.Animation).play("AnimScaleBoom");
+        }   
+        else if(this.idCache == 3){
             this.icon.node.getComponent(cc.Animation).play("AnimScaleHeart");
-        }else
+        }else if(this.idCache == 4){
+            this.icon.node.getComponent(cc.Animation).play("AnimScaleKeoThach");
+        }
+        else if(this.idCache == 5){
+            this.icon.node.getComponent(cc.Animation).play("AnimScaleLuc");
+        }
+        else if(this.idCache == 6){
+            this.icon.node.getComponent(cc.Animation).play("AnimScaleLam");
+        }
+        else if(this.idCache == 7){
+            this.icon.node.getComponent(cc.Animation).play("AnimScaleTao");
+        }
+        else if(this.idCache == 8){
+            this.icon.node.getComponent(cc.Animation).play("AnimScaleMan");
+        }
+        else if(this.idCache == 9){
+            this.icon.node.getComponent(cc.Animation).play("AnimScaleDuaHau");
+        }
+        else if(this.idCache == 10){
+            this.icon.node.getComponent(cc.Animation).play("AnimScaleNho");
+        }
+        else if(this.idCache == 11){
+            this.icon.node.getComponent(cc.Animation).play("AnimScaleChuoi");
+        }
+        else
             this.icon.node.getComponent(cc.Animation).play("AnimScaleItem");
     },
 
