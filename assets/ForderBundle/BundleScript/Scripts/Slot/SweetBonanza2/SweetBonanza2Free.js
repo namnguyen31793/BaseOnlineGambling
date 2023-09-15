@@ -24,7 +24,6 @@ cc.Class({
             }, false);
             this.toDoList.Wait(1.8);
             this.toDoList.AddWork(()=>{
-                //this.notifyFree.active = false;
                 this.slotView.HideNotifyWinFree();
             }, false);
         }

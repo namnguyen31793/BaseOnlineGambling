@@ -60,7 +60,6 @@ cc.Class({
         this.stateSpin += 1;
         if(this.stateSpin == 2) {
             for(let i = 0; i < this.cacheMatrix.length; i++) {
-                //this.slotView.itemManager.SetImage(this.cacheMatrix[i], this.listItem[i], i);
                 this.slotView.itemManager.SetImage(this.cacheMatrix[i], this.listItem[i], i, this.listMultiWildCache[i]);
             }
         }
