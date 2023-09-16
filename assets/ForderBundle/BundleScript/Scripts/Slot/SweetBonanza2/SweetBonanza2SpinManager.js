@@ -108,14 +108,14 @@ cc.Class({
         //------------
         //de ma tran moi vao cache
         let oldMatrix = this.cacheMatrix;
-        let listIndex = [];
+        let listIndex = [];  
         this.toDoList.CreateList();
 
         //show bien mat item
         if(this.slotView.drawLineManager.listLineWin.length > 0) {
             this.toDoList.AddWork(()=>{
                     for(let i = 0; i < this.slotView.drawLineManager.listLineWin[0].length; i++) {
-                        let index = this.slotView.drawLineManager.listLineWin[0][i];
+                        let index = this.slotView.drawLineManager.listLineWin[0][i];                        
                         this.listItem[index].node.active = false;
                         this.CreateEffectDestroyItem(this.listItem[index].node.getPosition());
                         oldMatrix[index] = -1;

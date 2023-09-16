@@ -26,6 +26,8 @@ cc.Class({
 
     ShowEffectWin() {
         //this._super();
+
+        
         cc.log("this.idCache: "+this.idCache);
         if(this.idCache == 1){
             this.icon.node.getComponent(cc.Animation).play("AnimScaleFree");
@@ -65,7 +67,9 @@ cc.Class({
 
     ShowEffectBoom() {
         //this._super();
-        this.icon.node.getComponent(cc.Animation).play("animMinNo");
+    //    cc.log(">>>>  ShowEffectBoom: "+this.idCache);
+     //   this.icon.node.getComponent(cc.Animation).play("animMinNo");
+      this.icon.node.getComponent(cc.Animation).play("AnimScaleBoom");
         this.multi.node.active = false;
     },
 
