@@ -44,15 +44,36 @@ cc.Class({
             this.toDoList.AddWork(()=>{
                 this.DrawLine(this.listLineWin[0]);
             }, false);
-            this.toDoList.Wait(1);
+            if(this.CheckIsFree(listLine))
+                this.toDoList.Wait(2);
+            else
+                this.toDoList.Wait(1);
             this.toDoList.AddWork(()=>{
                 this.HideAllLine();
             }, false);
+            if(this.CheckIsFree(listLine) && this.slotView.isFree){
+                this.toDoList.AddWork(()=>{
+                    this.slotView.ShowBonusFree();
+                }, false);
+                this.toDoList.Wait(1.5);
+                this.toDoList.AddWork(()=>{
+                    this.slotView.HideBonusFree();
+                }, false);
+                this.toDoList.Wait(0.5);
+            }
         }
         this.toDoList.AddWork(()=>
             this.slotView.toDoList.DoWork(),
         false);
         this.toDoList.Play();
+    },
+
+    CheckIsFree(listLine){
+        for(let i = 0; i < listLine.length; i++){
+            if(listLine[i] == 1)
+                return true;
+        }
+        return false;
     },
 
     GetListPosRuleAllWay(listLine){

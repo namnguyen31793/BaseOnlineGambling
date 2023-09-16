@@ -163,11 +163,15 @@ cc.Class({
             return;
         let listItem = this.slotView.spinManager.listItem;
         if(listHaveWild[listHaveWild.length-1] != null){
+            toDoList.Wait(0.5);
             for(let j = 0; j < 30; j++) {
                 if(listHaveWild[listHaveWild.length-1][j] != null){
                     cc.log(listHaveWild[listHaveWild.length-1][j])
                     toDoList.AddWork(()=>{
                         listItem[j].ShowEffectBoom();
+                    }, false);
+                    toDoList.Wait(0.6);
+                    toDoList.AddWork(()=>{
                         this.CreateEffectFlyItem(listItem[j].node.getPosition(), listHaveWild[listHaveWild.length-1][j]);
                     }, false);
                     toDoList.Wait(0.6);

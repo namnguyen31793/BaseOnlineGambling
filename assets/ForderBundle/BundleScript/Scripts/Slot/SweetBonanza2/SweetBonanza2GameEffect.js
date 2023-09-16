@@ -52,4 +52,14 @@ cc.Class({
     PlayEndBigWinCharacter(){
         this.isEndBigWin = true;
     },
+
+    ShowNotifyBonusFree() {
+        this.bonusObj.active = true;
+        this.bonusObj.getComponent(cc.Animation).play("AnimBonusFree");
+    },
+
+    HideNotifyBonusFree() {
+        this.bonusObj.getComponent(cc.Animation).play("AnimBonusFreeEnd");
+    },
+
 });

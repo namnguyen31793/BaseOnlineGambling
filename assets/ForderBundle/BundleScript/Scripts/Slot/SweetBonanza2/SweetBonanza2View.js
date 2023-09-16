@@ -181,4 +181,12 @@ cc.Class({
         else return this.totalBetValue;
     },
 
+    ShowBonusFree(){
+        this.effectManager.ShowNotifyBonusFree();
+    },
+
+    HideBonusFree(){
+        this.effectManager.HideNotifyBonusFree();
+    },
+
 });
