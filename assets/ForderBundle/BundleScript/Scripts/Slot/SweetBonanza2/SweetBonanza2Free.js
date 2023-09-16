@@ -38,7 +38,7 @@ cc.Class({
                     this.CreateWinMoneyWithMutl(winNormalValue/extend, winNormalValue, extend);
                 },false);
                 this.MultiFly(listPosExtend, extend, winNormalValue, this.toDoList); 
-                this.toDoList.Wait(2);
+                this.toDoList.Wait(5);
                 this.toDoList.AddWork(()=>{
                     this.HideWinMoneyWithMutl();
                 }, false);
