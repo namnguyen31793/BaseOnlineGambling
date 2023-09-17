@@ -3,9 +3,13 @@
 cc.Class({
     extends: require("SlotView"),
 
+    
+
     Init() {
         this.slotType = Global.Enum.GAME_TYPE.SWEET_BONANZA;
         this.lineData = 0;
+        this.backgroundNormal.active = false;
+        this.Handle_ChangeNormalBackground();
     },
 
     OnGetSpinResult(spinId, matrix, listLineWinData, winNormalValue, winBonusValue, bonusTurn, freeSpinLeft, totalWin, accountBalance, currentJackpotValue, isTakeJackpot, extandMatrix) {
@@ -129,6 +133,11 @@ cc.Class({
 
     playBoomSound(){
         this.soundControl.PlayBoom();
+    },
+
+    ShowMoneyWinEffect(pos,winMoney)
+    {
+        this.effectManager.ShowWinMoneyEffect(pos,winMoney);
     },
 
     ShowMoneyWinStep(winNormalValue){

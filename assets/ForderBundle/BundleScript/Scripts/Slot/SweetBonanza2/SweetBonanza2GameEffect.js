@@ -9,6 +9,7 @@ cc.Class({
     properties: {
         objTextFree : cc.Node,
         objTextFreeEnd : cc.Node,
+        WinMoneyLabel: cc.Label,
     },
     
 
@@ -32,10 +33,11 @@ cc.Class({
     },
 
     ShowNotifyWinFree(num) {
+
         this.mark.active = true;
         this.freeObj.active = true;
         this.freeObj.getComponent(cc.Animation).play("EffectFreeSpin");;
-        this.lbFree.string = "X" + Global.Helper.formatNumber(num);
+        this.lbFree.string =  Global.Helper.formatNumber(num);
         this.objTextFree.active = false;
         this.objTextFreeEnd.active = true;
     },
@@ -60,6 +62,21 @@ cc.Class({
 
     HideNotifyBonusFree() {
         this.bonusObj.getComponent(cc.Animation).play("AnimBonusFreeEnd");
+    },
+
+    ShowWinMoneyEffect(pos,winMoney)
+    {
+      
+        this.WinMoneyLabel.node.setPosition(pos);
+        this.WinMoneyLabel.string = Global.Helper.formatNumber(winMoney);
+        this.WinMoneyLabel.node.active = true;
+    
+        let WinMoneyLabel_Animation =  this.WinMoneyLabel.getComponent(cc.Animation);
+        let callback = ()=>{     
+            this.WinMoneyLabel.node.active = false;
+        }
+        WinMoneyLabel_Animation.on("finished", callback);
+        WinMoneyLabel_Animation.play("WinMoney_Animation");
     },
 
 });

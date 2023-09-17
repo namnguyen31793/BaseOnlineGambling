@@ -110,17 +110,28 @@ cc.Class({
         let oldMatrix = this.cacheMatrix;
         let listIndex = [];  
         this.toDoList.CreateList();
+        let winMoney = winMoneyStep* this.slotView.GetBetValue()/100;
 
         //show bien mat item
         if(this.slotView.drawLineManager.listLineWin.length > 0) {
+           
             this.toDoList.AddWork(()=>{
+                    let scoreMoneyEffectPos;
                     for(let i = 0; i < this.slotView.drawLineManager.listLineWin[0].length; i++) {
                         let index = this.slotView.drawLineManager.listLineWin[0][i];                        
                         this.listItem[index].node.active = false;
                         this.CreateEffectDestroyItem(this.listItem[index].node.getPosition());
                         oldMatrix[index] = -1;
                         listIndex[listIndex.length] = index;
+
+                        //lay vi tri giua 
+                        if(i == Math.floor(this.slotView.drawLineManager.listLineWin.length/2))
+                        {
+                            scoreMoneyEffectPos = this.listItem[index].node.getPosition();
+                        }
                     }
+                   
+                    this.slotView.ShowMoneyWinEffect(scoreMoneyEffectPos,winMoney);
                     this.slotView.playBoomSound();
             }, false);
             //create show tien thang cung luot

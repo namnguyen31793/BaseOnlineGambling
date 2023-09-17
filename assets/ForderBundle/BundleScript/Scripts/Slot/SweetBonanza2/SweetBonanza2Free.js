@@ -21,8 +21,9 @@ cc.Class({
             this.toDoList.AddWork(()=>{
                 this.ClearTotalWinCache();
                 this.slotView.effectManager.ShowNotifyFree(numberFree);
+                this.slotView.Handle_ChangeFreespinBackground();
             }, false);
-            this.toDoList.Wait(1.8);
+            this.toDoList.Wait(4);
             this.toDoList.AddWork(()=>{
                 this.slotView.HideNotifyWinFree();
             }, false);
@@ -60,12 +61,15 @@ cc.Class({
                 this.slotView.isFree = false;
                 this.slotView.ShowNotifyWinFree(this.totalWin);
             }, false);
-            this.toDoList.Wait(3);
+           // this.toDoList.Wait(3);      
+           this.toDoList.Wait(5);
             this.toDoList.AddWork(()=>{
+                this.slotView.Handle_ChangeNormalBackground();
                 this.slotView.HideNotifyWinFree();
                 this.playAnimStartFree(false);
             }, false);
             this.toDoList.Wait(0.5);
+            //this.toDoList.Wait(0.5);  
         }
         this.toDoList.AddWork(()=>{
             this.slotView.toDoList.DoWork();

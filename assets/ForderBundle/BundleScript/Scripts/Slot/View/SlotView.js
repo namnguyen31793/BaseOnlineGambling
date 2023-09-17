@@ -46,6 +46,8 @@ cc.Class({
             default: true,
         },
         contentUser : cc.Node,
+        backgroundNormal : cc.Node,
+        backgroundFreeSpin : cc.Node,
     },
 
     onLoad() {
@@ -540,6 +542,21 @@ cc.Class({
             return;
             
        
+    },
+
+    Handle_ChangeFreespinBackground()
+    {
+        cc.log("Handle_ChangeFreespinBackground");
+        this.backgroundNormal.active = false;
+        this.backgroundFreeSpin.active = true;
+        
+    },
+
+    Handle_ChangeNormalBackground()
+    {
+        cc.log("Handle_ChangeNormalBackground");
+        this.backgroundNormal.active = true;
+        this.backgroundFreeSpin.active = false;
     },
 
   

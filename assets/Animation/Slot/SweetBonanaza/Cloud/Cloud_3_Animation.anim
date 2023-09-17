@@ -1,0 +1,33 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Cloud_3_Animation",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 80,
+  "sample": 1,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            -1612.324,
+            296.971,
+            0
+          ]
+        },
+        {
+          "frame": 80,
+          "value": [
+            953.691,
+            296.971,
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "events": []
+}

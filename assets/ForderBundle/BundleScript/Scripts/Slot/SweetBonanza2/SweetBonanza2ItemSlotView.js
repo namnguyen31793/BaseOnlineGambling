@@ -26,7 +26,8 @@ cc.Class({
 
     ShowEffectWin() {
         //this._super();
-
+  
+       // sfdsfdsf();
         
         cc.log("this.idCache: "+this.idCache);
         if(this.idCache == 1){
@@ -50,7 +51,7 @@ cc.Class({
             this.icon.node.getComponent(cc.Animation).play("AnimScaleTao");
         }
         else if(this.idCache == 8){
-            this.icon.node.getComponent(cc.Animation).play("AnimScaleMan");
+            this.icon.node.getComponent(cc.Animation).play("AnimScaleDao");
         }
         else if(this.idCache == 9){
             this.icon.node.getComponent(cc.Animation).play("AnimScaleDuaHau");
