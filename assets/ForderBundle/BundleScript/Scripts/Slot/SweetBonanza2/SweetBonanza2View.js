@@ -149,13 +149,14 @@ cc.Class({
     },
 
     UpdateMoneyResult(winNormalValue, totalValue, isTakeJackpot, isWaitRunMoneyWin = false) {
-        cc.log("UpdateMoneyResult winNormalValue "+winNormalValue+" - totalWin "+totalValue);
+        cc.log("UpdateMoneyResult winNormalValue "+winNormalValue+" - totalWin "+totalValue+" isWaitRunMoneyWin"+isWaitRunMoneyWin);
         require("WalletController").getIns().TakeBalance(this.slotType)
         if(this.isFree) {
             this.freeManager.AddTotalWin(winNormalValue);
         }
         if(!isTakeJackpot) {
             let isBigWin = this.CheckBigWin(winNormalValue);
+            cc.log("UpdateMoneyResult winNormalValue "+winNormalValue+" - totalWin "+totalValue+" isWaitRunMoneyWin"+isWaitRunMoneyWin+" isBigWin "+isBigWin);
             if(winNormalValue > 0) {
                 if(!isBigWin) {
                     this.PlayWinMoney();

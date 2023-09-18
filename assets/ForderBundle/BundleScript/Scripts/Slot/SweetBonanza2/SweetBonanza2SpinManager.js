@@ -78,7 +78,6 @@ cc.Class({
 
 
     PlaySpinColumn(timeDistanceColumn) {
-        cc.log("nodeEffect PlaySpinColumn "+this.nodeEffect.enabled);
         this.nodeEffect.enabled = true;
         this.countFallOut = 0;
         this.isFreeDom = false;
@@ -94,7 +93,6 @@ cc.Class({
                 this.isFreeDom = true;
                 this.countTimeFreeDom = 0;
             }
-            this.nodeEffect.enabled = false;
             cc.log("nodeEffect end "+this.nodeEffect.enabled);
         }
     },
@@ -199,6 +197,8 @@ cc.Class({
         }, false);
         this.toDoList.Wait(0.1+7*DELAY_COLUM_DROP);
         this.toDoList.AddWork(()=>{
+            //hide mask
+            this.nodeEffect.enabled = false;
             for(let i = 0; i < this.listSpinObj.length; i++) {
                 this.listSpinObj[i].EndFall();
             }

@@ -72,13 +72,14 @@ cc.Class({
         if(listMatrix.length > 1){
             for(let i = 1; i < listMatrix.length; i++){
                 //roi ma tran moi
+                toDoList.AddWork(()=>slotView.spinManager.nodeEffect.enabled = true,false);
                 toDoList.AddWork(()=>slotView.DropMatrix(listMatrix[i], this.listMultiExtraFree[i], listWinStepDataModel[i-1], i),true);              
                 toDoList.AddWork(()=>slotView.UpdateLineWinData(listLineWinDataModel[i]),true);
             }
         }
 //end drop
         if(!slotView.isFree)
-            toDoList.AddWork(()=>slotView.UpdateMoneyResult(winNormalValue, totalWin, isTakeJackpot),true);
+            toDoList.AddWork(()=>slotView.UpdateMoneyResult(winNormalValue, totalWin, isTakeJackpot, true),true);
         toDoList.AddWork(()=>slotView.SetFreeSpin(freeSpinLeft, true, winNormalValue, extend, this.listMultiExtraFree),true);
         
 
@@ -200,6 +201,36 @@ cc.Class({
         }else{
             this.nodeBG.active = true;
             this.nodeKhung.active = true;
+        }
+    },
+    
+    CheckTimeShowPrize(prizeValue) {
+        let isSpeed = this.slotView.isSpeed;
+        if(this.slotView.isBonus)
+            isSpeed = false;
+        if(prizeValue > 0) {        
+            let isBigWin = this.slotView.CheckBigWin(prizeValue);
+            this.isWin = true;
+            if(isBigWin)
+                this.slotView.toDoList.Wait(2.2);
+            else if(this.slotView.isAuto) {
+                if(isSpeed)
+                    this.slotView.toDoList.Wait(2);
+                else this.slotView.toDoList.Wait(2);
+            } else{
+                this.slotView.toDoList.Wait(2);
+            }
+            
+        } else {
+            this.isWin = false;
+            if(this.slotView.isAuto) {
+                if(isSpeed)
+                    this.slotView.toDoList.Wait(1.2);
+                else this.slotView.toDoList.Wait(1.2);
+            }             
+            else  {
+                this.slotView.toDoList.Wait(0.2);
+            }
         }
     },
 });
