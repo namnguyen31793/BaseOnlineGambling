@@ -134,6 +134,15 @@ cc.Class({
     playBoomSound(){
         this.soundControl.PlayBoom();
     },
+    play_FreeSpinSound()
+    {
+        this.soundControl.Play_ShowFreeSpin();
+    },
+    play_WinMoney()
+    {
+        this.soundControl.Play_ShowWinMoney();
+    },
+
 
     ShowMoneyWinEffect(pos,winMoney)
     {

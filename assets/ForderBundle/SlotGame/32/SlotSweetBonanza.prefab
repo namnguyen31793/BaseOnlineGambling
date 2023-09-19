@@ -57026,6 +57026,12 @@
     "reelSpin": {
       "__uuid__": "84aa1870-06c7-41de-8aa4-e987e4d9e6be"
     },
+    "showFreeSpin": {
+      "__uuid__": "18079923-b138-487c-9323-ad3ee156424d"
+    },
+    "showWinMoney": {
+      "__uuid__": "748b3958-c1da-4c2a-9438-2e118a0ad05a"
+    },
     "_id": ""
   },
   {

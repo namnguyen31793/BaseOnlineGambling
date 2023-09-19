@@ -6,8 +6,8 @@ cc.Class({
     },
     properties: {
 		reelSpin : cc.AudioClip,
-      
-       
+        showFreeSpin : cc.AudioClip,
+        showWinMoney : cc.AudioClip,
     },
     SetLink() {
         this._super();
@@ -26,6 +26,15 @@ cc.Class({
     PlaySpinStart() {
         cc.audioEngine.playEffect(this.reelSpin, false);   
     },
+
+    Play_ShowFreeSpin()
+    {
+        cc.audioEngine.playEffect(this.showFreeSpin, false);   
+    },
+    Play_ShowWinMoney()
+    {
+        cc.audioEngine.playEffect(this.showWinMoney, false);   
+    }
 
     
 });

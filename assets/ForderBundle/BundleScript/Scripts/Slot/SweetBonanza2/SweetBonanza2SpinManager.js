@@ -131,6 +131,7 @@ cc.Class({
                    
                     this.slotView.ShowMoneyWinEffect(scoreMoneyEffectPos,winMoney);
                     this.slotView.playBoomSound();
+                    this.slotView.play_WinMoney();
             }, false);
             //create show tien thang cung luot
             if(winMoneyStep > 0){
