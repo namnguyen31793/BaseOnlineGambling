@@ -169,13 +169,7 @@ cc.Class({
             if(winNormalValue > 0) {
                 if(!isBigWin) {
                     this.PlayWinMoney();
-                    if(isWaitRunMoneyWin) {
-                        this.scheduleOnce(()=>{
-                            this.toDoList.DoWork();
-                        } , 1);  
-                    } else {
-                        this.toDoList.DoWork();
-                    }
+                    this.toDoList.DoWork();
                 } else {
                     this.menuView.ResetValueCacheWin();
                     //this.menuView.HideWinValueCache();

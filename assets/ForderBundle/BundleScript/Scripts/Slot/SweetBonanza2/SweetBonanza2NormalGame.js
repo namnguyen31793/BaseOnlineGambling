@@ -215,10 +215,10 @@ cc.Class({
                 this.slotView.toDoList.Wait(2.2);
             else if(this.slotView.isAuto) {
                 if(isSpeed)
-                    this.slotView.toDoList.Wait(1);
-                else this.slotView.toDoList.Wait(1);
+                    this.slotView.toDoList.Wait(0.5);
+                else this.slotView.toDoList.Wait(0.5);
             } else{
-                this.slotView.toDoList.Wait(1);
+                this.slotView.toDoList.Wait(0.5);
             }
             
         } else {
