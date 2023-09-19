@@ -124,6 +124,7 @@ cc.Class({
         this.idCache = id;
         
         this.icon.spriteFrame = sprSmall;
+        this.icon.node.scale = 1;
 
         this.isShowSpine = false;
         this.level = 0;
