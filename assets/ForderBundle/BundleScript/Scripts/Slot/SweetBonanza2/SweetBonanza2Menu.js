@@ -13,4 +13,10 @@ cc.Class({
         this.UpdateWinValue(value);
     },
 
+    SendBuyFree(){
+        Global.Helper.LogAction("click buy free:"+this.slotView.slotType);
+        this.slotView.PlayClick();
+        this.slotView.RequestBuyFree() ;
+    },
+
 });

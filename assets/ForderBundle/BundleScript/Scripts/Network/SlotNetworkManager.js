@@ -167,7 +167,8 @@ var SlotNetworkManager = cc.Class({
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_SWEET_BONANZA_GAME_GET_ACCOUNT_INFO :
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_SWEET_BONANZA_GAME_GET_ACCOUNT_FREETURN :
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_SWEET_BONANZA_GAME_GET_TOP_TAKE_JACKPOT_INFO :
-            case Global.Enum.RESPONSE_CODE.MSG_SERVER_SWEET_BONANZA_GAME_GET_DETAIL_HISTORY :
+            case Global.Enum.RESPONSE_CODE.MSG_SERVER_SWEET_BONANZA_GAME_GET_DETAIL_HISTORY :   
+            case Global.Enum.RESPONSE_CODE.MSG_SERVER_SWEET_BONANZA_GAME_BUY_FEATURE:
                 if(Global.SlotNetWork) Global.SlotNetWork.ResponseServer(responseCode, packet);
                 break
             //mini slot

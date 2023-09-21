@@ -14,6 +14,7 @@ window.CONFIG = {
 	IS_MAP: true,
 	IS_NATIVE:true,
 
+	MULTI_BET_BONANZA: 100,
 	TX_BET_PERIOD: 60,
 	TX_AWARD_PERIOD: 20,
 	FAKE_GAME : false,

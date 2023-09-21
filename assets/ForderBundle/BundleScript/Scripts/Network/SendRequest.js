@@ -195,6 +195,11 @@ var SendRequest = cc.Class({
     },
 
     // Slot
+
+    MST_Client_Slot_Buy_Free(msg) {
+        Global.NetworkManager.sendRequest(Global.Enum.REQUEST_CODE.MSG_CLIENT_SLOT_BUY_FEATURE, msg, Global.Enum.NETWORK_TARGET_CODE.SLOT_MACHINE);
+    },
+
     MST_Client_Slot_Get_Game_Config_Info(msg) {
         cc.log("send ----------------")
         Global.NetworkManager.sendRequest(Global.Enum.REQUEST_CODE.MSG_CLIENT_SLOT_GAME_CONFIG_INFO, msg, Global.Enum.NETWORK_TARGET_CODE.LOBBY);

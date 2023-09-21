@@ -202,4 +202,25 @@ cc.Class({
         this.effectManager.HideNotifyBonusFree();
     },
 
+    RequestBuyFree(isRequest = true) {
+        if(Global.isChallenge==0 && Global.dataBattle == null)
+            if(Global.MainPlayerInfo.ingameBalance < this.totalBetValue*CONFIG.MULTI_BET_BONANZA && !this.isFree && !this.isBonus) {
+                Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NOT_ENOUGHT_MONEY_TO_PLAY"));            
+                return;
+            }
+        this.isSpin = true;
+        this.PlaySpin();
+        this.effectManager.HideWinMoney();
+        this.drawLineManager.StopDraw();
+        this.spinManager.PlayEffectSpin();
+        
+        if(!this.isFree && !this.isBonus)
+            this.menuView.ResetValueCacheWin();
+
+        if(isRequest) {
+            this.netWork.RequestBuyFree();    
+        }
+        this.menuView.ActiveButtonMenu(false);
+    },
+
 });

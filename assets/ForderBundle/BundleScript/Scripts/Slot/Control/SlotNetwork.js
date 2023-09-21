@@ -93,6 +93,30 @@ cc.Class({
         }
     },
 
+    RequestBuyFree() {
+        let msg = {};
+        Global.Helper.LogAction("request BuyFree:"+this.slotView.roomID+"-"+this.slotView.slotType);
+        msg[1] = this.slotView.roomID;
+        msg[2] = this.slotView.lineData.toString();
+        msg[20] = this.slotView.slotType;
+        msg[40] = this.slotView.slotType;
+        cc.log("RequestBuyFree== " + this.slotView.roomID);
+        // if(this.slotView.isAuto && !this.slotView.isSpeed) {
+        //     Global.SendTrackerLogView("Play Auto");
+        // } else if(this.slotView.isAuto && this.slotView.isSpeed) {
+        //     Global.SendTrackerLogView("Play Turbo");
+        // } else if(!this.slotView.isAuto && this.slotView.isSpeed) {
+        //     Global.SendTrackerLogView("Play Fast");
+        // } else if(!this.slotView.isAuto && !this.slotView.isSpeed) {
+        //     Global.SendTrackerLogView("Play Normal");
+        // }
+        if(require("ScreenManager").getIns().moneyType == 0){
+            require("SendRequest").getIns().MST_Client_Slot_Buy_Free(msg);
+        }else{
+            //require("SendRequest").getIns().MST_Client_Real_Money_Slot_Spin(msg);
+        }
+    },
+
     RequestLeaveRoom() {
         if(require("ScreenManager").getIns().moneyType == 0){
             require("SendRequest").getIns().MST_Client_Slot_Leave_Room();

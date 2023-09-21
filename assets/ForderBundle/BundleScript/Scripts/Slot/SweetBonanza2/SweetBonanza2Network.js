@@ -12,6 +12,7 @@ cc.Class({
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_SWEET_BONANZA_GAME_GET_TOP_TAKE_JACKPOT_INFO:
                 this.GetJackpotInfo(packet);
                 break;
+            case Global.Enum.RESPONSE_CODE.MSG_SERVER_SWEET_BONANZA_GAME_BUY_FEATURE:
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_SWEET_BONANZA_GAME_SPIN:
                 cc.log(packet);
                 this.GetSpinResult(packet);
