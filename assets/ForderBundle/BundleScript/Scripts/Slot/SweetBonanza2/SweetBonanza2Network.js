@@ -13,6 +13,9 @@ cc.Class({
                 this.GetJackpotInfo(packet);
                 break;
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_SWEET_BONANZA_GAME_BUY_FEATURE:
+                cc.log(packet);
+                this.ProceduGetResultBuyFree(packet);
+                break;
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_SWEET_BONANZA_GAME_SPIN:
                 cc.log(packet);
                 this.GetSpinResult(packet);
@@ -67,15 +70,6 @@ cc.Class({
 
     ProceduGetResult(packet) {
 
-        // packet[2] = "12,7,10,11,6,13,13,9,1,7,10,6,7,12,11,11,13,13,9,1|2,12,5,11,6,12,4,10,1,7,10,7,9,12,11,11,6,7,9,1";
-        // packet[3] =  "497,369|";
-        // packet[4] = 100;
-        // packet[5] = 0;
-        // packet[6] = 0;
-        // packet[7] = 0;
-        // packet[9] = 100;
-
-
         let spinId = packet[1];
         let matrix = packet[2];
         let listLineWinData = packet[3];
@@ -89,16 +83,32 @@ cc.Class({
         let currentJackpotValue = packet[12];
         let isTakeJackpot = packet[13];
         let extandMatrix = packet[14];
-
-        // matrix = "7,7,3,1,9,7,7,8,4,3,9,9,11,10,9,7,9,9,10,9,8,5,9,5,7,9,4,10,11,3|7,10,7,1,11,11,7,6,3,3,3,10,11,7,4,7,7,7,10,8,8,5,8,5,7,10,4,10,11,3|10,10,8,11,10,9,6,10,3,1,11,11,8,6,4,3,3,10,11,8,8,5,8,5,10,10,4,10,11,3|8,3,8,10,7,8,11,8,3,11,11,9,6,7,4,1,3,11,8,6,8,3,8,5,11,8,4,5,11,3|4,5,8,10,5,7,3,3,3,11,7,9,11,3,3,1,11,11,6,7,4,3,3,5,11,6,4,5,11,3|11,3,5,3,3,6,4,5,3,10,5,7,11,5,8,11,7,9,6,7,4,1,11,11,11,6,4,5,11,5"
-        // listLineWinData = "9|7|10|8|3|"
-        // winNormalValue = 12700
-        // totalWin = 12700
-        // accountBalance = 111700
-        // extandMatrix = "50|100|40|80|1000|:1"
         
         this.slotView.OnGetSpinResult(spinId, matrix, listLineWinData, winNormalValue, winBonusValue, numberBonusSpin,freeSpinLeft, totalWin, accountBalance, 
-            currentJackpotValue, isTakeJackpot, extandMatrix);
+            currentJackpotValue, isTakeJackpot, extandMatrix, false);
+    },
+    ProceduGetResultBuyFree(packet) {
+
+        if(this.slotView.spinManager.isgetResult) {
+            this.slotView.AddStack(packet);
+            return;
+        }
+        let spinId = packet[1];
+        let matrix = packet[2];
+        let listLineWinData = packet[3];
+        let winNormalValue = packet[4];
+        let numberBonusSpin = packet[5];
+        let winBonusValue = packet[6];
+        let freeSpinLeft = packet[7];
+        let valueFreeSpin = packet[8];
+        let totalWin = packet[9];
+        let accountBalance = packet[11];
+        let currentJackpotValue = packet[12];
+        let isTakeJackpot = packet[13];
+        let extandMatrix = packet[14];
+        
+        this.slotView.OnGetSpinResult(spinId, matrix, listLineWinData, winNormalValue, winBonusValue, numberBonusSpin,freeSpinLeft, totalWin, accountBalance, 
+            currentJackpotValue, isTakeJackpot, extandMatrix, true);
     },
 
     GetJackpotInfo(packet) {

@@ -257,11 +257,13 @@ cc.Class({
         }
     },
 
-    UpdateMoneyNormalGame(winMoney, accountBalance) {
+    UpdateMoneyNormalGame(winMoney, accountBalance, isUpdateBuyFree = false) {
+        cc.log("UpdateMoneyNormalGame isUpdateBuyFree "+isUpdateBuyFree+" - this.totalBetValue "+this.totalBetValue)
         let betValue = this.totalBetValue;
         if(this.isFree || this.isBonus)
             betValue = 0;
-        
+        if(isUpdateBuyFree)
+            betValue = this.totalBetValue*CONFIG.MULTI_BET_BONANZA;
          require("WalletController").getIns().PushBalance(this.slotType, betValue, winMoney, accountBalance);
         
     },

@@ -36,6 +36,7 @@ cc.Class({
             default : true,
         },
         animBtnMenu : cc.Animation,
+        btnBuyFree : cc.Button,
     },
 
     onLoad() {
@@ -339,6 +340,8 @@ cc.Class({
                 this.btnPrevRoom.interactable = false;
             if(this.btnMaxBet)
                 this.btnMaxBet.interactable = false;
+            if(this.btnBuyFree)
+                this.btnBuyFree.interactable = false;
         } else {
             if(this.btnNextRoom)
                 this.btnNextRoom.interactable = active;
@@ -346,6 +349,8 @@ cc.Class({
                 this.btnPrevRoom.interactable = active;
             if(this.btnMaxBet)
                 this.btnMaxBet.interactable = active;
+            if(this.btnBuyFree)
+                this.btnBuyFree.interactable = active;
         }
     },
 

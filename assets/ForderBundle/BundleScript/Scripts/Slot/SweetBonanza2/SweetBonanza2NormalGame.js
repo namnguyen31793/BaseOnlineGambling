@@ -42,7 +42,7 @@ cc.Class({
         this.slotView.toDoList.DoWork();
     },
 
-    OnGetSpinResult(spinId, matrix, listLineWinData, winNormalValue, winBonusValue, bonusTurn, freeSpinLeft, totalWin, accountBalance, currentJackpotValue, isTakeJackpot,extandMatrix) {
+    OnGetSpinResult(spinId, matrix, listLineWinData, winNormalValue, winBonusValue, bonusTurn, freeSpinLeft, totalWin, accountBalance, currentJackpotValue, isTakeJackpot,extandMatrix, isUpdateBuyFree) {
         if(isTakeJackpot)
             winNormalValue = totalWin;
         
@@ -59,7 +59,7 @@ cc.Class({
         let mAccountBalance = accountBalance;
         if(this.slotView.isBonus)
             mAccountBalance = accountBalance-winBonusValue;
-        this.slotView.UpdateMoneyNormalGame(winNormalValue, mAccountBalance);
+        this.slotView.UpdateMoneyNormalGame(winNormalValue, mAccountBalance, isUpdateBuyFree);
         
         let toDoList = this.slotView.toDoList;
         let slotView = this.slotView;

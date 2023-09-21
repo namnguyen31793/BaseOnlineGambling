@@ -12,9 +12,9 @@ cc.Class({
         this.Handle_ChangeNormalBackground();
     },
 
-    OnGetSpinResult(spinId, matrix, listLineWinData, winNormalValue, winBonusValue, bonusTurn, freeSpinLeft, totalWin, accountBalance, currentJackpotValue, isTakeJackpot, extandMatrix) {
+    OnGetSpinResult(spinId, matrix, listLineWinData, winNormalValue, winBonusValue, bonusTurn, freeSpinLeft, totalWin, accountBalance, currentJackpotValue, isTakeJackpot, extandMatrix, isUpdateBuyFree) {
         this.normalManager.OnGetSpinResult(spinId, matrix, listLineWinData, winNormalValue, winBonusValue, bonusTurn,freeSpinLeft, totalWin, accountBalance, 
-            currentJackpotValue, isTakeJackpot, extandMatrix);
+            currentJackpotValue, isTakeJackpot, extandMatrix, isUpdateBuyFree);
     },
 
     OnGetAccountInfo(accountBalance, freeSpin, totalBetValue, jackpotValue, lastPrizeValue, lineData, extandMatrix) {
