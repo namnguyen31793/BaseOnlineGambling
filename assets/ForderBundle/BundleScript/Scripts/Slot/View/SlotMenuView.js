@@ -37,6 +37,7 @@ cc.Class({
         },
         animBtnMenu : cc.Animation,
         btnBuyFree : cc.Button,
+        lb_CostBuyFree : cc.Label,
     },
 
     onLoad() {
@@ -142,6 +143,8 @@ cc.Class({
         this.betValue = totalBetValue;
         if(this.lbBet)
             this.lbBet.string = Global.Helper.formatNumber(this.GetBetValue());//Global.Helper.formatMoney(this.GetBetValue());
+        if(this.lb_CostBuyFree)
+            this.lb_CostBuyFree.string = Global.Helper.formatNumber(totalBetValue*CONFIG.MULTI_BET_BONANZA);
     },
 
     UpdateWinValue(winValue) {

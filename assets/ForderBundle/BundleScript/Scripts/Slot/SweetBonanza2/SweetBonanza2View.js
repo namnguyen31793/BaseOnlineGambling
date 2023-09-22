@@ -146,6 +146,7 @@ cc.Class({
 
     ShowMoneyWinEffect(pos,winMoney)
     {
+        cc.log("ShowMoneyWinEffe winMoney "+winMoney);
         this.effectManager.ShowWinMoneyEffect(pos,winMoney);
     },
 
