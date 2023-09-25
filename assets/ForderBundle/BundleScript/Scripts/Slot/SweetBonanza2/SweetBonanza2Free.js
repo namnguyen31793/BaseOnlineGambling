@@ -39,13 +39,13 @@ cc.Class({
                     this.CreateWinMoneyWithMutl(winNormalValue/extend, winNormalValue, extend);
                 },false);
                 this.MultiFly(listPosExtend, extend, winNormalValue, this.toDoList); 
-                this.toDoList.Wait(5);
+                this.toDoList.Wait(4);
                 this.toDoList.AddWork(()=>{
                     this.HideWinMoneyWithMutl();
                 }, false);
             } 
             if(winNormalValue > 0)
-                this.toDoList.AddWork(()=>this.UpdateMoneyResultFree( winNormalValue, this.toDoList, false),true);
+                this.toDoList.AddWork(()=>this.UpdateMoneyResultFree( winNormalValue/extend, winNormalValue, this.toDoList, false),true);
         }
         if(numberFree > 0 && !this.slotView.isFree) {
             this.toDoList.AddWork(()=>{
@@ -97,9 +97,9 @@ cc.Class({
         this.cacheValueMulti += 1;
     },
     
-    UpdateMoneyResultFree(totalWin, toDoList, isWaitRunMoneyWin = false) {
+    UpdateMoneyResultFree(win, totalWin, toDoList, isWaitRunMoneyWin = false) {
         require("WalletController").getIns().TakeBalance(this.slotView.slotType)
-        this.AddTotalWin(totalWin);
+        this.AddTotalWin(totalWin - win);
         let isBigWin = this.slotView.CheckBigWin(totalWin);
         cc.log("UpdateMoneyResultFree "+totalWin+" - isBigWin "+isBigWin);
         if(totalWin > 0) {
@@ -108,17 +108,17 @@ cc.Class({
                 //this.slotView.effectManager.ShowWinMoney(winNormalValue);
                 if(isWaitRunMoneyWin) {
                     this.slotView.scheduleOnce(()=>{
-                        this.slotView.UpdateWinValue(totalWin);
+                        this.slotView.UpdateWinValue(totalWin - win);
                         toDoList.DoWork();
                     } , 2);  
                 }else{
-                    this.slotView.UpdateWinValue(totalWin);
+                    this.slotView.UpdateWinValue(totalWin - win);
                     toDoList.DoWork();
                 }
             } else {
                 this.slotView.PlayBigWin();
                 this.slotView.effectManager.ShowBigWin(totalWin, toDoList);
-                this.slotView.UpdateWinValue(totalWin);
+                this.slotView.UpdateWinValue(totalWin - win);
             }
         } else {
             this.slotView.UpdateWinValue(totalWin);
