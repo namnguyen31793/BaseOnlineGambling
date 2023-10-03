@@ -753,6 +753,14 @@ cc.Class({
             MSG_SERVER_SWEET_BONANZA_GAME_GET_DETAIL_HISTORY : 580,
             MSG_SERVER_SWEET_BONANZA_GAME_BUY_FEATURE : 581,
 
+            //tayduky
+            MSG_SERVER_TAY_DU_KY_GAME_JACKPOT_INFO : 582,
+            MSG_SERVER_TAY_DU_KY_GAME_SPIN : 583,
+            MSG_SERVER_TAY_DU_KY_GAME_GET_ACCOUNT_INFO : 584,
+            MSG_SERVER_TAY_DU_KY_GAME_GET_ACCOUNT_FREETURN : 585,
+            MSG_SERVER_TAY_DU_KY_GAME_GET_TOP_TAKE_JACKPOT_INFO : 586,
+            MSG_SERVER_TAY_DU_KY_GAME_GET_DETAIL_HISTORY : 587,
+
             //rpg
             MSG_SERVER_RPG_BATTLE_GAME_SPIN : 553,
             MSG_SERVER_RPG_BATTLE_FIELD_GAME_END : 554,
@@ -927,7 +935,7 @@ cc.Class({
             THAI_BLOSSOMS : 29,
             SLOT_9_POTS : 31,
             SWEET_BONANZA : 32,
-            SLOT_KRAKEN2 : 33,
+            TAY_DU_KY : 33,
         };
 
         this.SKILLGAME_TYPE = {

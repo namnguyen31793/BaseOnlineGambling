@@ -117,11 +117,6 @@ cc.Class({
 
     UpdateMoney(gold) {
         if(this.lbMoney) {
-            // if(Global.dataBattle == null) {
-            //     this.lbMoney.string = Global.Helper.formatString(Global.MyLocalization.GetText("TEXT_TOTAL_MONEY"), [Global.Helper.formatNumber(gold)]);//Global.Helper.formatNumber(gold);
-            // } else {
-            //     this.lbMoney.string = Global.Helper.formatString(Global.MyLocalization.GetText("TEXT_TOTAL_SCORE"), [Global.Helper.formatNumber(gold)]);//Global.Helper.formatNumber(gold);
-            // }
             if(Global.agent == 0) {
                 this.lbMoney.string = "BALANCE; " + [Global.Helper.formatNumber(gold)];
             } else {
