@@ -1,4 +1,5 @@
 var DELAY_COLUM_DROP = 0.1;
+var NUMBER_COLUMP = 6;
 cc.Class({
     extends: require("SpinManager"),
     ctor() {
@@ -247,9 +248,9 @@ cc.Class({
 
     OnCheckSpinSuccess() {
         this.stateGetResult += 1;
-        if(this.stateGetResult == 2) {
+        if(this.stateGetResult >= 2) {
             this.isFreeDom = false;
-            if(this.countFallOut == 5)
+            if(this.countFallOut >= NUMBER_COLUMP)
                 this.OnCheckStopSpin();
         }
     },
