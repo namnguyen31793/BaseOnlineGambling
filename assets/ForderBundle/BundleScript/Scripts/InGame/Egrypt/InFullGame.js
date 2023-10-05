@@ -19,10 +19,6 @@ cc.Class({
         if(Global.uitype == 2){
             this.nodeUIButton.active = true;
         }
-
-        if(Global.agent == 0){
-            this.nodeDemo.active = true;
-        }
         console.log("Slot full game start");
         Global.UIManager.showLoading();
 		console.log(require("ScreenManager").getIns().roomType);
@@ -68,10 +64,6 @@ cc.Class({
         }else if(require("ScreenManager").getIns().roomType == 32){
             bName = "32";
 			url = "SlotSweetBonanza";
-        }else if(require("ScreenManager").getIns().roomType == 33){
-            bName = "33";
-			url = "SlotTayDuKy";
-            this.nodeDemo.active = false;
         }else if(require("ScreenManager").getIns().roomType == 1001){
             bName = "PlinkoBase";
 			url = "PlinkoBase";
@@ -85,6 +77,10 @@ cc.Class({
 			    fullGame.nodeGame.addChild(cc.instantiate(prefab));
             }
 		}, 1);  
+
+        if(Global.agent == 0){
+            this.nodeDemo.active = true;
+        }
         
     },
 
