@@ -97,8 +97,8 @@ cc.Class({
             let matrix = this.normalManager.ParseMatrix(lastMatrix);
             //let extendMatrix = this.normalManager.ParseExtendMatrix(lastMatrix);
             this.spinManager.UpdateMatrix(matrix, true);
-            if(this.isFree)
-                this.SetWildFree(this.listMultiWild);
+            // if(this.isFree)
+            //     this.SetWildFree(this.listMultiWild);
             
         }
     },

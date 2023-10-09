@@ -55,6 +55,9 @@ cc.Class({
                 this.playAnimStartFree(true);
             }, false);
             this.toDoList.Wait(0.5);
+            this.toDoList.AddWork(()=>{
+                this.slotView.Handle_ChangeFreespinBackground();
+            }, false);
         }
         if(numberFree == 0 && this.slotView.isFree) {
             this.toDoList.AddWork(()=>{
