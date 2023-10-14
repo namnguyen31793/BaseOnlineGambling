@@ -23,6 +23,7 @@ cc.Class({
         msg2[1] = this.slotView.roomID;
         msg2[20] = this.slotView.slotType;
         msg2[40] = this.slotView.slotType;
+        cc.log("RequestGetInfoRoom roomID "+ this.slotView.roomID+" - slotType "+this.slotView.slotType);
         cc.log("RequestGetInfoRoom "+require("ScreenManager").getIns().moneyType);
         if(require("ScreenManager").getIns().moneyType == 0){
             require("SendRequest").getIns().MST_Client_Slot_Open_Game(msg);
