@@ -92,9 +92,12 @@ cc.Class({
 
     EndBonus(bonusValue) {
         //show wim all bonus
-        this.lbBonusValue.string = Global.Helper.formatNumber(parseInt(this.bonusValue));
+        cc.log("End Bonus "+bonusValue)
+        this.lbBonusValue.string = Global.Helper.formatNumber(parseInt(bonusValue));
+        this.slotView.ShowNotifyWinFree(bonusValue);
 
         this.scheduleOnce(()=>{
+            this.slotView.HideNotifyWinFree();
             this.toDoList.DoWork();
             this.Hide();
         } , 2);

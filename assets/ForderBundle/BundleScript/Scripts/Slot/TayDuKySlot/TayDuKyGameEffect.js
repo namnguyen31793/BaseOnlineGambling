@@ -53,7 +53,7 @@ cc.Class({
     },
 
     HideNotifyWinFree(){
-        //this.freeObj.active = false;
+        this.freeObj.active = false;
         this.notifyObj.active = false;
         this.lbNotify.string = "";
     },
