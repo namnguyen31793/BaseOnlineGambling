@@ -7,6 +7,11 @@ window.ApiController = {
         this.BaseCallGet(link, callback, errorCallBack);
     },
 
+    RequestGetJackpotLobby(roomID, gameType, callback, errorCallBack){
+        var link= CONFIG.BASE_SPIN_HUB_LINK+"v1/ProviderStaticiscal/GetJackpotLobbyByRoom?agentId=0&encryptedData="+"&checksum=&roomId="+roomID+"&gameType="+gameType;
+        this.BaseCallGet(link, callback, errorCallBack);
+    },
+
     BaseCall(url, message, callback, callbackFail, isCache = true) {
         let current = this;
         // console.log(url+"    "+isCache);

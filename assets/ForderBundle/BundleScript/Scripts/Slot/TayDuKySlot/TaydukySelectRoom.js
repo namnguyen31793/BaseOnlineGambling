@@ -3,9 +3,16 @@ cc.Class({
     ctor() {
         this.slotView = null;
     },
+
+    properties: {
+        jackpotRoom1 : cc.Label,
+        jackpotRoom2 : cc.Label,
+        jackpotRoom3 : cc.Label,
+    },
     
     Init(slotView) {
         this.slotView = slotView;
+        this.ShowSelectRoom();
     },
 
 
@@ -20,10 +27,34 @@ cc.Class({
 
     ShowSelectRoom(){
         this.node.active = true;
+        ApiController.RequestGetJackpotLobby( 1, 33, (data) => {
+            if(data == "null" || data == ""){
+            }else{
+                console.log("ShowSelectRoom 1 "+data);
+                this.jackpotRoom1.string = Global.Helper.formatNumber(parseInt(data));;
+            }
+        }, this.ErrorCallBack);
+        ApiController.RequestGetJackpotLobby( 2, 33, (data) => {
+            if(data == "null" || data == ""){
+            }else{
+                console.log("ShowSelectRoom 2 "+data);
+                this.jackpotRoom2.string = Global.Helper.formatNumber(parseInt(data));;
+            }
+        }, this.ErrorCallBack);
+        ApiController.RequestGetJackpotLobby( 3, 33, (data) => {
+            if(data == "null" || data == ""){
+            }else{
+                console.log("ShowSelectRoom 3 "+data);
+                this.jackpotRoom3.string = Global.Helper.formatNumber(parseInt(data));;
+            }
+        }, this.ErrorCallBack);
     },
 
     QuitGame(){
         this.slotView.RequestLeaveRoom();
         require("ScreenManager").getIns().LoadScene(Global.Enum.SCREEN_CODE.LOBBY);
+    },
+
+    ErrorCallBack(errorCode, message) {
     },
 });
