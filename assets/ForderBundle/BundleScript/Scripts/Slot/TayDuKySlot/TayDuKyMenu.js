@@ -61,6 +61,14 @@ cc.Class({
             });
         }
     },
+
+    UpdateBetValue(totalBetValue) {
+        this.betValue = totalBetValue;
+        if(this.lbBet)
+            this.lbBet.string = Global.Helper.NumberShortK(this.GetBetValue()/20);//Global.Helper.formatMoney(this.GetBetValue());
+        if(this.lb_CostBuyFree)
+            this.lb_CostBuyFree.string = Global.Helper.NumberShortK(totalBetValue*CONFIG.MULTI_BET_BONANZA);
+    },
     
     ClickBack() {
         this.slotView.PlayClick();

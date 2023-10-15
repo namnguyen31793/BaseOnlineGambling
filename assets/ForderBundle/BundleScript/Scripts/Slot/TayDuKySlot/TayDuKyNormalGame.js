@@ -40,9 +40,6 @@ cc.Class({
             
         let matrixInfo = this.ParseMatrix(matrix)
         this.slotView.UpdateMatrix(matrixInfo);
-        
-        /*he so gem hoac so tich luy queen trong free*/
-        let numberPots = this.ParseExtendMatrix(matrix);
        
         let mAccountBalance = accountBalance;
         if(this.slotView.isBonus)
@@ -70,6 +67,8 @@ cc.Class({
         }
         slotView.CheckTimeShowPrize(winNormalValue);
         toDoList.AddWork(()=>slotView.ActiveButtonMenu(),false);
+        if(isTakeJackpot)
+            toDoList.Wait(1);
         //check item
         toDoList.AddWork(()=>slotView.UpdateJackpotValue(currentJackpotValue),false);
         toDoList.AddWork(()=>slotView.ActionAutoSpin(),false);
@@ -78,7 +77,6 @@ cc.Class({
     CheckBonus(){},
 
     CheckBonusTayDu(extendMatrixDescription){
-        cc.log(extendMatrixDescription)
         if(extendMatrixDescription === '[]' || extendMatrixDescription === ''){
             return false;
         }else{
@@ -133,7 +131,6 @@ cc.Class({
     },
 
     SetWildItem(toDoList) {
-        cc.log(this.posData)
         if(this.posData.length == 0) {
             toDoList.DoWork();
             return;

@@ -141,7 +141,6 @@ cc.Class({
         // if(!this.isBattle) {
         //     require("WalletController").getIns().TakeBalance(this.slotType)
         // }
-        cc.log("UpdateMoneyResult "+isTakeJackpot+" -totalValue "+totalValue);
         if(this.isFree) {
             this.freeManager.AddTotalWin(winNormalValue);
         }

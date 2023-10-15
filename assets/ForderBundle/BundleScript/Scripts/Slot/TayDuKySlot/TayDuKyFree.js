@@ -12,7 +12,6 @@ cc.Class({
     },
 
     ShowFree(numberFree, isNotify, lineWin, winNormalValue = 0, isTakeJackpot = false) {
-        cc.log("ShowFree numberFree "+numberFree+" isNotify "+isNotify+" isFree "+this.slotView.isFree);
         this.toDoList.CreateList();
         this.numberFreeSpin = numberFree;
         if(isNotify && numberFree > 0 && !this.slotView.isFree) {
@@ -43,14 +42,14 @@ cc.Class({
         if(numberFree > 0 && !this.slotView.isFree) {
             this.cacheTotalSpin = parseInt(cc.sys.localStorage.getItem("Key_Free_TayDu")) || this.numberFreeSpin;
 
-            this.toDoList.Wait(2);
+            this.toDoList.Wait(1);
             this.toDoList.AddWork(()=>{
                 this.GetTotalWinCache();
                 this.SetTextFree();
                 this.slotView.isFree = true;
                 this.playAnimShowFree(true);
             }, false);
-            this.toDoList.Wait(2);
+            this.toDoList.Wait(1);
         }
         if(numberFree == 0 && this.slotView.isFree) {
             this.toDoList.AddWork(()=>{
