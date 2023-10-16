@@ -297,6 +297,7 @@ cc.Class({
 			"DISCONNECT" : "Connection failed, please try again",
 			"MIN_MONEY_JOIN_ROOM" : "Need at least <color=#FFFF00FF>{0}</color> gold to enter the room!",
 			"NOT_ENOUGHT_MONEY_TO_SHOOT" : "Don't have enough money to use this gun, want to recharge?",
+			"NOT_ENOUGHT_MONEY_TO_PLAY" : "Don't have enough money to continue play",
 			"QUIT_ROOM" : "Want to leave room?",
 			"IAP_BILLING_FAIL" : "Payment failed [{0}] !",
 			"QUIT_GAME" : "You want to sign out?",
