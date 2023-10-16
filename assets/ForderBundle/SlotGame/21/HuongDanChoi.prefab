@@ -1023,7 +1023,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 776,
-      "height": 458
+      "height": 457
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1219,6 +1219,23 @@
     },
     "_enabled": true,
     "listSpr_Help": [
+      {
+        "__uuid__": "27459faa-bc3d-4468-bc51-b50eaddba55c"
+      },
+      {
+        "__uuid__": "9d605f48-c8a1-452a-8ec7-73c1b6670e1c"
+      },
+      {
+        "__uuid__": "839dc94b-c509-4ef1-ad39-ecbfe6035286"
+      },
+      {
+        "__uuid__": "c87aeeb6-5513-4eec-9da0-7e32a0b0150c"
+      },
+      {
+        "__uuid__": "16e8017c-cf4b-4cdd-9918-263e319ba5b4"
+      }
+    ],
+    "listSpr_Help_Eng": [
       {
         "__uuid__": "ece19915-aa23-4530-afef-12d1b39628cd"
       },

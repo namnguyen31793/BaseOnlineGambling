@@ -1212,6 +1212,20 @@
     "_enabled": true,
     "listSpr_Help": [
       {
+        "__uuid__": "e6c1fd32-1af7-412e-bcc4-20f84da9dde0"
+      },
+      {
+        "__uuid__": "9e0da411-46ba-40d2-84d1-f72ee591d7c2"
+      },
+      {
+        "__uuid__": "afda0db8-ee61-44d8-835f-b59911ac52ca"
+      },
+      {
+        "__uuid__": "69d0cb25-bb5c-447f-997b-fd2eba469a7b"
+      }
+    ],
+    "listSpr_Help_Eng": [
+      {
         "__uuid__": "8ca5d1c2-15be-4b58-a0f9-6f7738829a47"
       },
       {

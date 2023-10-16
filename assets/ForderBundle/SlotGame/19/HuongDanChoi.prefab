@@ -330,8 +330,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 809,
-      "height": 483
+      "width": 808,
+      "height": 481
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1338,6 +1338,26 @@
       },
       {
         "__uuid__": "8be4c8b7-23bd-41d9-868f-ae19dbcc8351"
+      }
+    ],
+    "listSpr_Help_Eng": [
+      {
+        "__uuid__": "ef91ba73-c0b3-4ffb-9251-ec91248af3cd"
+      },
+      {
+        "__uuid__": "e4b66380-4f63-48fd-807a-ba0b2b6c333d"
+      },
+      {
+        "__uuid__": "198bb021-e6b7-45c2-b110-dd01bf939288"
+      },
+      {
+        "__uuid__": "8567a406-98ea-422f-af0c-c968e3cdc14b"
+      },
+      {
+        "__uuid__": "ae971bfe-91b6-4717-b59e-06192914b3fb"
+      },
+      {
+        "__uuid__": "ae971bfe-91b6-4717-b59e-06192914b3fb"
       }
     ],
     "sprHelp": {

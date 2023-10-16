@@ -1220,6 +1220,20 @@
     "_enabled": true,
     "listSpr_Help": [
       {
+        "__uuid__": "59c47c90-c2f9-431f-9c9d-14b3f9d33397"
+      },
+      {
+        "__uuid__": "1750ddf3-367b-4276-af0c-224ee0a6af60"
+      },
+      {
+        "__uuid__": "ddbe9657-e423-481b-af8f-c035bff46434"
+      },
+      {
+        "__uuid__": "a82d413e-f0c0-4af1-ba15-ae8d92473438"
+      }
+    ],
+    "listSpr_Help_Eng": [
+      {
         "__uuid__": "477b2cd7-30d3-4866-a505-8846406d4230"
       },
       {

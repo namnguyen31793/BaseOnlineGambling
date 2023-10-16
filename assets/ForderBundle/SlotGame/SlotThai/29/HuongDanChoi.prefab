@@ -1221,6 +1221,17 @@
         "__uuid__": "723fc807-59c6-409f-98e9-d46ec3dd24fe"
       }
     ],
+    "listSpr_Help_Eng": [
+      {
+        "__uuid__": "d04f26d4-4a44-4440-be31-5fecd42b79e5"
+      },
+      {
+        "__uuid__": "d426f544-0539-4bbf-b4a4-b5816fe6a646"
+      },
+      {
+        "__uuid__": "723fc807-59c6-409f-98e9-d46ec3dd24fe"
+      }
+    ],
     "sprHelp": {
       "__id__": 27
     },

@@ -1014,7 +1014,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 879,
+      "width": 878,
       "height": 419
     },
     "_anchorPoint": {
@@ -1222,6 +1222,20 @@
       },
       {
         "__uuid__": "31cb34c8-72c3-479a-81c9-44e9e620d2a6"
+      }
+    ],
+    "listSpr_Help_Eng": [
+      {
+        "__uuid__": "19934ad1-8df8-41bd-a6da-6950a77eef6d"
+      },
+      {
+        "__uuid__": "3aca1e4b-c630-4a6d-acec-8a44c2da0e2c"
+      },
+      {
+        "__uuid__": "e8da9207-11de-4c7a-a9e0-c3432d5a9c0f"
+      },
+      {
+        "__uuid__": "84b071dc-9536-4170-a5b5-a8b0f09d9c2f"
       }
     ],
     "sprHelp": {

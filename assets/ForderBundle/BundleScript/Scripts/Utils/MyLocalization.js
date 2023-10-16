@@ -126,9 +126,9 @@ cc.Class({
 			"EVENT_END" : "Sự kiện đã kết thúc",
 			
 			//FOOTER
-			"TEXT_DETAIL_BET" : "BET: {0}", 
-			"TEXT_TOTAL_MONEY" : "BALANCE: {0}", 
-			"TEXT_TOTAL_SCORE" : "SCORE: {0}", 
+			"TEXT_DETAIL_BET" : "Mức Cược: {0}", 
+			"TEXT_TOTAL_MONEY" : "Số Dư: {0}", 
+			"TEXT_TOTAL_SCORE" : "Điểm: {0}", 
 			//battle
 			"END_BATTLE" : "Bạn có muốn đầu hàng luôn không?",
 			"CONTINUE_BATTLE" : "Bạn đang dở 1 trận đấu, bạn có muốn tiếp tục không? Nếu từ chối thì bạn sẽ bị xử thua luôn",
@@ -384,9 +384,9 @@ cc.Class({
 			"MISSION_DES_SPECIAL_REWARD" : "Win <color=#F5EB00>{0}</color> Special Score",
 			
 			//FOOTER
-			"TEXT_DETAIL_BET" : "BET: {0}", 
-			"TEXT_TOTAL_MONEY" : "BALANCE: {0}", 
-			"TEXT_TOTAL_SCORE" : "SCORE: {0}", 
+			"TEXT_DETAIL_BET" : "Bet: {0}", 
+			"TEXT_TOTAL_MONEY" : "Balance: {0}", 
+			"TEXT_TOTAL_SCORE" : "Score: {0}", 
 			//battle
 			"END_BATTLE" : "Do you want to surrender now?",
 			"CONTINUE_BATTLE" : "You are in the match, do you want to continue? If you stop here, you will lose this match",

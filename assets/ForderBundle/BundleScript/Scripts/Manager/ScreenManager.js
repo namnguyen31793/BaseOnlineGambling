@@ -38,7 +38,8 @@ var ScreenManager = cc.Class({
                         cc.director.runScene(scene);
                     })
                 } else {
-                    Global.DownloadManager.LoadScene("LobbyEng","LobbyScene", (scene)=>{
+                    Global.DownloadManager.LoadScene("Lobby","LobbyScene", (scene)=>{
+                    //Global.DownloadManager.LoadScene("LobbyEng","LobbyScene", (scene)=>{
                         cc.director.runScene(scene);
                     })
                 }
@@ -52,7 +53,8 @@ var ScreenManager = cc.Class({
                     cc.director.runScene(scene);
                 },1)
             } else {
-                Global.DownloadManager.LoadScene("LobbyEng","LobbyScene", (scene)=>{
+                Global.DownloadManager.LoadScene("Lobby","LobbyScene", (scene)=>{
+                //Global.DownloadManager.LoadScene("LobbyEng","LobbyScene", (scene)=>{
                     cc.director.runScene(scene);
                 },1)
             }

@@ -326,7 +326,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 1108,
-      "height": 656
+      "height": 647
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1211,6 +1211,20 @@
     },
     "_enabled": true,
     "listSpr_Help": [
+      {
+        "__uuid__": "8440f983-990d-44ba-959b-060c421c68d7"
+      },
+      {
+        "__uuid__": "f7b32a12-a178-4b64-941f-627590ee062d"
+      },
+      {
+        "__uuid__": "62944a4c-4f5a-4289-9ef4-2b7d855b7239"
+      },
+      {
+        "__uuid__": "0afb4cc1-d518-4ef4-92bf-29521dd09ee5"
+      }
+    ],
+    "listSpr_Help_Eng": [
       {
         "__uuid__": "b3984953-91e2-42aa-bd5f-8ef4cb3d65b0"
       },

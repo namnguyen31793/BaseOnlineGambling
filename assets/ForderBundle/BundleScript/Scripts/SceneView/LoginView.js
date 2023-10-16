@@ -30,6 +30,7 @@ cc.Class({
 		cc.log("getParamsFromHeaderInet ");
 		Global.GameId = 19;
 		Global.uitype = 1;
+		Global.language = "en";
 		CONFIG.INET = true;
 		const location = window.location;
 		console.log(location.href);
@@ -60,6 +61,8 @@ cc.Class({
 			Global.deviceId = parseInt(result["deviceid"])
 		if(result["uitype"] != null)
 			Global.uitype = parseInt(result["uitype"])
+		if(result["lang"] != null)
+			Global.language = result["lang"].toLowerCase();
 		if(Global.ssoKey == null)
 			return;
 		//send request agent 0 để lay connect server 
@@ -71,6 +74,7 @@ cc.Class({
 	getParamsFromHeaderSpinHub(){
 		Global.GameId = 19;
 		Global.uitype = 1;
+		Global.language = "en";
 		const location = window.location;
 		console.log(location.href);
 		var params = location.href.split("?")[1];
@@ -111,6 +115,8 @@ cc.Class({
 			Global.GameId = parseInt(result["gameId"])
 		if(result["uitype"] != null)
 			Global.uitype = parseInt(result["uitype"])
+		if(result["lang"] != null)
+			Global.language = result["lang"].toLowerCase();
 		//send request api
         ApiController.RequestGetConnectInfo(result["agent"], result["encryptedData"], result["checksum"], (data) => {
             this.HandlelGetConnectInfo(data);
@@ -120,7 +126,8 @@ cc.Class({
 	HandlelGetConnectInfo(data){
 		//success call LoginSuccess
 		if(data == "null" || data == ""){
-			Global.UIManager.showCommandPopup("THÔNG TIN KHÔNG HỢP LỆ", () => {
+			Global.MyLocalization.GetText("NOT_LOAD_INFO");
+			Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NOT_LOAD_INFO") /* "THÔNG TIN KHÔNG HỢP LỆ" */, () => {
             });
         }else{
             console.log("HandlelGetConnectInfo "+data);

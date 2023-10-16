@@ -122,11 +122,7 @@ cc.Class({
             // } else {
             //     this.lbMoney.string = Global.Helper.formatString(Global.MyLocalization.GetText("TEXT_TOTAL_SCORE"), [Global.Helper.formatNumber(gold)]);//Global.Helper.formatNumber(gold);
             // }
-            if(Global.agent == 0) {
-                this.lbMoney.string = [Global.Helper.formatNumber(gold)];//"BALANCE; " + [Global.Helper.formatNumber(gold)];
-            } else {
-                this.lbMoney.string = Global.Helper.formatString(Global.MyLocalization.GetText("TEXT_TOTAL_MONEY"), [Global.Helper.formatNumber(gold)]);//Global.Helper.formatNumber(gold);
-            }
+            this.lbMoney.string = Global.Helper.formatString(Global.MyLocalization.GetText("TEXT_TOTAL_MONEY"), [Global.Helper.formatNumber(gold)]);//Global.Helper.formatNumber(gold);           
         }
     },
 
@@ -176,7 +172,7 @@ cc.Class({
         this.betValue = totalBetValue;
         if(totalBetValue == null)
             totalBetValue = 0;
-        this.lbTotalBet.string = [Global.Helper.formatNumber(totalBetValue)];// Global.Helper.formatString(Global.MyLocalization.GetText("TEXT_DETAIL_BET"), [Global.Helper.formatNumber(totalBetValue)]);
+        this.lbTotalBet.string = Global.Helper.formatString(Global.MyLocalization.GetText("TEXT_DETAIL_BET"), [Global.Helper.formatNumber(totalBetValue)]);
     },
 
     SetLineData(lineData) {
