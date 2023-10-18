@@ -24,6 +24,10 @@ cc.Class({
             default: [],
             type: cc.SpriteFrame,
         },
+        nodeNotifyNumberChangeSpriteEng : {
+            default: [],
+            type: cc.SpriteFrame,
+        },
         nodeWaitFree : cc.Node,
     },
 
@@ -104,7 +108,11 @@ cc.Class({
         }
         if(numberFree > 0 && !this.slotView.isFree) {
             this.toDoList.AddWork(()=>{
-                this.nodeNotifyNumberChange.spriteFrame = this.nodeNotifyNumberChangeSprite[0];
+                if(Global.language == "vi") {
+                    this.nodeNotifyNumberChange.spriteFrame = this.nodeNotifyNumberChangeSprite[0];
+                } else {
+                    this.nodeNotifyNumberChange.spriteFrame = this.nodeNotifyNumberChangeSpriteEng[0];
+                }
             }, false);
             this.toDoList.Wait(1);
             this.toDoList.AddWork(()=>{
@@ -185,13 +193,24 @@ cc.Class({
         if(num >=15){
             this.listTypeItemChange[3].active = true;
         }
-        if(num < 3)
-            this.nodeNotifyNumberChange.spriteFrame = this.nodeNotifyNumberChangeSprite[0];
-        else if(num < 5)
-            this.nodeNotifyNumberChange.spriteFrame = this.nodeNotifyNumberChangeSprite[1];
-        else if(num < 9)
-            this.nodeNotifyNumberChange.spriteFrame = this.nodeNotifyNumberChangeSprite[2];
-        else
-            this.nodeNotifyNumberChange.spriteFrame = this.nodeNotifyNumberChangeSprite[3];
+        if(Global.language == "vi") {
+            if(num < 3)
+                this.nodeNotifyNumberChange.spriteFrame = this.nodeNotifyNumberChangeSprite[0];
+            else if(num < 5)
+                this.nodeNotifyNumberChange.spriteFrame = this.nodeNotifyNumberChangeSprite[1];
+            else if(num < 9)
+                this.nodeNotifyNumberChange.spriteFrame = this.nodeNotifyNumberChangeSprite[2];
+            else
+                this.nodeNotifyNumberChange.spriteFrame = this.nodeNotifyNumberChangeSprite[3];
+        } else {
+            if(num < 3)
+                this.nodeNotifyNumberChange.spriteFrame = this.nodeNotifyNumberChangeSpriteEng[0];
+            else if(num < 5)
+                this.nodeNotifyNumberChange.spriteFrame = this.nodeNotifyNumberChangeSpriteEng[1];
+            else if(num < 9)
+                this.nodeNotifyNumberChange.spriteFrame = this.nodeNotifyNumberChangeSpriteEng[2];
+            else
+                this.nodeNotifyNumberChange.spriteFrame = this.nodeNotifyNumberChangeSpriteEng[3];
+        }
     }
 });
