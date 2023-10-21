@@ -4,7 +4,6 @@ cc.Class({
     properties: {
         nodeGame: cc.Node,
         nodeDemo: cc.Node,
-        nodeUIButton: cc.Node,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -16,9 +15,6 @@ cc.Class({
     },
 
     start() {
-        if(Global.uitype == 2){
-            this.nodeUIButton.active = true;
-        }
         console.log("Slot full game start");
         Global.UIManager.showLoading();
 		console.log(require("ScreenManager").getIns().roomType);

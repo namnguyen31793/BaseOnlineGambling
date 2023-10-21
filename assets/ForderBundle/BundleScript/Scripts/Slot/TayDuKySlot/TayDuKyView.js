@@ -14,6 +14,7 @@ cc.Class({
         this.slotType = Global.Enum.GAME_TYPE.TAY_DU_KY;
         this.lineData = 20;
         this.selectRoom.Init(this);
+        this.selectRoom.active = true;
     },
 
     AddScheduleAnimWait(){

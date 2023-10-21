@@ -57,7 +57,8 @@ cc.Class({
             if(this.CheckBonusTayDu(extendMatrixDescription)){
                 toDoList.AddWork(()=>slotView.effectManager.ShowBonus(),false);
                 toDoList.Wait(2);
-                toDoList.AddWork(()=>this.ShowBonus(winBonusValue, totalWin, extendMatrixDescription,toDoList),true);  
+                toDoList.AddWork(()=>slotView.effectManager.ClickCloseBonus(),false);
+                toDoList.AddWork(()=>this.ShowBonus(winBonusValue, extendMatrixDescription),true);  
             }
             toDoList.AddWork(()=>slotView.UpdateLineWinData(this.ParseLineData(listLineWinData)),false);
         }
@@ -84,10 +85,9 @@ cc.Class({
         }
     },
 
-    ShowBonus(winBonusValue, totalWin,extendMatrixDescription, toDoList){
-        let valueBonus = totalWin - winBonusValue;
+    ShowBonus(winBonusValue,extendMatrixDescription){
         let listBonus =  JSON.parse(extendMatrixDescription);
-        this.slotView.bonusManager.ShowBonusGame(listBonus, valueBonus, toDoList);
+        this.slotView.bonusManager.ShowBonusGame(listBonus, winBonusValue);
     },
 
     HideValueWildFree(){

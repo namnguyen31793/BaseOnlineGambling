@@ -23,13 +23,14 @@ cc.Class({
         this.isCountTime = false;
         this.bonusValue = 0;
         this.cachebonusValue = 0;
-        this.toDoList = null;
+        this.waitEnd = false;
     },
 
-    ShowBonusGame(listBonus, bonusValue, toDoList) {
+    ShowBonusGame(listBonus, bonusValue) {
         for(let i = 0; i < this.listBtn.length; i++){
             this.listBtn[i].active = true;
         }
+        cc.log(listBonus);
         this.listBonus = listBonus;
         this.indexBonus = 0;
         this.cachebonusValue = 0;
@@ -37,16 +38,18 @@ cc.Class({
         this.isCountTime = true;
         this.nodeTime.active = true;
         this.bonusValue = bonusValue;
-        this.toDoList = toDoList;
+        this.waitEnd = true;
         this.node.active = true;
     },
 
     ClickValueBonus(event, index){
         if(this.indexBonus == this.listBonus.length)
             return;
-        this.isCountTime = false;
+        // this.isCountTime = false;
+        this.time = 20;
         this.nodeTime.active = false;
         //show win by index 
+        cc.log(this.listBonus[this.indexBonus]);
         let valueWin = this.listBonus[this.indexBonus];
         //show effect
         this.listBtn[index].active = false;
@@ -54,7 +57,7 @@ cc.Class({
         let txtValue = cc.instantiate(this.itemTxt);
         txtValue.parent = this.txtContent;
         txtValue.setPosition(cc.v2(this.listBtn[index].getPosition().x, -150));
-        txtValue.active = true;
+        txtValue.active = true; 
         txtValue.scale = 0;
         txtValue.getComponent(cc.Label).string = Global.Helper.formatNumber(parseInt(valueWin));
         const scaleAction = cc.scaleTo(1, 1);
@@ -62,8 +65,9 @@ cc.Class({
         const sequence = cc.sequence(scaleAction, moveAction);
         txtValue.runAction(sequence);
 
-        this.cachebonusValue += parseInt(valueWin);
-        this.lbBonusValue.string = Global.Helper.formatNumber(parseInt(this.cachebonusValue));
+        let valueBonus = this.slotView.menuView.GetBetValue()* parseInt(valueWin)/1000;
+        this.cachebonusValue += valueBonus;
+        this.lbBonusValue.string = Global.Helper.formatNumber(valueBonus);
 
         //index ++
         this.indexBonus++;
@@ -92,18 +96,21 @@ cc.Class({
 
     EndBonus(bonusValue) {
         //show wim all bonus
-        cc.log("End Bonus "+bonusValue)
+        if(!this.waitEnd )
+            return;
+        this.waitEnd = false;
         this.lbBonusValue.string = Global.Helper.formatNumber(parseInt(bonusValue));
-        this.slotView.ShowNotifyWinFree(bonusValue);
+        this.slotView.ShowNotifyWinFree(parseInt(bonusValue));
 
         this.scheduleOnce(()=>{
             this.slotView.HideNotifyWinFree();
-            this.toDoList.DoWork();
+            this.slotView.toDoList.DoWork();
             this.Hide();
         } , 2);
     },
 
     Hide(){
+        this.waitEnd = false;
         this.resetTxtContent();
         this.listBonus = [];
         this.indexBonus = 0;
@@ -111,7 +118,6 @@ cc.Class({
         this.isCountTime = false;
         this.nodeTime.active = false;
         this.bonusValue = 0;
-        this.toDoList = null;
         this.node.active = false;
     },
     resetTxtContent() {

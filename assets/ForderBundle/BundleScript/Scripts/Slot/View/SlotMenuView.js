@@ -38,6 +38,7 @@ cc.Class({
         animBtnMenu : cc.Animation,
         btnBuyFree : cc.Button,
         lb_CostBuyFree : cc.Label,
+        nodeUIBackButton: cc.Node,
     },
 
     onLoad() {
@@ -48,6 +49,10 @@ cc.Class({
         //     if(this.animBtnMenu && this.animBtnMenu.node)
         //         this.animBtnMenu.node.x = wScene - 45;
         //  }
+        if(Global.uitype == 2){
+            if(this.nodeUIBackButton)
+                this.nodeUIBackButton.active = true;
+        }
          if(Global.isTutorial >= 1) {
             this.animBtnMenu.node.opacity = 150;
          }
@@ -377,5 +382,12 @@ cc.Class({
                 this.isCountPress = false;
             }
         }
+    },
+
+    SendLeaveRoom(){
+        let msg = {};
+        msg[40] = require("ScreenManager").getIns().roomType;
+        require("SendRequest").getIns().MST_Client_Slot_Leave_Room(msg);
+        Global.UIManager.showLoadingNotHide();
     },
 });
