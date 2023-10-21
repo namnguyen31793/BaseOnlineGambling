@@ -69,6 +69,7 @@ cc.Class({
         }
         //tao obj cho cot quay
         this.listSpinObj[0] = cc.find("Container/Normal/SpinObj", this.node).getComponent(this.nameSpin);
+        cc.log(">>Container/Normal/SpinObj :  ")
         for(let i = 1; i < this.NUMBER_COLUMN; i++) {
             this.listSpinObj[i] = cc.instantiate(this.listSpinObj[0].node).getComponent(this.nameSpin);
             this.listSpinObj[i].node.parent = this.listSpinObj[0].node.parent;

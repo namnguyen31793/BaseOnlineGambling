@@ -29,5 +29,11 @@ var Sound = {
         TOWER_UP_BG: "Sound/TowerUp/BG",
         TOWER_UP_FREE: "Sound/TowerUp/StartFree",
         TOWER_UP_SPIN: "Sound/TowerUp/Spin",
+        TAY_DU_KI_BG: "Sound/TayDuKy/BG",
+        TAY_DU_KI_START_SPIN: "Sound/TayDuKy/StartSpin",
+        TAY_DU_KI_STOP_SPIN: "Sound/TayDuKy/StopSpin",
+        TAY_DU_KI_JACKPOT: "Sound/TayDuKy/Jackpot",
+        TAY_DU_KI_BONUS: "Sound/TayDuKy/BonusMusic",
+        TAY_DU_KI_FREESPIN: "Sound/TayDuKy/Freespin",
     },
 }
