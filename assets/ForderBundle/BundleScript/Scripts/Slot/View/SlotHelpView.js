@@ -21,6 +21,7 @@ cc.Class({
     onLoad() {
         this.indexHelp = 0;
         this.lbCurrent.string = (this.indexHelp +1)  + "/"+this.listSpr_Help.length;
+        this.ChangeImage();
     },
     start() {
         Global.UIManager.hideMiniLoading();
