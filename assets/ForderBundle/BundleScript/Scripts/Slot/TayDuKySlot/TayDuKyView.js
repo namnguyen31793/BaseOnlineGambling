@@ -175,7 +175,7 @@ cc.Class({
             }
         }else{
             this.PlayJackpot();
-            this.effectManager.ShowJackpot(totalValue, this.toDoList, true, true);
+            this.effectManager.ShowJackpot(totalValue, this.toDoList, true, true, true);
         }  
     },
 });

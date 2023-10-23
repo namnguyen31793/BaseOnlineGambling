@@ -200,6 +200,7 @@ cc.Class({
             this.slotView.UpdateWinValue(this.winMoney);
         else
             this.slotView.menuView.ShowWinValueCache();
+        cc.log("take balance "+this.isUpdateWallet);
         if(this.isUpdateWallet) {
             if(!this.slotView.isBattle) {
                 require("WalletController").getIns().TakeBalance(this.slotView.slotType)

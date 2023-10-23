@@ -37,7 +37,7 @@ cc.Class({
         }
     },
 
-    Show(slotView){
+    Init(slotView){
         this.slotView = slotView;
     },
 

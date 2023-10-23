@@ -105,7 +105,7 @@ cc.Class({
             }
         }else{
             this.slotView.PlayJackpot();
-            this.slotView.effectManager.ShowJackpot(totalValue, this.toDoList, true, true);
+            this.slotView.effectManager.ShowJackpot(winNormalValue, this.toDoList, true, true, true);
         }  
     },
 

@@ -59,13 +59,13 @@ cc.Class({
         txtValue.setPosition(cc.v2(this.listBtn[index].getPosition().x, -150));
         txtValue.active = true; 
         txtValue.scale = 0;
-        txtValue.getComponent(cc.Label).string = Global.Helper.formatNumber(parseInt(valueWin));
+        let valueBonus = this.slotView.menuView.GetBetValue()* parseInt(valueWin)/1000;
+        txtValue.getComponent(cc.Label).string = Global.Helper.formatNumber(valueBonus);
         const scaleAction = cc.scaleTo(1, 1);
         const moveAction = cc.moveTo(1, cc.v2(txtValue.getPosition().x, 0));
         const sequence = cc.sequence(scaleAction, moveAction);
         txtValue.runAction(sequence);
 
-        let valueBonus = this.slotView.menuView.GetBetValue()* parseInt(valueWin)/1000;
         this.cachebonusValue += valueBonus;
         this.lbBonusValue.string = Global.Helper.formatNumber(valueBonus);
 

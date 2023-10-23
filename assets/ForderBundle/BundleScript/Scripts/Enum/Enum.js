@@ -252,12 +252,14 @@ cc.Class({
         
             //get daily 
             MSG_CLIENT_SLOT_MISSION_GET_CURRENT_MISSION : 323,
-
             MSG_CLIENT_SLOT_GET_ROOM_CONFIG : 337,
 
             //rpg
             MSG_CLIENT_RPG_BATTLE_FIELD_SPIN : 338,
             MSG_CLIENT_RPG_BATTLE_START_GAME : 340,
+
+            //PLAY_TRY
+            MSG_CLIENT_SLOT_SPIN_CHOI_THU : 341,
 
             //region tai xiu
             MSG_CLIENT_DICE_GET_CURRENT_TURN_INFO : 350,
@@ -760,6 +762,7 @@ cc.Class({
             MSG_SERVER_TAY_DU_KY_GAME_GET_ACCOUNT_FREETURN : 585,
             MSG_SERVER_TAY_DU_KY_GAME_GET_TOP_TAKE_JACKPOT_INFO : 586,
             MSG_SERVER_TAY_DU_KY_GAME_GET_DETAIL_HISTORY : 587,
+            MSG_SERVER_TAY_DU_KY_GAME_SPIN_CHOI_THU : 588,
 
             //rpg
             MSG_SERVER_RPG_BATTLE_GAME_SPIN : 553,

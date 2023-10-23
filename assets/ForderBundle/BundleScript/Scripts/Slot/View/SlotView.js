@@ -380,7 +380,11 @@ cc.Class({
             this.menuView.ResetValueCacheWin();
 
         if(isRequest) {
-            this.netWork.RequestSpinNormal();    
+            if(this.roomID != 0){
+                this.netWork.RequestSpinNormal();  
+            }else{
+                this.netWork.RequestSpinTry();  
+            }
         }
         this.menuView.ActiveButtonMenu(false);
     },
@@ -560,8 +564,5 @@ cc.Class({
         this.backgroundNormal.active = true;
         this.backgroundFreeSpin.active = false;
     },
-
-  
-
 
 });

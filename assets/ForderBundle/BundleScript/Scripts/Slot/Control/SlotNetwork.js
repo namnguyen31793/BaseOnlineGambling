@@ -153,6 +153,17 @@ cc.Class({
         require("SendRequest").getIns().MST_Client_Battle_Field_ReMatch();
     },
 
+    RequestSpinTry() {
+        let msg = {};
+        cc.log("request try:"+this.slotView.roomID+"-"+this.slotView.slotType);
+        msg[1] = this.slotView.roomID;
+        msg[2] = this.slotView.lineData.toString();
+        msg[20] = this.slotView.slotType;
+        msg[40] = this.slotView.slotType;
+
+        require("SendRequest").getIns().MST_Client_Slot_Spin_Try(msg);
+    },
+
     ////////////////////////////////////////////////////////////
 
     ResponseServer(code, packet) {

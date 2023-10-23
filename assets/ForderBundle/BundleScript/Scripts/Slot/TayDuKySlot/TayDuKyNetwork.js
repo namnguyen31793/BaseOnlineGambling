@@ -1,7 +1,11 @@
 
 
 cc.Class({
-    extends: require("SlotNetwork"),
+    extends: require("SlotNetwork"), 
+    
+    ctor() {
+        this.cacheFreeSpin = 0;
+    },
 
     ResponseServer(code, packet) {
       
@@ -23,6 +27,9 @@ cc.Class({
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_TAY_DU_KY_GAME_GET_TOP_TAKE_JACKPOT_INFO:
                 this.GetTop(packet);
                 break;
+            case Global.Enum.RESPONSE_CODE.MSG_SERVER_TAY_DU_KY_GAME_SPIN_CHOI_THU:
+                this.ProceduGetResultTry(packet);
+                break;
         }
     },
 
@@ -43,6 +50,37 @@ cc.Class({
 
         this.slotView.OnGetSpinResult(spinId, matrix, listLineWinData, winNormalValue, winBonusValue, numberBonusSpin,freeSpinLeft, totalWin, accountBalance, 
             currentJackpotValue, isTakeJackpot, extendMatrixDescription);
+    },
+
+    ProceduGetResultTry(packet) {
+        cc.log(packet);
+        cc.log(this.slotView.spinManager.isgetResult);
+        if(this.slotView.spinManager.isgetResult) {
+            this.slotView.AddStack(packet);
+            return;
+        }
+        let spinId = packet[1];
+        let matrix = packet[2];
+        let listLineWinData = packet[3];
+        let winNormalValue = packet[4];
+        let numberBonusSpin = packet[5];
+        let winBonusValue = packet[6];
+        let freeSpinLeft = packet[7];
+        let valueFreeSpin = packet[8];
+        let totalWin = packet[9];
+        let accountBalance = 0;
+        let currentJackpotValue = packet[12];
+        let isTakeJackpot = packet[13];
+        let extendMatrixDescription = packet[14]; 
+        if(this.cacheFreeSpin == 0)
+            this.cacheFreeSpin = freeSpinLeft
+        else
+            this.cacheFreeSpin -= 1;
+
+        accountBalance = require("WalletController").getIns().GetBalance() - 200000 + totalWin;
+        this.slotView.OnGetSpinResult(spinId, matrix, listLineWinData, winNormalValue, winBonusValue, numberBonusSpin, this.cacheFreeSpin, totalWin, accountBalance, 
+            currentJackpotValue, isTakeJackpot, extendMatrixDescription);
+        
     },
 
    

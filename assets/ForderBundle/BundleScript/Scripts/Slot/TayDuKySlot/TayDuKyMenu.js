@@ -85,7 +85,7 @@ cc.Class({
         this.betValue = totalBetValue;
         if(totalBetValue == null)
             totalBetValue = 0;
-        this.lbTotalBet.string = Global.Helper.formatNumber(totalBetValue);
+        this.lbTotalBet.string = Global.Helper.NumberShortK(totalBetValue);
     },
 
     ClickRank() {
@@ -115,7 +115,7 @@ cc.Class({
                 let help = cc.instantiate(prefab);
                 menu.slotView.node.addChild(help, 10000);
                 menu.slotView.settingView = help.getComponent("TayDuKySetting");
-                menu.slotView.settingView.Init(menu.slotView);
+                menu.slotView.settingView.Init(this.slotView);
             });
         }
     },

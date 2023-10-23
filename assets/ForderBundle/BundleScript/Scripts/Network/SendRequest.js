@@ -283,6 +283,10 @@ var SendRequest = cc.Class({
         Global.NetworkManager.sendRequest(Global.Enum.REQUEST_CODE.MST_CLIENT_MINISLOT_SPIN, msg, Global.Enum.NETWORK_TARGET_CODE.SLOT_MACHINE);
     },
 
+    MST_Client_Slot_Spin_Try(msg) {
+        Global.NetworkManager.sendRequest(Global.Enum.REQUEST_CODE.MSG_CLIENT_SLOT_SPIN_CHOI_THU, msg, Global.Enum.NETWORK_TARGET_CODE.SLOT_MACHINE);
+    },
+
     MST_Client_MiniSlot_Get_Top_Winner() {
         this.RequestMessageNoData(Global.Enum.REQUEST_CODE.MST_CLIENT_MINISLOT_GET_TOP_WINNER, Global.Enum.NETWORK_TARGET_CODE.SLOT_MACHINE);
     },
