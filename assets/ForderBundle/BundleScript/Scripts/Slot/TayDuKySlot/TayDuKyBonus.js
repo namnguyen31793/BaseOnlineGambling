@@ -61,8 +61,8 @@ cc.Class({
         txtValue.scale = 0;
         let valueBonus = this.slotView.menuView.GetBetValue()* parseInt(valueWin)/1000;
         txtValue.getComponent(cc.Label).string = Global.Helper.formatNumber(valueBonus);
-        const scaleAction = cc.scaleTo(1, 1);
-        const moveAction = cc.moveTo(1, cc.v2(txtValue.getPosition().x, 0));
+        const scaleAction = cc.scaleTo(0.25, 1);
+        const moveAction = cc.moveTo(0.45, cc.v2(txtValue.getPosition().x, 0));
         const sequence = cc.sequence(scaleAction, moveAction);
         txtValue.runAction(sequence);
 
@@ -106,7 +106,7 @@ cc.Class({
             this.slotView.HideNotifyWinFree();
             this.slotView.toDoList.DoWork();
             this.Hide();
-        } , 2);
+        } , 0.5);
     },
 
     Hide(){

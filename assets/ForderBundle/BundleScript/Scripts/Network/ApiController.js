@@ -12,6 +12,11 @@ window.ApiController = {
         this.BaseCallGet(link, callback, errorCallBack);
     },
 
+    RequestGetHistoryJackpot(gameType, callback, errorCallBack){
+        var link= CONFIG.BASE_SPIN_HUB_LINK+"v1/ProviderStaticiscal/GetHistoryJackpot?agentId=0&encryptedData=&checksum=&gameId="+gameType;
+        this.BaseCallGet(link, callback, errorCallBack);
+    },
+
     BaseCall(url, message, callback, callbackFail, isCache = true) {
         let current = this;
         // console.log(url+"    "+isCache);

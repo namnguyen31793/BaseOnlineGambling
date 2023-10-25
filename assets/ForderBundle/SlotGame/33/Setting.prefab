@@ -697,8 +697,8 @@
       "__id__": 1
     },
     "component": "",
-    "_componentId": "c464bjEZYlC56Td91CIiFpJ",
-    "handler": "onClose",
+    "_componentId": "14c85NyijlCkZK+n0djkKl+",
+    "handler": "Hide",
     "customEventData": ""
   },
   {
@@ -891,8 +891,8 @@
       "__id__": 1
     },
     "component": "",
-    "_componentId": "c464bjEZYlC56Td91CIiFpJ",
-    "handler": "onClose",
+    "_componentId": "14c85NyijlCkZK+n0djkKl+",
+    "handler": "ShowHistory",
     "customEventData": ""
   },
   {
@@ -1085,8 +1085,8 @@
       "__id__": 1
     },
     "component": "",
-    "_componentId": "c464bjEZYlC56Td91CIiFpJ",
-    "handler": "onClose",
+    "_componentId": "14c85NyijlCkZK+n0djkKl+",
+    "handler": "ShowRank",
     "customEventData": ""
   },
   {

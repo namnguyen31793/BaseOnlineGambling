@@ -582,6 +582,11 @@ cc.Class({
         return false;
     },
 
+    GetStringFullYear(date){
+        let timeReturn = date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDate() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+        return timeReturn;
+    },
+
     CompareVersion(version1, version2) {
         let list1 = version1.split(".");
         let list2 = version2.split(".");

@@ -1229,6 +1229,23 @@
         "__uuid__": "6421d60d-ae25-4dce-b9ae-aedbeb8fba60"
       }
     ],
+    "listSpr_Help_Eng": [
+      {
+        "__uuid__": "a72c6326-a99a-4884-ab43-5e3100ceade9"
+      },
+      {
+        "__uuid__": "96d645e6-0fb3-4e80-b6cb-d2b52a38426e"
+      },
+      {
+        "__uuid__": "a411d97d-f037-4adb-b02f-4839a28fabdb"
+      },
+      {
+        "__uuid__": "42730c14-ffa7-422c-a587-cf310e0de41a"
+      },
+      {
+        "__uuid__": "6421d60d-ae25-4dce-b9ae-aedbeb8fba60"
+      }
+    ],
     "sprHelp": {
       "__id__": 27
     },

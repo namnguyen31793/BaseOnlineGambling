@@ -15,7 +15,7 @@ cc.Class({
         this.UpdateBetValue(this.listBet[0]);
         this.linkTopView = "PopupMiniGame/ShockDeer/TopShockDeer";
         this.linkHistoryView = "PopupMiniGame/ShockDeer/LichSuShockDeer";
-        this.linkRankView = "RankView";
+        this.linkRankView = "PopupRank";
         this.linkSettingView = "Setting";
 
         //this._super(slotView); //k ke thua
@@ -90,16 +90,15 @@ cc.Class({
 
     ClickRank() {
         this.slotView.PlayClick();
+        let menu = this;
         if(this.slotView.rankView) {
-            this.slotView.rankView.node.active = true;
+            this.slotView.rankView.Show(menu.slotView);
         } else {
-            Global.UIManager.showMiniLoading();
-            let menu = this;
             Global.DownloadManager.LoadPrefab(this.slotView.slotType.toString(),this.linkRankView, (prefab)=>{
                 let help = cc.instantiate(prefab);
                 menu.slotView.node.addChild(help, 10000);
-                menu.slotView.rankView = help.getComponent("HitSlotRank");
-                menu.slotView.rankView.Init(menu.slotView);
+                menu.slotView.rankView = help.getComponent("SlotRankView");
+                menu.slotView.rankView.Show(menu.slotView);
             });
         }
     },
@@ -109,7 +108,6 @@ cc.Class({
         if(this.slotView.settingView) {
             this.slotView.settingView.node.active = true;
         } else {
-            Global.UIManager.showMiniLoading();
             let menu = this;
             Global.DownloadManager.LoadPrefab(this.slotView.slotType.toString(),this.linkSettingView, (prefab)=>{
                 let help = cc.instantiate(prefab);

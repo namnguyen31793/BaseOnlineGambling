@@ -43,33 +43,25 @@ cc.Class({
 
     ClickMusic(toggle, data) {
         this.slotView.ChangeStateMusic(toggle.isChecked);
-        if(toggle.isChecked) {
-            Global.AudioManager.ChangeValueMusic(1);
-        } else {
-            Global.AudioManager.ChangeValueMusic(0);
-        }
+
         this.toggleMusic.node.getChildByName("Background").active = !toggle.isChecked;
     },
 
     ClickAudio(toggle, data) {
         this.slotView.ChangeStateSound(toggle.isChecked);
-        if(toggle.isChecked) {
-            Global.AudioManager.ChangeValueSound(1);
-        } else {
-            Global.AudioManager.ChangeValueSound(0);
-        }
+
         this.toggleAudio.node.getChildByName("Background").active = !toggle.isChecked;
     },
     
     ShowRank(){
-
+        this.slotView.menuView.ClickRank();
     },
 
     ShowHistory(){
-
+        this.slotView.menuView.ClickRank();
     },
 
     Hide(){
-
+        this.node.active = false;
     },
 });
