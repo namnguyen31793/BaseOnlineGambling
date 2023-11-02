@@ -1,5 +1,5 @@
 cc.Class({
-    extends: require('Slot_Sound'),
+    extends: require('SlotSound'),
 
     properties: {
         linkBgSound : {

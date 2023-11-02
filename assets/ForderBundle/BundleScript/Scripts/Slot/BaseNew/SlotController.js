@@ -14,7 +14,7 @@ cc.Class({
         slotUI: require('SlotUI'),
         slotMenu: require('SlotMenu'),
         slotEffect: require('SlotEffect'),
-        slotSound: require('Slot_Sound'),
+        slotSound: require('SlotSound'),
     },
 
     onLoad: function () {

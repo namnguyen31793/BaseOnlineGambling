@@ -9,7 +9,7 @@ cc.Class({
     extends: cc.Component,
 
     ctor() {
-        this.TOTAL_ITEM = 21;
+        this.TOTAL_ITEM = 15;
         this.listEffect = [];
         this.cacheBonusTurn = 0;
         this.listBonus = [];
@@ -28,8 +28,8 @@ cc.Class({
     properties: {
         lbBonusValue : cc.Label,
         lbCountTime : cc.Label,
-        lbBet : cc.Label,
-        lbTurn : cc.Label,
+       //lbBet : cc.Label,
+       // lbTurn : cc.Label,
         nodeTime : cc.Node,
         parentListItem : cc.Node,
     },
@@ -45,11 +45,11 @@ cc.Class({
     ShowBonusGame(listBonus, bonusValue, callback, bet) {
         this.callbackBonus = callback;
         this.bet = bet;
-        this.lbBet.string = Global.Helper.formatNumber(bet);
+        //this.lbBet.string = Global.Helper.formatNumber(bet);
         for(let i = 0; i < this.listBtn.length; i++){
             this.listBtn[i].Reset();
         }
-        this.lbTurn.string = listBonus.length.toString();
+        //this.lbTurn.string = listBonus.length.toString();
         this.listBonus = listBonus;
         this.indexBonus = 0;
         this.cachebonusValue = 0;
@@ -79,7 +79,7 @@ cc.Class({
 
         //index ++
         this.indexBonus++;
-        this.lbTurn.string = ( this.listBonus.length-this.indexBonus).toString();
+        //this.lbTurn.string = ( this.listBonus.length-this.indexBonus).toString();
         if(this.indexBonus == this.listBonus.length){
             this.scheduleOnce(()=>{
                 this.EndBonus(this.bonusValue)
@@ -99,7 +99,7 @@ cc.Class({
             this.isCountTime = false;
             this.EndBonus(this.bonusValue)
         }
-        this.lbCountTime.string = parseInt(this.time);
+        this.lbCountTime.string = parseInt(this.time)+"s";
     },
 
     EndBonus(bonusValue) {
@@ -125,8 +125,8 @@ cc.Class({
         this.nodeTime.active = false;
         this.bonusValue = 0;
         this.node.active = false;
-        this.lbBet.string = "";
-        this.lbTurn.string = "";
+        //this.lbBet.string = "";
+        //this.lbTurn.string = "";
         for(let i = 0; i < this.listBtn.length; i++){
             this.listBtn[i].Reset();
         }
