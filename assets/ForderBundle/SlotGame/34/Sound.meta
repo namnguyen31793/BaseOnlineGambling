@@ -1,8 +1,8 @@
 {
   "ver": "1.1.2",
-  "uuid": "939bfa83-1b99-4f56-bdc6-b4971c3a4250",
-  "isBundle": true,
-  "bundleName": "34",
+  "uuid": "b9039a43-a1e6-42a5-af77-8007a72cb4b6",
+  "isBundle": false,
+  "bundleName": "",
   "priority": 1,
   "compressionType": {},
   "optimizeHotUpdate": {},

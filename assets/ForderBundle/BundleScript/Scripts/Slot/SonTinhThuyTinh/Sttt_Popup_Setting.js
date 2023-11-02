@@ -1,14 +1,7 @@
-// Learn cc.Class:
-//  - https://docs.cocos.com/creator/manual/en/scripting/class.html
-// Learn Attribute:
-//  - https://docs.cocos.com/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
-
 cc.Class({
     extends: cc.Component,
     ctor() {
-        this.slotView = null;
+        this.slotControl = null;
     },
 
     properties: {
@@ -37,28 +30,28 @@ cc.Class({
         }
     },
 
-    Init(slotView){
-        this.slotView = slotView;
+    Init(slotControl){
+        this.slotControl = slotControl;
     },
 
     ClickMusic(toggle, data) {
-        this.slotView.ChangeStateMusic(toggle.isChecked);
+        this.slotControl.ChangeStateMusic(toggle.isChecked);
 
         this.toggleMusic.node.getChildByName("Background").active = !toggle.isChecked;
     },
 
     ClickAudio(toggle, data) {
-        this.slotView.ChangeStateSound(toggle.isChecked);
+        this.slotControl.ChangeStateSound(toggle.isChecked);
 
         this.toggleAudio.node.getChildByName("Background").active = !toggle.isChecked;
     },
     
     ShowRank(){
-        this.slotView.menuView.ClickRank();
+        //this.slotControl.menuView.ClickRank();
     },
 
     ShowHistory(){
-        this.slotView.menuView.ClickRank();
+        //this.slotControl.menuView.ClickRank();
     },
 
     Hide(){

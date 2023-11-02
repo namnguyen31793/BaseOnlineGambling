@@ -939,6 +939,7 @@ cc.Class({
             SLOT_9_POTS : 31,
             SWEET_BONANZA : 32,
             TAY_DU_KY : 33,
+            SON_TINH_THUY_TINH : 33,
         };
 
         this.SKILLGAME_TYPE = {

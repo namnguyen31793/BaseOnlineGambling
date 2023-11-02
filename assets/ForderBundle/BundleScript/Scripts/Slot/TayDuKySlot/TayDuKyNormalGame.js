@@ -102,9 +102,8 @@ cc.Class({
         for(let i = 0; i < matrixStr.length; i++) {
             matrix[i] = parseInt(matrixStr[i]);
             //id 2 la wild doc, chi xuat hien cot 2 va 4
-            if(matrix[i] == 2){
-                if(i == 1 || i == 3)
-                    this.posData.push(i);
+            if((i == 1 || i == 3) && matrix[i] == 2){
+                this.posData.push(i);
             }
         }
         return matrix;

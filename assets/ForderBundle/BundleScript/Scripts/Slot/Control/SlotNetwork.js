@@ -450,6 +450,7 @@ cc.Class({
    
     //config
     GetRoomConfig(packet) {
+        cc.log(packet)
         let config = [];
         for(let i = 0; i < packet[1].length; i++) {
             config[i] = JSON.parse(packet[1][i]);

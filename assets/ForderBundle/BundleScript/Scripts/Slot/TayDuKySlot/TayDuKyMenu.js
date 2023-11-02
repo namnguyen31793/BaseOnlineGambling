@@ -118,5 +118,12 @@ cc.Class({
         }
     },
 
+    ClickMusic(toggle, data) {
+        this.slotView.ChangeStateMusic(toggle.isChecked);
+        //this.toggleAudio.node.getChildByName("Background").active = !toggle.isChecked;
+    },
 
+    ClickSound(toggle, data) {
+        this.slotView.ChangeStateSound(toggle.isChecked);
+    },
 });

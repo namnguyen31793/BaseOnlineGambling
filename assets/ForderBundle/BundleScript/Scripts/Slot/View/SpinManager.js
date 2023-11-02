@@ -201,6 +201,7 @@ cc.Class({
     },
 
     OnStopSpin(listSpinObj) {
+        cc.log("OnStopSpin")
         let indexPreWin = this.CountPreWin();
         let min = this.NUMBER_COLUMN;
         for(let i = 0; i < indexPreWin.length; i++) {
@@ -270,6 +271,7 @@ cc.Class({
                 }
             } , listDelay[i]);
         }
+        cc.log(this.listIndexIncrease)
         this.slotView.OnSpinDone();
     },
 

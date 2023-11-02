@@ -5,6 +5,19 @@ var SlotNetworkManager = cc.Class({
             return this.self;
         }
     },
+    ctor() {
+        this.SlotGameManager = new Map();
+    },
+
+    AddSlotController(gameid, slotControl){
+        cc.log("AddSlotController "+gameid)
+        this.SlotGameManager.set(gameid, slotControl);
+    },
+
+    RemoveSlotController(gameid){
+        cc.log("RemoveSlotController "+gameid)
+        this.SlotGameManager.delete(gameid);
+    },
 
     HandleResponse(operationResponse) {
         var data = operationResponse;
@@ -179,6 +192,9 @@ var SlotNetworkManager = cc.Class({
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_TAY_DU_KY_GAME_GET_ACCOUNT_FREETURN:
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_TAY_DU_KY_GAME_GET_TOP_TAKE_JACKPOT_INFO: 
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_TAY_DU_KY_GAME_SPIN_CHOI_THU: 
+                cc.log(this.SlotGameManager.get(Global.Enum.GAME_TYPE.SON_TINH_THUY_TINH))
+                if(this.SlotGameManager.get(Global.Enum.GAME_TYPE.SON_TINH_THUY_TINH))
+                    this.SlotGameManager.get(Global.Enum.GAME_TYPE.SON_TINH_THUY_TINH).ResponseServer(responseCode, packet);
                 if(Global.SlotNetWork) Global.SlotNetWork.ResponseServer(responseCode, packet);
                 break;
             //mini slot

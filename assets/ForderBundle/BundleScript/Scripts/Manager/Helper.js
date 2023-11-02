@@ -628,6 +628,9 @@ cc.Class({
 		console.log("onFacebookLoginError error = " + error);
         Global.UIManager.showCommandPopup("Lỗi đăng nhập Facebook: "+error);
 	},
+    isStringNullOrEmpty(str) {
+        return typeof str === "null" || str === "";
+    },
 
     onLoad() {
         Global.Helper = this;
