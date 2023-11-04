@@ -44,7 +44,7 @@ cc.Class({
         if(this.EffectFree == null){
             //nếu effect chưa có thì load ra, xong rồi init event end anim
             let seft = this;
-            Global.DownloadManager.LoadPrefab("34","effectFree", (prefab)=>{
+            Global.DownloadManager.LoadPrefab(this.slotController.NAME_BUNDLE_STRING,"effectFree", (prefab)=>{
                 let effect = cc.instantiate(prefab);
                 seft.node.addChild(effect);
                 seft.EffectFree = effect;
@@ -70,7 +70,7 @@ cc.Class({
         if(this.EffectFree == null){
             //nếu effect chưa có thì load ra, xong rồi init event end anim
             let seft = this;
-            Global.DownloadManager.LoadPrefab("34","effectFree", (prefab)=>{
+            Global.DownloadManager.LoadPrefab(this.slotController.NAME_BUNDLE_STRING,"effectFree", (prefab)=>{
                 let effect = cc.instantiate(prefab);
                 seft.node.addChild(effect);
                 seft.EffectFree = effect;
@@ -105,7 +105,7 @@ cc.Class({
         if(this.EffectBonus == null){
             //nếu effect chưa có thì load ra, xong rồi init event end anim
             let seft = this;
-            Global.DownloadManager.LoadPrefab("34","effectBonus", (prefab)=>{
+            Global.DownloadManager.LoadPrefab(this.slotController.NAME_BUNDLE_STRING,"effectBonus", (prefab)=>{
                 let effect = cc.instantiate(prefab);
                 seft.node.addChild(effect);
                 effect.setSiblingIndex(0);
@@ -143,7 +143,7 @@ cc.Class({
         cc.log("ShowBonusGame "+winBonusValue);
         if(this.BonusGame == null){
             let seft = this;
-            Global.DownloadManager.LoadPrefab("34","PopupBonus", (prefab)=>{
+            Global.DownloadManager.LoadPrefab(this.slotController.NAME_BUNDLE_STRING,"PopupBonus", (prefab)=>{
                 let effect = cc.instantiate(prefab);
                 seft.node.addChild(effect);
                 seft.BonusGame = effect;
@@ -165,7 +165,7 @@ cc.Class({
         if(this.EffectBigWin == null){
             //nếu effect chưa có thì load ra, xong rồi init event end anim
             let seft = this;
-            Global.DownloadManager.LoadPrefab("34","effectFree", (prefab)=>{
+            Global.DownloadManager.LoadPrefab(this.slotController.NAME_BUNDLE_STRING,"effectFree", (prefab)=>{
                 let effect = cc.instantiate(prefab);
                 seft.node.addChild(effect);
                 seft.EffectBigWin = effect;
@@ -205,7 +205,7 @@ cc.Class({
         if(this.EffectJackpot == null){
             //nếu effect chưa có thì load ra, xong rồi init event end anim
             let seft = this;
-            Global.DownloadManager.LoadPrefab("34","effectJackpot", (prefab)=>{
+            Global.DownloadManager.LoadPrefab(this.slotController.NAME_BUNDLE_STRING,"effectJackpot", (prefab)=>{
                 let effect = cc.instantiate(prefab);
                 seft.node.addChild(effect);
                 seft.EffectJackpot = effect;

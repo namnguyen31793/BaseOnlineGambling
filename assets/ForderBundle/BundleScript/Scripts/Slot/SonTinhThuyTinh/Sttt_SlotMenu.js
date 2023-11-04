@@ -5,6 +5,9 @@ cc.Class({
         this.isSpeed = false;
         this.listJackpotValue = [];
         this.isCountPress = false;
+        this.HelpPopup = null;
+        this.RankPopup = null;
+        this.SettingPopup = null;
     },
 
     properties: {
@@ -21,7 +24,9 @@ cc.Class({
         lbLine : cc.Label,
         lbSession : cc.Label,
         lbFreeTurn : cc.Label,
+        NodeFreeTurn : cc.Node,
         toggleAuto : cc.Toggle,
+        nodeParentPopup : cc.Node,
     }, 
 
      Init(slotController){
@@ -38,15 +43,6 @@ cc.Class({
         this.btnSpin.node.on(cc.Node.EventType.TOUCH_CANCEL, (touch) => {
             this.isCountPress = false;
         });
-        // let isMusic = cc.sys.localStorage.getItem(CONFIG.KEY_MUSIC+"123465") || 1;
-        // if(isMusic > 0) {
-            
-        // } else {
-        //     if(this.toggleAudio) {
-        //         this.toggleAudio.isChecked = false;
-        //         this.ClickVolume(this.toggleAudio, null);
-        //     }
-        // }
         // this.UpdateMoney(0);
     },
     
@@ -159,6 +155,10 @@ cc.Class({
     /*----------*/
 
     /* FREE*/
+    ShowBoxTurnFree(isShow){
+        if(this.NodeFreeTurn)
+            this.NodeFreeTurn.active = isShow;
+    },
     SetTextFree(freeSpinLeft){
         if(this.lbFreeTurn)
             this.lbFreeTurn.string = freeSpinLeft.toString();
@@ -246,4 +246,79 @@ cc.Class({
         }
     },
     /*----------------*/
+
+    ClickQuitGame(){
+        this.slotController.CallLeaveGame();
+        require("ScreenManager").getIns().LoadScene(Global.Enum.SCREEN_CODE.LOBBY);
+    },
+
+    ClickShowSetting(){
+        if(this.SettingPopup == null){
+            //nếu effect chưa có thì load ra, xong rồi init event end anim
+            let seft = this;
+            Global.DownloadManager.LoadPrefab(this.slotController.NAME_BUNDLE_STRING,"PopupSetting", (prefab)=>{
+                let effect = cc.instantiate(prefab);
+                seft.nodeParentPopup.addChild(effect);
+                effect.setPosition(cc.v2(0,0));
+                seft.SettingPopup = effect;
+                seft.SettingPopup.getComponent('Sttt_Popup_Setting').Init(seft.slotController);
+                seft.SettingPopup.active = true;
+
+            });  
+        }else{
+            this.SettingPopup.active = true;
+        }
+    },
+
+    ClickShowHelp(){
+        if(this.HelpPopup == null){
+            //nếu effect chưa có thì load ra, xong rồi init event end anim
+            let seft = this;
+            Global.DownloadManager.LoadPrefab(this.slotController.NAME_BUNDLE_STRING,"PopupGuide", (prefab)=>{
+                let effect = cc.instantiate(prefab);
+                seft.nodeParentPopup.addChild(effect);
+                effect.setPosition(cc.v2(0,0));
+                seft.HelpPopup = effect;
+                seft.HelpPopup.getComponent('SlotGuide').Init(seft.slotController);
+                seft.HelpPopup.active = true;
+
+            });  
+        }else{
+            this.HelpPopup.active = true;
+        }
+    },
+
+    ClickShowRank(){
+        if(this.RankPopup == null){
+            //nếu effect chưa có thì load ra, xong rồi init event end anim
+            let seft = this;
+            Global.DownloadManager.LoadPrefab(this.slotController.NAME_BUNDLE_STRING,"PopupRank", (prefab)=>{
+                let effect = cc.instantiate(prefab);
+                seft.nodeParentPopup.addChild(effect);
+                effect.setPosition(cc.v2(0,0));
+                seft.RankPopup = effect.getComponent('Sttt_Popup_Rank');
+                seft.RankPopup.Show(seft.slotController);
+
+            });  
+        }else{
+            this.RankPopup.Show(this.slotController);;
+        }
+    },
+
+    ClickShowHistory(){
+        if(this.RankPopup == null){
+            //nếu effect chưa có thì load ra, xong rồi init event end anim
+            let seft = this;
+            Global.DownloadManager.LoadPrefab(this.slotController.NAME_BUNDLE_STRING,"PopupRank", (prefab)=>{
+                let effect = cc.instantiate(prefab);
+                seft.nodeParentPopup.addChild(effect);
+                effect.setPosition(cc.v2(0,0));
+                seft.RankPopup = effect.getComponent('Sttt_Popup_Rank');
+                seft.RankPopup.Show(seft.slotController);
+
+            });  
+        }else{
+            this.RankPopup.Show(this.slotController);;
+        }
+    },
 });

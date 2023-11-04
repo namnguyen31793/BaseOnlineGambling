@@ -14,6 +14,7 @@ cc.Class({
             this.TIME_DISTANCE_COLUMN = 0.25;
             this.NUMBER_LINE = 20;
             this.stackSpin = [];
+            this.NAME_BUNDLE_STRING = "34";
         },
 
         properties: {
@@ -126,7 +127,7 @@ cc.Class({
             }
             this.ResetUINewTurn();
             this.isSpin = true;
-            //this.soundControl.PlaySpin();
+            this.slotSound.PlayAudioSpin();
             this.slotEffect.Clear();
             this.PlayEffectSpin();
             
@@ -157,7 +158,7 @@ cc.Class({
                 this.slotUI.OnCheckUpdateMatrix();
             } , timeSpin);
             this.slotUI.PlaySpinColumn(timeDistanceColumn);
-            //this.soundControl.PlaySpinStart();
+            //this.slotSound.PlaySpinStart();
         },
 
         GetIsSpeed(){
@@ -422,6 +423,7 @@ cc.Class({
             let listBonus =  JSON.parse(extendMatrixDescription);
             //show effect start()
             let seft = this;
+            this.slotSound.PlayAudioBonusStart();
             this.slotEffect.ShowEffectStartBonus( () => {
                 seft.ShowBonusGame(listBonus, winBonusValue);
             });
@@ -449,6 +451,7 @@ cc.Class({
                 this.slotMenu.ClearTotalWinFreeCache();
                 //chờ show effect start free
                 let seft = this;
+                this.slotSound.PlayAudioFreeSpin();
                 this.slotEffect.ShowEffectStartFree(numberFree, () => {
                     seft.ShowFree(freeSpinLeft);
                 });
@@ -458,6 +461,9 @@ cc.Class({
         },
 
         ShowFree(freeSpinLeft){
+            //set bg free
+            this.slotUI.ShowBgGameFree(true);
+            this.slotMenu.ShowBoxTurnFree(true);
             this.slotMenu.SetTextFree(freeSpinLeft);
             this.isFree = true;
             this.toDoList.DoWork(); //chạy tiếp todoList sau khi set free
@@ -466,10 +472,13 @@ cc.Class({
         CheckEndFree(freeSpinLeft, totalWin){
             this.slotMenu.UpdateWinFree(totalWin);
             let totalWinFree = this.ClearTotalWinFreeCache();
-            if(freeSpinLeft == 0)
+            if(freeSpinLeft == 0){
                 this.slotEffect.ShowEffectEndFree(totalWinFree, () => {
+                    this.slotUI.ShowBgGameFree(false);
+                    this.slotMenu.ShowBoxTurnFree(false);
                     seft.toDoList.DoWork();
                 });
+            }
             else
                 this.toDoList.DoWork();
         },
@@ -480,10 +489,10 @@ cc.Class({
                 if(winValue > 0) {
                     let isBigWin = this.CheckBigWin(winValue);
                     if(!isBigWin) {
-                        //this.soundControl.PlayWinMoney();
+                        this.slotSound.PlayAudioWinMoney();
                         this.ShowUpdateWinValueMenu(winValue);
                     } else {
-                        //this.soundControl.PlayBigWin();
+                        this.slotSound.PlayAudioBigWin();
                         this.slotEffect.ShowBigWin(winValue, () => {
                             seft.ShowUpdateWinValueMenu(winValue);
                         });
@@ -496,7 +505,7 @@ cc.Class({
                     } , 0.4);
                 }
             }else{
-                //this.soundControl.PlayJackpot();
+                this.slotSound.PlayAudioJackpot();
                 this.slotEffect.ShowJackpot(winValue,  () => {
                     seft.ShowUpdateWinValueMenu(winValue);
                 });
@@ -607,6 +616,12 @@ cc.Class({
             if(this.stackSpin[1])
                 count++;
             return count;
+        },
+        /*-------------------------------*/
+
+        /* AUDIO */
+        PlayClick(){
+            this.slotSound.PlayAudioClick();
         },
         /*-------------------------------*/
     });

@@ -12,6 +12,7 @@
         BUY_FREE : 'BuyFree',
         GET_ACCOUNT_INFO : 'GetAccountInfo',
         GET_JACKPOT:'GetJackpot',
+        LEAVE:'Leave',
     });
 
 }).call(this);

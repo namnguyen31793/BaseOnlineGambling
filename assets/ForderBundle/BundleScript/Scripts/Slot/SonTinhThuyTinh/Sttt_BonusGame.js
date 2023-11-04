@@ -32,6 +32,9 @@ cc.Class({
        // lbTurn : cc.Label,
         nodeTime : cc.Node,
         parentListItem : cc.Node,
+        nodeReward : cc.Node,
+        lbReward : cc.Label,
+
     },
 
     onLoad() {
@@ -43,6 +46,7 @@ cc.Class({
     },
 
     ShowBonusGame(listBonus, bonusValue, callback, bet) {
+        this.ResetUI();
         this.callbackBonus = callback;
         this.bet = bet;
         //this.lbBet.string = Global.Helper.formatNumber(bet);
@@ -81,11 +85,10 @@ cc.Class({
         this.indexBonus++;
         //this.lbTurn.string = ( this.listBonus.length-this.indexBonus).toString();
         if(this.indexBonus == this.listBonus.length){
-            this.scheduleOnce(()=>{
-                this.EndBonus(this.bonusValue)
-            } , 2);
+            this.ShowRewardBonus();
         }
     },
+
     update (dt) {
         if(this.isCountTime ){
             this.time -= dt;
@@ -97,9 +100,21 @@ cc.Class({
         if(this.time < 0){
             this.time = 0;
             this.isCountTime = false;
-            this.EndBonus(this.bonusValue)
+            this.ShowRewardBonus();
         }
         this.lbCountTime.string = parseInt(this.time)+"s";
+    },
+
+    ShowRewardBonus(){
+        this.nodeReward.scale = 0;
+        this.nodeReward.active = true;
+        var scaleAction = cc.scaleTo(0.2, 0.6); //scale to 0.6 in 0.2s
+        this.nodeReward.runAction(scaleAction);
+        this.lbReward.string = Global.Helper.formatNumber(parseInt(this.bonusValue));
+        
+        this.scheduleOnce(()=>{
+            this.EndBonus(this.bonusValue)
+        } , 2);
     },
 
     EndBonus(bonusValue) {
@@ -117,20 +132,24 @@ cc.Class({
     },
 
     Hide(){
+        this.ResetUI();
         this.waitEnd = false;
         this.listBonus = [];
         this.indexBonus = 0;
         this.time = 0;
         this.isCountTime = false;
-        this.nodeTime.active = false;
         this.bonusValue = 0;
-        this.node.active = false;
         //this.lbBet.string = "";
         //this.lbTurn.string = "";
-        for(let i = 0; i < this.listBtn.length; i++){
-            this.listBtn[i].Reset();
-        }
         this.node.active = false;
     },
 
+    ResetUI(){
+        this.nodeReward.active= false;
+        this.nodeTime.active = false;
+        this.lbReward.string = "";
+        for(let i = 0; i < this.listBtn.length; i++){
+            this.listBtn[i].Reset();
+        }
+    },
 });

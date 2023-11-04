@@ -26,6 +26,7 @@ cc.Class({
         this.listStopIncrease = [];
     },
     properties: {
+        BG_Free : cc.Node,
         parentListItem : cc.Node,
         parentListLine : cc.Node,
         nodeStop : cc.Node,
@@ -104,10 +105,15 @@ cc.Class({
         //         this.nodeUIBackButton.active = true;
         // }
         //check audio
+        this.BG_Free.active = false;
     },
 
     Hide(){
 
+    },
+
+    ShowBgGameFree(isShow){
+        this.BG_Free.active = isShow;
     },
 
     PlaySpinColumn(timeDistanceColumn) {
@@ -156,7 +162,7 @@ cc.Class({
         if(this.slotController.isBonus)
             isSpeed = false;
         if(isSpeed)
-            timeDistanceColumn = this.TIME_DISTANCE_COLUMN/2;
+            timeDistanceColumn = 0;
         let listDelay = [];
         let totalDelay = 0;
         for(let i = 0; i < listSpinObj.length; i++) {
