@@ -75,8 +75,8 @@ cc.Class({
                 url = "SlotTayDuKy";
                 this.nodeDemo.position = cc.v2(-505, 585);
                 break;
-            case 34:
-                bName = "34";
+            case 35:
+                bName = "35";
                 url = "SlotSTTT";
                 this.nodeDemo.position = cc.v2(-505, 585);
                 break;

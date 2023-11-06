@@ -48,19 +48,36 @@ cc.Class({
                 let effect = cc.instantiate(prefab);
                 seft.node.addChild(effect);
                 seft.EffectFree = effect;
+                let spineObj = seft.EffectFree.getChildByName("Spine");
+                let notifyObj = seft.EffectFree.getChildByName("Effect");
                 seft.EffectFree.getComponent(sp.Skeleton).setCompleteListener((trackEntry) => {
                     if (trackEntry.animation.name === 'animation') {
                         seft.WaitEndFree();
                      }
                 });
                 seft.EffectFree.active = true;
+                spineObj.active = false;
+                notifyObj.active = true;
                 seft.EffectFree.getComponent(sp.Skeleton).setAnimation(0,'animation',false);
-                seft.EffectFree.getChildByName("txt").getComponent(cc.Label).string =  numberFree.toString();
+                seft.EffectFree.getChildByName("txt").getComponent(cc.Label).string =  numberFree.toString()+" lượt chơi miễn phí";
+                seft.EffectFree.scheduleOnce(()=>{
+                    spineObj.active = true;ny
+                    spineObj.getComponent(sp.Skeleton).setAnimation(0,'animation',false);
+                } , 1);
             });  
         }else{
+            let spineObj = this.EffectFree.getChildByName("Spine");
+            let notifyObj = this.EffectFree.getChildByName("Effect");
             this.EffectFree.active = true;
+            notifyObj.active = true;
+            spineObj.active = false;
             this.EffectFree.getComponent(sp.Skeleton).setAnimation(0,'animation',false);
-            this.EffectFree.getChildByName("txt").getComponent(cc.Label).string =  numberFree.toString();
+            this.EffectFree.getChildByName("txt").getComponent(cc.Label).string =  numberFree.toString()+" lượt chơi miễn phí";
+            this.EffectFree.scheduleOnce(()=>{
+                spineObj.active = true;
+                notifyObj.active = false;
+                spineObj.getComponent(sp.Skeleton).setAnimation(0,'animation',false);
+            } , 1);
         }
     },
 
@@ -74,19 +91,37 @@ cc.Class({
                 let effect = cc.instantiate(prefab);
                 seft.node.addChild(effect);
                 seft.EffectFree = effect;
-                seft.EffectFree.getComponent(sp.Skeleton).setCompleteListener((trackEntry) => {
+                let spineObj = seft.EffectFree.getChildByName("Spine");
+                let notifyObj = seft.EffectFree.getChildByName("Effect");
+                spineObj.getComponent(sp.Skeleton).setCompleteListener((trackEntry) => {
                     if (trackEntry.animation.name === 'animation') {
                         seft.WaitEndFree();
                      }
                 });
                 seft.EffectFree.active = true;
-                seft.EffectFree.getComponent(sp.Skeleton).setAnimation(0,'animation',false);
-                seft.EffectFree.getChildByName("txt").getComponent(cc.Label).string = Global.Helper.formatNumber(parseInt(totalWinFree));
+                spineObj.active = false;
+                notifyObj.active = true;
+                seft.EffectFree.getChildByName("txt").getComponent(cc.Label).string = "Bạn đã thắng "+ Global.Helper.formatNumber(parseInt(totalWinFree));
+                seft.EffectFree.scheduleOnce(()=>{
+                    spineObj.active = true;
+                    notifyObj.active = false;
+                    spineObj.getComponent(sp.Skeleton).setAnimation(0,'animation',false);
+                } , 1.5);
+                
             });  
         }else{
+            let spineObj = this.EffectFree.getChildByName("Spine");
+            let notifyObj = this.EffectFree.getChildByName("Effect");
             this.EffectFree.active = true;
-            this.EffectFree.getComponent(sp.Skeleton).setAnimation(0,'animation',false);
-            this.EffectFree.getChildByName("txt").getComponent(cc.Label).string = Global.Helper.formatNumber(parseInt(totalWinFree));
+            spineObj.active = false;
+            notifyObj.active = true;
+            this.EffectFree.getChildByName("txt").getComponent(cc.Label).string = "Bạn đã thắng "+Global.Helper.formatNumber(parseInt(totalWinFree));
+            this.EffectFree.getChildByName("txt").getComponent(sp.Skeleton).setAnimation(0,'animation',false);
+            this.EffectFree.scheduleOnce(()=>{
+                spineObj.active = true;
+                notifyObj.active = false;
+                spineObj.getComponent(sp.Skeleton).setAnimation(0,'animation',false);
+            } , 1.5);
         }
     },
 

@@ -205,16 +205,16 @@ cc.Class({
             cc.log("ResponseServer "+code)
             cc.log(packet)
             switch (code) {
-                case Global.Enum.RESPONSE_CODE.MSG_SERVER_TAY_DU_KY_GAME_GET_ACCOUNT_INFO:
+                case Global.Enum.RESPONSE_CODE.MSG_SERVER_SON_TINH_GAME_GET_ACCOUNT_INFO:
                     this.GetAccountInfo(packet);
                     break;
-                case Global.Enum.RESPONSE_CODE.MSG_SERVER_TAY_DU_KY_GAME_JACKPOT_INFO:
+                case Global.Enum.RESPONSE_CODE.MSG_SERVER_SON_TINH_GAME_JACKPOT_INFO:
                     this.GetJackpotInfo(packet);
                     break;
-                case Global.Enum.RESPONSE_CODE.MSG_SERVER_TAY_DU_KY_GAME_SPIN:
+                case Global.Enum.RESPONSE_CODE.MSG_SERVER_SON_TINH_GAME_SPIN:
                     this.ProceduGetResult(packet);
                     break;
-                case Global.Enum.RESPONSE_CODE.MSG_SERVER_TAY_DU_KY_GAME_SPIN_CHOI_THU:
+                case Global.Enum.RESPONSE_CODE.MSG_SERVER_SON_TINH_GAME_SPIN_CHOI_THU:
                     this.ProceduGetResultTry(packet);
                     break;
             }

@@ -764,6 +764,15 @@ cc.Class({
             MSG_SERVER_TAY_DU_KY_GAME_GET_DETAIL_HISTORY : 587,
             MSG_SERVER_TAY_DU_KY_GAME_SPIN_CHOI_THU : 588,
 
+            //sontinhthuytinh
+            MSG_SERVER_SON_TINH_GAME_JACKPOT_INFO : 600,
+            MSG_SERVER_SON_TINH_GAME_SPIN : 601,
+            MSG_SERVER_SON_TINH_GAME_GET_ACCOUNT_INFO : 602,
+            MSG_SERVER_SON_TINH_GAME_GET_ACCOUNT_FREETURN : 603,
+            MSG_SERVER_SON_TINH_GAME_GET_TOP_TAKE_JACKPOT_INFO : 604,
+            MSG_SERVER_SON_TINH_GAME_GET_DETAIL_HISTORY : 605,
+            MSG_SERVER_SON_TINH_GAME_SPIN_CHOI_THU : 606,
+
             //rpg
             MSG_SERVER_RPG_BATTLE_GAME_SPIN : 553,
             MSG_SERVER_RPG_BATTLE_FIELD_GAME_END : 554,
@@ -939,7 +948,7 @@ cc.Class({
             SLOT_9_POTS : 31,
             SWEET_BONANZA : 32,
             TAY_DU_KY : 33,
-            SON_TINH_THUY_TINH : 33,
+            SON_TINH_THUY_TINH : 35,
         };
 
         this.SKILLGAME_TYPE = {
