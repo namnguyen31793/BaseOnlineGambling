@@ -7,6 +7,7 @@ cc.Class({
         this.isCountPress = false;
         this.HelpPopup = null;
         this.RankPopup = null;
+        this.HistoryPopup = null;
         this.SettingPopup = null;
     },
 
@@ -164,24 +165,18 @@ cc.Class({
             this.lbFreeTurn.string = freeSpinLeft.toString();
     },
 
-    ResetValueCacheWin(){
-        this.totalWinFree = 0;
-        this.lbTotalWin.getComponent("LbMonneyChange").reset();
-        this.lbTotalWin.string ="";
-    },
-
-    UpdateWinFree(totalWinFree){
-        this.totalWinFree += totalWinFree;
+    UpdateWinFree(valueWin){
+        this.totalWinFree += valueWin;
         this.lbTotalWin.getComponent("LbMonneyChange").setMoney(this.totalWinFree);
         cc.sys.localStorage.setItem("Key_Total_Free"+this.slotController.getGameId() , this.totalWin);
     },
 
     ClearTotalWinFreeCache(){
-        let totalWinFree = this.totalWinFree;
+        let win = this.totalWinFree;
         this.totalWinFree = 0;
         this.lbTotalWin.string = "";
         cc.sys.localStorage.setItem("Key_Total_Free"+this.slotController.getGameId() , this.totalWin);
-        return totalWinFree;
+        return win;
     },
 
     GetTotalWinCache(){
@@ -306,19 +301,17 @@ cc.Class({
     },
 
     ClickShowHistory(){
-        if(this.RankPopup == null){
-            //nếu effect chưa có thì load ra, xong rồi init event end anim
+        if(this.HistoryPopup == null){
             let seft = this;
-            Global.DownloadManager.LoadPrefab(this.slotController.NAME_BUNDLE_STRING,"PopupRank", (prefab)=>{
+            Global.DownloadManager.LoadPrefab(this.slotController.NAME_BUNDLE_STRING,"PopupHistory", (prefab)=>{
                 let effect = cc.instantiate(prefab);
                 seft.nodeParentPopup.addChild(effect);
                 effect.setPosition(cc.v2(0,0));
-                seft.RankPopup = effect.getComponent('Sttt_Popup_Rank');
-                seft.RankPopup.Show(seft.slotController);
-
+                seft.HistoryPopup = effect.getComponent('SlotHistory');
+                seft.HistoryPopup.Show(seft.slotController.getGameId());
             });  
         }else{
-            this.RankPopup.Show(this.slotController);;
+            this.HistoryPopup.Show(this.slotController.getGameId());;
         }
     },
 });

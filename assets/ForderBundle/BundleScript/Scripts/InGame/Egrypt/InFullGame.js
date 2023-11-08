@@ -103,7 +103,7 @@ cc.Class({
         let slotControl = slot.getComponent("SlotController");
         let slotType = require("ScreenManager").getIns().roomType;
         switch(slotType){
-            case 34:
+            case 35:
                 slotControl.setGameId(Global.Enum.GAME_TYPE.SON_TINH_THUY_TINH);
                 slotControl.Init();
                 require("SlotNetworkManager").getIns().AddSlotController(Global.Enum.GAME_TYPE.SON_TINH_THUY_TINH, slotControl);

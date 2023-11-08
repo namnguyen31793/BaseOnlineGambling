@@ -50,7 +50,7 @@ cc.Class({
                 seft.EffectFree = effect;
                 let spineObj = seft.EffectFree.getChildByName("Spine");
                 let notifyObj = seft.EffectFree.getChildByName("Effect");
-                seft.EffectFree.getComponent(sp.Skeleton).setCompleteListener((trackEntry) => {
+                spineObj.getComponent(sp.Skeleton).setCompleteListener((trackEntry) => {
                     if (trackEntry.animation.name === 'animation') {
                         seft.WaitEndFree();
                      }
@@ -58,10 +58,10 @@ cc.Class({
                 seft.EffectFree.active = true;
                 spineObj.active = false;
                 notifyObj.active = true;
-                seft.EffectFree.getComponent(sp.Skeleton).setAnimation(0,'animation',false);
-                seft.EffectFree.getChildByName("txt").getComponent(cc.Label).string =  numberFree.toString()+" lượt chơi miễn phí";
-                seft.EffectFree.scheduleOnce(()=>{
-                    spineObj.active = true;ny
+                spineObj.getComponent(sp.Skeleton).setAnimation(0,'animation',false);
+                notifyObj.getChildByName("txt").getComponent(cc.Label).string =  numberFree.toString()+" lượt chơi miễn phí";
+                seft.scheduleOnce(()=>{
+                    spineObj.active = true;
                     spineObj.getComponent(sp.Skeleton).setAnimation(0,'animation',false);
                 } , 1);
             });  
@@ -71,9 +71,8 @@ cc.Class({
             this.EffectFree.active = true;
             notifyObj.active = true;
             spineObj.active = false;
-            this.EffectFree.getComponent(sp.Skeleton).setAnimation(0,'animation',false);
-            this.EffectFree.getChildByName("txt").getComponent(cc.Label).string =  numberFree.toString()+" lượt chơi miễn phí";
-            this.EffectFree.scheduleOnce(()=>{
+            notifyObj.getChildByName("txt").getComponent(cc.Label).string =  numberFree.toString()+" lượt chơi miễn phí";
+            this.scheduleOnce(()=>{
                 spineObj.active = true;
                 notifyObj.active = false;
                 spineObj.getComponent(sp.Skeleton).setAnimation(0,'animation',false);
@@ -101,8 +100,8 @@ cc.Class({
                 seft.EffectFree.active = true;
                 spineObj.active = false;
                 notifyObj.active = true;
-                seft.EffectFree.getChildByName("txt").getComponent(cc.Label).string = "Bạn đã thắng "+ Global.Helper.formatNumber(parseInt(totalWinFree));
-                seft.EffectFree.scheduleOnce(()=>{
+                notifyObj.getChildByName("txt").getComponent(cc.Label).string = "Bạn đã thắng "+ Global.Helper.formatNumber(parseInt(totalWinFree));
+                seft.scheduleOnce(()=>{
                     spineObj.active = true;
                     notifyObj.active = false;
                     spineObj.getComponent(sp.Skeleton).setAnimation(0,'animation',false);
@@ -115,9 +114,9 @@ cc.Class({
             this.EffectFree.active = true;
             spineObj.active = false;
             notifyObj.active = true;
-            this.EffectFree.getChildByName("txt").getComponent(cc.Label).string = "Bạn đã thắng "+Global.Helper.formatNumber(parseInt(totalWinFree));
-            this.EffectFree.getChildByName("txt").getComponent(sp.Skeleton).setAnimation(0,'animation',false);
-            this.EffectFree.scheduleOnce(()=>{
+            notifyObj.getChildByName("txt").getComponent(cc.Label).string = "Bạn đã thắng "+Global.Helper.formatNumber(parseInt(totalWinFree));
+            spineObj.getComponent(sp.Skeleton).setAnimation(0,'animation',false);
+            this.scheduleOnce(()=>{
                 spineObj.active = true;
                 notifyObj.active = false;
                 spineObj.getComponent(sp.Skeleton).setAnimation(0,'animation',false);
@@ -200,7 +199,7 @@ cc.Class({
         if(this.EffectBigWin == null){
             //nếu effect chưa có thì load ra, xong rồi init event end anim
             let seft = this;
-            Global.DownloadManager.LoadPrefab(this.slotController.NAME_BUNDLE_STRING,"effectFree", (prefab)=>{
+            Global.DownloadManager.LoadPrefab(this.slotController.NAME_BUNDLE_STRING,"effectBigWin", (prefab)=>{
                 let effect = cc.instantiate(prefab);
                 seft.node.addChild(effect);
                 seft.EffectBigWin = effect;
@@ -211,20 +210,20 @@ cc.Class({
                 });
                 seft.EffectBigWin.active = true;
                 seft.EffectBigWin.getChildByName("thanglon_eff").getComponent(sp.Skeleton).setAnimation(0,'Start',false);
-                seft.EffectBigWin.getChildByName("lblCash").getComponent(require("LbMonneyChange")).Reset();
-                seft.EffectJackpot.getChildByName("lblCash").getComponent(cc.Label).string = "";
+                seft.EffectBigWin.getChildByName("lblCash").getComponent("LbMonneyChange").reset();
+                seft.EffectBigWin.getChildByName("lblCash").getComponent(cc.Label).string = "";
             });  
         }else{
             this.EffectBigWin.active = true;
             this.EffectBigWin.getChildByName("thanglon_eff").getComponent(sp.Skeleton).setAnimation(0,'Start',false);
-            this.EffectBigWin.getChildByName("lblCash").getComponent(require("LbMonneyChange")).Reset();
-            this.EffectJackpot.getChildByName("lblCash").getComponent(cc.Label).string = "";
+            this.EffectBigWin.getChildByName("lblCash").getComponent("LbMonneyChange").reset();
+            this.EffectBigWin.getChildByName("lblCash").getComponent(cc.Label).string = "";
         }
     },
     
     WaitBigWin(){
         this.EffectBigWin.getChildByName("thanglon_eff").getComponent(sp.Skeleton).setAnimation(0,'Loop', true);
-        this.EffectBigWin.getChildByName("lblCash").getComponent(require("LbMonneyChange")).setMoney(this.cacheValueEfffect);
+        this.EffectBigWin.getChildByName("lblCash").getComponent("LbMonneyChange").setMoney(this.cacheValueEfffect);
         //chạy 2s effect xon
         this.scheduleOnce(()=>{
             this.EffectBigWin.active = false;
@@ -251,25 +250,25 @@ cc.Class({
                 });
                 seft.EffectJackpot.active = true;
                 seft.EffectJackpot.getChildByName("nohu_eff").getComponent(sp.Skeleton).setAnimation(0,'start',false);
-                seft.EffectJackpot.getChildByName("lblCash").getComponent(require("LbMonneyChange")).Reset();
+                seft.EffectJackpot.getChildByName("lblCash").getComponent("LbMonneyChange").reset();
                 seft.EffectJackpot.getChildByName("lblCash").getComponent(cc.Label).string = "";
             });  
         }else{
             this.EffectJackpot.active = true;
             this.EffectJackpot.getChildByName("nohu_eff").getComponent(sp.Skeleton).setAnimation(0,'start',false);
-            this.EffectJackpot.getChildByName("lblCash").getComponent(require("LbMonneyChange")).Reset();
+            this.EffectJackpot.getChildByName("lblCash").getComponent("LbMonneyChange").reset();
             this.EffectJackpot.getChildByName("lblCash").getComponent(cc.Label).string = "";
         }
     },
 
     WaitJackpot(){
         this.EffectJackpot.getChildByName("nohu_eff").getComponent(sp.Skeleton).setAnimation(0,'loop', true);
-        this.EffectJackpot.getChildByName("lblCash").getComponent(require("LbMonneyChange")).setMoney(this.cacheValueEfffect);
+        this.EffectJackpot.getChildByName("lblCash").getComponent("LbMonneyChange").setMoney(this.cacheValueEfffect);
         //chạy 2s effect xon
         this.scheduleOnce(()=>{
             this.EffectJackpot.active = false;
             this.callbackEfffect();
-        } , 2);
+        } , 3);
     },
     /* ---------------- */
 

@@ -262,6 +262,7 @@ cc.Class({
     },
 
     GetHistory(packet) {
+        cc.log(packet);
         this.slotView.historyView.responseServer(packet);
     },
 

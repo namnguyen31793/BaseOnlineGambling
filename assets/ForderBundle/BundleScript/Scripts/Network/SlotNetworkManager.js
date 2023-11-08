@@ -143,7 +143,10 @@ var SlotNetworkManager = cc.Class({
 
           
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_GET_ROOM_CONFIG:
+                cc.log(packet)
                 if(Global.SlotNetWork) Global.SlotNetWork.GetRoomConfig(packet);
+                if(this.SlotGameManager.get(Global.Enum.GAME_TYPE.SON_TINH_THUY_TINH))
+                    this.SlotGameManager.get(Global.Enum.GAME_TYPE.SON_TINH_THUY_TINH).ResponseServer(responseCode, packet);
                 break;
            
             

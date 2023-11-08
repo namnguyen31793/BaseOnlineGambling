@@ -20089,9 +20089,7 @@
     "_headAniInfo": null,
     "_playTimes": 0,
     "_isAniComplete": true,
-    "_N$skeletonData": {
-      "__uuid__": "f4aa7039-d8ba-4552-9c74-97af93581d8f"
-    },
+    "_N$skeletonData": null,
     "_N$_defaultCacheMode": 0,
     "_N$debugSlots": false,
     "_N$debugBones": false,
@@ -20206,9 +20204,7 @@
     "_headAniInfo": null,
     "_playTimes": 0,
     "_isAniComplete": true,
-    "_N$skeletonData": {
-      "__uuid__": "f4aa7039-d8ba-4552-9c74-97af93581d8f"
-    },
+    "_N$skeletonData": null,
     "_N$_defaultCacheMode": 0,
     "_N$debugSlots": false,
     "_N$debugBones": false,
@@ -20323,9 +20319,7 @@
     "_headAniInfo": null,
     "_playTimes": 0,
     "_isAniComplete": true,
-    "_N$skeletonData": {
-      "__uuid__": "f4aa7039-d8ba-4552-9c74-97af93581d8f"
-    },
+    "_N$skeletonData": null,
     "_N$_defaultCacheMode": 0,
     "_N$debugSlots": false,
     "_N$debugBones": false,
@@ -20440,9 +20434,7 @@
     "_headAniInfo": null,
     "_playTimes": 0,
     "_isAniComplete": true,
-    "_N$skeletonData": {
-      "__uuid__": "f4aa7039-d8ba-4552-9c74-97af93581d8f"
-    },
+    "_N$skeletonData": null,
     "_N$_defaultCacheMode": 0,
     "_N$debugSlots": false,
     "_N$debugBones": false,
@@ -20557,9 +20549,7 @@
     "_headAniInfo": null,
     "_playTimes": 0,
     "_isAniComplete": true,
-    "_N$skeletonData": {
-      "__uuid__": "f4aa7039-d8ba-4552-9c74-97af93581d8f"
-    },
+    "_N$skeletonData": null,
     "_N$_defaultCacheMode": 0,
     "_N$debugSlots": false,
     "_N$debugBones": false,
@@ -26487,9 +26477,7 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "2cab043d-e6ab-4098-9f51-d27fe7b4dd0c"
-    },
+    "_spriteFrame": null,
     "_type": 0,
     "_sizeMode": 1,
     "_fillType": 0,
@@ -28116,9 +28104,7 @@
     "_headAniInfo": null,
     "_playTimes": 0,
     "_isAniComplete": true,
-    "_N$skeletonData": {
-      "__uuid__": "2240cc22-e00f-4f29-b47b-9ea9fd9ccebd"
-    },
+    "_N$skeletonData": null,
     "_N$_defaultCacheMode": 0,
     "_N$debugSlots": false,
     "_N$debugBones": false,
@@ -35688,8 +35674,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 853.47,
-      "height": 589
+      "width": 1700,
+      "height": 1700
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -35739,24 +35725,26 @@
       }
     ],
     "paused": false,
-    "defaultSkin": "",
-    "defaultAnimation": "",
+    "defaultSkin": "default",
+    "defaultAnimation": "Bigwin",
     "_preCacheMode": 1,
     "_cacheMode": 1,
-    "loop": false,
-    "premultipliedAlpha": true,
+    "loop": true,
+    "premultipliedAlpha": false,
     "timeScale": 1,
     "_accTime": 0,
     "_playCount": 0,
     "_frameCache": null,
     "_curFrame": null,
     "_skeletonCache": null,
-    "_animationName": "animation",
+    "_animationName": "Bigwin",
     "_animationQueue": [],
     "_headAniInfo": null,
     "_playTimes": 1,
     "_isAniComplete": true,
-    "_N$skeletonData": null,
+    "_N$skeletonData": {
+      "__uuid__": "46eb4c12-1130-43de-be49-89dbdf6c8a7a"
+    },
     "_N$_defaultCacheMode": 1,
     "_N$debugSlots": false,
     "_N$debugBones": false,
@@ -35803,8 +35791,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 853.47,
-      "height": 589
+      "width": 1700,
+      "height": 1700
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -35854,24 +35842,26 @@
       }
     ],
     "paused": false,
-    "defaultSkin": "",
-    "defaultAnimation": "",
+    "defaultSkin": "default",
+    "defaultAnimation": "Bigwin",
     "_preCacheMode": 1,
     "_cacheMode": 1,
-    "loop": false,
-    "premultipliedAlpha": true,
+    "loop": true,
+    "premultipliedAlpha": false,
     "timeScale": 1,
     "_accTime": 0,
     "_playCount": 0,
     "_frameCache": null,
     "_curFrame": null,
     "_skeletonCache": null,
-    "_animationName": "animation",
+    "_animationName": "Bigwin",
     "_animationQueue": [],
     "_headAniInfo": null,
     "_playTimes": 1,
     "_isAniComplete": true,
-    "_N$skeletonData": null,
+    "_N$skeletonData": {
+      "__uuid__": "46eb4c12-1130-43de-be49-89dbdf6c8a7a"
+    },
     "_N$_defaultCacheMode": 1,
     "_N$debugSlots": false,
     "_N$debugBones": false,
@@ -36590,7 +36580,7 @@
     "_preCacheMode": 0,
     "_cacheMode": 0,
     "loop": true,
-    "premultipliedAlpha": true,
+    "premultipliedAlpha": false,
     "timeScale": 1,
     "_accTime": 0,
     "_playCount": 0,
@@ -36944,7 +36934,7 @@
       "__uuid__": "418ac6ff-c232-4971-b91d-6bc117198307"
     },
     "_texture": null,
-    "_stopped": false,
+    "_stopped": true,
     "playOnLoad": true,
     "autoRemoveOnFinish": false,
     "totalParticles": 1991,
@@ -37873,7 +37863,7 @@
         "__id__": 1086
       }
     ],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1091

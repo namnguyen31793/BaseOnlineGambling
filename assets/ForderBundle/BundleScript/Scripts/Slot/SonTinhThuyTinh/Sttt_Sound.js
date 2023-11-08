@@ -49,7 +49,7 @@ cc.Class({
     PlayBackgroundMusic() {
         if(this.isPlayMusic)
             this.soundManager.playMusicBackground(this.linkBgSound, 0.3, ()=>{
-                this.soundManager2.playMusicBackground("34", this.linkBgSound, 0.6);
+                this.soundManager2.playMusicBackground("35", this.linkBgSound, 0.6);
             });
     },
 
@@ -153,7 +153,7 @@ cc.Class({
     PlaySound(resSound) {
         if(this.isPlaySound) {
             this.soundManager.playEffect(resSound, false, 1, ()=>{
-                this.soundManager2.playEffect("34", resSound, false, 1 , true);
+                this.soundManager2.playEffect("35", resSound, false, 1 , true);
             });
         }        
     },

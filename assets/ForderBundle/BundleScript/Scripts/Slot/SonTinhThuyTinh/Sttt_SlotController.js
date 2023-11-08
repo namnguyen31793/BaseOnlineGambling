@@ -14,7 +14,7 @@ cc.Class({
             this.TIME_DISTANCE_COLUMN = 0.25;
             this.NUMBER_LINE = 20;
             this.stackSpin = [];
-            this.NAME_BUNDLE_STRING = "34";
+            this.NAME_BUNDLE_STRING = "35";
         },
 
         properties: {
@@ -132,7 +132,7 @@ cc.Class({
             this.PlayEffectSpin();
             
             if(!this.isFree && !this.isBonus)
-                this.slotMenu.ResetValueCacheWin();
+                this.slotMenu.ClearTotalWinFreeCache();
     
             this.DeActiveButtonMenu();
             if(isRequest) {
@@ -165,10 +165,10 @@ cc.Class({
             return this.slotMenu.isSpeed;
         },
 
-        CheckEndAnimPreWin(freeTurn, bonusTurn) {
-            cc.log("CheckEndAnimPreWin "+freeTurn);
+        CheckEndAnimNearWin(freeTurn, bonusTurn) {
+            cc.log("CheckEndAnimNearWin "+freeTurn);
             if(!this.isFree && !this.isBonus) {
-                if((freeTurn > 0 || bonusTurn > 0) && this.slotUI.CheckPreWin()) {
+                if((freeTurn > 0 || bonusTurn > 0) && this.slotUI.CheckNearWin()) {
                     if(freeTurn > 0)
                         this.slotUI.EndItemBonusPreWin();
                     if(bonusTurn > 0)
@@ -205,6 +205,9 @@ cc.Class({
             cc.log("ResponseServer "+code)
             cc.log(packet)
             switch (code) {
+                case Global.Enum.RESPONSE_CODE.MSG_SERVER_GET_ROOM_CONFIG:
+                    this.GetRoomConfig(packet);
+                    break;
                 case Global.Enum.RESPONSE_CODE.MSG_SERVER_SON_TINH_GAME_GET_ACCOUNT_INFO:
                     this.GetAccountInfo(packet);
                     break;
@@ -218,6 +221,15 @@ cc.Class({
                     this.ProceduGetResultTry(packet);
                     break;
             }
+        },
+
+        GetRoomConfig(packet) {
+            cc.log(packet)
+            let config = [];
+            for(let i = 0; i < packet[1].length; i++) {
+                config[i] = JSON.parse(packet[1][i]);
+            }
+            cc.log(config);
         },
 
         GetAccountInfo(packet) {
@@ -350,11 +362,12 @@ cc.Class({
             //Khởi tạo list action chạy lần lượt
             this.toDoList.CreateList();
             this.toDoList.AddWork(()=>this.OnGetResult(),true);//-- chờ check chạy xong effect cột, các cột chạy xong sẽ call OnSpinDone() trong SlotUI
-            this.toDoList.AddWork(()=>this.CheckEndAnimPreWin(freeSpinLeft, 0),true);
+            this.toDoList.AddWork(()=>this.CheckEndAnimNearWin(freeSpinLeft, 0),true);
             if(listLine.length != 0){
                 this.toDoList.AddWork(()=>{
                     this.UpdateLineWinData(listLine);
                 },false);
+                this.toDoList.Wait(0.5);
             }
             this.toDoList.AddWork(()=>{
                 this.slotMenu.UpdateSessionID(spinId);
@@ -452,7 +465,7 @@ cc.Class({
                 //chờ show effect start free
                 let seft = this;
                 this.slotSound.PlayAudioFreeSpin();
-                this.slotEffect.ShowEffectStartFree(numberFree, () => {
+                this.slotEffect.ShowEffectStartFree(freeSpinLeft, () => {
                     seft.ShowFree(freeSpinLeft);
                 });
                 return;
@@ -469,10 +482,11 @@ cc.Class({
             this.toDoList.DoWork(); //chạy tiếp todoList sau khi set free
         },
         
-        CheckEndFree(freeSpinLeft, totalWin){
-            this.slotMenu.UpdateWinFree(totalWin);
-            let totalWinFree = this.ClearTotalWinFreeCache();
+        CheckEndFree(freeSpinLeft){
             if(freeSpinLeft == 0){
+                let seft = this;
+                let totalWinFree = this.slotMenu.ClearTotalWinFreeCache();
+                this.isFree = false;
                 this.slotEffect.ShowEffectEndFree(totalWinFree, () => {
                     this.slotUI.ShowBgGameFree(false);
                     this.slotMenu.ShowBoxTurnFree(false);
@@ -513,7 +527,10 @@ cc.Class({
         },
         
         ShowUpdateWinValueMenu(value){
-            this.slotMenu.UpdateWinValue(value);
+            if(!this.isFree)
+                this.slotMenu.UpdateWinValue(value);
+            else
+                this.slotMenu.UpdateWinFree(value);
             this.scheduleOnce(()=>{
                 this.toDoList.DoWork();
             } , 1.2);
@@ -560,7 +577,7 @@ cc.Class({
         */
         CheckBigWin(winMoney, mutil = 6) {
             let isBigWin = false;
-            if(winMoney >= this.totalBetValue * mutil) 
+            if(winMoney >= this.GetBetValue() * mutil) 
                 isBigWin = true;
             return isBigWin;
         },

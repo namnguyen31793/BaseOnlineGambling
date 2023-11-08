@@ -18,10 +18,10 @@ cc.Class({
         this.countSpinDone = 0;
         this.nameClassItem = "Sttt_ItemView";
         this.nameClassSpinColump = "Sttt_SlotSpinColumn";
-        this.listIdPreWin = [];
-        this.listCountPreWin = [];
-        this.listIdPreWinIncrease = [];
-        this.listCountPreWinIncrease = [];
+        this.listIdNearWin = [];
+        this.listCountNearWin = [];
+        this.listIdNearWinIncrease = [];
+        this.listCountNearWinIncrease = [];
         this.listIndexIncrease = [];
         this.listStopIncrease = [];
     },
@@ -95,11 +95,13 @@ cc.Class({
             this.listSpinObj[i].InitSpinColumn(this, this.listItem[i].node, distanceY, this.NUMBER_ITEM_ABOVE, this.NUMBER_ITEM_BELOW, this.NUMBER_ROW, this.NUMBER_COLUMN, this.NUMBER_SPEED);
             this.listSpinObj[i].node.active = false;
         }
+        this.listIdNearWin[0] = this.ID_BONUS;
+        this.listIdNearWinIncrease[0] = this.ID_FREE;
+        this.listCountNearWin[0] = 2;   //so item check là 2
+        this.listCountNearWinIncrease[1] = 2; //so item check là 2
     },
 
     Show(){
-        this.listIdPreWin[0] = this.ID_BONUS;
-        this.listIdPreWinIncrease[0] = this.ID_FREE;
         // if(Global.uitype == 2){
         //     if(this.nodeUIBackButton)
         //         this.nodeUIBackButton.active = true;
@@ -195,7 +197,7 @@ cc.Class({
                         if(i >= this.listIndexIncrease[j]) {
                             if(i < this.listStopIncrease[j]) {
                                 checkShowIncrease = true;
-                                this.ShowAnimPreWinItem(this.listIdPreWinIncrease[j]);
+                                this.ShowAnimPreWinItem(this.listIdNearWinIncrease[j]);
                             } else {
                                 this.scheduleOnce(()=>{
                                     this.HideEffectPreWin(i);
@@ -208,7 +210,7 @@ cc.Class({
                     this.scheduleOnce(()=>{
                         for(let j = 0; j < indexPreWin.length; j++) {
                             if(indexPreWin[j] != -1 && i >= indexPreWin[j]) {
-                                this.ShowAnimPreWinItem(this.listIdPreWin[j]);
+                                this.ShowAnimPreWinItem(this.listIdNearWin[j]);
                             }
                         }
                         this.HideEffectPreWin(i);
@@ -303,11 +305,11 @@ cc.Class({
         let listCount = [];
         let listCountIncrease = [];
         let listIndex = [];
-        for(let i = 0; i < this.listIdPreWin.length; i++) {
+        for(let i = 0; i < this.listIdNearWin.length; i++) {
             listCount[i] = 0;
             listIndex[i] = -1;
         }
-        for(let i = 0; i < this.listIdPreWinIncrease.length; i++) {
+        for(let i = 0; i < this.listIdNearWinIncrease.length; i++) {
             listCountIncrease[i] = 0;
             this.listIndexIncrease[i] = -1;
             this.listStopIncrease[i] = this.NUMBER_COLUMN;
@@ -318,18 +320,18 @@ cc.Class({
         for(let i = 0; i < this.NUMBER_COLUMN-1; i++) {
             let checkIn= false;
             for(let j = 0; j < this.NUMBER_ROW; j++) {
-                for(let k = 0; k < this.listIdPreWin.length; k++) {
-                    if(this.CheckIdPreWin(this.slotController.cacheMatrix[i+j*this.NUMBER_COLUMN], this.listIdPreWin[k])) {
+                for(let k = 0; k < this.listIdNearWin.length; k++) {
+                    if(this.CheckIdPreWin(this.slotController.cacheMatrix[i+j*this.NUMBER_COLUMN], this.listIdNearWin[k])) {
                         listCount[k] += 1;
-                        if(listCount[k] >= this.listCountPreWin[k] && listIndex[k] == -1) {
+                        if(listCount[k] >= this.listCountNearWin[k] && listIndex[k] == -1) {
                             listIndex[k] = i;
                         }
                     }
                 }
-                for(let k = 0; k < this.listIdPreWinIncrease.length; k++) {
-                    if(this.CheckIdPreWin(this.slotController.cacheMatrix[i+j*this.NUMBER_COLUMN], this.listIdPreWinIncrease[k]) && checkIncrease) {
+                for(let k = 0; k < this.listIdNearWinIncrease.length; k++) {
+                    if(this.CheckIdPreWin(this.slotController.cacheMatrix[i+j*this.NUMBER_COLUMN], this.listIdNearWinIncrease[k]) && checkIncrease) {
                         listCountIncrease[k] += 1;
-                        if(listCountIncrease[k] >= this.listCountPreWinIncrease[k] && this.listIndexIncrease[k] == -1) {
+                        if(listCountIncrease[k] >= this.listCountNearWinIncrease[k] && this.listIndexIncrease[k] == -1) {
                             this.listIndexIncrease[k] = i;
                         }
                         checkIn = true;
@@ -347,8 +349,8 @@ cc.Class({
         return listIndex;
     },
 
-    CheckPreWin() {
-        return this.listIdPreWin.length > 0;
+    CheckNearWin() {
+        return this.listIdNearWin.length > 0;
     },
 
     CheckIdPreWin(idItem, idCheck) {
@@ -383,6 +385,7 @@ cc.Class({
     },
 
     HideEffectPreWin(index) {
+        cc.log("HideEffectPreWin "+index);
         this.effectPreWin[index].active = false;
     },
 

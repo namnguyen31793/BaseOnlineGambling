@@ -126,4 +126,19 @@ cc.Class({
     ClickSound(toggle, data) {
         this.slotView.ChangeStateSound(toggle.isChecked);
     },
+
+    ClickShowHistory(){
+        if(this.slotView.historyView == null){
+            let seft = this;
+            Global.DownloadManager.LoadPrefab("33","PopupHistory", (prefab)=>{
+                let effect = cc.instantiate(prefab);
+                seft.slotView.node.addChild(effect, 10000);
+                effect.setPosition(cc.v2(0,0));
+                seft.slotView.historyView = effect.getComponent('SlotHistory');
+                seft.slotView.historyView.Show(seft.slotView.slotType);
+            });  
+        }else{
+            this.slotView.historyView.Show(this.slotView.slotType);;
+        }
+    },
 });

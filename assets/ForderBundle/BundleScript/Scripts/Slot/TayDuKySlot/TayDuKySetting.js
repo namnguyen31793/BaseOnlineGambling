@@ -58,7 +58,7 @@ cc.Class({
     },
 
     ShowHistory(){
-        this.slotView.menuView.ClickRank();
+        this.slotView.menuView.ClickShowHistory();
     },
 
     Hide(){
