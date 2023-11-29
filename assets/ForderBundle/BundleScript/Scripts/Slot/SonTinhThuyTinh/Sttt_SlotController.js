@@ -10,7 +10,8 @@ cc.Class({
             this.lineData = 20;
             this.stateSpin = 0;
 
-            this.TIME_SPIN = 0.2;
+            this.NUMBER_COLUMN =5;
+            this.TIME_SPIN = 0.25;
             this.TIME_DISTANCE_COLUMN = 0.25;
             this.NUMBER_LINE = 20;
             this.stackSpin = [];
@@ -105,13 +106,12 @@ cc.Class({
                 // this.slotEffect.ClickCloseNotify(false);
                 // this.slotEffect.ClickCloseFree();
                 // this.slotEffect.ClickCloseBonus();
-                // this.bonusManager.isCheckAuto = false;
                 this.slotEffect.Clear();
-                let packet = this.GetStack();
+                let packet = this.GetStack();//get cache kq ve nhanh
                 let isRequest = true;
                 this.RequestSpin(isRequest);
                 if(packet) {
-                    this.netWork.ProceduGetResult(packet);
+                    this.ProceduGetResult(packet);
                 }
             }
         },
@@ -135,6 +135,7 @@ cc.Class({
                 this.slotMenu.ClearTotalWinFreeCache();
     
             this.DeActiveButtonMenu();
+            cc.log("RequestSpin ");
             if(isRequest) {
                 if(this.roomID != 0){
                     this.CallRequestSpin();  
@@ -152,7 +153,6 @@ cc.Class({
             if(this.GetIsSpeed())
                 timeDistanceColumn = 0;
             let timeSpin = this.TIME_SPIN + timeDistanceColumn * (this.NUMBER_COLUMN-1);
-            
             this.scheduleOnce(()=>{
                 this.slotUI.OnCheckSpinSuccess();
                 this.slotUI.OnCheckUpdateMatrix();
@@ -390,7 +390,6 @@ cc.Class({
             this.toDoList.AddWork(()=>{
                 // lấy số dư tài khoản đã cache
                 require("WalletController").getIns().TakeBalance(this.getGameId())
-                this.HideLineWinData();
                 this.ActiveButtonMenu();
                 this.ActionAutoSpin();   //check auto thì send turn tiếp
             },false);
@@ -407,6 +406,7 @@ cc.Class({
         },
 
         UpdateMatrix(matrix, isSetDefaut = false) {
+            cc.log("UpdateMatrix "+isSetDefaut)
             this.cacheMatrix = matrix;
             this.slotUI.OnCheckUpdateMatrix(isSetDefaut);
         },
@@ -454,6 +454,7 @@ cc.Class({
         //xóa các effect turn cũ khi bắt đầu quay turn mới
         ResetUINewTurn(){
             this.slotUI.RemoveExpandWild();
+            this.HideLineWinData();
         },
 
         HandleFree(freeSpinLeft){

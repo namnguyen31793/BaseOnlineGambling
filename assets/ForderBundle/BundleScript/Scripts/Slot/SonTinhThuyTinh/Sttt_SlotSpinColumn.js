@@ -72,6 +72,7 @@ cc.Class({
     },
 
     GetResult(index, matrix) {
+        cc.log("GetResult "+index);
         let listRs = [];
         this.indexSpin = index;
         let point = 0;

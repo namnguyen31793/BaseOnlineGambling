@@ -78,7 +78,10 @@ cc.Class({
             case 35:
                 bName = "35";
                 url = "SlotSTTT";
-                this.nodeDemo.position = cc.v2(-505, 585);
+                break;
+            case 37:
+                bName = "37";
+                url = "SlotAnKhe";
                 break;
         }
         let seft = this;
@@ -107,6 +110,11 @@ cc.Class({
                 slotControl.setGameId(Global.Enum.GAME_TYPE.SON_TINH_THUY_TINH);
                 slotControl.Init();
                 require("SlotNetworkManager").getIns().AddSlotController(Global.Enum.GAME_TYPE.SON_TINH_THUY_TINH, slotControl);
+                break;
+            case 37:
+                slotControl.setGameId(Global.Enum.GAME_TYPE.AN_KHE_TRA_VANG);
+                slotControl.Init();
+                require("SlotNetworkManager").getIns().AddSlotController(Global.Enum.GAME_TYPE.AN_KHE_TRA_VANG, slotControl);
                 break;
         }
     },

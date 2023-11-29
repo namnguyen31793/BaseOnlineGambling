@@ -13,6 +13,7 @@
         GET_ACCOUNT_INFO : 'GetAccountInfo',
         GET_JACKPOT:'GetJackpot',
         LEAVE:'Leave',
+        SELECT_INPUT_FREE:'SelectInputFree',
     });
 
 }).call(this);

@@ -260,6 +260,7 @@ cc.Class({
 
             //PLAY_TRY
             MSG_CLIENT_SLOT_SPIN_CHOI_THU : 341,
+            MSG_CLIENT_SLOT_SELECT_FREE_TYPE : 343,
 
             //region tai xiu
             MSG_CLIENT_DICE_GET_CURRENT_TURN_INFO : 350,
@@ -773,6 +774,16 @@ cc.Class({
             MSG_SERVER_SON_TINH_GAME_GET_DETAIL_HISTORY : 605,
             MSG_SERVER_SON_TINH_GAME_SPIN_CHOI_THU : 606,
 
+            //an khe
+            MSG_SERVER_CAY_KHE_GAME_JACKPOT_INFO : 620,
+            MSG_SERVER_CAY_KHE_GAME_SPIN : 621,
+            MSG_SERVER_CAY_KHE_GAME_GET_ACCOUNT_INFO : 622,
+            MSG_SERVER_CAY_KHE_GAME_GET_ACCOUNT_FREETURN : 623,
+            MSG_SERVER_CAY_KHE_GAME_GET_TOP_TAKE_JACKPOT_INFO : 624,
+            MSG_SERVER_CAY_KHE_GAME_GET_DETAIL_HISTORY : 625,
+            MSG_SERVER_CAY_KHE_GAME_SPIN_CHOI_THU : 626,
+            MSG_SERVER_CAY_KHE_GAME_SELECT_FREE_TYPE : 627,
+
             //rpg
             MSG_SERVER_RPG_BATTLE_GAME_SPIN : 553,
             MSG_SERVER_RPG_BATTLE_FIELD_GAME_END : 554,
@@ -949,6 +960,7 @@ cc.Class({
             SWEET_BONANZA : 32,
             TAY_DU_KY : 33,
             SON_TINH_THUY_TINH : 35,
+            AN_KHE_TRA_VANG : 37,
         };
 
         this.SKILLGAME_TYPE = {

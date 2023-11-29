@@ -99,6 +99,15 @@ cc.Class({
         this.sendRequestOnHub(cc.MethodHubName.SPIN_TRY, msg);
     },
     
+    CallSelectRooomFree(freespinType) {
+        let msg = {};
+        msg[1] = this.getRoomId();
+        msg[2] = freespinType;
+        msg[20] = this.getGameId();
+        msg[40] = this.getGameId();
+        this.sendRequestOnHub(cc.MethodHubName.SELECT_INPUT_FREE, msg);
+    },
+
     CallLeaveGame() {
         let msg = {};
         msg[1] = this.getRoomId();
@@ -133,7 +142,10 @@ cc.Class({
                 require("SendRequest").getIns().MST_Client_Slot_Get_Jackpot_Info(data);
                 break;
             case cc.MethodHubName.LEAVE:
-                require("SendRequest").getIns().MST_Client_Slot_Leave_Room(msg);
+                require("SendRequest").getIns().MST_Client_Slot_Leave_Room(data);
+                break;
+            case cc.MethodHubName.SELECT_INPUT_FREE:
+                require("SendRequest").getIns().MST_Client_Slot_Select_Type_Free(data);
                 break;
         }
     },

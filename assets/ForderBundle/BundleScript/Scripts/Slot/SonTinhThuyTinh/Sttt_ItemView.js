@@ -35,4 +35,14 @@ cc.Class({
         this.isShowPreWin = false;
         // this.node.getComponent(cc.Animation).play("StopPreWin");
     },
+
+    HideColoritem(){
+        this.skeleton.node.color = cc.Color.GRAY;
+        this.spriteIcons.node.color = cc.Color.GRAY;
+    },
+
+    ActiveColorItem(){
+        this.skeleton.node.color = cc.Color.WHITE;
+        this.spriteIcons.node.color = cc.Color.WHITE;
+    },
 });

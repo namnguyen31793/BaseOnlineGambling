@@ -147,6 +147,8 @@ var SlotNetworkManager = cc.Class({
                 if(Global.SlotNetWork) Global.SlotNetWork.GetRoomConfig(packet);
                 if(this.SlotGameManager.get(Global.Enum.GAME_TYPE.SON_TINH_THUY_TINH))
                     this.SlotGameManager.get(Global.Enum.GAME_TYPE.SON_TINH_THUY_TINH).ResponseServer(responseCode, packet);
+                if(this.SlotGameManager.get(Global.Enum.GAME_TYPE.AN_KHE_TRA_VANG))
+                    this.SlotGameManager.get(Global.Enum.GAME_TYPE.AN_KHE_TRA_VANG).ResponseServer(responseCode, packet);
                 break;
            
             
@@ -197,7 +199,7 @@ var SlotNetworkManager = cc.Class({
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_TAY_DU_KY_GAME_SPIN_CHOI_THU: 
                 if(Global.SlotNetWork) Global.SlotNetWork.ResponseServer(responseCode, packet);
                 break;
-                //tayduky
+                //son tinh
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_SON_TINH_GAME_JACKPOT_INFO:
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_SON_TINH_GAME_SPIN:
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_SON_TINH_GAME_GET_ACCOUNT_INFO:
@@ -207,6 +209,18 @@ var SlotNetworkManager = cc.Class({
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_SON_TINH_GAME_SPIN_CHOI_THU: 
                 if(this.SlotGameManager.get(Global.Enum.GAME_TYPE.SON_TINH_THUY_TINH))
                     this.SlotGameManager.get(Global.Enum.GAME_TYPE.SON_TINH_THUY_TINH).ResponseServer(responseCode, packet);
+                break;
+                //an khe
+            case Global.Enum.RESPONSE_CODE.MSG_SERVER_CAY_KHE_GAME_JACKPOT_INFO:
+            case Global.Enum.RESPONSE_CODE.MSG_SERVER_CAY_KHE_GAME_SPIN:
+            case Global.Enum.RESPONSE_CODE.MSG_SERVER_CAY_KHE_GAME_GET_ACCOUNT_INFO:
+            case Global.Enum.RESPONSE_CODE.MSG_SERVER_CAY_KHE_GAME_GET_ACCOUNT_FREETURN:
+            case Global.Enum.RESPONSE_CODE.MSG_SERVER_CAY_KHE_GAME_GET_TOP_TAKE_JACKPOT_INFO:
+            case Global.Enum.RESPONSE_CODE.MSG_SERVER_CAY_KHE_GAME_GET_DETAIL_HISTORY: 
+            case Global.Enum.RESPONSE_CODE.MSG_SERVER_CAY_KHE_GAME_SPIN_CHOI_THU: 
+            case Global.Enum.RESPONSE_CODE.MSG_SERVER_CAY_KHE_GAME_SELECT_FREE_TYPE: 
+                if(this.SlotGameManager.get(Global.Enum.GAME_TYPE.AN_KHE_TRA_VANG))
+                    this.SlotGameManager.get(Global.Enum.GAME_TYPE.AN_KHE_TRA_VANG).ResponseServer(responseCode, packet);
                 break;
             //mini slot
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_NEW_MINISLOT_JACKPOT_INFO:

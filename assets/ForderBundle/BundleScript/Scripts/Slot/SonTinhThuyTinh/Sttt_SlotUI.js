@@ -10,6 +10,9 @@ cc.Class({
         this.NUMBER_SPEED = 12;
         this.ID_BONUS = 3;
         this.ID_FREE = 4;
+        this.ID_WILD_EXTEND = 2;
+        this.ID_WILD = 1;
+        this.listSpecialWild = [];
         this.TIME_DISTANCE_COLUMN = 0.25;
         this.listStopObj = [];
         this.listSpinObj = [];
@@ -24,6 +27,7 @@ cc.Class({
         this.listCountNearWinIncrease = [];
         this.listIndexIncrease = [];
         this.listStopIncrease = [];
+        this.payLine = [];
     },
     properties: {
         BG_Free : cc.Node,
@@ -99,13 +103,36 @@ cc.Class({
         this.listIdNearWinIncrease[0] = this.ID_FREE;
         this.listCountNearWin[0] = 2;   //so item check là 2
         this.listCountNearWinIncrease[1] = 2; //so item check là 2
+    
+        this.InitPayLine();
+    },
+
+    InitPayLine() {
+        this.listSpecialWild = [this.ID_WILD, this.ID_WILD_EXTEND];
+        this.payLine = [];
+        this.payLine[1] = this.GetPosByColum([5, 6, 7, 8, 9]);
+        this.payLine[2] = this.GetPosByColum([0, 1, 2, 3, 4]);
+        this.payLine[3] = this.GetPosByColum([10, 11, 12, 13, 14]);
+        this.payLine[4] = this.GetPosByColum([0, 6, 12, 8, 4]);
+        this.payLine[5] = this.GetPosByColum([10, 6, 2, 8, 14]);
+        this.payLine[6] = this.GetPosByColum([5, 1, 7, 3, 9]);
+        this.payLine[7] = this.GetPosByColum([5, 11, 7, 13, 9]);
+        this.payLine[8] = this.GetPosByColum([0, 6, 2, 8, 4]);
+        this.payLine[9] = this.GetPosByColum([10, 6, 12, 8, 14]);
+        this.payLine[10] = this.GetPosByColum([5, 1, 2, 3, 9]);
+        this.payLine[11] = this.GetPosByColum([5, 11, 12, 13, 9]);
+        this.payLine[12] = this.GetPosByColum([10, 11, 7, 13, 14]);
+        this.payLine[13] = this.GetPosByColum([10, 6, 12, 8, 14]);
+        this.payLine[14] = this.GetPosByColum([10, 6, 7, 8, 14]);
+        this.payLine[15] = this.GetPosByColum([0, 6, 7, 8, 4]);
+        this.payLine[16] = this.GetPosByColum([0, 11, 2, 13, 4]);
+        this.payLine[17] = this.GetPosByColum([10, 1, 12, 3, 14]);
+        this.payLine[18] = this.GetPosByColum([5, 6, 2, 8, 9]);
+        this.payLine[19] = this.GetPosByColum([5, 6, 12, 8, 9]);
+        this.payLine[20] = this.GetPosByColum([10, 11, 2, 13, 14]);
     },
 
     Show(){
-        // if(Global.uitype == 2){
-        //     if(this.nodeUIBackButton)
-        //         this.nodeUIBackButton.active = true;
-        // }
         //check audio
         this.BG_Free.active = false;
     },
@@ -138,10 +165,11 @@ cc.Class({
     },
 
     OnCheckUpdateMatrix(isSetDefaut = false) {
+        cc.log("OnCheckUpdateMatrix "+this.slotController.stateSpin);
         if(!isSetDefaut) {
             this.slotController.stateSpin += 1;
         } 
-        if(this.slotController.stateSpin == 2 || isSetDefaut) {
+        if(this.slotController.stateSpin >= 2 || isSetDefaut) {
             for(let i = 0; i < this.slotController.cacheMatrix.length; i++) {
                 this.SetImageItem(this.slotController.cacheMatrix[i], this.listItem[i].node);
             }
@@ -149,6 +177,7 @@ cc.Class({
     },
     //check kết thúc spin, check matrix có item đặc biệt thì kéo dài
     OnStopSpin(listSpinObj) {
+        cc.log("OnStopSpin ");
         let indexPreWin = this.CountPreWin();
         let min = this.NUMBER_COLUMN;
         for(let i = 0; i < indexPreWin.length; i++) {
@@ -269,6 +298,7 @@ cc.Class({
     },
 
     OnSpinDone(indexColumn) {
+        cc.log("OnSPinDone "+indexColumn);
         //this.soundControl.StopSpin();
         //this.CheckItemWhenSpinDone(indexColumn); -- dùng để check với bonus k xóa
         this.listStopObj[indexColumn].active = true;
@@ -441,12 +471,82 @@ cc.Class({
                 continue;
             this.listLineImg[listLine[i]-1].active = true;
         }
+        for(let i = 0; i < this.listItem.length; i++) {
+            this.listItem[i].HideColoritem();
+        }
+        let listLineWin = this.GetListPosWin(listLine);        
+        this.DrawLine(listLineWin[0]);
+    },
+
+    DrawLine(listPoint) {
+        for(let i = 0; i < listPoint.length; i++) {
+            this.listItem[listPoint[i]].ActiveColorItem();
+        }
     },
 
     HideAllLine() {
         for(let j = 0; j < this.listLineImg.length; j++){
             this.listLineImg[j].active = false;
         }
+        for(let i = 0; i < this.listItem.length; i++) {
+            this.listItem[i].ActiveColorItem();
+        }
+    },
+
+    GetListPosWin(listLine){
+        let matrix = this.slotController.cacheMatrix;
+        let listLineWin = [];
+        //list tong hop
+        let listPoin = {};//list position win + 1 all
+        listPoin["0"] = [];
+        let outLineWin = [];
+        //chay tung line win
+        for(let i = 0; i < listLine.length; i++) {
+            let linePos = this.payLine[listLine[i]];// list position line win
+            var startPos = linePos[0]-1;
+
+            var idCheckMatch = -1;
+            if(matrix[startPos] != this.ID_WILD && matrix[startPos] != this.ID_WILD_EXTEND)
+                idCheckMatch = matrix[startPos]
+
+            if(!(startPos.toString() in listPoin)) {
+                listPoin[startPos.toString()] = [];
+                listPoin[startPos.toString()].push(startPos);
+            }
+            if(!listPoin["0"].includes(startPos))
+                listPoin["0"].push(startPos);
+
+            //lay id cac vi tri check
+            let listRs = []
+            listRs[0] = startPos;
+            for(let j = 1; j < linePos.length; j++){
+                if(idCheckMatch == -1 && matrix[linePos[j]-1] != this.ID_WILD && matrix[startPos] != this.ID_WILD_EXTEND)
+                    idCheckMatch = matrix[linePos[j]-1];
+
+                if((idCheckMatch != -1 && matrix[linePos[j]-1] != idCheckMatch && !this.CheckSpecialItem(matrix[linePos[j]-1])))
+                    break;
+                listRs[j] = linePos[j]-1;
+                if(!listPoin[startPos.toString()].includes((linePos[j]-1)))
+                    listPoin[startPos.toString()].push(linePos[j]-1);
+                if(!listPoin["0"].includes((linePos[j]-1)))
+                    listPoin["0"].push(linePos[j]-1);
+            };
+            listLineWin[i] = listRs;
+        }
+        for( var line in listPoin){
+            outLineWin[outLineWin.length] = listPoin[line];
+        }
+
+        return outLineWin;
+    },
+
+    CheckSpecialItem(id){
+        var isSpecialWild = false;
+        for(let i = 0; i < this.listSpecialWild.length; i++){
+            if(id == this.listSpecialWild[i])
+            isSpecialWild = true;
+        }
+        return isSpecialWild;
     },
     
     GetPosByColum(listPosColum) {

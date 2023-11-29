@@ -27,7 +27,7 @@ cc.Class({
         //call link
         var self = this;
         //showloading
-        ApiController.RequestGetHistoryJackpot( 33, (data) => {
+        ApiController.RequestGetHistoryJackpot( 35, (data) => {
             //hideloading
             self.HandlelHistoryRank(data);
         }, this.ErrorCallBack);

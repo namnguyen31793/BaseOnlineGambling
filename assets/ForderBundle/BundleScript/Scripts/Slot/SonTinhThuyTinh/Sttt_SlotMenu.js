@@ -36,6 +36,9 @@ cc.Class({
             if(this.btnSpin.interactable) {
                 this.isCountPress = true;
                 this.countTimePress = 0;
+            }else{
+                this.toggleAuto.isChecked = false;
+                this.ClickButtonSpeed(this.toggleAuto, null);
             }
         });
         this.btnSpin.node.on(cc.Node.EventType.TOUCH_END, (touch) => {
