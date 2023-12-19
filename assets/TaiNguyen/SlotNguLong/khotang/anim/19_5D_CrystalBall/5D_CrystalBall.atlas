@@ -1,0 +1,27 @@
+
+5D_CrystalBall.png
+size: 164,106
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+crys_glow
+  rotate: true
+  xy: 2, 2
+  size: 102, 108
+  orig: 197, 197
+  offset: 13, 71
+  index: -1
+sparkle
+  rotate: false
+  xy: 112, 51
+  size: 50, 53
+  orig: 50, 53
+  offset: 0, 0
+  index: -1
+spot
+  rotate: false
+  xy: 112, 8
+  size: 42, 41
+  orig: 42, 41
+  offset: 0, 0
+  index: -1

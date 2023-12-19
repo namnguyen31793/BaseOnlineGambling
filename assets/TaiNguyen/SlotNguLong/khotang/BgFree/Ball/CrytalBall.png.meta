@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "a05b1b92-efcd-43d0-9e01-befaf451dcea",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 197,
+  "height": 197,
+  "platformSettings": {},
+  "subMetas": {
+    "CrytalBall": {
+      "ver": "1.0.4",
+      "uuid": "ba1b5fe6-bf7d-4cff-9361-6e242c323da4",
+      "rawTextureUuid": "a05b1b92-efcd-43d0-9e01-befaf451dcea",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 194,
+      "height": 195,
+      "rawWidth": 197,
+      "rawHeight": 197,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

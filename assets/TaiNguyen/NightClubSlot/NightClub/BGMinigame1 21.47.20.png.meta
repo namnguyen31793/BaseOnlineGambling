@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "e8b45dd3-a07e-4f6c-b9c7-78f614f7bc4c",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1248,
+  "height": 325,
+  "platformSettings": {},
+  "subMetas": {
+    "BGMinigame1 21.47.20": {
+      "ver": "1.0.4",
+      "uuid": "e7629671-886d-4f6b-afd6-074803f599a1",
+      "rawTextureUuid": "e8b45dd3-a07e-4f6c-b9c7-78f614f7bc4c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1248,
+      "height": 325,
+      "rawWidth": 1248,
+      "rawHeight": 325,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

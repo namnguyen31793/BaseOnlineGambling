@@ -1,0 +1,27 @@
+
+5D_Symbol_Qilin_Frame.png
+size: 358,163
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Frame
+  rotate: true
+  xy: 2, 3
+  size: 158, 148
+  orig: 158, 148
+  offset: 0, 0
+  index: -1
+Frame_FreeG
+  rotate: true
+  xy: 152, 2
+  size: 159, 122
+  orig: 159, 122
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 276, 82
+  size: 80, 79
+  orig: 100, 140
+  offset: 10, 34
+  index: -1

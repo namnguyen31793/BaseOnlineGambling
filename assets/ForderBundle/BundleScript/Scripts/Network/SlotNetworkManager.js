@@ -145,10 +145,14 @@ var SlotNetworkManager = cc.Class({
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_GET_ROOM_CONFIG:
                 cc.log(packet)
                 if(Global.SlotNetWork) Global.SlotNetWork.GetRoomConfig(packet);
+                if(this.SlotGameManager.get(Global.Enum.GAME_TYPE.NIGHT_CLUB))
+                    this.SlotGameManager.get(Global.Enum.GAME_TYPE.NIGHT_CLUB).ResponseServer(responseCode, packet);
                 if(this.SlotGameManager.get(Global.Enum.GAME_TYPE.SON_TINH_THUY_TINH))
                     this.SlotGameManager.get(Global.Enum.GAME_TYPE.SON_TINH_THUY_TINH).ResponseServer(responseCode, packet);
                 if(this.SlotGameManager.get(Global.Enum.GAME_TYPE.AN_KHE_TRA_VANG))
                     this.SlotGameManager.get(Global.Enum.GAME_TYPE.AN_KHE_TRA_VANG).ResponseServer(responseCode, packet);
+                if(this.SlotGameManager.get(Global.Enum.GAME_TYPE.KHO_TANG_NGU_LONG))
+                    this.SlotGameManager.get(Global.Enum.GAME_TYPE.KHO_TANG_NGU_LONG).ResponseServer(responseCode, packet);
                 break;
            
             
@@ -198,6 +202,8 @@ var SlotNetworkManager = cc.Class({
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_TAY_DU_KY_GAME_GET_TOP_TAKE_JACKPOT_INFO: 
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_TAY_DU_KY_GAME_SPIN_CHOI_THU: 
                 if(Global.SlotNetWork) Global.SlotNetWork.ResponseServer(responseCode, packet);
+                if(this.SlotGameManager.get(Global.Enum.GAME_TYPE.NIGHT_CLUB))
+                    this.SlotGameManager.get(Global.Enum.GAME_TYPE.NIGHT_CLUB).ResponseServer(responseCode, packet);
                 break;
                 //son tinh
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_SON_TINH_GAME_JACKPOT_INFO:
@@ -221,6 +227,8 @@ var SlotNetworkManager = cc.Class({
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_CAY_KHE_GAME_SELECT_FREE_TYPE: 
                 if(this.SlotGameManager.get(Global.Enum.GAME_TYPE.AN_KHE_TRA_VANG))
                     this.SlotGameManager.get(Global.Enum.GAME_TYPE.AN_KHE_TRA_VANG).ResponseServer(responseCode, packet);
+                if(this.SlotGameManager.get(Global.Enum.GAME_TYPE.KHO_TANG_NGU_LONG))
+                    this.SlotGameManager.get(Global.Enum.GAME_TYPE.KHO_TANG_NGU_LONG).ResponseServer(responseCode, packet);
                 break;
             //mini slot
             case Global.Enum.RESPONSE_CODE.MSG_SERVER_NEW_MINISLOT_JACKPOT_INFO:

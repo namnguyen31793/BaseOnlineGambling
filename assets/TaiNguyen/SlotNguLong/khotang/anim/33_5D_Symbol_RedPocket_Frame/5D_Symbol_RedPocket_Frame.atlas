@@ -1,0 +1,27 @@
+
+5D_Symbol_RedPocket_Frame.png
+size: 361,164
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Frame
+  rotate: true
+  xy: 2, 2
+  size: 160, 150
+  orig: 160, 150
+  offset: 0, 0
+  index: -1
+Frame_FreeG
+  rotate: true
+  xy: 154, 2
+  size: 160, 123
+  orig: 160, 123
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 279, 83
+  size: 80, 79
+  orig: 100, 140
+  offset: 10, 34
+  index: -1

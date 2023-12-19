@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "0d8d9b6d-8304-4f46-9f56-6d3b276e77db",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1384,
+  "height": 777,
+  "platformSettings": {},
+  "subMetas": {
+    "5D_Transiton_FreeGame": {
+      "ver": "1.0.4",
+      "uuid": "b974548e-2018-4240-81e5-26ae8d0da610",
+      "rawTextureUuid": "0d8d9b6d-8304-4f46-9f56-6d3b276e77db",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 1380,
+      "height": 773,
+      "rawWidth": 1384,
+      "rawHeight": 777,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "8adf7b2c-d964-4a9f-a265-8f21019c7d64",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 328,
+  "height": 210,
+  "platformSettings": {},
+  "subMetas": {
+    "Dragon_Blue_01": {
+      "ver": "1.0.4",
+      "uuid": "9ca3ebbd-181a-43aa-a24e-5882c6cd31e3",
+      "rawTextureUuid": "8adf7b2c-d964-4a9f-a265-8f21019c7d64",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 328,
+      "height": 210,
+      "rawWidth": 328,
+      "rawHeight": 210,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

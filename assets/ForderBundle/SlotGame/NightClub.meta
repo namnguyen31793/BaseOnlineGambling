@@ -1,0 +1,12 @@
+{
+  "ver": "1.1.2",
+  "uuid": "ae88111f-d574-43ce-b0be-edc5f3c65dd9",
+  "isBundle": true,
+  "bundleName": "NightClub",
+  "priority": 1,
+  "compressionType": {},
+  "optimizeHotUpdate": {},
+  "inlineSpriteFrames": {},
+  "isRemoteBundle": {},
+  "subMetas": {}
+}

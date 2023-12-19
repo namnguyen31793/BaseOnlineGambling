@@ -1,0 +1,27 @@
+
+5D_Symbol_Turtle_Frame.png
+size: 359,162
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Frame
+  rotate: true
+  xy: 2, 2
+  size: 158, 149
+  orig: 158, 149
+  offset: 0, 0
+  index: -1
+Frame_FreeG
+  rotate: true
+  xy: 153, 2
+  size: 158, 122
+  orig: 158, 122
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 277, 81
+  size: 80, 79
+  orig: 100, 140
+  offset: 10, 34
+  index: -1

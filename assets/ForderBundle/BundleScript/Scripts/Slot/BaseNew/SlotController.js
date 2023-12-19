@@ -157,8 +157,9 @@ cc.Class({
 
     //lắng nghe call dổi room hoặc mới vào game
     SelectRoom(roomId) {
+        cc.log("SelectRoom "+roomId);
         this.setRoomId(roomId);
-        if (roomId === 0) {
+        if (roomId == 0) {
             //this.sendRequestOnHub(cc.MethodHubName.JOIN_TRY);
         } else {
             this.setRoomId(roomId);

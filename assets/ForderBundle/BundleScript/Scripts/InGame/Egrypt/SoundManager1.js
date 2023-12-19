@@ -20,7 +20,7 @@ var SoundManager1 = cc.Class({
         }
     },
     playMusicBackground(ResDefine, volume = 0.3, errorCallBack = null) {
-
+        cc.log(ResDefine)
         this.isPlayMusic = true;
         cc.resources.load(ResDefine, cc.AudioClip, (err, clip) => {
             if (err) {

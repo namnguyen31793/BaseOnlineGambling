@@ -8,9 +8,9 @@ cc.Class({
     properties: {
         listSpr_Help: [cc.SpriteFrame],
         listSpr_Help_Eng: [cc.SpriteFrame],
-        // listSpr_Title: [cc.SpriteFrame],
+        listSpr_Title: [cc.SpriteFrame],
         sprHelp: cc.Sprite,
-        // sprTitle: cc.Sprite,
+        sprTitle: cc.Sprite,
         lbCurrent:cc.Label,
     },
 
@@ -50,7 +50,10 @@ cc.Class({
         }else{
             this.sprHelp.spriteFrame = this.listSpr_Help_Eng[this.indexHelp];
         }
+        if(this.sprTitle)
+            this.sprTitle.spriteFrame = this.listSpr_Title[this.indexHelp];
     },
+
     onClose() {
         this.slotController.PlayClick();
         this.node.active = false;

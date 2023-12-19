@@ -9,11 +9,9 @@ cc.Class({
     },
 
     Init() {
+        cc.log('Init sound');
         this.soundManager = require('SoundManager1').getIns();
         this.soundManager2 = require('SoundManager2').getIns();
-    },
-
-    onLoad() {
         let isMusic = cc.sys.localStorage.getItem(CONFIG.KEY_MUSIC+"123465") || 1;
         if(isMusic > 0) {
             this.ChangeStateMusic(true);
@@ -28,6 +26,9 @@ cc.Class({
         } else {
             this.ChangeStateSound(false);
         }
+    },
+
+    onLoad() {
     },
 
     ChangeStateMusic(state) {

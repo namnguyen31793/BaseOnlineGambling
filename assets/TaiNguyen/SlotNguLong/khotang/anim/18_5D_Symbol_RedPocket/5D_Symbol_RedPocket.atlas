@@ -1,0 +1,153 @@
+
+5D_Symbol_RedPocket.png
+size: 324,277
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Coin/A_0041_41
+  rotate: true
+  xy: 2, 5
+  size: 8, 45
+  orig: 45, 45
+  offset: 18, 0
+  index: -1
+Coin/A_0042_42
+  rotate: true
+  xy: 191, 146
+  size: 13, 45
+  orig: 45, 45
+  offset: 15, 0
+  index: -1
+Coin/A_0043_43
+  rotate: true
+  xy: 150, 7
+  size: 18, 45
+  orig: 45, 45
+  offset: 12, 0
+  index: -1
+Coin/A_0044_44
+  rotate: true
+  xy: 103, 2
+  size: 23, 45
+  orig: 45, 45
+  offset: 9, 0
+  index: -1
+Coin/A_0045_45
+  rotate: true
+  xy: 192, 29
+  size: 27, 45
+  orig: 45, 45
+  offset: 7, 0
+  index: -1
+Coin/A_0046_46
+  rotate: false
+  xy: 239, 20
+  size: 31, 45
+  orig: 45, 45
+  offset: 5, 0
+  index: -1
+Coin/A_0047_47
+  rotate: false
+  xy: 238, 67
+  size: 34, 45
+  orig: 45, 45
+  offset: 3, 0
+  index: -1
+Coin/A_0048_48
+  rotate: false
+  xy: 238, 114
+  size: 37, 45
+  orig: 45, 45
+  offset: 2, 0
+  index: -1
+Coin/A_0049_49
+  rotate: false
+  xy: 272, 8
+  size: 39, 45
+  orig: 45, 45
+  offset: 1, 0
+  index: -1
+Coin/A_0050_50
+  rotate: true
+  xy: 274, 55
+  size: 40, 45
+  orig: 45, 45
+  offset: 1, 0
+  index: -1
+Coin/A_0051_51
+  rotate: true
+  xy: 192, 58
+  size: 41, 44
+  orig: 45, 45
+  offset: 1, 0
+  index: -1
+Coin/A_0052_52
+  rotate: true
+  xy: 277, 97
+  size: 42, 44
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+Coin/A_0053_53
+  rotate: true
+  xy: 277, 186
+  size: 43, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+Coin/A_0054_54
+  rotate: true
+  xy: 277, 141
+  size: 43, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+Coin/A_0055_55
+  rotate: true
+  xy: 277, 231
+  size: 44, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+Lixi3
+  rotate: false
+  xy: 103, 27
+  size: 87, 116
+  orig: 93, 122
+  offset: 3, 3
+  index: -1
+LixiDuoi
+  rotate: false
+  xy: 98, 145
+  size: 91, 130
+  orig: 94, 132
+  offset: 0, 2
+  index: -1
+LixiDuoiBong
+  rotate: false
+  xy: 191, 161
+  size: 84, 114
+  orig: 84, 114
+  offset: 0, 0
+  index: -1
+LixiDuoiShadow
+  rotate: false
+  xy: 2, 139
+  size: 94, 136
+  orig: 94, 136
+  offset: 0, 0
+  index: -1
+LixiTren
+  rotate: false
+  xy: 2, 15
+  size: 99, 122
+  orig: 99, 122
+  offset: 0, 0
+  index: -1
+Xu
+  rotate: true
+  xy: 192, 101
+  size: 43, 44
+  orig: 44, 45
+  offset: 0, 0
+  index: -1

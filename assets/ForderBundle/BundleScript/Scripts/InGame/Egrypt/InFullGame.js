@@ -83,6 +83,14 @@ cc.Class({
                 bName = "37";
                 url = "SlotAnKhe";
                 break;
+            case 39:
+                bName = "39";
+                url = "SlotNguLong";
+                break;
+            case 101:
+                bName = "NightClub";
+                url = "NightClub";
+                break;
         }
         let seft = this;
         Global.DownloadManager.LoadPrefab(bName,url, (prefab)=>{
@@ -115,6 +123,16 @@ cc.Class({
                 slotControl.setGameId(Global.Enum.GAME_TYPE.AN_KHE_TRA_VANG);
                 slotControl.Init();
                 require("SlotNetworkManager").getIns().AddSlotController(Global.Enum.GAME_TYPE.AN_KHE_TRA_VANG, slotControl);
+                break;
+            case 39:
+                slotControl.setGameId(Global.Enum.GAME_TYPE.KHO_TANG_NGU_LONG);
+                slotControl.Init();
+                require("SlotNetworkManager").getIns().AddSlotController(Global.Enum.GAME_TYPE.KHO_TANG_NGU_LONG, slotControl);
+                break;
+            case 101:
+                slotControl.setGameId(Global.Enum.GAME_TYPE.NIGHT_CLUB);
+                slotControl.Init();
+                require("SlotNetworkManager").getIns().AddSlotController(Global.Enum.GAME_TYPE.NIGHT_CLUB, slotControl);
                 break;
         }
     },
