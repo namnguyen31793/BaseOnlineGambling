@@ -28,11 +28,9 @@ cc.Class({
 
         //game kế thừa sửa phần này để chỉnh tùy chọn show room hay game
         Init: function () {
-            this.setLineData (this.NUMBER_LINE)
             //game chọn rom thi show room
             this.roomControl.Init(this);
-            // //game không có chọn room thì lần đầu vào chọn room 1
-            // this.JoinSlot(1);
+            this.setLineData (this.NUMBER_LINE)
         },
         
         ShowSelectRoom(){
@@ -47,6 +45,7 @@ cc.Class({
         },
 
         JoinSlot: function (roomId) {
+            cc.log("JoinSlot "+roomId);
             this.SelectRoom(roomId);
             if(this.slotUI)
                 this.slotUI.Show();
@@ -64,7 +63,7 @@ cc.Class({
         },
 
         UpdateMoneyNormalGame(winMoney, accountBalance, isBuyFree = false) {
-            cc.log("UpdateMoneyNormalGame isBuyFree "+isBuyFree+" - this.totalBetValue "+this.betValue)
+            cc.log("UpdateMoneyNormalGame isBuyFree "+isBuyFree+" - totalBetValue "+this.betValue+" - accountBalance "+accountBalance)
             let betValue = this.betValue;
             //free và bonus sẽ k mất tiền lượt quay
             if(this.isFree || this.isBonus)
@@ -123,6 +122,7 @@ cc.Class({
         },
 
         RequestSpin(isRequest = true) {
+            cc.log("RequestSpin "+Global.MainPlayerInfo.ingameBalance+" _totalBetValue "+this.totalBetValue);
             if(Global.MainPlayerInfo.ingameBalance < this.totalBetValue && !this.isFree && !this.isBonus) {
                 Global.UIManager.showCommandPopup(Global.MyLocalization.GetText("NOT_ENOUGHT_MONEY_TO_PLAY"));
                 if(this.isAuto) {
@@ -381,13 +381,12 @@ cc.Class({
         OnGetSpinResult(spinId, matrix, listLineWinData, winNormalValue, winBonusValue, freeSpinLeft, totalWin, accountBalance, currentJackpotValue, isTakeJackpot, extendMatrixDescription) {
             if(isTakeJackpot)
                 winNormalValue = totalWin;
-            //add cache tiền thắng
-            require("WalletController").getIns().PushBalance(this.getGameId(), this.GetBetValue(), totalWin, accountBalance);
             this.UpdateMatrix(this.ParseMatrix(matrix), false);
             //màn bonus chia ra tiền nhận sau khi diễn, nên cộng số dư ăn line trước
             let mAccountBalance = accountBalance;
             if(this.isBonus)
                 mAccountBalance = accountBalance-winBonusValue;
+            //add cache tiền thắng
             this.UpdateMoneyNormalGame(winNormalValue, mAccountBalance);
             let listLine = this.ParseLineData(listLineWinData);
 

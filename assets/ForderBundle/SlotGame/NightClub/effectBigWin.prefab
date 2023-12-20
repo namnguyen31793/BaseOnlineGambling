@@ -115,15 +115,15 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        11.753,
-        17.78,
+        0,
+        0,
         0,
         0,
         0,
         0,
         1,
-        0.9,
-        0.9,
+        0.92,
+        0.92,
         1
       ]
     },
@@ -155,7 +155,7 @@
     ],
     "paused": false,
     "defaultSkin": "default",
-    "defaultAnimation": "Girl1",
+    "defaultAnimation": "",
     "_preCacheMode": 0,
     "_cacheMode": 0,
     "loop": false,
@@ -223,7 +223,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 403.26,
+      "width": 258.43,
       "height": 40
     },
     "_anchorPoint": {
@@ -235,8 +235,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        110,
-        -200,
+        10,
+        -126.134,
         0,
         0,
         0,
@@ -275,8 +275,8 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_string": "",
-    "_N$string": "",
+    "_string": "123.456",
+    "_N$string": "123.456",
     "_fontSize": 62,
     "_lineHeight": 40,
     "_enableWrapText": true,

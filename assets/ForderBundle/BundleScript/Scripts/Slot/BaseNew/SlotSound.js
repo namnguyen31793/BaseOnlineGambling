@@ -9,7 +9,6 @@ cc.Class({
     },
 
     Init() {
-        cc.log('Init sound');
         this.soundManager = require('SoundManager1').getIns();
         this.soundManager2 = require('SoundManager2').getIns();
         let isMusic = cc.sys.localStorage.getItem(CONFIG.KEY_MUSIC+"123465") || 1;

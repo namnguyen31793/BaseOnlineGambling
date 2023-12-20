@@ -4,6 +4,7 @@ cc.Class({
     properties: {
         nodeGame: cc.Node,
         nodeDemo: cc.Node,
+        canvas : cc.Canvas,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -15,6 +16,7 @@ cc.Class({
     },
 
     start() {
+        this.canvas.designResolution = this.vecMaxSize;
         console.log("Slot full game start");
         Global.UIManager.showLoading();
 		console.log(require("ScreenManager").getIns().roomType);
@@ -88,6 +90,8 @@ cc.Class({
                 url = "SlotNguLong";
                 break;
             case 101:
+                this.nodeDemo.position = cc.v2(505, 505);
+                this.canvas.designResolution = cc.size(1334, 650);
                 bName = "NightClub";
                 url = "NightClub";
                 break;

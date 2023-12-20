@@ -145,7 +145,10 @@ cc.Class({
         //this.soundControl.PlaySpinStop();
         let listItemSlot = this.slotUI.listItem;
         for(let j = 0; j < this.numberRow; j++) {
-            listItemSlot[this.indexSpin+j*this.numberColumn].node.active = true;
+            let item = listItemSlot[this.indexSpin+j*this.numberColumn].node;
+            let pos = item.getPosition();
+            item.active = true;
+            item.runAction(cc.sequence(cc.moveTo(0.12,cc.v2(pos.x, pos.y - 15)),cc.moveTo(0.08, pos))).setTag(2);
         }
         this.slotUI.OnSpinDone(this.indexSpin);
         this.node.active = false;

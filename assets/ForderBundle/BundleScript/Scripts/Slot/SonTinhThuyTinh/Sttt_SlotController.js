@@ -349,13 +349,12 @@ cc.Class({
         OnGetSpinResult(spinId, matrix, listLineWinData, winNormalValue, winBonusValue, freeSpinLeft, totalWin, accountBalance, currentJackpotValue, isTakeJackpot, extendMatrixDescription) {
             if(isTakeJackpot)
                 winNormalValue = totalWin;
-            //add cache tiền thắng
-            require("WalletController").getIns().PushBalance(this.getGameId(), this.GetBetValue(), totalWin, accountBalance);
             this.UpdateMatrix(this.ParseMatrix(matrix), false);
             //màn bonus chia ra tiền nhận sau khi diễn, nên cộng số dư ăn line trước
             let mAccountBalance = accountBalance;
             if(this.isBonus)
                 mAccountBalance = accountBalance-winBonusValue;
+            //add cache tiền thắng
             this.UpdateMoneyNormalGame(winNormalValue, mAccountBalance);
             let listLine = this.ParseLineData(listLineWinData);
 

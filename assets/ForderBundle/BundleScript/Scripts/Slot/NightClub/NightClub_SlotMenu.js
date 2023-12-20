@@ -156,11 +156,11 @@ cc.Class({
     /*BET*/
     UpdateBetValue(totalBetValue) {
         if(this.lbBet)
-            this.lbBet.string = Global.Helper.formatNumber(totalBetValue/this.slotController.NUMBER_LINE);//Global.Helper.formatMoney(this.GetBetValue());
+            this.lbBet.string = Global.Helper.formatPrice(totalBetValue/this.slotController.NUMBER_LINE);//Global.Helper.formatMoney(this.GetBetValue());
         if(this.lbTotalBet)
-            this.lbTotalBet.string = Global.Helper.formatNumber(totalBetValue);
+            this.lbTotalBet.string = Global.Helper.formatPrice(totalBetValue);
         if(this.lb_CostBuyFree)
-            this.lb_CostBuyFree.string = Global.Helper.formatNumber(totalBetValue*CONFIG.MULTI_BET_BONANZA);
+            this.lb_CostBuyFree.string = Global.Helper.formatPrice(totalBetValue*CONFIG.MULTI_BET_BONANZA);
     },
 
     UpdateTotalBetValue(totalBetValue) {
@@ -169,9 +169,9 @@ cc.Class({
         if(totalBetValue == null)
             totalBetValue = 0;
         if(this.lbBet)
-            this.lbBet.string = Global.Helper.formatNumber(totalBetValue/this.slotController.NUMBER_LINE);
+            this.lbBet.string = Global.Helper.formatPrice(totalBetValue/this.slotController.NUMBER_LINE);
         if(this.lbTotalBet)
-            this.lbTotalBet.string = Global.Helper.formatNumber(totalBetValue);
+            this.lbTotalBet.string = Global.Helper.formatPrice(totalBetValue);
     },
     /*----------*/
 

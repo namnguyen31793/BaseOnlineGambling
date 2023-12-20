@@ -53,7 +53,6 @@ cc.Class({
     },
 
     PlayBackgroundMusic() {
-        cc.log(this.soundManager);
         if(this.isPlayMusic)
             this.soundManager.playMusicBackground(this.linkBgSound, 0.2, ()=>{
                 this.soundManager2.playMusicBackground(this.linkBundle, this.linkBgSound, 0.6);

@@ -68,11 +68,10 @@ cc.Class({
         this.time = 20;
         this.nodeTime.active = false;
         //show win by index 
-        cc.log(this.listBonus[this.indexBonus]);
         let valueWin = this.listBonus[this.indexBonus];
         //show effect
         let valueBonus = this.bet* parseInt(valueWin)/1000;
-        this.listBtn[index].ShowEffect(valueBonus, index);
+        this.listBtn[index].ShowEffect(valueBonus, parseInt(index)+1);
 
         this.cachebonusValue += valueBonus;
         this.lbBonusValue.string = Global.Helper.formatNumber(this.cachebonusValue);

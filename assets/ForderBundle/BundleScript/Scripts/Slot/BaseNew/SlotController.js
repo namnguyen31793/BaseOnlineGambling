@@ -10,7 +10,6 @@ cc.Class({
         this.toDoList = null;
     },
     properties: {
-        nodeRoom: cc.Node,
         slotUI: require('SlotUI'),
         slotMenu: require('SlotMenu'),
         slotEffect: require('SlotEffect'),
@@ -18,7 +17,6 @@ cc.Class({
     },
 
     onLoad: function () {
-        cc.log("onLoad 1")
         //bien check active button room chua
         this.isActiveButtonRoom = false;
         this.toDoList = this.node.addComponent("ToDoList");
@@ -183,7 +181,8 @@ cc.Class({
     //set khi load game trong infullgame
     setGameId (gameId) {
         cc.log("setGameId "+gameId)
-        return this.gameId = gameId;
+        this.gameId = gameId;
+        return this.gameId;
     },
 
     setLineData (lineData) {
