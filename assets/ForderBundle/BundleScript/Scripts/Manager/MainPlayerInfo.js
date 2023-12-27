@@ -16,6 +16,7 @@ cc.Class({
 		this.level = 0;
 		this.spriteAva = null;
 		this.vip = 0;
+		this.currentGameID = 0;
 	},
 
 	SetAvatar(spriteAva) {
@@ -73,6 +74,12 @@ cc.Class({
 		this.vipPoint = vipPoint;
 	},
 
+	SetCurrentGameID(gameID)
+	{
+		cc.log("SetCurrentGameID : "+gameID);
+		this.currentGameID = gameID;
+	},
+
 	onLoad() {
         Global.MainPlayerInfo = this;
     },
@@ -80,4 +87,6 @@ cc.Class({
     onDestroy(){
 		Global.MainPlayerInfo = null;
 	},
+
+
 });

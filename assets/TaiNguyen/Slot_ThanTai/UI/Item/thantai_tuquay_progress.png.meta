@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "d6b21f1b-20fc-4ffe-a0a1-a6108aa29c34",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 221,
+  "height": 87,
+  "platformSettings": {},
+  "subMetas": {
+    "thantai_tuquay_progress": {
+      "ver": "1.0.4",
+      "uuid": "a80179fa-f113-4b9b-abc7-de249f40ae86",
+      "rawTextureUuid": "d6b21f1b-20fc-4ffe-a0a1-a6108aa29c34",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 221,
+      "height": 86,
+      "rawWidth": 221,
+      "rawHeight": 87,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "a50bbbd1-8ae2-43a4-b56a-126d1858b6b8",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 221,
+  "height": 58,
+  "platformSettings": {},
+  "subMetas": {
+    "thantai_bg_napcoin": {
+      "ver": "1.0.4",
+      "uuid": "c5c21e0e-815a-4a51-9856-8ecba6b1c208",
+      "rawTextureUuid": "a50bbbd1-8ae2-43a4-b56a-126d1858b6b8",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 221,
+      "height": 58,
+      "rawWidth": 221,
+      "rawHeight": 58,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

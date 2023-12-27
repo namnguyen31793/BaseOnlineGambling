@@ -1,0 +1,25 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "ToaSang_Animation",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 15,
+  "sample": 1,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "angle": [
+        {
+          "frame": 0,
+          "value": 162.94310318518075
+        },
+        {
+          "frame": 15,
+          "value": 360
+        }
+      ]
+    }
+  },
+  "events": []
+}

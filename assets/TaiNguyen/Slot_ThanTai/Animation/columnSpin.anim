@@ -1,0 +1,200 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "columnSpin",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5166666666666667,
+  "sample": 60,
+  "speed": 2,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "item_0": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 295
+            },
+            {
+              "frame": 0.5,
+              "value": -300
+            },
+            {
+              "frame": 0.5166666666666667,
+              "value": 300
+            }
+          ]
+        }
+      },
+      "item_1": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 150
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": -300
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": 300
+            },
+            {
+              "frame": 0.5,
+              "value": 150
+            }
+          ]
+        }
+      },
+      "item_2": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 5
+            },
+            {
+              "frame": 0.25,
+              "value": -300
+            },
+            {
+              "frame": 0.26666666666666666,
+              "value": 300
+            },
+            {
+              "frame": 0.5,
+              "value": 5
+            }
+          ]
+        }
+      },
+      "item_3": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": -140
+            },
+            {
+              "frame": 0.13333333333333333,
+              "value": -300
+            },
+            {
+              "frame": 0.15,
+              "value": 300
+            },
+            {
+              "frame": 0.5,
+              "value": -140
+            }
+          ]
+        }
+      },
+      "item_1/spriteItem": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": false
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": true
+            }
+          ]
+        }
+      },
+      "item_2/spriteItem": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.25,
+              "value": false
+            },
+            {
+              "frame": 0.26666666666666666,
+              "value": true
+            }
+          ]
+        }
+      },
+      "item_3/spriteItem": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.13333333333333333,
+              "value": false
+            },
+            {
+              "frame": 0.15,
+              "value": true
+            }
+          ]
+        }
+      },
+      "item_0/spriteItem": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.5,
+              "value": false
+            },
+            {
+              "frame": 0.5166666666666667,
+              "value": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [
+    {
+      "frame": 0.13333333333333333,
+      "func": "randomIcon_Blur",
+      "params": [
+        3
+      ]
+    },
+    {
+      "frame": 0.25,
+      "func": "randomIcon_Blur",
+      "params": [
+        2
+      ]
+    },
+    {
+      "frame": 0.36666666666666664,
+      "func": "randomIcon_Blur",
+      "params": [
+        1
+      ]
+    },
+    {
+      "frame": 0.5,
+      "func": "randomIcon_Blur",
+      "params": [
+        0
+      ]
+    }
+  ]
+}

@@ -256,9 +256,9 @@ cc.Class({
         }
         for(let i = this.slotController.posData.length - 1; i >= 0; i--) {
             if(this.slotController.posData[i] == 1 && index == 1){
-                this.CreateExpandingWild(0, "Wild-SonTinh");
+                this.CreateExpandingWild(0, "Girl1");
             }else if(this.slotController.posData[i] == 3 && index == 3){
-                this.CreateExpandingWild(1, "Wild-ThuyTinh");
+                this.CreateExpandingWild(1, "Girl2");
             }        
         }
     },
@@ -450,9 +450,6 @@ cc.Class({
                 break;
             case 10:
                 animationName = "Medal-anim";
-                break;
-            default:
-                animationName = "animation";
                 break;
         }
         return animationName;

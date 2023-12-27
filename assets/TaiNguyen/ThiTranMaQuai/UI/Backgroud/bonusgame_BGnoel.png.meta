@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "38fd0ed3-f3f5-449b-8640-3227ab2c52cb",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1560,
+  "height": 720,
+  "platformSettings": {},
+  "subMetas": {
+    "bonusgame_BGnoel": {
+      "ver": "1.0.4",
+      "uuid": "0e7e301b-70d4-4c79-ac0d-245d740537b9",
+      "rawTextureUuid": "38fd0ed3-f3f5-449b-8640-3227ab2c52cb",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1560,
+      "height": 720,
+      "rawWidth": 1560,
+      "rawHeight": 720,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

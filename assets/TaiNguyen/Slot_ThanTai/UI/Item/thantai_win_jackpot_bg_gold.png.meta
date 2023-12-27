@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "df6dc249-85b1-4002-9f34-2e9f52ecc529",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 424,
+  "height": 122,
+  "platformSettings": {},
+  "subMetas": {
+    "thantai_win_jackpot_bg_gold": {
+      "ver": "1.0.4",
+      "uuid": "22a8b8e9-0d7f-4e52-a7ca-f24238fffe63",
+      "rawTextureUuid": "df6dc249-85b1-4002-9f34-2e9f52ecc529",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 424,
+      "height": 122,
+      "rawWidth": 424,
+      "rawHeight": 122,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

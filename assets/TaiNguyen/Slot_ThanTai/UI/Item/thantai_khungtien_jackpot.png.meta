@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "3c2e7f11-9c7a-4985-8ab6-1745b3d11014",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 647,
+  "height": 105,
+  "platformSettings": {},
+  "subMetas": {
+    "thantai_khungtien_jackpot": {
+      "ver": "1.0.4",
+      "uuid": "2b3d7fed-7609-4ffb-931a-0ee6bb43a94d",
+      "rawTextureUuid": "3c2e7f11-9c7a-4985-8ab6-1745b3d11014",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 647,
+      "height": 104,
+      "rawWidth": 647,
+      "rawHeight": 105,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

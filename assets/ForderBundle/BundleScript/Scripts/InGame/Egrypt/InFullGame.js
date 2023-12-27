@@ -73,8 +73,14 @@ cc.Class({
                 url = "SlotSweetBonanza";
                 break;
             case 33:
-                bName = "33";
-                url = "SlotTayDuKy";
+                this.nodeDemo.position = cc.v2(505, 505);
+                this.canvas.designResolution = cc.size(1334, 650);
+                bName = "NightClub";
+                url = "NightClub";
+                break;
+            case 34:
+                bName = "TTMQ";
+                url = "TTMQView";
                 this.nodeDemo.position = cc.v2(-505, 585);
                 break;
             case 35:
@@ -90,10 +96,9 @@ cc.Class({
                 url = "SlotNguLong";
                 break;
             case 101:
-                this.nodeDemo.position = cc.v2(505, 505);
-                this.canvas.designResolution = cc.size(1334, 650);
-                bName = "NightClub";
-                url = "NightClub";
+                bName = "33";
+                url = "SlotTayDuKy";
+                this.nodeDemo.position = cc.v2(-505, 585);
                 break;
         }
         let seft = this;

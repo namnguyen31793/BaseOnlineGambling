@@ -1,0 +1,29 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Off_Setting",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5,
+  "sample": 10,
+  "speed": 6,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "icOn": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 32
+            },
+            {
+              "frame": 0.5,
+              "value": -32
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}
